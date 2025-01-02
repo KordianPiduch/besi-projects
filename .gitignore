@@ -1,0 +1,11 @@
+*.opt
+*.precompilecache
+*.compileinfo
+*.bootinfo_guids
+*.bootinfo
+*.~u
+.DS_Store
+.venv/
+docs/.*
+._*
+documentation/
