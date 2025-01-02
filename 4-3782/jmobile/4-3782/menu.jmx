@@ -1,0 +1,127 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="menu" py="0" dataWndSize="0,70" pageType="modal" pageName="menu" pageSize="300,260" usedFonts="Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="300" height="260" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="ShapeWgt" id="rect1">
+   <wgtStyle x="0" y="0" cx="145.16" cy="25" stroke="rgb(102,102,102)" width="300" height="50" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="2" L1="Audit Trail"/>
+    <MLText id="13" L1="Page 1"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithIcon" id="BtnStd1">
+   <wgtStyle x="0" y="0" cx="40" cy="25" width="80" height="50" forcePaint="1"/>
+   <object class="ButtonWgt" id="BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(102,102,102)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(192,192,192)" releasePath="images\Btn_rect_blueUp.svg" width="80" forcePaint="9" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+    </dataLinks>
+    <links>
+     <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="ImageWgt" id="BtnStd1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle imagePath="images/MenuLayout3.svg" x="28" lock="true" y="6" stroke-width="1" cx="16" cy="17.50" stroke="rgb(237,237,237)" enableCache="true" width="32" height="35" fill="rgb(255,255,255)" forcePaint="1"/>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="BtnIllum5">
+   <wgtStyle x="25" y="75" cx="125" cy="24.97" width="250" height="49.94"/>
+   <object class="ButtonWgt" id="BtnIllum5.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" cx="119.07" cy="22.34" value="0" style="0" width="250" height="49.94" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="LoadPageAction" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="page1.jmx" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnIllum5.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="60" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="116.38" cy="32.09" font-sizepx="16" width="190" wrapping="true" height="49.94" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="13">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" id="BtnIllum5.icoImg" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon">
+    <wgtStyle imagePath="images/Monitor3.svg" x="10" y="10" stroke-width="0" cx="15" cy="13.34" stroke="rgb(237,237,237)" width="30" height="30" fill="rgb(255,255,255)" forcePaint="1"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle x="25" y="200" cx="125" cy="25" width="250" height="50"/>
+   <object class="GroupWgt" customType="ButtonsWithIcon" id="GroupWgt1.BtnStd2">
+    <wgtStyle x="0" y="0" cx="40" cy="25" width="80" height="50"/>
+    <object class="ButtonWgt" id="GroupWgt1.BtnStd2.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+     <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="80" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_blueDown.svg"/>
+     <links>
+      <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+      <action class="LoadPageAction" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="alarmpage.jmx" attribute="onMouseClick"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GroupWgt1.BtnStd2.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle imagePath="images/Alarm.svg" x="25" y="10" stroke-width="1" cx="15" cy="15" stroke="rgb(255,255,255)" enableCache="true" width="30" height="30" fill="rgb(255,255,255)" forcePaint="1"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="ButtonsWithIcon" id="GroupWgt1.BtnStd3">
+    <wgtStyle x="85" y="0" cx="40" cy="25" width="80" height="50"/>
+    <object class="ButtonWgt" id="GroupWgt1.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+     <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="80" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_blueDown.svg"/>
+     <links>
+      <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+      <action class="LoadPageAction" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="networkpage.jmx" attribute="onMouseClick"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GroupWgt1.BtnStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle imagePath="images/Network3.svg" x="25" y="10" stroke-width="1" cx="15" cy="15" stroke="rgb(255,255,255)" enableCache="true" width="30" height="30" fill="rgb(255,255,255)" forcePaint="1"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="ButtonsWithIcon" id="GroupWgt1.BtnStd4">
+    <wgtStyle x="170" y="0" cx="40" cy="25" width="80" height="50"/>
+    <object class="ButtonWgt" id="GroupWgt1.BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+     <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="80" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_blueDown.svg"/>
+     <links>
+      <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+      <action class="ShowDialogAction" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="info_page.jmx" attribute="onMouseClick"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GroupWgt1.BtnStd4.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle imagePath="images/Info.svg" x="25" y="10" stroke-width="1" cx="15" cy="15" stroke="rgb(255,255,255)" enableCache="true" width="30" height="30" fill="rgb(255,255,255)" forcePaint="1"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="menu@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="BtnIllum1">
+   <wgtStyle x="25" y="130" cx="125" cy="25" width="250" height="50"/>
+   <object class="ButtonWgt" id="BtnIllum1.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="LoadPageAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="audittrail.jmx" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnIllum1.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="60" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="116.38" cy="32.13" font-sizepx="16" width="190" wrapping="true" height="50" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="2">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" id="BtnIllum1.icoImg" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon">
+    <wgtStyle imagePath="images/Monitor3.svg" x="10" y="10.01" stroke-width="0" cx="15" cy="13.36" stroke="rgb(237,237,237)" width="30" height="30.04" fill="rgb(255,255,255)" forcePaint="1"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

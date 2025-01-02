@@ -1,0 +1,7 @@
+<defs>
+ <g attributeName="pump_pressure_sensor-1.0:1.0" showChildNodes="0" id="custom_properties" inherit="basicgroup_properties">
+  <info></info>
+  <text isCompound="true" attributeName="pump_prefix" display="pump_prefix" attributeType="param" attachTag="true" updateProps="true" default="true"/>
+  <text attributeName="sensor" display="sensor" editChild="true" attributeType="param" updateProps="true" default="true">suction / discharge</text>
+ </g>
+</defs>

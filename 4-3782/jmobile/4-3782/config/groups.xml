@@ -1,0 +1,455 @@
+<groups>
+ <group Type="Auto">
+  <name>AddUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Force Logoff Time</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AlarmPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AuditTrail@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>background_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>ChangePassword@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>DeleteUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>NetworkPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_in_control</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>ip_address</tag>
+  <tag>ping_status_master</tag>
+  <tag>ping_status_slave</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>Page1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|discharge_sensor|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|discharge_sensor|pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|running</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|suction_sensor|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|suction_sensor|pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|density</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|position_close</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|position_open</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|stepless|position_per</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|press_take_control</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>UserEditor@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>VisuElements@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[1]|sttDraft|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|discharge_sensor|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|discharge_sensor|pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|running</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|suction_sensor|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|suction_sensor|pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|density</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|measuring_height</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|position_close</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|position_open</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|stepless|position_per</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|press_take_control</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>audit_trail_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>base_template@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm not acknowledged</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|atmospheric_pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|enable</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|angle</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|enable</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|enable</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>counter_time_string</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>timer_user_logout_box_visibility</tag>
+ </group>
+ <group Type="Auto">
+  <name>besi-template@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_IP</tag>
+  <tag>HMI_USER</tag>
+  <tag>IP Address</tag>
+  <tag>This Client User-Name</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>pump_dialog_x</tag>
+  <tag>pump_dialog_y</tag>
+  <tag>valve_dialog_base_x</tag>
+  <tag>valve_dialog_base_y</tag>
+ </group>
+ <group Type="Auto">
+  <name>dimmer@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Display Brightness</tag>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>draft_settings@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>draft_prefix</tag>
+  <tag>frame_color</tag>
+  <tag>sensor_bargraph_reverse</tag>
+  <tag>text_color</tag>
+  <tag>|density</tag>
+  <tag>|failure</tag>
+  <tag>|max_height</tag>
+  <tag>|measuring_height</tag>
+  <tag>|measuring_pressure</tag>
+  <tag>|name</tag>
+  <tag>|save</tag>
+  <tag>|sensor_input_mA</tag>
+  <tag>|sensor_mounting_height</tag>
+  <tag>|sensor_range</tag>
+ </group>
+ <group Type="Auto">
+  <name>info_page@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>HMI_OS</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|project_version</tag>
+  <tag>ProjectID</tag>
+  <tag>ProjectVersion</tag>
+  <tag>bar_color</tag>
+  <tag>besi_no</tag>
+  <tag>frame_color</tag>
+  <tag>hull_no</tag>
+  <tag>shipyard_name</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>login_timer_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>loginpage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>menu@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>project_config@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|backup</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|global_load</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|global_save</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>theme</tag>
+ </group>
+ <group Type="Auto">
+  <name>pump_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>pump_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|press_start</tag>
+  <tag>|press_stop</tag>
+  <tag>|reset</tag>
+ </group>
+ <group Type="Auto">
+  <name>pump_settings@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>pump_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|discharge_sensor|failure</tag>
+  <tag>|discharge_sensor|max_pressure</tag>
+  <tag>|discharge_sensor|min_pressure</tag>
+  <tag>|discharge_sensor|pressure</tag>
+  <tag>|failure</tag>
+  <tag>|name</tag>
+  <tag>|pulse_time</tag>
+  <tag>|save</tag>
+  <tag>|start_delay_time</tag>
+  <tag>|stop_delay_time</tag>
+  <tag>|suction_sensor|failure</tag>
+  <tag>|suction_sensor|max_pressure</tag>
+  <tag>|suction_sensor|min_pressure</tag>
+  <tag>|suction_sensor|pressure</tag>
+ </group>
+ <group Type="Auto">
+  <name>pump_settings_simple@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>pump_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|failure</tag>
+  <tag>|name</tag>
+  <tag>|pulse_time</tag>
+  <tag>|save</tag>
+  <tag>|start_delay_time</tag>
+  <tag>|stop_delay_time</tag>
+ </group>
+ <group Type="Auto">
+  <name>redundancy_status@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_in_control</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>ip_address</tag>
+  <tag>ping_status_master</tag>
+  <tag>ping_status_slave</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_draft@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>draft_prefix</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_pump@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>pump_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|simulation|discharge_sensor</tag>
+  <tag>|simulation|suction_sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_tank@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>tank_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_valve@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|name</tag>
+  <tag>|simulation|close</tag>
+  <tag>|simulation|open</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>switch_user@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>tank_settings@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>tank_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|alarm|alarm_delay</tag>
+  <tag>|alarm|alarm_per_HHL</tag>
+  <tag>|alarm|alarm_per_HL</tag>
+  <tag>|alarm|alarm_per_LL</tag>
+  <tag>|alarm|enable_HHL</tag>
+  <tag>|alarm|enable_switch_HL</tag>
+  <tag>|alarm|enable_switch_LL</tag>
+  <tag>|density</tag>
+  <tag>|level_switch_HL</tag>
+  <tag>|level_switch_LL</tag>
+  <tag>|measuring_height</tag>
+  <tag>|measuring_pressure</tag>
+  <tag>|name</tag>
+  <tag>|save</tag>
+  <tag>|sensor_input_mA</tag>
+  <tag>|sensor_mounting_height</tag>
+  <tag>|sensor_range</tag>
+  <tag>|status</tag>
+  <tag>|tank_max_height</tag>
+  <tag>|tank_max_volume</tag>
+  <tag>|temp|alarm_temp</tag>
+  <tag>|temp|enable</tag>
+  <tag>|temp|status</tag>
+  <tag>|temp|temperature</tag>
+  <tag>|volume</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_USER</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_operator@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_service@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>USB Drive Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_confirm</tag>
+  <tag>valve_prefix</tag>
+  <tag>|name</tag>
+  <tag>|press_close</tag>
+  <tag>|press_open</tag>
+  <tag>|reset</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_base_confirmation@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|press_open</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_stepless@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|name</tag>
+  <tag>|press_close</tag>
+  <tag>|press_open</tag>
+  <tag>|reset</tag>
+  <tag>|stepless|set_point</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_stepless_autoadjust@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|stepless|auto_adjust</tag>
+ </group>
+</groups>
