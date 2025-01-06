@@ -9,3 +9,4 @@
 docs/.*
 ._*
 documentation/
+*.Application.xml
