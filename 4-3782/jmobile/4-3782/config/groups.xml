@@ -1,5 +1,19 @@
 <groups>
  <group Type="Auto">
+  <name>4-3782@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_IP</tag>
+  <tag>HMI_USER</tag>
+  <tag>IP Address</tag>
+  <tag>This Client User-Name</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>pump_dialog_x</tag>
+  <tag>pump_dialog_y</tag>
+  <tag>valve_dialog_base_x</tag>
+  <tag>valve_dialog_base_y</tag>
+ </group>
+ <group Type="Auto">
   <name>AddUser@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>Force Logoff Time</tag>
@@ -155,20 +169,6 @@
   <tag>frame_color</tag>
   <tag>text_color</tag>
   <tag>timer_user_logout_box_visibility</tag>
- </group>
- <group Type="Auto">
-  <name>besi-template@$GroupSubscrWgt@$0</name>
-  <active>false</active>
-  <tag>HMI_IP</tag>
-  <tag>HMI_USER</tag>
-  <tag>IP Address</tag>
-  <tag>This Client User-Name</tag>
-  <tag>background_color</tag>
-  <tag>bar_color</tag>
-  <tag>pump_dialog_x</tag>
-  <tag>pump_dialog_y</tag>
-  <tag>valve_dialog_base_x</tag>
-  <tag>valve_dialog_base_y</tag>
  </group>
  <group Type="Auto">
   <name>dimmer@$GroupSubscrWgt@$0</name>
