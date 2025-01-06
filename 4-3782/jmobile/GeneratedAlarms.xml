@@ -44219,7 +44219,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: load csv file failed</L1>
+			<L1 langName="Lang1">ballast pump 1 err: load csv file failed</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44272,7 +44272,60 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: save csv file failed</L1>
+			<L1 langName="Lang1">ballast pump 1 err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump1_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[1]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">ballast pump 1 err: pump in error state.</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44325,7 +44378,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: main suction sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 1 err: main suction sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44378,7 +44431,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: backup suction sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 1 err: backup suction sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44431,7 +44484,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: main discharge sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 1 err: main discharge sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44484,7 +44537,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 1 err: backup discharge sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 1 err: backup discharge sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44537,7 +44590,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: load csv file failed</L1>
+			<L1 langName="Lang1">ballast pump 2 err: load csv file failed</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44590,7 +44643,60 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: save csv file failed</L1>
+			<L1 langName="Lang1">ballast pump 2 err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump2_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[2]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">ballast pump 2 err: pump in error state.</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44643,7 +44749,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: main suction sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 2 err: main suction sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44696,7 +44802,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: backup suction sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 2 err: backup suction sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44749,7 +44855,7 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: main discharge sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 2 err: main discharge sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
@@ -44802,7 +44908,1491 @@
 		<actions></actions>
 		<useractions></useractions>
 		<description>
-			<L1 langName="Lang1">pump 2 err: backup discharge sensor failure</L1>
+			<L1 langName="Lang1">ballast pump 2 err: backup discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_load_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_csv_load</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: load csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_save_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_csv_save</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: pump in error state.</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_sensor_suction_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_sensor_suction_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: main suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_sensor_suction_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_sensor_suction_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: backup suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_sensor_discharge_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_sensor_discharge_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: main discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump3_sensor_discharge_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[3]|sttPump|alarm|err_sensor_discharge_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">bilge pump err: backup discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_load_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_csv_load</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: load csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_save_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_csv_save</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: pump in error state.</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_sensor_suction_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_sensor_suction_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: main suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_sensor_suction_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_sensor_suction_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: backup suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_sensor_discharge_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_sensor_discharge_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: main discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump4_sensor_discharge_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[4]|sttPump|alarm|err_sensor_discharge_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">fire fighting pump err: backup discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_load_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_csv_load</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: load csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_save_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_csv_save</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: pump in error state.</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_sensor_suction_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_sensor_suction_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: main suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_sensor_suction_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_sensor_suction_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: backup suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_sensor_discharge_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_sensor_discharge_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: main discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump5_sensor_discharge_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|alarm|err_sensor_discharge_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">HFO transfer pump err: backup discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_load_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_csv_load</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: load csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_save_csv</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_csv_save</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: save csv file failed</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_general_failure</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|failure</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: pump in error state.</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_sensor_suction_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_sensor_suction_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: main suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_sensor_suction_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_sensor_suction_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: backup suction sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_sensor_discharge_main</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_sensor_discharge_main</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: main discharge sensor failure</L1>
+		</description>
+		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+	</alarm>
+	<alarm eventBuffer="AlarmBuffer1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true">
+		<name>pump6_sensor_discharge_backup</name>
+		<groups></groups>
+		<source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|alarm|err_sensor_discharge_backup</source>
+		<alarmType>valueAlarm</alarmType>
+		<value>1</value>
+		<enableTag></enableTag>
+		<remoteAck></remoteAck>
+		<ackNotify></ackNotify>
+		<touchAckNotify></touchAckNotify>
+		<enabled>true</enabled>
+		<requireAck>true</requireAck>
+		<blinkTxt>false</blinkTxt>
+		<requireReset>true</requireReset>
+		<severity>1</severity>
+		<priority>3</priority>
+		<logMask>76</logMask>
+		<notifyMask>76</notifyMask>
+		<actionMask>1</actionMask>
+		<printMask>1</printMask>
+		<customFields>
+			<customField_1>
+				<L1 langName="Lang1"></L1>
+			</customField_1>
+			<customField_2>
+				<L1 langName="Lang1"></L1>
+			</customField_2>
+		</customFields>
+		<colors>
+			<ackTxtColor>#ff0000</ackTxtColor>
+			<ackBgColor>#ffff00</ackBgColor>
+			<disabledTxtColor>#000000</disabledTxtColor>
+			<disabledBgColor>#ffffff</disabledBgColor>
+			<triggeredTxtColor>#d20000</triggeredTxtColor>
+			<triggeredBgColor>#ffffff</triggeredBgColor>
+			<notTriggeredTxtColor>#aaaaaa</notTriggeredTxtColor>
+			<notTriggeredBgColor>#ffffff</notTriggeredBgColor>
+			<triggeredAckedTxtColor>#000000</triggeredAckedTxtColor>
+			<triggeredAckedBgColor>#ffffff</triggeredAckedBgColor>
+			<triggeredNotAckedTxtColor>#d20000</triggeredNotAckedTxtColor>
+			<triggeredNotAckedBgColor>#ffffff</triggeredNotAckedBgColor>
+			<notTriggeredAckedTxtColor>#aaaaaa</notTriggeredAckedTxtColor>
+			<notTriggeredAckedBgColor>#ffffff</notTriggeredAckedBgColor>
+			<notTriggeredNotAckedTxtColor>#aaaaaa</notTriggeredNotAckedTxtColor>
+			<notTriggeredNotAckedBgColor>#ffffff</notTriggeredNotAckedBgColor>
+		</colors>
+		<actions></actions>
+		<useractions></useractions>
+		<description>
+			<L1 langName="Lang1">MDO transfer pump err: backup discharge sensor failure</L1>
 		</description>
 		<enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
 	</alarm>
