@@ -26,7 +26,9 @@ Width: <TODO>
 - 53 valves 
 - 28 tanks
 - 4 drafts
-- 2 pumps with start permission
+- 6 pumps
+    - 2 pumps with start permission
+    - 4 standard pumps 
 - HMI: 2 Touchscreens + 1 PC
 - atmospheric sensor
 - inclinometer trim
@@ -47,10 +49,16 @@ Width: <TODO>
 
 ## Functional Description
 
+### Voltage supervision alarms
+All alarms are connected to master unit (PLC1), in case of main unit failure alarm monitoring will be disabled.
+
 ### Pump Control 
 ```
 SHIPYARD REQUEST:
 About the overload inquiry interface between the valve remote control and the switchboard.
-BESI needs to modify the drawing, that is, a start button needs to be pressed twice: press the first time for the heavy load request signal, press the second time for the pump signal.
-There are a total of 4 interface signals between the starter and the valve remote control. The signals sent to the starter by remote control of the valve are start (potential free normal open) and stop (passive normally open); The signals sent by the starter to the remote control of the valve are operation (potential free normal open) and power permissible (potential free normal open).
+BESI needs to modify the drawing, that is, a start button needs to be pressed twice: 
+press the first time for the heavy load request signal, press the second time for the pump signal.
+There are a total of 4 interface signals between the starter and the valve remote control. 
+The signals sent to the starter by remote control of the valve are start (potential free normal open) and stop (passive normally open); 
+The signals sent by the starter to the remote control of the valve are operation (potential free normal open) and power permissible (potential free normal open).
 ```
