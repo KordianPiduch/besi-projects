@@ -1,4 +1,4 @@
-$hmi.addPagesScript({// ------------------------------------  besi-template  ------------------------------ 
+$hmi.addPagesScript({// ------------------------------------  4-3782  ------------------------------ 
 
 "p0_page0": function(){
 // ------------------------------------  Header ------------------------------
@@ -12,9 +12,9 @@ var Group = $hmi.getJSModule('Group');var State = $hmi.getJSModule('State');
 
 function startup_setup_OnAction(me, eventInfo)
 {
-    project.setTag("shipyard_name", "Shipyard");
-    project.setTag("besi_no", "Project");
-    project.setTag("hull_no", "Hull");
+    project.setTag("shipyard_name", "New Dayang Shipbuilding Co.");
+    project.setTag("besi_no", "4-3782");
+    project.setTag("hull_no", "NDY1284");
     
     // default to black theme
     if (project.getTag("theme") === true){
