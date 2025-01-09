@@ -1,0 +1,94 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeER" dataWndSize="0,70" pageName="BilgeER" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
+  <object class="ImageWgt" id="image1">
+   <wgtStyle imagePath="images/4-3782-bilge-er.png" x="0" lock="true" y="50" cx="960" cy="490" stroke="rgb(200,200,200)" width="1920" height="980" fill="rgb(230,230,230)" forcePaint="1"/>
+  </object>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="BILGE"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="take_control_button-1.0:1.0" id="TakeControlBtn2">
+   <wgtStyle x="85" y="5" wgtStaticOpt="dynamic" cx="60" cy="20" width="120" height="40" forcePaint="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID_internal"/>
+   </dataLinks>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">2</param>
+    <param attrName="HMI_ID_internal"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v">
+   <wgtStyle x="1471" y="364" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">2</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">0</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v1">
+   <wgtStyle x="1762.50" y="415.61" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">2</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">0</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v2">
+   <wgtStyle x="1010" y="415.61" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">2</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">0</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h">
+   <wgtStyle x="1205.06" y="558.32" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">2</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">0</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h1">
+   <wgtStyle x="1583" y="558.32" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">2</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">0</param>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="BilgeER@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump_v">
+   <wgtStyle x="154.52" y="273.13" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">2</param>
+    <param attrName="PumpID" alias="PumpID">3</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump_v1">
+   <wgtStyle x="334.68" y="273.13" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">2</param>
+    <param attrName="PumpID" alias="PumpID">4</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>
