@@ -21,6 +21,7 @@
       <page class="PageWgt" type="normal" name="BallastER" size="1920,1080" file="ballaster.jmx"/>
       <page class="PageWgt" type="normal" name="Bilge" size="1920,1080" file="bilge.jmx"/>
       <page class="PageWgt" type="normal" name="BilgeER" size="1920,1080" file="bilgeer.jmx"/>
+      <page class="PageWgt" type="normal" name="Fuel" size="1920,1080" file="fuel.jmx"/>
       <page class="PageWgt" type="normal" name="AuditTrail" size="1920,1080" file="audittrail.jmx"/>
       <page class="PageWgt" type="normal" name="AlarmPage" size="1920,1080" file="alarmpage.jmx"/>
       <page class="PageWgt" type="normal" name="NetworkPage" size="1920,1080" file="networkpage.jmx"/>
