@@ -490,6 +490,9 @@
  <group Type="Auto">
   <name>NetworkPage@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag></tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|connection_status|connection_status[3]</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|connection_status|connection_status[4]</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_healthy</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_in_control</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_healthy</tag>

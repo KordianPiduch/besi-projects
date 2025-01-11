@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -291,25 +291,25 @@
    </links>
   </object>
   <object class="GroupWgt" customType="draft-1.0:1.0" id="draft">
-   <wgtStyle x="45" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="45" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DraftID">1</param>
    </links>
   </object>
   <object class="GroupWgt" customType="draft-1.0:1.0" id="draft1">
-   <wgtStyle x="910" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="910" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DraftID">3</param>
    </links>
   </object>
   <object class="GroupWgt" customType="draft-1.0:1.0" id="draft2">
-   <wgtStyle x="910" lock="true" y="959.75" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="910" lock="true" y="959.75" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DraftID">2</param>
    </links>
   </object>
   <object class="GroupWgt" customType="draft-1.0:1.0" id="draft3">
-   <wgtStyle x="1770" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="1770" lock="true" y="80.01" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DraftID">4</param>
    </links>
