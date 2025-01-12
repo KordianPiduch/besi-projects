@@ -110,4 +110,58 @@
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
  </protocol>
+ <protocol>
+  <id>prot4</id>
+  <name>PING</name>
+  <file>PING</file>
+  <configuration>CfgVer=1 model=1 ipAddress=192.168.10.15 protocol=ICMP port=80 timeout=5000 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>30000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Ping</displayName>
+  <clientSide>false</clientSide>
+  <remoteOnly>false</remoteOnly>
+ </protocol>
+ <protocol>
+  <id>prot5</id>
+  <name>PING</name>
+  <file>PING</file>
+  <configuration>CfgVer=1 model=1 ipAddress=192.168.10.25 protocol=ICMP port=80 timeout=5000 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>30000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Ping</displayName>
+  <clientSide>false</clientSide>
+  <remoteOnly>false</remoteOnly>
+ </protocol>
+ <protocol>
+  <id>prot9</id>
+  <name>PING</name>
+  <file>PING</file>
+  <configuration>CfgVer=1 model=1 ipAddress=192.168.10.35 protocol=ICMP port=80 timeout=5000 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>30000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Ping</displayName>
+  <clientSide>false</clientSide>
+  <remoteOnly>false</remoteOnly>
+ </protocol>
 </protocols>

@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="AlarmPage" dataWndSize="0,70" pageName="AlarmPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="AlarmPage" dataWndSize="0,70" pageName="AlarmPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -8,10 +8,8 @@
    </langs>
    <MLTexts>
     <MLText id="1" L1=""/>
-    <MLText id="0" L1="Toggle selection"/>
     <MLText id="2" L1="ALARM PAGE"/>
     <MLText id="3" L1="Reset"/>
-    <MLText id="4" L1="Save"/>
     <MLText id="6" L1="Label"/>
     <MLText id="8" L1="Label"/>
     <MLText id="11" L1="Hide Not Triggered"/>
@@ -86,25 +84,8 @@
       </lang>
      </links>
     </object>
-    <object class="GroupWgt" customType="ButtonsWithLabel" id="ActiveAlarmsTable.Filter.Selection">
-     <wgtStyle x="606.60" y="0" wgtStaticOpt="dynamic" cx="273.17" cy="17" width="546.34" height="34" forcePaint="21"/>
-     <object class="ButtonWgt" id="ActiveAlarmsTable.Filter.Selection.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="273.17" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="546.34" forcePaint="21" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
-      <links>
-       <action class="SelectAllAlarmsOnSrcAction" actionID="1" event="onMouseClick" alarmSrcId="ActiveAlarmsTable.Table.AlarmsSrcWgt" actionWgt="_WgtMgr" attribute="onMouseClick" mode="0"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="ActiveAlarmsTable.Filter.Selection.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="20.23" vert-align="middle" y="0.78" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="242.84" alignment="center" cy="15.46" font-sizepx="13" width="485.61" wrapping="true" height="31.68" forcePaint="21" font-color="rgb(255,255,255)"/>
-      <links>
-       <lang class="MLTextLink" textid="0">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-    </object>
     <object class="GroupWgt" customType="ButtonsWithLabel" id="ActiveAlarmsTable.Filter.Ack">
-     <wgtStyle x="1444.68" y="0" wgtStaticOpt="dynamic" cx="103.62" cy="17" width="207.23" height="34" forcePaint="17"/>
+     <wgtStyle x="1444.68" y="0" wgtStaticOpt="dynamic" cx="103.61" cy="17" width="207.23" height="34" forcePaint="17"/>
      <object class="ButtonWgt" id="ActiveAlarmsTable.Filter.Ack.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
       <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="103.62" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="207.23" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
       <links>
@@ -121,7 +102,7 @@
      </object>
     </object>
     <object class="GroupWgt" customType="ButtonsWithLabel" id="ActiveAlarmsTable.Filter.Reset">
-     <wgtStyle x="1670.77" y="0" wgtStaticOpt="dynamic" cx="103.62" cy="17" width="207.23" height="34" forcePaint="17"/>
+     <wgtStyle x="1670.77" y="0" wgtStaticOpt="dynamic" cx="103.61" cy="17" width="207.23" height="34" forcePaint="17"/>
      <object class="ButtonWgt" id="ActiveAlarmsTable.Filter.Reset.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
       <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="103.66" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="207.23" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
       <links>
@@ -132,24 +113,6 @@
       <wgtStyle font-family="Roboto Medium" x="7.67" vert-align="middle" y="0.78" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="92.17" alignment="center" cy="15.46" font-sizepx="13" width="184.18" wrapping="true" height="31.68" forcePaint="17" font-color="rgb(255,255,255)"/>
       <links>
        <lang class="MLTextLink" textid="3">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-    </object>
-    <object class="GroupWgt" customType="ButtonsWithLabel" id="ActiveAlarmsTable.Filter.Save">
-     <wgtStyle x="1201.92" y="0" wgtStaticOpt="dynamic" cx="103.62" cy="17" width="207.23" height="34" forcePaint="21"/>
-     <object class="ButtonWgt" id="ActiveAlarmsTable.Filter.Save.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="103.62" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="207.23" forcePaint="21" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
-      <links>
-       <action class="EnableAlarmsAction" actionID="1" enableFlag="false" alarmID="" event="onMouseUp" actionWgt="_AlarmsMgr" attribute="onMouseRelease"/>
-       <action class="SaveConfigurationAction" actionID="2" event="onMouseUp" actionWgt="_IdalMgr" attribute="onMouseRelease"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="ActiveAlarmsTable.Filter.Save.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="7.67" vert-align="middle" y="0.78" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="92.13" alignment="center" cy="15.46" font-sizepx="13" width="184.14" wrapping="true" height="31.68" forcePaint="21" font-color="rgb(255,255,255)"/>
-      <links>
-       <lang class="MLTextLink" textid="4">
         <MLFontFamily L1="Roboto Medium"/>
        </lang>
       </links>
