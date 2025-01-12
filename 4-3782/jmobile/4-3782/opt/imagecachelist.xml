@@ -14,12 +14,12 @@
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="12" file="images/btnkey_rect_graydwn.svg" numUses="58" stroke="none" fill="rgb(230,230,230)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="12" file="images/btnkey_rect_grayup.svg" numUses="58" stroke="none" fill="rgb(230,230,230)"/>
  <file isSvgFile="true" imgSize="27,23" numSizes="1" file="lib/valve_base_vertical-1.0/images/warning.svg" numUses="45" stroke="none" fill="rgb(240,0,0)"/>
- <file isSvgFile="true" imgSize="80,50" numSizes="35" file="images/btn_rect_blueup.svg" numUses="37" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="80,50" numSizes="33" file="images/btn_rect_blueup.svg" numUses="35" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="35,25" numSizes="1" file="lib/tank-1.0/images/btn_rect_dwn.svg" numUses="29" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="35,25" numSizes="1" file="lib/tank-1.0/images/btn_rect_blueup.svg" numUses="29" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="17,16" numSizes="1" file="lib/tank-1.0/images/gear2.svg" numUses="29" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="30,25" numSizes="1" file="lib/tank-1.0/images/warning.svg" numUses="29" stroke="none" fill="rgb(255,255,255)"/>
- <file isSvgFile="true" imgSize="261,30" numSizes="29" file="images/btn_rect_dwn.svg" numUses="29" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="261,30" numSizes="27" file="images/btn_rect_dwn.svg" numUses="27" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="22" file="images/btnkey_rect_graydwn.svg" numUses="24" stroke="none" fill="rgb(200,200,200)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="22" file="images/btnkey_rect_grayup.svg" numUses="24" stroke="none" fill="rgb(200,200,200)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="88,32" numSizes="1" file="images/win-like-press.svg" numUses="22" stroke="none" fill="rgb(230,230,230)"/>

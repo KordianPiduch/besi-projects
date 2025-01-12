@@ -25,7 +25,7 @@
   </dataLinks>
  </object>
  <object class="LabelWgt" id="*.name">
-  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="51.22" alignment="center" cy="11.25" font-sizepx="16" width="99" wrapping="true" height="24" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="51.22" alignment="center" cy="11.25" font-sizepx="13" width="99" wrapping="true" height="24" forcePaint="16" font-color="rgb(255,255,255)"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[${TankID}]|sttTank|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
