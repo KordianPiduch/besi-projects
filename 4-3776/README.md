@@ -1,5 +1,9 @@
 # 4-3776
 
+This project is based on the template repository `besi-template`  
+Tag: 1.1.2  
+Commit: 874e40268ed8630df52b5ccf4786e702bc134243 
+
 Software for projects: 4-3776
 
 
@@ -20,7 +24,6 @@ Lifting capacity : 4000 MT
 ## Project design sources
 | data               | version                                        |
 |--------------------|------------------------------------------------|
-| project template   | redundancy-0.2.0                               |
 | electrical drawing | 4-3776-3a Rev. 1 Electrical Drawing 14.06.2024 |
 | valve list         | 4-3776 Valve list rev. a 14.06.2024            |
 | sensor list        | 4-3776 sensor list 13.06.24                    |
