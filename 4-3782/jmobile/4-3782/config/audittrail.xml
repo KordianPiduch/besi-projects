@@ -1,0 +1,9 @@
+<audit_trail enable="true">
+ <misc>
+  <userdetails auditBuff="AuditTrail" eventT="18" subT="1">true</userdetails>
+  <usermanagementactions auditBuff="AuditTrail" enableSignature="true" eventT="18" subT="1">true</usermanagementactions>
+  <systemactions auditBuff="AuditTrail" eventT="18" subT="1">true</systemactions>
+  <ftpactions auditBuff="AuditTrail" eventT="18" subT="1">true</ftpactions>
+  <bufferactions auditBuff="AuditTrail" eventT="18" subT="1">true</bufferactions>
+ </misc>
+</audit_trail>

@@ -1,0 +1,69 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="Every"/>
+   <MLText id="1" L1="Hourly"/>
+   <MLText id="2" L1="Daily"/>
+   <MLText id="3" L1="Weekly"/>
+   <MLText id="4" L1="Monthly"/>
+   <MLText id="5" L1="Yearly"/>
+   <MLText id="6" L1="By Date"/>
+   <MLText id="7" L1="Hi-Res"/>
+   <MLText id="8" L1="Time"/>
+   <MLText id="9" L1="Sunrise+"/>
+   <MLText id="10" L1="Sunrise-"/>
+   <MLText id="11" L1="Sunset+"/>
+   <MLText id="12" L1="Sunset-"/>
+   <MLText id="13" L1="Random10"/>
+   <MLText id="14" L1="Random20"/>
+  </MLTexts>
+ </multiLangs>
+ <typeMLDesc Hourly="[1@Schedule]Hourly" Monthly="[4@Schedule]Monthly" Yearly="[5@Schedule]Yearly" Daily="[2@Schedule]Daily" HiRes="[7@Schedule]Hi-Res" Every="[0@Schedule]Every" Weekly="[3@Schedule]Weekly" ByDate="[6@Schedule]By Date"/>
+ <modeMLDesc Random10="[13@Schedule]Random10" SunsetPlus="[11@Schedule]Sunset+" SunrisePlus="[9@Schedule]Sunrise+" SunriseMinus="[10@Schedule]Sunrise-" SunsetMinus="[12@Schedule]Sunset-" Time="[8@Schedule]Time" Random20="[14@Schedule]Random20"/>
+ <timedAction>
+  <id>startup_setup</id>
+  <enable>true</enable>
+  <onstartup>true</onstartup>
+  <executeonlyatstartup>true</executeonlyatstartup>
+  <condition></condition>
+  <mode>Random10</mode>
+  <timezone latitude="" longitude="" utc="" place=""/>
+  <second>0</second>
+  <minute>28</minute>
+  <hour>11</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="1">
+   <macroAction actionID="0" actionFunction="jsAction" parameters="startup_setup_OnAction"/>
+  </actions>
+ </timedAction>
+ <highResCyclicAction>
+  <id>redundancy</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <millisecond>5000</millisecond>
+  <priority>1</priority>
+  <actions enable="1" id="2">
+   <macroAction actionID="1" actionFunction="jsAction" parameters="redundancy_OnAction"/>
+  </actions>
+ </highResCyclicAction>
+ <highResCyclicAction>
+  <id>login_time</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <millisecond>1000</millisecond>
+  <priority>0</priority>
+  <actions enable="1" id="3">
+   <macroAction actionID="2" actionFunction="jsAction" parameters="login_time_OnAction"/>
+  </actions>
+ </highResCyclicAction>
+</scheduledActions>
