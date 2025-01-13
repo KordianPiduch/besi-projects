@@ -35,7 +35,7 @@ Width: <TODO>
 - inclinometer heel
 
 ## Project specific requirements:
-- pump control
+- ballast pump control with permission signal
 
 ## External communication
 ### RS485
@@ -62,3 +62,8 @@ There are a total of 4 interface signals between the starter and the valve remot
 The signals sent to the starter by remote control of the valve are start (potential free normal open) and stop (passive normally open); 
 The signals sent by the starter to the remote control of the valve are operation (potential free normal open) and power permissible (potential free normal open).
 ```
+
+
+## Project History
+### 1.0.0
+init version 
