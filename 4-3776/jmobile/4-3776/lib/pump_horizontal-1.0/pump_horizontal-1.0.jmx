@@ -1,0 +1,216 @@
+<customWgt>
+ <links>
+  <param attrName="SYSTEM_ID"/>
+  <param attrName="PumpID"/>
+  <param attrName="direction"/>
+  <param attrName="setting_type"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="pump_horizontal_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="pump name"/>
+   <MLText id="1" L1="bar"/>
+   <MLText id="2" L1="bar"/>
+   <MLText id="3" L1="s"/>
+   <MLText id="4" L1="d"/>
+   <MLText id="5" L1="sw"/>
+   <MLText id="6" L1="dw"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" id="*.pump_symbol">
+  <wgtStyle x="39" y="27" wgtStaticOpt="dynamic" cx="21" cy="21" width="42" height="42" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.pump_symbol.circle">
+   <wgtStyle ry="19" x="0" y="0" wgtStaticOpt="dynamic" cx="21" cy="21" stroke="rgb(200,200,200)" width="42" height="42" fill="rgb(127,127,127)" forcePaint="16" nodeName="ellipse" rx="22"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="*.pump_symbol.triangle">
+   <wgtStyle x="8" y="4" mtx="0,1,0,-1,0,0,33,0,1" wgtStaticOpt="dynamic" cx="17" cy="16.50" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="33" height="33" fill="rgb(237,237,237)" forcePaint="16" nodeName="polygon"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|running" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#f00000;#00aa00" name="ColorPaletteCustom">
+       <value i="0">0</value>
+       <value i="1">1</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.valve_name1">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="1" vert-align="middle" y="66" font-size="9" wgtStaticOpt="dynamic" keypad-type="None" cx="60" alignment="center" cy="10" font-sizepx="12" width="119" wrapping="true" height="20" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="0"/>
+  </links>
+ </object>
+ <object class="GroupWgt" id="*.pressure_sensor_right">
+  <wgtStyle x="83" y="0" wgtStaticOpt="dynamic" cx="18" cy="26" width="36" height="52" forcePaint="16"/>
+  <object class="LineWgt" id="*.pressure_sensor_right.line2">
+   <wgtStyle x="18" anchorIdx="1" y="14" wgtStaticOpt="dynamic" stroke-width="2" cx="0" cy="17" stroke="rgb(102,102,102)" width="0" height="34" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="*.pressure_sensor_right.circle1">
+   <wgtStyle ry="19" x="14" y="43" wgtStaticOpt="dynamic" cx="4.50" cy="4.50" stroke="rgb(102,102,102)" width="9" height="9" fill="rgb(102,102,102)" forcePaint="16" nodeName="ellipse" rx="22"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="*.pressure_sensor_right.roundrect1">
+   <wgtStyle ry="20" x="0" y="1" wgtStaticOpt="dynamic" cx="17.45" cy="14.03" stroke="rgb(102,102,102)" width="36" height="29" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="20"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="*.pressure_sensor_right.numeric1">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="16.24" cy="7.71" disabled="true" decimalDigits="1" x="0" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="17" font-color="rgb(255,255,255)" readWrite="true" width="35" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto" text="99.9" value="99.9" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.pressure_sensor_right.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="13" font-size="9" wgtStaticOpt="dynamic" keypad-type="None" cx="18.44" alignment="center" cy="8.10" font-sizepx="12" width="35" wrapping="true" height="17" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="*.pressure_sensor_right.warn_sign">
+   <wgtStyle x="5" y="5" wgtStaticOpt="dynamic" cx="13.50" cy="11" width="27" height="22" forcePaint="16"/>
+   <object class="ShapeWgt" id="*.pressure_sensor_right.warn_sign.background">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+   </object>
+   <object class="ImageWgt" id="*.pressure_sensor_right.warn_sign.Warning">
+    <wgtStyle imagePath="lib/pump_horizontal-1.0/images/Warning.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="13.50" cy="11" stroke="rgb(240,0,0)" width="27" height="22" blink="true" fill="rgb(240,0,0)" forcePaint="16"/>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.pressure_sensor_left">
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="18" cy="26" width="36" height="52" forcePaint="16"/>
+  <object class="LineWgt" id="*.pressure_sensor_left.line2">
+   <wgtStyle x="18" anchorIdx="1" y="14" wgtStaticOpt="dynamic" stroke-width="2" cx="0" cy="17" stroke="rgb(102,102,102)" width="0" height="34" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="*.pressure_sensor_left.circle1">
+   <wgtStyle ry="19" x="14" y="43" wgtStaticOpt="dynamic" cx="4.50" cy="4.50" stroke="rgb(102,102,102)" width="9" height="9" fill="rgb(102,102,102)" forcePaint="16" nodeName="ellipse" rx="22"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="*.pressure_sensor_left.roundrect1">
+   <wgtStyle ry="20" x="0" y="1" wgtStaticOpt="dynamic" cx="17.45" cy="14.03" stroke="rgb(102,102,102)" width="36" height="29" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="20"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="*.pressure_sensor_left.numeric1">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="16.24" cy="7.71" disabled="true" decimalDigits="1" x="0" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="17" font-color="rgb(255,255,255)" readWrite="true" width="35" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto" text="99.9" value="99.9" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.pressure_sensor_left.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="13" font-size="9" wgtStaticOpt="dynamic" keypad-type="None" cx="18.44" alignment="center" cy="8.10" font-sizepx="12" width="35" wrapping="true" height="17" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="*.pressure_sensor_left.warn_sign">
+   <wgtStyle x="5" y="4" wgtStaticOpt="dynamic" cx="13.50" cy="11" width="27" height="22" forcePaint="16"/>
+   <object class="ShapeWgt" id="*.pressure_sensor_left.warn_sign.background">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+   </object>
+   <object class="ImageWgt" id="*.pressure_sensor_left.warn_sign.Warning">
+    <wgtStyle imagePath="lib/pump_horizontal-1.0/images/Warning.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="13.50" cy="11" stroke="rgb(240,0,0)" width="27" height="22" blink="true" fill="rgb(240,0,0)" forcePaint="16"/>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.pump_warn_sign">
+  <wgtStyle x="64" y="43" wgtStaticOpt="dynamic" cx="13.50" cy="11" width="27" height="22" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="ShapeWgt" id="*.pump_warn_sign.background">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="*.pump_warn_sign.Warning">
+   <wgtStyle imagePath="lib/pump_horizontal-1.0/images/Warning.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="13.50" cy="11" stroke="rgb(240,0,0)" width="27" height="22" blink="true" fill="rgb(240,0,0)" forcePaint="16"/>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.help_label_suction">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="43" vert-align="middle" y="6" font-size="12" visibility="false" keypad-type="None" cx="1.02" alignment="center" cy="0.90" font-sizepx="16" width="1" wrapping="true" height="1" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|suction_sensor|pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="3"/>
+   <action class="JavaScriptAction" f="this.help_label_suction_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_discharge">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="45" vert-align="middle" y="5" font-size="12" visibility="false" keypad-type="None" cx="1.03" alignment="center" cy="0.90" font-sizepx="16" width="1" wrapping="true" height="1" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|discharge_sensor|pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="4"/>
+   <action class="JavaScriptAction" f="this.help_label_discharge_onDataUpdate" actionID="1" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_suction_warning">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="50" vert-align="middle" y="13" font-size="12" visibility="false" keypad-type="None" cx="1.02" alignment="center" cy="0.90" font-sizepx="16" width="1" wrapping="true" height="1" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|suction_sensor|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="5"/>
+   <action class="JavaScriptAction" f="this.help_label_suction_warning_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_discharge_warning">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="50" vert-align="middle" y="11" font-size="12" visibility="false" keypad-type="None" cx="1.02" alignment="center" cy="0.90" font-sizepx="16" width="1" wrapping="true" height="1" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|discharge_sensor|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="6"/>
+   <action class="JavaScriptAction" f="this.help_label_discharge_warning_onDataUpdate" actionID="1" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="ButtonWgt" id="*.button" hmiStyle="type:btn">
+  <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="momentary" fill="rgb(160,160,164)" cx="29.54" cy="31.86" x="31.50" y="15" height="65" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="60" forcePaint="16" wgtStaticOpt="dynamic" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+  <links>
+   <action class="JavaScriptAction" f="this.button_onMouseClick" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+  </links>
+ </object>
+</customWgt>

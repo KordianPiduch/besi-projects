@@ -1,0 +1,28 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="settings" px="0" id="pump_settings_simple" py="0" dataWndSize="0,70" pageType="modal" pageName="pump_settings_simple" pageSize="244,180" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="244" height="180" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupWgt" customType="pump_dialog_simple-1.0:1.0" id="wgtSimple">
+   <wgtStyle x="10" y="10" wgtStaticOpt="dynamic" cx="112" cy="78.50" width="224" height="157" forcePaint="24"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-255" sourceType="Tag" tag="pump_prefix" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="pump_prefix"/>
+   </dataLinks>
+   <links>
+    <param attrName="hide_name_bar"/>
+    <param attrName="pump_prefix" alias="pump_prefix"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="pump_settings_simple@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>
