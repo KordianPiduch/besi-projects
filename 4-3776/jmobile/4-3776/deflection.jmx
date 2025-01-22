@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Deflection" dataWndSize="0,70" pageName="Deflection" pageSize="1920,1080" usedFonts="Roboto,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Deflection" dataWndSize="0,70" pageName="Deflection" pageSize="1920,1080" usedFonts="Roboto,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -19,7 +19,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert5">
-   <wgtStyle staticFile="opt/deflectiongauvert5.png" x="641" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert5.png" x="641" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -56,7 +56,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert1">
-   <wgtStyle staticFile="opt/deflectiongauvert1.png" x="491" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert1.png" x="491" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -93,7 +93,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert2">
-   <wgtStyle staticFile="opt/deflectiongauvert2.png" x="341" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert2.png" x="341" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -130,7 +130,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert3">
-   <wgtStyle staticFile="opt/deflectiongauvert3.png" x="191" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert3.png" x="191" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -167,7 +167,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert4">
-   <wgtStyle staticFile="opt/deflectiongauvert4.png" x="41" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert4.png" x="41" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -204,7 +204,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert6">
-   <wgtStyle staticFile="opt/deflectiongauvert6.png" x="641" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert6.png" x="641" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -241,7 +241,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert7">
-   <wgtStyle staticFile="opt/deflectiongauvert7.png" x="491" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert7.png" x="491" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -278,7 +278,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert8">
-   <wgtStyle staticFile="opt/deflectiongauvert8.png" x="341" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert8.png" x="341" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -315,7 +315,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert9">
-   <wgtStyle staticFile="opt/deflectiongauvert9.png" x="191" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert9.png" x="191" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -352,7 +352,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert10">
-   <wgtStyle staticFile="opt/deflectiongauvert10.png" x="41" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert10.png" x="41" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -392,61 +392,61 @@
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection1">
-   <wgtStyle x="630" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="630" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">1</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection2">
-   <wgtStyle x="480" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="480" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">2</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection3">
-   <wgtStyle x="330" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="330" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">3</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection4">
-   <wgtStyle x="180" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="180" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">4</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection5">
-   <wgtStyle x="30" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="30" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">5</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection6">
-   <wgtStyle x="630" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="630" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">6</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection7">
-   <wgtStyle x="480" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="480" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">7</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection8">
-   <wgtStyle x="330" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="330" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">8</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection9">
-   <wgtStyle x="180" y="578.94" wgtStaticOpt="dynamic" cx="60" cy="20.06" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="180" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">9</param>
    </links>
   </object>
   <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection10">
-   <wgtStyle x="30" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <wgtStyle x="30" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="17"/>
    <links>
     <param attrName="DeflectionID">10</param>
    </links>
@@ -544,7 +544,7 @@
    </dataLinks>
   </object>
   <object class="ChartWgt" id="ScatterChart1">
-   <wgtStyle axesDialogForegroundColor="rgb(40,40,40)" cursorLabelsColor="none" updatePauseMs="1000" timeWindowSizeMinutes="5" font-size="12" layoutHorizontalGridValuesHeight="10" cursorPosition="0" cursorEnable="false" autoScaleEnable="false" height="426" axesDialogShadowColor="rgb(40,40,40)" cursorLabelsHeight="10" cursorButtonHide="false" font-style="0" backgroundColor="none" cursorColor="rgb(0,0,0)" wgtStaticOpt="dynamic" font-family="Roboto" axesDialogButtonBackgroundColor="rgb(40,40,40)" toolbarBackgroundColor="rgb(237,237,237)" suggestedVerticalGridLines="4" toolbarForegroundColor="rgb(0,0,255)" config="" width="1161.75" cursorLabelsWidth="80" forcePaint="25" axesControlEnable="false" cx="580.88" dateFormat="yyyy/MM/dd" cy="213" layoutToolbarButtonsSize="32" suggestedHorizontalGridLines="5" timeFormat="hh:mm:ss" toolbarEnable="true" layoutAxisButtonWidth="10" horizontalAxisReverse="0" verticalAxisReverse="0" autoScaleToolbarButtonVisible="false" chartBackgroundColor="none" x="753.63" font-bold="false" y="534.76" cursorLabelsEnable="true" layoutVerticalGridValuesWidth="50" foregroundColor="rgb(40,40,40)" layoutAxisButtonMaximumHeight="42" globalCurveType="0" axesDialogBackgroundColor="rgb(40,40,40)" layoutAxisDialogWidth="150">
+   <wgtStyle axesDialogForegroundColor="rgb(40,40,40)" cursorLabelsColor="none" updatePauseMs="1000" timeWindowSizeMinutes="5" font-size="12" layoutHorizontalGridValuesHeight="10" cursorPosition="0" cursorEnable="false" autoScaleEnable="false" height="426" axesDialogShadowColor="rgb(40,40,40)" cursorLabelsHeight="10" cursorButtonHide="false" font-style="0" backgroundColor="none" cursorColor="rgb(0,0,0)" wgtStaticOpt="dynamic" font-family="Roboto" axesDialogButtonBackgroundColor="rgb(40,40,40)" toolbarBackgroundColor="rgb(237,237,237)" suggestedVerticalGridLines="4" toolbarForegroundColor="rgb(0,0,255)" config="" width="1161.75" cursorLabelsWidth="80" forcePaint="89" axesControlEnable="false" cx="580.88" dateFormat="yyyy/MM/dd" cy="213" layoutToolbarButtonsSize="32" suggestedHorizontalGridLines="5" timeFormat="hh:mm:ss" toolbarEnable="true" layoutAxisButtonWidth="10" horizontalAxisReverse="0" verticalAxisReverse="0" autoScaleToolbarButtonVisible="false" chartBackgroundColor="none" x="753.63" font-bold="false" y="534.76" cursorLabelsEnable="true" layoutVerticalGridValuesWidth="50" foregroundColor="rgb(40,40,40)" layoutAxisButtonMaximumHeight="42" globalCurveType="0" axesDialogBackgroundColor="rgb(40,40,40)" layoutAxisDialogWidth="150">
     <axes>
      <axis origin="0" color="rgb(192,192,192)" visible="true" scaleFactor="9.18125"/>
      <axis origin="0" showOnAxis="0" color="rgb(192,192,192)" visible="true" scaleFactor="121.3333333333333" label="m"/>

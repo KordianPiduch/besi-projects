@@ -1,6 +1,6 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Bilge" dataWndSize="0,70" pageName="Bilge" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
-  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Bilge" dataWndSize="0,70" pageName="Bilge" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
    <langs defLangId="L1" curLangId="L1">
@@ -11,37 +11,37 @@
    </MLTexts>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank">
-   <wgtStyle x="130" y="198.74" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="130" y="198.74" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">25</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank1">
-   <wgtStyle x="299.43" y="199.32" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="299.43" y="199.32" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">26</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank2">
-   <wgtStyle x="468.87" y="199.90" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="468.87" y="199.90" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">27</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank3">
-   <wgtStyle x="638.30" y="197" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="638.30" y="197" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">28</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank4">
-   <wgtStyle x="807.74" y="197.58" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="807.74" y="197.58" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">29</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank5">
-   <wgtStyle x="977.17" y="198.16" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <wgtStyle x="977.17" y="198.16" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">30</param>
    </links>
@@ -56,7 +56,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h">
-   <wgtStyle x="159.50" y="475.65" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <wgtStyle x="159.50" y="475.65" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
     <param attrName="PumpID" alias="PumpID">1</param>
@@ -65,7 +65,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h1">
-   <wgtStyle x="159.50" y="595.76" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <wgtStyle x="159.50" y="595.76" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
     <param attrName="PumpID" alias="PumpID">2</param>
@@ -74,7 +74,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h2">
-   <wgtStyle x="159.50" y="715.87" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <wgtStyle x="159.50" y="715.87" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
     <param attrName="PumpID" alias="PumpID">3</param>
@@ -83,7 +83,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h3">
-   <wgtStyle x="159.50" y="835.99" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <wgtStyle x="159.50" y="835.99" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
     <param attrName="PumpID" alias="PumpID">4</param>

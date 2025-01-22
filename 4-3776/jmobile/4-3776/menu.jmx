@@ -1,6 +1,6 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="false" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="menu" py="0" dataWndSize="0,70" pageType="modal" pageName="menu" pageSize="300,500" usedFonts="Roboto Medium">
-  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="300" height="500" forcePaint="520" v="04.05.01.523"/>
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="menu" py="0" dataWndSize="0,70" pageType="modal" pageName="menu" pageSize="300,500" usedFonts="Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="300" height="500" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
   </dataLinks>
@@ -51,7 +51,7 @@
       <action class="LoadPageAction" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="alarmpage.jmx" attribute="onMouseClick"/>
      </links>
     </object>
-    <object class="ImageWgt" id="GroupWgt1.BtnStd2.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+    <object class="ImageWgt" id="GroupWgt1.BtnStd2.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
      <wgtStyle imagePath="images/Alarm.svg" x="25" y="10" stroke-width="1" cx="15" cy="15" stroke="rgb(255,255,255)" enableCache="true" width="30" height="30" fill="rgb(255,255,255)" forcePaint="1"/>
     </object>
    </object>
@@ -86,7 +86,7 @@
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
   <object class="GroupWgt" id="GridLayout7">
-   <wgtStyle x="25" y="55" wgtStaticOpt="dynamic" cx="125" cy="183" width="250" height="366" forcePaint="17">
+   <wgtStyle x="25" y="55" wgtStaticOpt="dynamic" cx="125" cy="183" width="250" height="366" forcePaint="16">
     <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="1" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="6">
      <colProperties>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>

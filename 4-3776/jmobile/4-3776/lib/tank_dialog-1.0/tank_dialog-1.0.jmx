@@ -867,7 +867,7 @@
     <lang class="MLTextLink" textid="33"/>
    </links>
   </object>
-  <object class="ImageWgt" id="*.light_HL.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+  <object class="ImageWgt" id="*.light_HL.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
    <wgtStyle x="9.94" y="6.81" fill-opacity="0.5" cx="5.19" cy="6.06" enableCache="true" width="10.39" height="12.11" forcePaint="16"/>
   </object>
  </object>
@@ -898,7 +898,7 @@
     <lang class="MLTextLink" textid="34"/>
    </links>
   </object>
-  <object class="ImageWgt" id="*.light_LL.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+  <object class="ImageWgt" id="*.light_LL.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
    <wgtStyle x="9.94" y="6.81" fill-opacity="0.5" cx="5.19" cy="6.06" enableCache="true" width="10.39" height="12.11" forcePaint="16"/>
   </object>
  </object>
@@ -937,7 +937,7 @@
     <action class="ShowDialogAction" actionID="0" event="onMouseClick" actionWgt="_PageMgr" pageName="simulation_tank.jmx" attribute="onMouseClick"/>
    </links>
   </object>
-  <object class="ImageWgt" id="*.simulation_button.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+  <object class="ImageWgt" id="*.simulation_button.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
    <wgtStyle imagePath="lib/tank_dialog-1.0/images/Adjustments1.svg" x="3.78" lock="true" y="2.70" wgtStaticOpt="dynamic" stroke-width="1" cx="10.80" cy="10.80" stroke="rgb(237,237,237)" enableCache="true" width="21.60" height="21.60" fill="rgb(255,255,255)" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>

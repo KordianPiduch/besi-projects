@@ -1,4 +1,4 @@
-$hmi.addPagesScript({// ------------------------------------  besi-template  ------------------------------ 
+$hmi.addPagesScript({// ------------------------------------  4-3776  ------------------------------ 
 
 "p0_page0": function(){
 // ------------------------------------  Header ------------------------------
@@ -23,14 +23,16 @@ function startup_setup_OnAction(me, eventInfo)
         project.setTag("bar_color", "rgb(200,200,200)") 
         project.setTag("text_color", "rgb(0,0,0)")
         project.setTag("frame_color", "rgb(102,102,102)") 
-        
+        project.setTag("stroke_color", "rgb(0,0,0)")
     }else{
         // dark mode
         project.setTag("background_color", "rgb(127,127,127)")
         project.setTag("bar_color", "rgb(102,102,102)")
         project.setTag("text_color", "rgb(255,255,255)")
         project.setTag("frame_color", "rgb(200,200,200)")
+        project.setTag("stroke_color", "rgb(255,255,255)")
     }
+    project.setTag("stroke_width", 2);
     
     // set HMI ID
     var hmi_ip = project.getTag("HMI_IP");
