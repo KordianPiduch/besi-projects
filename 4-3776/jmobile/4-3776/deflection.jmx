@@ -1,0 +1,579 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Deflection" dataWndSize="0,70" pageName="Deflection" pageSize="1920,1080" usedFonts="Roboto,Roboto Light">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="2" L1="DEFLECTION"/>
+    <MLText id="4" L1="Warning [cm]"/>
+    <MLText id="5" L1="Alarm [cm]"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert5">
+   <wgtStyle staticFile="opt/deflectiongauvert5.png" x="641" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert5.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert5.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert5.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert5.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert5.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[6]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert5.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert1">
+   <wgtStyle staticFile="opt/deflectiongauvert1.png" x="491" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert1.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert1.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert1.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert1.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert1.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[7]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert1.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert2">
+   <wgtStyle staticFile="opt/deflectiongauvert2.png" x="341" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert2.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert2.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert2.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert2.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert2.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[8]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert2.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert3">
+   <wgtStyle staticFile="opt/deflectiongauvert3.png" x="191" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert3.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert3.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert3.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert3.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert3.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[9]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert3.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert4">
+   <wgtStyle staticFile="opt/deflectiongauvert4.png" x="41" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert4.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert4.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert4.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert4.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert4.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[10]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert4.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert6">
+   <wgtStyle staticFile="opt/deflectiongauvert6.png" x="641" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert6.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert6.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert6.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert6.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert6.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert6.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert7">
+   <wgtStyle staticFile="opt/deflectiongauvert7.png" x="491" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert7.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert7.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert7.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert7.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert7.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[2]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert7.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert8">
+   <wgtStyle staticFile="opt/deflectiongauvert8.png" x="341" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert8.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert8.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert8.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert8.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert8.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[3]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert8.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert9">
+   <wgtStyle staticFile="opt/deflectiongauvert9.png" x="191" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert9.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert9.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert9.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert9.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert9.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[4]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert9.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="LinearGauge" id="GauVert10">
+   <wgtStyle staticFile="opt/deflectiongauvert10.png" x="41" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <links>
+    <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
+    <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.Scale.lbl.reverseScale;*.Scale.ticks.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
+   </links>
+   <object class="ImageWgt" id="GauVert10.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+   </object>
+   <object class="GroupWgt" customType="LinearScale" id="GauVert10.Scale">
+    <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="GauVert10.Scale.lbl">
+     <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="17.12" cy="117.50" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="270" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="59.90" max="3" vert-align="top" usingFormat="" labelFreq="4" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="GauVert10.Scale.ticks">
+     <wgtStyle form="vertical" tickSize2="28" tickFreq="8" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="16.49" cy="128.51" x="27.48" y="5.88" height="257" alarmColorMajor="rgb(255,255,255)" alarmMax="100" endAngle="200" strokeMajor="rgb(255,255,255)" width="33" align="0" max="3" alarmColorMinor="rgb(255,255,255)" halfMajorTick="true" tickSize="12" forcePaint="65" labelFreq="4" strokeMinor="rgb(255,255,255)" startAngle="-10" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="NeedleWgt" id="GauVert10.ndl">
+    <wgtStyle form="vertical" reverseScale="true" cx="20.60" cy="326.03" x="17" y="8" toolTipFontName="Roboto" height="343" width="50" max="3" imagePath="../../shared/gallery/images/VerticalgaugeNeedle.svg" discrete="true" forcePaint="8" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[5]|sttDeflection|measuring_height" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="GauVert10.ndl.img">
+     <wgtStyle imagePath="images/Vert_gaugeneedle.svg" x="0" y="123" stroke-width="1" cx="36.69" cy="8" stroke="rgb(255,255,255)" width="76" height="2" fill="rgb(255,255,255)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Deflection@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection1">
+   <wgtStyle x="630" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">1</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection2">
+   <wgtStyle x="480" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">2</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection3">
+   <wgtStyle x="330" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">3</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection4">
+   <wgtStyle x="180" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">4</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection5">
+   <wgtStyle x="30" y="119.44" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">5</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection6">
+   <wgtStyle x="630" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">6</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection7">
+   <wgtStyle x="480" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">7</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection8">
+   <wgtStyle x="330" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">8</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection9">
+   <wgtStyle x="180" y="578.94" wgtStaticOpt="dynamic" cx="60" cy="20.06" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">9</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="deflection-1.0:1.0" id="deflection10">
+   <wgtStyle x="30" y="578.94" wgtStaticOpt="dynamic" cx="50" cy="20.50" width="100" height="41" forcePaint="16"/>
+   <links>
+    <param attrName="DeflectionID">10</param>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle x="1077.14" y="515" cx="104.50" cy="25" width="209" height="50" forcePaint="1"/>
+   <object class="NumericWgt" id="GroupWgt1.numeric1">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="137" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_warning_level_in_cm" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+    </dataLinks>
+   </object>
+   <object class="GroupWgt" id="GroupWgt1.field_label10">
+    <wgtStyle x="0" y="0" cx="65" cy="25" width="130" height="50" forcePaint="65"/>
+    <object class="ShapeWgt" id="GroupWgt1.field_label10.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" cx="63.03" cy="24.20" stroke="rgb(200,200,200)" width="130" height="50" fill="rgb(102,102,102)" nodeName="rect" forcePaint="201" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt1.field_label10.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="66.58" alignment="center" cy="22.50" font-sizepx="16" width="129" wrapping="true" height="49" forcePaint="201" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="4"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle x="1332.05" y="515" cx="104.50" cy="25" width="209" height="50" forcePaint="1"/>
+   <object class="NumericWgt" id="GroupWgt2.numeric1">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="137" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_alarm_level_in_cm" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+    </dataLinks>
+   </object>
+   <object class="GroupWgt" id="GroupWgt2.field_label10">
+    <wgtStyle x="0" y="0" cx="65" cy="25" width="130" height="50" forcePaint="65"/>
+    <object class="ShapeWgt" id="GroupWgt2.field_label10.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" cx="63.03" cy="24.20" stroke="rgb(200,200,200)" width="130" height="50" fill="rgb(102,102,102)" nodeName="rect" forcePaint="201" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.field_label10.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="66.58" alignment="center" cy="22.50" font-sizepx="16" width="129" wrapping="true" height="49" forcePaint="201" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="5"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="ChartWgt" id="ScatterChart3">
+   <wgtStyle axesDialogForegroundColor="rgb(40,40,40)" cursorLabelsColor="none" updatePauseMs="1000" timeWindowSizeMinutes="5" font-size="12" layoutHorizontalGridValuesHeight="10" cursorPosition="0" cursorEnable="false" autoScaleEnable="false" height="426" axesDialogShadowColor="rgb(40,40,40)" cursorLabelsHeight="10" cursorButtonHide="false" font-style="0" backgroundColor="none" cursorColor="rgb(0,0,0)" wgtStaticOpt="dynamic" font-family="Roboto" axesDialogButtonBackgroundColor="rgb(40,40,40)" toolbarBackgroundColor="rgb(237,237,237)" suggestedVerticalGridLines="4" toolbarForegroundColor="rgb(0,0,255)" config="" width="1161.75" cursorLabelsWidth="80" forcePaint="25" axesControlEnable="false" cx="580.88" dateFormat="yyyy/MM/dd" cy="213" layoutToolbarButtonsSize="32" suggestedHorizontalGridLines="5" timeFormat="hh:mm:ss" toolbarEnable="true" layoutAxisButtonWidth="10" horizontalAxisReverse="0" verticalAxisReverse="0" autoScaleToolbarButtonVisible="false" chartBackgroundColor="none" x="753.63" font-bold="false" y="74.79" cursorLabelsEnable="true" layoutVerticalGridValuesWidth="50" foregroundColor="rgb(40,40,40)" layoutAxisButtonMaximumHeight="42" globalCurveType="0" axesDialogBackgroundColor="rgb(40,40,40)" layoutAxisDialogWidth="150">
+    <axes>
+     <axis origin="0" color="rgb(192,192,192)" visible="true" scaleFactor="9.18125"/>
+     <axis origin="0" showOnAxis="0" color="rgb(192,192,192)" visible="true" scaleFactor="121.3333333333333" label="m"/>
+    </axes>
+    <curves>
+     <curve scatterType="0" associatedAxis="1" style="0" color="rgb(0,0,255)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="0" color="rgb(255,255,255)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,0,0)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,0,0)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,173,91)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,173,91)" visible="true" width="2"/>
+    </curves>
+    <stripes/>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag0"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_measured" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag0"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag1"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|y_defl" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag1"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag2"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|y_defl_alarm_up" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag2"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag3"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|y_defl_alarm_down" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag3"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag4"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag5"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|y_defl_warn_up" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag4"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_portside|y_defl_warn_down" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag5"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveColor1"/>
+   </dataLinks>
+  </object>
+  <object class="ChartWgt" id="ScatterChart1">
+   <wgtStyle axesDialogForegroundColor="rgb(40,40,40)" cursorLabelsColor="none" updatePauseMs="1000" timeWindowSizeMinutes="5" font-size="12" layoutHorizontalGridValuesHeight="10" cursorPosition="0" cursorEnable="false" autoScaleEnable="false" height="426" axesDialogShadowColor="rgb(40,40,40)" cursorLabelsHeight="10" cursorButtonHide="false" font-style="0" backgroundColor="none" cursorColor="rgb(0,0,0)" wgtStaticOpt="dynamic" font-family="Roboto" axesDialogButtonBackgroundColor="rgb(40,40,40)" toolbarBackgroundColor="rgb(237,237,237)" suggestedVerticalGridLines="4" toolbarForegroundColor="rgb(0,0,255)" config="" width="1161.75" cursorLabelsWidth="80" forcePaint="25" axesControlEnable="false" cx="580.88" dateFormat="yyyy/MM/dd" cy="213" layoutToolbarButtonsSize="32" suggestedHorizontalGridLines="5" timeFormat="hh:mm:ss" toolbarEnable="true" layoutAxisButtonWidth="10" horizontalAxisReverse="0" verticalAxisReverse="0" autoScaleToolbarButtonVisible="false" chartBackgroundColor="none" x="753.63" font-bold="false" y="534.76" cursorLabelsEnable="true" layoutVerticalGridValuesWidth="50" foregroundColor="rgb(40,40,40)" layoutAxisButtonMaximumHeight="42" globalCurveType="0" axesDialogBackgroundColor="rgb(40,40,40)" layoutAxisDialogWidth="150">
+    <axes>
+     <axis origin="0" color="rgb(192,192,192)" visible="true" scaleFactor="9.18125"/>
+     <axis origin="0" showOnAxis="0" color="rgb(192,192,192)" visible="true" scaleFactor="121.3333333333333" label="m"/>
+    </axes>
+    <curves>
+     <curve scatterType="0" associatedAxis="1" style="0" color="rgb(0,0,255)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="0" color="rgb(255,255,255)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,0,0)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,0,0)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,173,91)" visible="true" width="2"/>
+     <curve scatterType="0" associatedAxis="1" style="2" color="rgb(255,173,91)" visible="true" width="2"/>
+    </curves>
+    <stripes/>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag0"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_measured" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag0"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag1"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|y_defl" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag1"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag2"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|y_defl_alarm_up" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag2"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag3"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|y_defl_alarm_down" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag3"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag4"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|defl_sensor_position_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterXTag5"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|y_defl_warn_up" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag4"/>
+    <dataLink class="TagMgrWgt" tagType="float-5" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|deflection_starboard|y_defl_warn_down" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveScatterYTag5"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="curveColor1"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

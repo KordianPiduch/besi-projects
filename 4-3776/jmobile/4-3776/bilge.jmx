@@ -1,0 +1,105 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Bilge" dataWndSize="0,70" pageName="Bilge" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="53" L1="BILGE"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank">
+   <wgtStyle x="130" y="198.74" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">25</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank1">
+   <wgtStyle x="299.43" y="199.32" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">26</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank2">
+   <wgtStyle x="468.87" y="199.90" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">27</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank3">
+   <wgtStyle x="638.30" y="197" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">28</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank4">
+   <wgtStyle x="807.74" y="197.58" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">29</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="tank-1.0:1.0" id="tank5">
+   <wgtStyle x="977.17" y="198.16" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="16"/>
+   <links>
+    <param attrName="TankID" alias="TankID">30</param>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Bilge@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="53"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h">
+   <wgtStyle x="159.50" y="475.65" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
+    <param attrName="PumpID" alias="PumpID">1</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h1">
+   <wgtStyle x="159.50" y="595.76" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
+    <param attrName="PumpID" alias="PumpID">2</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h2">
+   <wgtStyle x="159.50" y="715.87" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
+    <param attrName="PumpID" alias="PumpID">3</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h3">
+   <wgtStyle x="159.50" y="835.99" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
+    <param attrName="PumpID" alias="PumpID">4</param>
+    <param attrName="direction" alias="direction"/>
+    <param attrName="setting_type" alias="setting_type"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="take_control_button-1.0:1.0" id="TakeControlBtn2">
+   <wgtStyle x="85" y="5" wgtStaticOpt="dynamic" cx="60" cy="20" width="120" height="40" forcePaint="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID_internal"/>
+   </dataLinks>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">2</param>
+    <param attrName="HMI_ID_internal"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

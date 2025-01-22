@@ -1,0 +1,49 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="HPU" dataWndSize="0,70" pageName="HPU" pageSize="1920,1080" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="3" L1="HPU"/>
+    <MLText id="4" L1="HPU 1"/>
+    <MLText id="5" L1="HPU 2"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="HPU-1.0:1.0" id="GroupWgt5">
+   <wgtStyle x="0" y="225" wgtStaticOpt="dynamic" cx="500" cy="315" width="1000" height="630" forcePaint="17"/>
+   <links>
+    <param attrName="sttHPU">OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|project|HPU|HPU[1]</param>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="HPU@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="HPU-1.0:1.0" id="GroupWgt1">
+   <wgtStyle x="920" y="225" wgtStaticOpt="dynamic" cx="500" cy="315" width="1000" height="630" forcePaint="17"/>
+   <links>
+    <param attrName="sttHPU">OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|project|HPU|HPU[2]</param>
+   </links>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="page_name1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="272" vert-align="middle" y="764.95" font-size="20" keypad-type="None" cx="192.59" alignment="center" cy="22.95" font-sizepx="27" width="375" wrapping="true" height="50" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="page_name2">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="1217" vert-align="middle" y="764.95" font-size="20" keypad-type="None" cx="192.59" alignment="center" cy="22.95" font-sizepx="27" width="375" wrapping="true" height="50" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

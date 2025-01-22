@@ -101,7 +101,7 @@
   <offline_opt>true</offline_opt>
   <offline_rpt>3</offline_rpt>
   <dictionaries>
-   <dictionaryname nodeId="Node1" dictionaryFilterNode="false" autoSync="false">OPCUA Client_2</dictionaryname>
+   <dictionaryname nodeId="Node1" dictionaryFilterNode="false" autoSync="false">OPCUA Client_4</dictionaryname>
    <dictionaryname nodeId="Node2" dictionaryFilterNode="false" autoSync="false">OPCUA Client</dictionaryname>
   </dictionaries>
   <enableSimProtocol>true</enableSimProtocol>
