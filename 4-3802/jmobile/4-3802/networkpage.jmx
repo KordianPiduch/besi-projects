@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="NetworkPage" dataWndSize="0,70" pageName="NetworkPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="NetworkPage" dataWndSize="0,70" pageName="NetworkPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="ShapeWgt" id="rect3">
    <wgtStyle x="1052.17" lock="true" y="178.22" cx="172.21" cy="256.50" stroke="rgb(192,192,192)" width="355.89" height="513" fill="rgb(127,127,127)" nodeName="rect" forcePaint="1"/>

@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Cargo" dataWndSize="0,70" pageName="Cargo" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Cargo" dataWndSize="0,70" pageName="Cargo" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="ImageWgt" id="ImageWgt1">
    <wgtStyle imagePath="images/Cargo_0.0.7.png" x="0" lock="true" y="-2" cx="959.50" cy="540" width="1919" height="1080" forcePaint="1"/>

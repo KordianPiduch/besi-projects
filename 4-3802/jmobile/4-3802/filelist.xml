@@ -1,15 +1,15 @@
 <JMFiles>
- <ProjectInfo Size="9189872" AllowedSize="251658240"/>
+ <ProjectInfo Size="9191584" AllowedSize="251658240"/>
  <files>
-  <file name="alarmpage.jmxb" size="12328" sha256="7014e471e2621a35ccf8aaacd9b352034c0d623012da9e15041d590ae0a5357b"/>
+  <file name="alarmpage.jmxb" size="12741" sha256="0beecca44e1dfc1950f9d858dcad00a20495f97ae79ed979899762126ea3274c"/>
   <file name="audit_trail_info.jmxb" size="1278" sha256="e8a6dfbefc3837f401d61e9c4ba313e88c45ca5b1a53ec73196d1c4d5df4fd0b"/>
   <file name="audittrail.jmxb" size="21207" sha256="b0f7a3de01382fab188df95afa37e96d60c7cd159c7e11ac03068c4e6a9409a5"/>
-  <file name="base_template.jmxb" size="10313" sha256="71fd761e28016a7b746606433575b55fe5bc1824305804117b285ce005c25a96"/>
+  <file name="base_template.jmxb" size="11169" sha256="bbcbfaaf255f6f938b728471d3bc1f1d244ef0ded541afc9f6933474116b06c4"/>
   <file name="base_template.js" size="665" sha256="f557aa28f30015da64310aa8e85e472580b59801f08360a2e89bad230fd43bf6"/>
-  <file name="cargo.jmxb" size="20285" sha256="6fec59655ed16efc5f48e62b6730e27dee9f900a963a820e3b2963e0e3b96f4c"/>
+  <file name="cargo.jmxb" size="19443" sha256="7b384d38c78056c815bcb2c2ce8fb4515626e0f8325e7ba13fa979729fe1613b"/>
   <file name="dimmer.jmxb" size="3834" sha256="66e683b94686749d26f7a7229216f9e1fa3b484e76f27d775f309c293058ef44"/>
   <file name="dimmer.js" size="173" sha256="bd809efbe1a9156e5e7feffb7e692f7d850f800782d47cdb50c2f749c0008b2f"/>
-  <file name="hpu.jmxb" size="984" sha256="b9cd0d0ac0b70bf415a0d291deff690bbd0dcba66d4e9c6aaf2b9ed7756258ba"/>
+  <file name="hpu.jmxb" size="998" sha256="d574021a9369305ae5f46e3dd0e9125c327e0fbc22dfa14e5dd0125c07786126"/>
   <file name="images/Alarm.svg" size="637" sha256="9d54780f920318e8891d90379e749d76f112b48fa6ad1eb36b16fc1d5e5cb534"/>
   <file name="images/ArrowsIcon23.svg" size="492" sha256="33829c78525df91a829127bf38625a3a706c8d1efbaf3f5d7ba853eb47848a3e"/>
   <file name="images/Cargo2.png" size="53726" sha256="5265ed9d2e3fd947c3ea57f05b0ff62375cc590e0d757a974de6845c9275d486"/>
@@ -21,16 +21,16 @@
   <file name="images/Network3.svg" size="747" sha256="0207b1eabaa5defb3f8f76cac147086473a5da1a6f4e9755a0597b616fcda3c7"/>
   <file name="images/Sldrvrt_needle.svg" size="424" sha256="410931dbd22f34accf6835ef2d67cdfee9f1d2b28bf3a076af015c08ca25e94c"/>
   <file name="images/besi_logo.svg.png" size="5537" sha256="6f269edcb99d115ebb885d382c9cb77f57df43aec8b796010820133ecc3d84ea"/>
-  <file name="images/dwn_arrow_ico.svg" size="704" sha256="bd6903de894d5408118cb4bc0b9742c555307f4c5c67588f016730d9ed59d143"/>
+  <file name="images/dwn_arrow_ico.svg" size="716" sha256="d1f35895a866bed5e9b60daea4c27363cbb20d2864cf217520f16ee9c725697b"/>
   <file name="images/g4143.png" size="12187" sha256="09f61a5f431ba5ccf73522c927c712754d6d1ed08eecc158d79dd93fdfa00e76"/>
   <file name="images/search_icon.svg" size="653" sha256="c49ecdbd747e2c620a688255db75742e1133e6d683550b2ee482b20fd6328dd5"/>
-  <file name="images/up_arrow_ico.svg" size="603" sha256="00c171d9292900111c4097fa7e47e5d71a571c0889dafbac0de2d381d8fc7301"/>
+  <file name="images/up_arrow_ico.svg" size="611" sha256="f05a0188406326eedc45686886eb913a7a7306871eded49a2bf08d1fa116f47d"/>
   <file name="images/widget_frame.svg" size="271" sha256="32921b5373eef4b122448b48c1cc0dc5dbc903a1c6566616a2736bb982746f9f"/>
   <file name="images\Btn_rectRound_Dwn.svg" size="288" sha256="19794d98b9c92e563a020b2165d0129255851d87f44407190ed4c2601ae25559"/>
   <file name="images\Btn_rect_Dwn.svg" size="1696" sha256="8a2e3397d8559ea1b487d7082bcb5c92bad5e64e9fe9cc31d568ec0568a3529c"/>
   <file name="images\Btn_rect_blueDown.svg" size="272" sha256="e7a487b2003b241fda0a4e6ee873bd14161647899beb1460d006c5733bd606ab"/>
-  <file name="images\Btn_rect_blueUp.svg" size="263" sha256="df2aeb935e8a9e1b433fcd6ae641a0581e4bba882e6c4238d3d08a5d908e1751"/>
-  <file name="images\btn_rect_blueup.svg" size="263" sha256="df2aeb935e8a9e1b433fcd6ae641a0581e4bba882e6c4238d3d08a5d908e1751"/>
+  <file name="images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="images\btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="images\btn_rect_dwn.svg" size="1696" sha256="8a2e3397d8559ea1b487d7082bcb5c92bad5e64e9fe9cc31d568ec0568a3529c"/>
   <file name="images\btn_rect_grayup.svg" size="261" sha256="7dc8ff6690eee758f2c2649dd6bce22c3e067af6be2b7d02afde75e361138781"/>
   <file name="images\btn_rectround_blueup.svg" size="312" sha256="fa771169793b11cbbecdc4d127e9944c0ad24831308a2f80a04cdce95e3d0e5f"/>
@@ -78,9 +78,9 @@
   <file name="lib\valve_simulation-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="login_timer_info.jmxb" size="1086" sha256="3ab0c0f2933dd9fb640c990ae6451d044ecf48d8260ce55b9ce86742b93ed7a8"/>
   <file name="menu.jmxb" size="8085" sha256="f7c7fcf8afbf29458bfbc138fb1a88727511be49ee972c12e30cb1bd9ac5d4ea"/>
-  <file name="networkpage.jmxb" size="3715" sha256="68cea23c4df08e18fc5119060be420e3c58befd43e091d9199f7d15f629f7e14"/>
+  <file name="networkpage.jmxb" size="3729" sha256="82612a9aa7be6cb0b49cf5caaf5c4ba4dde24dc4ea3bac82a6afde8b95722da9"/>
   <file name="opt/info_page.png" size="4203" sha256="0d4a0dd7d4de6b6dc28472fbb1f4604d9841d0b7cf498079568c804e77e11188"/>
-  <file name="project_config.jmxb" size="9137" sha256="5f8fb050752445475db18e96ad75c9b915378d3ca84992162bf1e5514d986722"/>
+  <file name="project_config.jmxb" size="9139" sha256="0cf4089ea8b974c954febe9e8e3fa32d2447b84bbb884813241b961ef24def93"/>
   <file name="project_config.js" size="1024" sha256="bd54cda1bfc5076de85d7d3c4053eed5b2275ddd3c6e9c3870f6b88995a4cc0e"/>
   <file name="pump.jmxb" size="7108" sha256="ee0247f0e951b91ab6b4d238bd9a28c6fec04648de56f7153d15a5cffc890ffa"/>
   <file name="redundancy_status.jmxb" size="844" sha256="cf5259844e3dfc4c89796a311d070e6d60ecec97fb0b4e694ea5df5115b4f2b3"/>
@@ -134,20 +134,20 @@
   <file name="config\trends.xml" size="499" sha256="b8ff6b8439a0831cdbdf2f0de21bbd14c211cadb6ee008440fa5dd9d00ff167e"/>
   <file name="config\indexedtagset.xml" size="18" sha256="39895772190a15c0a2f1bd42c675315b9727f784ccfd3cb3fd85085f1565f31a"/>
   <file name="config\recipe.xml" size="63" sha256="f57496007614c3d5dccae83c7b9a3e2a275bf7c19c84a5eede140a70effa39a1"/>
-  <file name="config\alarms.xml" size="873130" sha256="43299e5a9183eed6f6fd580c813e428616b947ed04895f91d3f8fefb6cbfa94b"/>
-  <file name="config\alarms.bin" size="342966" sha256="6b57af12b8582134904ddfe84340e456ba9b2e1df0a0bbc07153e2691d5de1ec"/>
+  <file name="config\alarms.xml" size="874013" sha256="cbfd5a3134a7a4e80d9be1929ce82eaf5a3071c73bffcb4b64b74e31dcfb24aa"/>
+  <file name="config\alarms.bin" size="343239" sha256="1bd0d4d0bb6414d2398862b475f481aa75477268e309c48fa394162d5cca6bdf"/>
   <file name="config\multilang.xml" size="200" sha256="4abc2d173251bec56fae90b06755bbe3129f2c6d28451aed86fcadd36708a7ce"/>
   <file name="config\keypads.xml" size="222" sha256="c862d09d18ac4342a54424b953d42d7c017d732cd73578b3134c7a1f7d39faf4"/>
   <file name="config\scheduler.xml" size="2591" sha256="1a8171d5000de0caf1d49154abc29f903919feac0e08cfb4acbfd217249273d4"/>
   <file name="config\protocols.xml" size="6780" sha256="cd58d0ce2865619085540a8156006a59b0359c3be96a9c9e6de52d3b5d267ff8"/>
   <file name="config\eventconfig.xml" size="3941" sha256="3424ffb72f28e5b0ce6d6b37be4eececd9070d5aff5041f647c449993d06a800"/>
-  <file name="config\eventlistinfo.xml" size="91057" sha256="846bf07a5f5cb1e1829090846636be4a8d14b44473014b2f7cecc08751570bca"/>
+  <file name="config\eventlistinfo.xml" size="91059" sha256="13652f1019c2532c63e7562a3822b7967fd2fad4aa88f99a31fd3feb576fda51"/>
   <file name="config\emailinfo.xml" size="15" sha256="2b2e8c9590a88764287f8c376d2954c86af9af744a3bd0c0f89da767aed74929"/>
   <file name="config\reports.xml" size="739" sha256="1a10b39b38fd5284b0d3542ba174e82ffaf0af6fca258af5ecf1a5c8846d16bb"/>
   <file name="config\print.xml" size="178" sha256="7b6ad4a5e42637d7d8d8cda01d1e4782158976a2cd2b5f1f3723496ce73c8423"/>
   <file name="config\usermgnt_group.xml" size="3100" sha256="37032160afd132daf9bd5611d16c2da7488e1ac273f8a66b143bbfdc69244afb"/>
   <file name="config\usermgnt_user.xml" size="4848" sha256="7e1ed7707eb6efe5155cef3341cda6f9750bba6d260cd0f08c939450468c4193"/>
-  <file name="config\usermgnt_uiauth.xml" size="154328" sha256="9d2622b5d9603a935b4ba96e3129584523b99cccb62357a9dd422147996cbfc9"/>
+  <file name="config\usermgnt_uiauth.xml" size="154392" sha256="3fbdc7faeeedfbff00eeab9495cec7473c1ee0a5314512822f7e0a21ce695b5a"/>
   <file name="config\ftpd_security_auth.xml" size="440" sha256="9530b78ab5c0748aa504e18f1b8e6f2aa07e7a106d1b03c154124d830b94ac96"/>
   <file name="config\httpd_security_auth.xml" size="1100" sha256="ce91e80e0291543ca9211a43b9df042512c43cfd6d4656122c9f380d224ce5b3"/>
   <file name="config\usermgnt_taggroupauth.xml" size="644" sha256="584277d5defbbfa00fa5b133cda5235a630d1f2a00c42b5d72dd4e44936163c4"/>
@@ -155,7 +155,7 @@
   <file name="config\dbconnector.xml" size="56" sha256="9b014c196c6224a5e92b5332962a547028a6717e9e6d62e5230b4749279966ba"/>
   <file name="config\datatransfers.xml" size="78" sha256="09a060405021773df3699dc22108d9f866471cc92811d53f7fe41110e44dc00e"/>
   <file name="config\screensaver.xml" size="229" sha256="641e167e49c67f46faed00da51d989958ee769b754ebcd8f75d3aff276ae42bd"/>
-  <file name="opt\imagecachelist.xml" size="10577" sha256="5d91a4ef183b2a93b2013d240f721746766fec70b67fdf96530b1d1adc4f5aaa"/>
+  <file name="opt\imagecachelist.xml" size="10580" sha256="7fb2acfd3e286240b76f2ad71c6d7473d3c01cf985564d325ea0078c697aa2ae"/>
   <file name="config\if_opcua.xml" size="354" sha256="e3d2735fa8c4febcd0fbcc5fce3529fb932bffd4d6110f14a7e940b304d9c242"/>
   <file name="config\opcserverconfig.ini" size="5712" sha256="09e607d34e8226facc7bef7a5351394093e46bb6adc7337e7197a669440cc352"/>
   <file name="config\opc.ua.custom.nodeset.0.xml" size="806885" sha256="914b13861acbaf3921d81f1a91424aa95d42dc626f14d7e8dd83445f4d3017e7"/>
@@ -171,7 +171,7 @@
   <file name="lib/device_network_info-1.0/device_network_info-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.props" size="533" sha256="3c3daeb086b9fd48394cbd03a6a369809db3a116b443e4776a079fb1a4ffe484"/>
   <file name="lib/hpu-1.0/hpu-1.0.js" size="88" sha256="479497fcff9acafd2cd6184a1a56124d898c2f5fd39e62a09eeaaca4eee46730"/>
-  <file name="lib/hpu-1.0/hpu-1.0.jmx" size="29101" sha256="645cb7b6e89ef05919bff2e0884b22a63338e3b86f07ecb4cadefd14c1cba9a2"/>
+  <file name="lib/hpu-1.0/hpu-1.0.jmx" size="29101" sha256="96a0d92e511c346487ba50dd0948cfd289b56978c736a2e09171445901dd0606"/>
   <file name="lib/hpu-1.0/hpu-1.0.png" size="8215" sha256="38173ecf7aeec0deb37d1cc1f1a75fb14b2fbe767ab764c355a5ccc76e728910"/>
   <file name="lib/hpu-1.0/hpu-1.0.jmxb" size="17581" sha256="13fe6107c48b9c4491f8d00a137b66956893a0716ccc0a0a2430baf071280816"/>
   <file name="lib/hpu-1.0/hpu-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>

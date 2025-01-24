@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="false" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="project_config" py="0" dataWndSize="0,70" pageType="modal" scriptFile="project_config.js" pageName="project_config" pageSize="350,300" usedFonts="Roboto,Roboto Medium">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="project_config" py="0" dataWndSize="0,70" pageType="modal" scriptFile="project_config.js" pageName="project_config" pageSize="350,300" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="300" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>

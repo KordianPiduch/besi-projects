@@ -33,7 +33,7 @@
  <object class="GroupWgt" id="*.field_label10">
   <wgtStyle x="285" y="118" wgtStaticOpt="dynamic" cx="40" cy="15" width="80" height="30" forcePaint="16"/>
   <object class="ShapeWgt" id="*.field_label10.roundrect1">
-   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="2"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
@@ -52,7 +52,7 @@
  <object class="GroupWgt" id="*.field_label1">
   <wgtStyle x="443" y="118" wgtStaticOpt="dynamic" cx="40" cy="15" width="80" height="30" forcePaint="16"/>
   <object class="ShapeWgt" id="*.field_label1.roundrect1">
-   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="2"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>

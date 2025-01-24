@@ -20,8 +20,8 @@
  <file isSvgFile="true" prePath="keypads" imgSize="88,32" numSizes="1" file="images/win-like.svg" numUses="22" stroke="none" fill="rgb(230,230,230)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="32,32" numSizes="15" file="images/btn_rect_dwn.svg" numUses="22" stroke="none" fill="rgb(237,237,237)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="32,32" numSizes="15" file="images/btn_rect_grayup.svg" numUses="22" stroke="none" fill="rgb(237,237,237)"/>
- <file isSvgFile="true" imgSize="80,50" numSizes="3" file="images/btn_rectround_dwn.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
- <file isSvgFile="true" imgSize="80,50" numSizes="3" file="images/btn_rectround_blueup.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="80,40" numSizes="12" file="images/btn_rectround_dwn.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="80,40" numSizes="12" file="images/btn_rectround_blueup.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="31,32" numSizes="1" file="lib/hpu-1.0/images/frame_round_chrome.svg" numUses="9" stroke="none" fill="rgb(0,0,0)"/>
  <file isSvgFile="true" imgSize="250,50" numSizes="4" file="images/btn_rect_bluedown.svg" numUses="7" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="80,50" numSizes="6" file="images/btn_rect_dwn.svg" numUses="7" stroke="none" fill="rgb(102,102,102)"/>
@@ -70,5 +70,5 @@
  <file imgSize="1920,1080" numSizes="1" file="images/cargo2.png" numUses="1"/>
  <file imgSize="1000,630" numSizes="1" file="lib/hpu-1.0/images/hpu.png" numUses="1"/>
  <file imgSize="483,34" numSizes="1" file="images/,images/,images/,images/" numUses="1"/>
- <file imgSize="572,34" numSizes="1" file="images/,images/" numUses="1"/>
+ <file imgSize="1035,34" numSizes="1" file="images/,images/" numUses="1"/>
 </files>
