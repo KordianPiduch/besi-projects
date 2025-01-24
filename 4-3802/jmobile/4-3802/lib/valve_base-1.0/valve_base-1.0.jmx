@@ -19,7 +19,7 @@
    <action class="JavaScriptAction" f="this.valve_symbol_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
   </links>
   <object class="ShapeWgt" id="*.valve_symbol.triangle_bottom">
-   <wgtStyle x="0" y="17" wgtStaticOpt="dynamic" cx="10" cy="8.73" stroke="rgb(60,60,60)" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(170,170,127)" forcePaint="16" nodeName="polygon"/>
+   <wgtStyle x="0" y="17" wgtStaticOpt="dynamic" cx="10" cy="8.73" stroke="rgb(60,60,60)" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(170,170,127)" nodeName="polygon" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|status" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke">
      <xForms>
@@ -34,7 +34,7 @@
    </links>
   </object>
   <object class="ShapeWgt" id="*.valve_symbol.triangle_upper">
-   <wgtStyle x="0" y="0" mtx="-1,0,0,0,-1,0,20,18,1" wgtStaticOpt="dynamic" cx="10" cy="9.27" stroke="rgb(60,60,60)" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(170,170,127)" forcePaint="16" nodeName="polygon"/>
+   <wgtStyle x="0" y="0" mtx="-1,0,0,0,-1,0,20,18,1" wgtStaticOpt="dynamic" cx="10" cy="9.27" stroke="rgb(60,60,60)" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(170,170,127)" nodeName="polygon" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|status" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke">
      <xForms>
@@ -62,7 +62,7 @@
    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
   </dataLinks>
   <object class="ShapeWgt" id="*.warning_sign.background">
-   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    </dataLinks>

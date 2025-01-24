@@ -29,7 +29,7 @@ this.button_onMouseClick = function(me,eventInfo)
         project.setTag("valve_prefix", _valve_id);
         project.setTag("valve_confirm", _confirm === "true")
         project.setTag("valve_dialog_base_x", this.wgtValve.getProperty("x")-15);
-        project.setTag("valve_dialog_base_y", this.wgtValve.getProperty("y"));
+        project.setTag("valve_dialog_base_y", this.wgtValve.getProperty("y")-50);
         project.showDialog("valve_base.jmx");
     }
 

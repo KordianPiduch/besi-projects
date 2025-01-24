@@ -90,7 +90,7 @@
      <lang class="MLTextLink" textid="2"/>
     </links>
    </object>
-   <object class="ImageWgt" id="*.GroupWgt1.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <object class="ImageWgt" id="*.GroupWgt1.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
     <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
    </object>
   </object>
