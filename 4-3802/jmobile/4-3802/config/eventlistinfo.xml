@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="voltage_supervision_1" group="voltage_supervision_1" trigger="valueAlarm" description="[11@Alarm]SVC1 voltage supervision 1 err: Main Power Supply"/>
+    <event id="2" name="voltage_supervision_2" group="voltage_supervision_2" trigger="valueAlarm" description="[14@Alarm]SVC1 voltage supervision 2 err: Emergency Power Supply"/>
+    <event id="3" name="voltage_supervision_3" group="voltage_supervision_3" trigger="valueAlarm" description="[17@Alarm]SVC1 voltage supervision 3 err: G1,G2"/>
+    <event id="4" name="voltage_supervision_4" group="voltage_supervision_4" trigger="valueAlarm" description="[20@Alarm]SVC1 voltage supervision 4 err: F200"/>
+    <event id="5" name="voltage_supervision_5" group="voltage_supervision_5" trigger="valueAlarm" description="[23@Alarm]SVC1 voltage supervision 5 err: F201"/>
+    <event id="6" name="plc1_connection_status" group="plc1_connection_status" trigger="valueAlarm" description="[26@Alarm]PLC1 err: controller disconnected"/>
+    <event id="7" name="plc2_connection_status" group="plc2_connection_status" trigger="valueAlarm" description="[29@Alarm]PLC2 err: controller disconnected"/>
+    <event id="8" name="valve1_both_pos" group="valve1_both_pos" trigger="valueAlarm" description="[32@Alarm]CS32 err: both positions"/>
+    <event id="9" name="valve1_no_pos" group="valve1_no_pos" trigger="valueAlarm" description="[35@Alarm]CS32 err: no positions"/>
+    <event id="10" name="valve1_no_lost_close" group="valve1_no_lost_close" trigger="valueAlarm" description="[38@Alarm]CS32 err: lost position close"/>
+    <event id="11" name="valve1_no_lost_open" group="valve1_no_lost_open" trigger="valueAlarm" description="[41@Alarm]CS32 err: lost position open"/>
+    <event id="12" name="valve1_timeout_close" group="valve1_timeout_close" trigger="valueAlarm" description="[44@Alarm]CS32 err: not reach close position "/>
+    <event id="13" name="valve1_timeout_open" group="valve1_timeout_open" trigger="valueAlarm" description="[47@Alarm]CS32 err: not reach open position "/>
+    <event id="14" name="valve2_both_pos" group="valve2_both_pos" trigger="valueAlarm" description="[50@Alarm]CS33 err: both positions"/>
+    <event id="15" name="valve2_no_pos" group="valve2_no_pos" trigger="valueAlarm" description="[53@Alarm]CS33 err: no positions"/>
+    <event id="16" name="valve2_no_lost_close" group="valve2_no_lost_close" trigger="valueAlarm" description="[56@Alarm]CS33 err: lost position close"/>
+    <event id="17" name="valve2_no_lost_open" group="valve2_no_lost_open" trigger="valueAlarm" description="[59@Alarm]CS33 err: lost position open"/>
+    <event id="18" name="valve2_timeout_close" group="valve2_timeout_close" trigger="valueAlarm" description="[62@Alarm]CS33 err: not reach close position"/>
+    <event id="19" name="valve2_timeout_open" group="valve2_timeout_open" trigger="valueAlarm" description="[65@Alarm]CS33 err: not reach open position "/>
+    <event id="20" name="valve3_both_pos" group="valve3_both_pos" trigger="valueAlarm" description="[68@Alarm]CS34 err: both positions"/>
+    <event id="21" name="valve3_no_pos" group="valve3_no_pos" trigger="valueAlarm" description="[71@Alarm]CS34 err: no positions"/>
+    <event id="22" name="valve3_no_lost_close" group="valve3_no_lost_close" trigger="valueAlarm" description="[74@Alarm]CS34 err: lost position close"/>
+    <event id="23" name="valve3_no_lost_open" group="valve3_no_lost_open" trigger="valueAlarm" description="[77@Alarm]CS34 err: lost position open"/>
+    <event id="24" name="valve3_timeout_close" group="valve3_timeout_close" trigger="valueAlarm" description="[80@Alarm]CS34 err: not reach close position "/>
+    <event id="25" name="valve3_timeout_open" group="valve3_timeout_open" trigger="valueAlarm" description="[83@Alarm]CS34 err: not reach open position"/>
+    <event id="26" name="valve4_both_pos" group="valve4_both_pos" trigger="valueAlarm" description="[86@Alarm]CS35 err: both positions"/>
+    <event id="27" name="valve4_no_pos" group="valve4_no_pos" trigger="valueAlarm" description="[89@Alarm]CS35 err: no positions"/>
+    <event id="28" name="valve4_no_lost_close" group="valve4_no_lost_close" trigger="valueAlarm" description="[92@Alarm]CS35 err: lost position close"/>
+    <event id="29" name="valve4_no_lost_open" group="valve4_no_lost_open" trigger="valueAlarm" description="[95@Alarm]CS35 err: lost position open"/>
+    <event id="30" name="valve4_timeout_close" group="valve4_timeout_close" trigger="valueAlarm" description="[98@Alarm]CS35 err: not reach close position "/>
+    <event id="31" name="valve4_timeout_open" group="valve4_timeout_open" trigger="valueAlarm" description="[101@Alarm]CS35 err: not reach open position "/>
+    <event id="32" name="valve5_both_pos" group="valve5_both_pos" trigger="valueAlarm" description="[104@Alarm]CS36 err: both positions"/>
+    <event id="33" name="valve5_no_pos" group="valve5_no_pos" trigger="valueAlarm" description="[107@Alarm]CS36 err: no positions"/>
+    <event id="34" name="valve5_no_lost_close" group="valve5_no_lost_close" trigger="valueAlarm" description="[110@Alarm]CS36 err: lost position close"/>
+    <event id="35" name="valve5_no_lost_open" group="valve5_no_lost_open" trigger="valueAlarm" description="[113@Alarm]CS36 err: lost position open"/>
+    <event id="36" name="valve5_timeout_close" group="valve5_timeout_close" trigger="valueAlarm" description="[116@Alarm]CS36 err: not reach close position "/>
+    <event id="37" name="valve5_timeout_open" group="valve5_timeout_open" trigger="valueAlarm" description="[119@Alarm]CS36 err: not reach open position "/>
+    <event id="38" name="valve6_both_pos" group="valve6_both_pos" trigger="valueAlarm" description="[122@Alarm]CS37 err: both positions"/>
+    <event id="39" name="valve6_no_pos" group="valve6_no_pos" trigger="valueAlarm" description="[125@Alarm]CS37 err: no positions"/>
+    <event id="40" name="valve6_no_lost_close" group="valve6_no_lost_close" trigger="valueAlarm" description="[128@Alarm]CS37 err: lost position close"/>
+    <event id="41" name="valve6_no_lost_open" group="valve6_no_lost_open" trigger="valueAlarm" description="[131@Alarm]CS37 err: lost position open"/>
+    <event id="42" name="valve6_timeout_close" group="valve6_timeout_close" trigger="valueAlarm" description="[134@Alarm]CS37 err: not reach close position"/>
+    <event id="43" name="valve6_timeout_open" group="valve6_timeout_open" trigger="valueAlarm" description="[137@Alarm]CS37 err: not reach open position "/>
+    <event id="44" name="valve7_both_pos" group="valve7_both_pos" trigger="valueAlarm" description="[140@Alarm]CS38 err: both positions"/>
+    <event id="45" name="valve7_no_pos" group="valve7_no_pos" trigger="valueAlarm" description="[143@Alarm]CS38 err: no positions"/>
+    <event id="46" name="valve7_no_lost_close" group="valve7_no_lost_close" trigger="valueAlarm" description="[146@Alarm]CS38 err: lost position close"/>
+    <event id="47" name="valve7_no_lost_open" group="valve7_no_lost_open" trigger="valueAlarm" description="[149@Alarm]CS38 err: lost position open"/>
+    <event id="48" name="valve7_timeout_close" group="valve7_timeout_close" trigger="valueAlarm" description="[152@Alarm]CS38 err: not reach close position "/>
+    <event id="49" name="valve7_timeout_open" group="valve7_timeout_open" trigger="valueAlarm" description="[155@Alarm]CS38 err: not reach open position "/>
+    <event id="50" name="valve8_both_pos" group="valve8_both_pos" trigger="valueAlarm" description="[158@Alarm]CS93 err: both positions"/>
+    <event id="51" name="valve8_no_pos" group="valve8_no_pos" trigger="valueAlarm" description="[161@Alarm]CS93 err: no positions"/>
+    <event id="52" name="valve8_no_lost_close" group="valve8_no_lost_close" trigger="valueAlarm" description="[164@Alarm]CS93 err: lost position close"/>
+    <event id="53" name="valve8_no_lost_open" group="valve8_no_lost_open" trigger="valueAlarm" description="[167@Alarm]CS93 err: lost position open"/>
+    <event id="54" name="valve8_timeout_close" group="valve8_timeout_close" trigger="valueAlarm" description="[170@Alarm]CS93 err: not reach close position "/>
+    <event id="55" name="valve8_timeout_open" group="valve8_timeout_open" trigger="valueAlarm" description="[173@Alarm]CS93 err: not reach open position "/>
+    <event id="56" name="valve9_both_pos" group="valve9_both_pos" trigger="valueAlarm" description="[176@Alarm]CS94 err: both positions"/>
+    <event id="57" name="valve9_no_pos" group="valve9_no_pos" trigger="valueAlarm" description="[179@Alarm]CS94 err: no positions"/>
+    <event id="58" name="valve9_no_lost_close" group="valve9_no_lost_close" trigger="valueAlarm" description="[182@Alarm]CS94 err: lost position close"/>
+    <event id="59" name="valve9_no_lost_open" group="valve9_no_lost_open" trigger="valueAlarm" description="[185@Alarm]CS94 err: lost position open"/>
+    <event id="60" name="valve9_timeout_close" group="valve9_timeout_close" trigger="valueAlarm" description="[188@Alarm]CS94 err: not reach close position "/>
+    <event id="61" name="valve9_timeout_open" group="valve9_timeout_open" trigger="valueAlarm" description="[191@Alarm]CS94 err: not reach open position "/>
+    <event id="62" name="valve10_both_pos" group="valve10_both_pos" trigger="valueAlarm" description="[194@Alarm]CS95 err: both positions"/>
+    <event id="63" name="valve10_no_pos" group="valve10_no_pos" trigger="valueAlarm" description="[197@Alarm]CS95 err: no positions"/>
+    <event id="64" name="valve10_no_lost_close" group="valve10_no_lost_close" trigger="valueAlarm" description="[200@Alarm]CS95 err: lost position close"/>
+    <event id="65" name="valve10_no_lost_open" group="valve10_no_lost_open" trigger="valueAlarm" description="[203@Alarm]CS95 err: lost position open"/>
+    <event id="66" name="valve10_timeout_close" group="valve10_timeout_close" trigger="valueAlarm" description="[206@Alarm]CS95 err: not reach close position "/>
+    <event id="67" name="valve10_timeout_open" group="valve10_timeout_open" trigger="valueAlarm" description="[209@Alarm]CS95 err: not reach open position "/>
+    <event id="68" name="voltage_supervision_6" group="voltage_supervision_6" trigger="valueAlarm" description="[212@Alarm]SVC1 voltage supervision 6 err: F202"/>
+    <event id="69" name="voltage_supervision_7" group="voltage_supervision_7" trigger="valueAlarm" description="[215@Alarm]SVC1 voltage supervision 7 err: F203"/>
+    <event id="70" name="voltage_supervision_8" group="voltage_supervision_8" trigger="valueAlarm" description="[218@Alarm]SVC1 voltage supervision 8 err: F204"/>
+    <event id="71" name="voltage_supervision_9" group="voltage_supervision_9" trigger="valueAlarm" description="[221@Alarm]SVC1 voltage supervision 9 err: Filtr Indication"/>
+    <event id="72" name="voltage_supervision_10" group="voltage_supervision_10" trigger="valueAlarm" description="[224@Alarm]SVC1 voltage supervision 10 err: F102"/>
+    <event id="73" name="voltage_supervision_11" group="voltage_supervision_11" trigger="valueAlarm" description="[227@Alarm]SVC1 voltage supervision 11 err: F103"/>
+    <event id="74" name="voltage_supervision_12" group="voltage_supervision_12" trigger="valueAlarm" description="[230@Alarm]SVC1 voltage supervision 12 err: F104"/>
+    <event id="75" name="voltage_supervision_13" group="voltage_supervision_13" trigger="valueAlarm" description="[233@Alarm]SVC1 voltage supervision 13 err: PSM"/>
+    <event id="76" name="plc3_connection_status" group="plc3_connection_status" trigger="valueAlarm" description="[236@Alarm]PLC3 err: controller disconnected"/>
+    <event id="77" name="plc4_connection_status" group="plc4_connection_status" trigger="valueAlarm" description="[239@Alarm]PLC4 err: controller disconnected"/>
+    <event id="78" name="valve11_both_pos" group="valve11_both_pos" trigger="valueAlarm" description="[242@Alarm]CS96 err: both positions"/>
+    <event id="79" name="valve11_no_pos" group="valve11_no_pos" trigger="valueAlarm" description="[245@Alarm]CS96 err: no positions"/>
+    <event id="80" name="valve11_no_lost_close" group="valve11_no_lost_close" trigger="valueAlarm" description="[248@Alarm]CS96 err: lost position close"/>
+    <event id="81" name="valve11_no_lost_open" group="valve11_no_lost_open" trigger="valueAlarm" description="[251@Alarm]CS96 err: lost position open"/>
+    <event id="82" name="valve11_timeout_close" group="valve11_timeout_close" trigger="valueAlarm" description="[254@Alarm]CS96 err: not reach close position "/>
+    <event id="83" name="valve11_timeout_open" group="valve11_timeout_open" trigger="valueAlarm" description="[257@Alarm]CS96 err: not reach open position "/>
+    <event id="84" name="valve12_both_pos" group="valve12_both_pos" trigger="valueAlarm" description="[260@Alarm]CS97 err: both positions"/>
+    <event id="85" name="valve12_no_pos" group="valve12_no_pos" trigger="valueAlarm" description="[263@Alarm]CS97 err: no positions"/>
+    <event id="86" name="valve12_no_lost_close" group="valve12_no_lost_close" trigger="valueAlarm" description="[266@Alarm]CS97 err: lost position close"/>
+    <event id="87" name="valve12_no_lost_open" group="valve12_no_lost_open" trigger="valueAlarm" description="[269@Alarm]CS97 err: lost position open"/>
+    <event id="88" name="valve12_timeout_close" group="valve12_timeout_close" trigger="valueAlarm" description="[272@Alarm]CS97 err: not reach close position "/>
+    <event id="89" name="valve12_timeout_open" group="valve12_timeout_open" trigger="valueAlarm" description="[275@Alarm]CS97 err: not reach open position"/>
+    <event id="90" name="valve13_both_pos" group="valve13_both_pos" trigger="valueAlarm" description="[278@Alarm]CS98 err: both positions"/>
+    <event id="91" name="valve13_no_pos" group="valve13_no_pos" trigger="valueAlarm" description="[281@Alarm]CS98 err: no positions"/>
+    <event id="92" name="valve13_no_lost_close" group="valve13_no_lost_close" trigger="valueAlarm" description="[284@Alarm]CS98 err: lost position close"/>
+    <event id="93" name="valve13_no_lost_open" group="valve13_no_lost_open" trigger="valueAlarm" description="[287@Alarm]CS98 err: lost position open"/>
+    <event id="94" name="valve13_timeout_close" group="valve13_timeout_close" trigger="valueAlarm" description="[290@Alarm]CS98 err: not reach close position "/>
+    <event id="95" name="valve13_timeout_open" group="valve13_timeout_open" trigger="valueAlarm" description="[293@Alarm]CS98 err: not reach open position"/>
+    <event id="96" name="valve14_both_pos" group="valve14_both_pos" trigger="valueAlarm" description="[296@Alarm]CS99 err: both positions"/>
+    <event id="97" name="valve14_no_pos" group="valve14_no_pos" trigger="valueAlarm" description="[299@Alarm]CS99 err: no positions"/>
+    <event id="98" name="valve14_no_lost_close" group="valve14_no_lost_close" trigger="valueAlarm" description="[302@Alarm]CS99 err: lost position close"/>
+    <event id="99" name="valve14_no_lost_open" group="valve14_no_lost_open" trigger="valueAlarm" description="[305@Alarm]CS99 err: lost position open"/>
+    <event id="100" name="valve14_timeout_close" group="valve14_timeout_close" trigger="valueAlarm" description="[308@Alarm]CS99 err: not reach close position "/>
+    <event id="101" name="valve14_timeout_open" group="valve14_timeout_open" trigger="valueAlarm" description="[311@Alarm]CS99 err: not reach open position "/>
+    <event id="102" name="valve15_both_pos" group="valve15_both_pos" trigger="valueAlarm" description="[314@Alarm]CS83 err: both positions"/>
+    <event id="103" name="valve15_no_pos" group="valve15_no_pos" trigger="valueAlarm" description="[317@Alarm]CS83 err: no positions"/>
+    <event id="104" name="valve15_no_lost_close" group="valve15_no_lost_close" trigger="valueAlarm" description="[320@Alarm]CS83 err: lost position close"/>
+    <event id="105" name="valve15_no_lost_open" group="valve15_no_lost_open" trigger="valueAlarm" description="[323@Alarm]CS83 err: lost position open"/>
+    <event id="106" name="valve15_timeout_close" group="valve15_timeout_close" trigger="valueAlarm" description="[326@Alarm]CS83 err: not reach close position "/>
+    <event id="107" name="valve15_timeout_open" group="valve15_timeout_open" trigger="valueAlarm" description="[329@Alarm]CS83 err: not reach open position "/>
+    <event id="108" name="valve16_both_pos" group="valve16_both_pos" trigger="valueAlarm" description="[332@Alarm]CS84 err: both positions"/>
+    <event id="109" name="valve16_no_pos" group="valve16_no_pos" trigger="valueAlarm" description="[335@Alarm]CS84 err: no positions"/>
+    <event id="110" name="valve16_no_lost_close" group="valve16_no_lost_close" trigger="valueAlarm" description="[338@Alarm]CS84 err: lost position close"/>
+    <event id="111" name="valve16_no_lost_open" group="valve16_no_lost_open" trigger="valueAlarm" description="[341@Alarm]CS84 err: lost position open"/>
+    <event id="112" name="valve16_timeout_close" group="valve16_timeout_close" trigger="valueAlarm" description="[344@Alarm]CS84 err: not reach close position "/>
+    <event id="113" name="valve16_timeout_open" group="valve16_timeout_open" trigger="valueAlarm" description="[347@Alarm]CS84 err: not reach open position "/>
+    <event id="114" name="valve17_both_pos" group="valve17_both_pos" trigger="valueAlarm" description="[350@Alarm]CS85 err: both positions"/>
+    <event id="115" name="valve17_no_pos" group="valve17_no_pos" trigger="valueAlarm" description="[353@Alarm]CS85 err: no positions"/>
+    <event id="116" name="valve17_no_lost_close" group="valve17_no_lost_close" trigger="valueAlarm" description="[356@Alarm]CS85 err: lost position close"/>
+    <event id="117" name="valve17_no_lost_open" group="valve17_no_lost_open" trigger="valueAlarm" description="[359@Alarm]CS85 err: lost position open"/>
+    <event id="118" name="valve17_timeout_close" group="valve17_timeout_close" trigger="valueAlarm" description="[362@Alarm]CS85 err: not reach close position"/>
+    <event id="119" name="valve17_timeout_open" group="valve17_timeout_open" trigger="valueAlarm" description="[365@Alarm]CS85 err: not reach open position "/>
+    <event id="120" name="valve18_both_pos" group="valve18_both_pos" trigger="valueAlarm" description="[368@Alarm]CS86 err: both positions"/>
+    <event id="121" name="valve18_no_pos" group="valve18_no_pos" trigger="valueAlarm" description="[371@Alarm]CS86 err: no positions"/>
+    <event id="122" name="valve18_no_lost_close" group="valve18_no_lost_close" trigger="valueAlarm" description="[374@Alarm]CS86 err: lost position close"/>
+    <event id="123" name="valve18_no_lost_open" group="valve18_no_lost_open" trigger="valueAlarm" description="[377@Alarm]CS86 err: lost position open"/>
+    <event id="124" name="valve18_timeout_close" group="valve18_timeout_close" trigger="valueAlarm" description="[380@Alarm]CS86 err: not reach close position "/>
+    <event id="125" name="valve18_timeout_open" group="valve18_timeout_open" trigger="valueAlarm" description="[383@Alarm]CS86 err: not reach open position "/>
+    <event id="126" name="valve19_both_pos" group="valve19_both_pos" trigger="valueAlarm" description="[386@Alarm]CS87 err: both positions"/>
+    <event id="127" name="valve19_no_pos" group="valve19_no_pos" trigger="valueAlarm" description="[389@Alarm]CS87 err: no positions"/>
+    <event id="128" name="valve19_no_lost_close" group="valve19_no_lost_close" trigger="valueAlarm" description="[392@Alarm]CS87 err: lost position close"/>
+    <event id="129" name="valve19_no_lost_open" group="valve19_no_lost_open" trigger="valueAlarm" description="[395@Alarm]CS87 err: lost position open"/>
+    <event id="130" name="valve19_timeout_close" group="valve19_timeout_close" trigger="valueAlarm" description="[398@Alarm]CS87 err: not reach close position "/>
+    <event id="131" name="valve19_timeout_open" group="valve19_timeout_open" trigger="valueAlarm" description="[401@Alarm]CS87 err: not reach open position "/>
+    <event id="132" name="valve20_both_pos" group="valve20_both_pos" trigger="valueAlarm" description="[404@Alarm]CS88 err: both positions"/>
+    <event id="133" name="valve20_no_pos" group="valve20_no_pos" trigger="valueAlarm" description="[407@Alarm]CS88 err: no positions"/>
+    <event id="134" name="valve20_no_lost_close" group="valve20_no_lost_close" trigger="valueAlarm" description="[410@Alarm]CS88 err: lost position close"/>
+    <event id="135" name="valve20_no_lost_open" group="valve20_no_lost_open" trigger="valueAlarm" description="[413@Alarm]CS88 err: lost position open"/>
+    <event id="136" name="valve20_timeout_close" group="valve20_timeout_close" trigger="valueAlarm" description="[416@Alarm]CS88 err: not reach close position "/>
+    <event id="137" name="valve20_timeout_open" group="valve20_timeout_open" trigger="valueAlarm" description="[419@Alarm]CS88 err: not reach open position "/>
+    <event id="138" name="valve21_both_pos" group="valve21_both_pos" trigger="valueAlarm" description="[422@Alarm]CS89 err: both positions"/>
+    <event id="139" name="valve21_no_pos" group="valve21_no_pos" trigger="valueAlarm" description="[425@Alarm]CS89 err: no positions"/>
+    <event id="140" name="valve21_no_lost_close" group="valve21_no_lost_close" trigger="valueAlarm" description="[428@Alarm]CS89 err: lost position close"/>
+    <event id="141" name="valve21_no_lost_open" group="valve21_no_lost_open" trigger="valueAlarm" description="[431@Alarm]CS89 err: lost position open"/>
+    <event id="142" name="valve21_timeout_close" group="valve21_timeout_close" trigger="valueAlarm" description="[434@Alarm]CS89 err: not reach close position "/>
+    <event id="143" name="valve21_timeout_open" group="valve21_timeout_open" trigger="valueAlarm" description="[437@Alarm]CS89 err: not reach open position"/>
+    <event id="144" name="valve22_both_pos" group="valve22_both_pos" trigger="valueAlarm" description="[440@Alarm]CS07 err: both positions"/>
+    <event id="145" name="valve22_no_pos" group="valve22_no_pos" trigger="valueAlarm" description="[443@Alarm]CS07 err: no positions"/>
+    <event id="146" name="valve22_no_lost_close" group="valve22_no_lost_close" trigger="valueAlarm" description="[446@Alarm]CS07 err: lost position close"/>
+    <event id="147" name="valve22_no_lost_open" group="valve22_no_lost_open" trigger="valueAlarm" description="[449@Alarm]CS07 err: lost position open"/>
+    <event id="148" name="valve22_timeout_close" group="valve22_timeout_close" trigger="valueAlarm" description="[452@Alarm]CS07 err: not reach close position "/>
+    <event id="149" name="valve22_timeout_open" group="valve22_timeout_open" trigger="valueAlarm" description="[455@Alarm]CS07 err: not reach open position "/>
+    <event id="150" name="valve23_both_pos" group="valve23_both_pos" trigger="valueAlarm" description="[458@Alarm]CS10 err: both positions"/>
+    <event id="151" name="valve23_no_pos" group="valve23_no_pos" trigger="valueAlarm" description="[461@Alarm]CS10 err: no positions"/>
+    <event id="152" name="valve23_no_lost_close" group="valve23_no_lost_close" trigger="valueAlarm" description="[464@Alarm]CS10 err: lost position close"/>
+    <event id="153" name="valve23_no_lost_open" group="valve23_no_lost_open" trigger="valueAlarm" description="[467@Alarm]CS10 err: lost position open"/>
+    <event id="154" name="valve23_timeout_close" group="valve23_timeout_close" trigger="valueAlarm" description="[470@Alarm]CS10 err: not reach close position "/>
+    <event id="155" name="valve23_timeout_open" group="valve23_timeout_open" trigger="valueAlarm" description="[473@Alarm]CS10 err: not reach open position "/>
+    <event id="156" name="valve24_both_pos" group="valve24_both_pos" trigger="valueAlarm" description="[476@Alarm]CS16 err: both positions"/>
+    <event id="157" name="valve24_no_pos" group="valve24_no_pos" trigger="valueAlarm" description="[479@Alarm]CS16 err: no positions"/>
+    <event id="158" name="valve24_no_lost_close" group="valve24_no_lost_close" trigger="valueAlarm" description="[482@Alarm]CS16 err: lost position close"/>
+    <event id="159" name="valve24_no_lost_open" group="valve24_no_lost_open" trigger="valueAlarm" description="[485@Alarm]CS16 err: lost position open"/>
+    <event id="160" name="valve24_timeout_close" group="valve24_timeout_close" trigger="valueAlarm" description="[488@Alarm]CS16 err: not reach close position "/>
+    <event id="161" name="valve24_timeout_open" group="valve24_timeout_open" trigger="valueAlarm" description="[491@Alarm]CS16 err: not reach open position "/>
+    <event id="162" name="valve25_both_pos" group="valve25_both_pos" trigger="valueAlarm" description="[494@Alarm]CS12 err: both positions"/>
+    <event id="163" name="valve25_no_pos" group="valve25_no_pos" trigger="valueAlarm" description="[497@Alarm]CS12 err: no positions"/>
+    <event id="164" name="valve25_no_lost_close" group="valve25_no_lost_close" trigger="valueAlarm" description="[500@Alarm]CS12 err: lost position close"/>
+    <event id="165" name="valve25_no_lost_open" group="valve25_no_lost_open" trigger="valueAlarm" description="[503@Alarm]CS12 err: lost position open"/>
+    <event id="166" name="valve25_timeout_close" group="valve25_timeout_close" trigger="valueAlarm" description="[506@Alarm]CS12 err: not reach close position "/>
+    <event id="167" name="valve25_timeout_open" group="valve25_timeout_open" trigger="valueAlarm" description="[509@Alarm]CS12 err: not reach open position "/>
+    <event id="168" name="valve26_both_pos" group="valve26_both_pos" trigger="valueAlarm" description="[512@Alarm]CS21 err: both positions"/>
+    <event id="169" name="valve26_no_pos" group="valve26_no_pos" trigger="valueAlarm" description="[515@Alarm]CS21 err: no positions"/>
+    <event id="170" name="valve26_no_lost_close" group="valve26_no_lost_close" trigger="valueAlarm" description="[518@Alarm]CS21 err: lost position close"/>
+    <event id="171" name="valve26_no_lost_open" group="valve26_no_lost_open" trigger="valueAlarm" description="[521@Alarm]CS21 err: lost position open"/>
+    <event id="172" name="valve26_timeout_close" group="valve26_timeout_close" trigger="valueAlarm" description="[524@Alarm]CS21 err: not reach close position "/>
+    <event id="173" name="valve26_timeout_open" group="valve26_timeout_open" trigger="valueAlarm" description="[527@Alarm]CS21 err: not reach open position "/>
+    <event id="174" name="valve27_both_pos" group="valve27_both_pos" trigger="valueAlarm" description="[530@Alarm]CS55 err: both positions"/>
+    <event id="175" name="valve27_no_pos" group="valve27_no_pos" trigger="valueAlarm" description="[533@Alarm]CS55 err: no positions"/>
+    <event id="176" name="valve27_no_lost_close" group="valve27_no_lost_close" trigger="valueAlarm" description="[536@Alarm]CS55 err: lost position close"/>
+    <event id="177" name="valve27_no_lost_open" group="valve27_no_lost_open" trigger="valueAlarm" description="[539@Alarm]CS55 err: lost position open"/>
+    <event id="178" name="valve27_timeout_close" group="valve27_timeout_close" trigger="valueAlarm" description="[542@Alarm]CS55 err: not reach close position "/>
+    <event id="179" name="valve27_timeout_open" group="valve27_timeout_open" trigger="valueAlarm" description="[545@Alarm]CS55 err: not reach open position "/>
+    <event id="180" name="valve28_both_pos" group="valve28_both_pos" trigger="valueAlarm" description="[548@Alarm]CS56 err: both positions"/>
+    <event id="181" name="valve28_no_pos" group="valve28_no_pos" trigger="valueAlarm" description="[551@Alarm]CS56 err: no positions"/>
+    <event id="182" name="valve28_no_lost_close" group="valve28_no_lost_close" trigger="valueAlarm" description="[554@Alarm]CS56 err: lost position close"/>
+    <event id="183" name="valve28_no_lost_open" group="valve28_no_lost_open" trigger="valueAlarm" description="[557@Alarm]CS56 err: lost position open"/>
+    <event id="184" name="valve28_timeout_close" group="valve28_timeout_close" trigger="valueAlarm" description="[560@Alarm]CS56 err: not reach close position "/>
+    <event id="185" name="valve28_timeout_open" group="valve28_timeout_open" trigger="valueAlarm" description="[563@Alarm]CS56 err: not reach open position "/>
+    <event id="186" name="valve29_both_pos" group="valve29_both_pos" trigger="valueAlarm" description="[566@Alarm]CS57 err: both positions"/>
+    <event id="187" name="valve29_no_pos" group="valve29_no_pos" trigger="valueAlarm" description="[569@Alarm]CS57 err: no positions"/>
+    <event id="188" name="valve29_no_lost_close" group="valve29_no_lost_close" trigger="valueAlarm" description="[572@Alarm]CS57 err: lost position close"/>
+    <event id="189" name="valve29_no_lost_open" group="valve29_no_lost_open" trigger="valueAlarm" description="[575@Alarm]CS57 err: lost position open"/>
+    <event id="190" name="valve29_timeout_close" group="valve29_timeout_close" trigger="valueAlarm" description="[578@Alarm]CS57 err: not reach close position "/>
+    <event id="191" name="valve29_timeout_open" group="valve29_timeout_open" trigger="valueAlarm" description="[581@Alarm]CS57 err: not reach open position"/>
+    <event id="192" name="valve30_both_pos" group="valve30_both_pos" trigger="valueAlarm" description="[584@Alarm]CS25 err: both positions"/>
+    <event id="193" name="valve30_no_pos" group="valve30_no_pos" trigger="valueAlarm" description="[587@Alarm]CS25 err: no positions"/>
+    <event id="194" name="valve30_no_lost_close" group="valve30_no_lost_close" trigger="valueAlarm" description="[590@Alarm]CS25 err: lost position close"/>
+    <event id="195" name="valve30_no_lost_open" group="valve30_no_lost_open" trigger="valueAlarm" description="[593@Alarm]CS25 err: lost position open"/>
+    <event id="196" name="valve30_timeout_close" group="valve30_timeout_close" trigger="valueAlarm" description="[596@Alarm]CS25 err: not reach close position "/>
+    <event id="197" name="valve30_timeout_open" group="valve30_timeout_open" trigger="valueAlarm" description="[599@Alarm]CS25 err: not reach open position "/>
+    <event id="198" name="valve31_both_pos" group="valve31_both_pos" trigger="valueAlarm" description="[602@Alarm]CS58 err: both positions"/>
+    <event id="199" name="valve31_no_pos" group="valve31_no_pos" trigger="valueAlarm" description="[605@Alarm]CS58 err: no positions"/>
+    <event id="200" name="valve31_no_lost_close" group="valve31_no_lost_close" trigger="valueAlarm" description="[608@Alarm]CS58 err: lost position close"/>
+    <event id="201" name="valve31_no_lost_open" group="valve31_no_lost_open" trigger="valueAlarm" description="[611@Alarm]CS58 err: lost position open"/>
+    <event id="202" name="valve31_timeout_close" group="valve31_timeout_close" trigger="valueAlarm" description="[614@Alarm]CS58 err: not reach close position "/>
+    <event id="203" name="valve31_timeout_open" group="valve31_timeout_open" trigger="valueAlarm" description="[617@Alarm]CS58 err: not reach open position"/>
+    <event id="204" name="valve32_both_pos" group="valve32_both_pos" trigger="valueAlarm" description="[620@Alarm]CS59 err: both positions"/>
+    <event id="205" name="valve32_no_pos" group="valve32_no_pos" trigger="valueAlarm" description="[623@Alarm]CS59 err: no positions"/>
+    <event id="206" name="valve32_no_lost_close" group="valve32_no_lost_close" trigger="valueAlarm" description="[626@Alarm]CS59 err: lost position close"/>
+    <event id="207" name="valve32_no_lost_open" group="valve32_no_lost_open" trigger="valueAlarm" description="[629@Alarm]CS59 err: lost position open"/>
+    <event id="208" name="valve32_timeout_close" group="valve32_timeout_close" trigger="valueAlarm" description="[632@Alarm]CS59 err: not reach close position "/>
+    <event id="209" name="valve32_timeout_open" group="valve32_timeout_open" trigger="valueAlarm" description="[635@Alarm]CS59 err: not reach open position "/>
+    <event id="210" name="valve33_both_pos" group="valve33_both_pos" trigger="valueAlarm" description="[638@Alarm]CS60 err: both positions"/>
+    <event id="211" name="valve33_no_pos" group="valve33_no_pos" trigger="valueAlarm" description="[641@Alarm]CS60 err: no positions"/>
+    <event id="212" name="valve33_no_lost_close" group="valve33_no_lost_close" trigger="valueAlarm" description="[644@Alarm]CS60 err: lost position close"/>
+    <event id="213" name="valve33_no_lost_open" group="valve33_no_lost_open" trigger="valueAlarm" description="[647@Alarm]CS60 err: lost position open"/>
+    <event id="214" name="valve33_timeout_close" group="valve33_timeout_close" trigger="valueAlarm" description="[650@Alarm]CS60 err: not reach close position "/>
+    <event id="215" name="valve33_timeout_open" group="valve33_timeout_open" trigger="valueAlarm" description="[653@Alarm]CS60 err: not reach open position "/>
+    <event id="216" name="valve34_both_pos" group="valve34_both_pos" trigger="valueAlarm" description="[656@Alarm]CS22 err: both positions"/>
+    <event id="217" name="valve34_no_pos" group="valve34_no_pos" trigger="valueAlarm" description="[659@Alarm]CS22 err: no positions"/>
+    <event id="218" name="valve34_no_lost_close" group="valve34_no_lost_close" trigger="valueAlarm" description="[662@Alarm]CS22 err: lost position close"/>
+    <event id="219" name="valve34_no_lost_open" group="valve34_no_lost_open" trigger="valueAlarm" description="[665@Alarm]CS22 err: lost position open"/>
+    <event id="220" name="valve34_timeout_close" group="valve34_timeout_close" trigger="valueAlarm" description="[668@Alarm]CS22 err: not reach close position "/>
+    <event id="221" name="valve34_timeout_open" group="valve34_timeout_open" trigger="valueAlarm" description="[671@Alarm]CS22 err: not reach open position"/>
+    <event id="222" name="valve35_both_pos" group="valve35_both_pos" trigger="valueAlarm" description="[674@Alarm]CS31 err: both positions"/>
+    <event id="223" name="valve35_no_pos" group="valve35_no_pos" trigger="valueAlarm" description="[677@Alarm]CS31 err: no positions"/>
+    <event id="224" name="valve35_no_lost_close" group="valve35_no_lost_close" trigger="valueAlarm" description="[680@Alarm]CS31 err: lost position close"/>
+    <event id="225" name="valve35_no_lost_open" group="valve35_no_lost_open" trigger="valueAlarm" description="[683@Alarm]CS31 err: lost position open"/>
+    <event id="226" name="valve35_timeout_close" group="valve35_timeout_close" trigger="valueAlarm" description="[686@Alarm]CS31 err: not reach close position "/>
+    <event id="227" name="valve35_timeout_open" group="valve35_timeout_open" trigger="valueAlarm" description="[689@Alarm]CS31 err: not reach open position "/>
+    <event id="228" name="valve36_both_pos" group="valve36_both_pos" trigger="valueAlarm" description="[692@Alarm]CS26 err: both positions"/>
+    <event id="229" name="valve36_no_pos" group="valve36_no_pos" trigger="valueAlarm" description="[695@Alarm]CS26 err: no positions"/>
+    <event id="230" name="valve36_no_lost_close" group="valve36_no_lost_close" trigger="valueAlarm" description="[698@Alarm]CS26 err: lost position close"/>
+    <event id="231" name="valve36_no_lost_open" group="valve36_no_lost_open" trigger="valueAlarm" description="[701@Alarm]CS26 err: lost position open"/>
+    <event id="232" name="valve36_timeout_close" group="valve36_timeout_close" trigger="valueAlarm" description="[704@Alarm]CS26 err: not reach close position "/>
+    <event id="233" name="valve36_timeout_open" group="valve36_timeout_open" trigger="valueAlarm" description="[707@Alarm]CS26 err: not reach open position "/>
+    <event id="234" name="valve37_both_pos" group="valve37_both_pos" trigger="valueAlarm" description="[710@Alarm]CS08 err: both positions"/>
+    <event id="235" name="valve37_no_pos" group="valve37_no_pos" trigger="valueAlarm" description="[713@Alarm]CS08 err: no positions"/>
+    <event id="236" name="valve37_no_lost_close" group="valve37_no_lost_close" trigger="valueAlarm" description="[716@Alarm]CS08 err: lost position close"/>
+    <event id="237" name="valve37_no_lost_open" group="valve37_no_lost_open" trigger="valueAlarm" description="[719@Alarm]CS08 err: lost position open"/>
+    <event id="238" name="valve37_timeout_close" group="valve37_timeout_close" trigger="valueAlarm" description="[722@Alarm]CS08 err: not reach close position "/>
+    <event id="239" name="valve37_timeout_open" group="valve37_timeout_open" trigger="valueAlarm" description="[725@Alarm]CS08 err: not reach open position"/>
+    <event id="240" name="valve38_both_pos" group="valve38_both_pos" trigger="valueAlarm" description="[728@Alarm]CS15 err: both positions"/>
+    <event id="241" name="valve38_no_pos" group="valve38_no_pos" trigger="valueAlarm" description="[731@Alarm]CS15 err: no positions"/>
+    <event id="242" name="valve38_no_lost_close" group="valve38_no_lost_close" trigger="valueAlarm" description="[734@Alarm]CS15 err: lost position close"/>
+    <event id="243" name="valve38_no_lost_open" group="valve38_no_lost_open" trigger="valueAlarm" description="[737@Alarm]CS15 err: lost position open"/>
+    <event id="244" name="valve38_timeout_close" group="valve38_timeout_close" trigger="valueAlarm" description="[740@Alarm]CS15 err: not reach close position"/>
+    <event id="245" name="valve38_timeout_open" group="valve38_timeout_open" trigger="valueAlarm" description="[743@Alarm]CS15 err: not reach open position "/>
+    <event id="246" name="valve39_both_pos" group="valve39_both_pos" trigger="valueAlarm" description="[746@Alarm]CS17 err: both positions"/>
+    <event id="247" name="valve39_no_pos" group="valve39_no_pos" trigger="valueAlarm" description="[749@Alarm]CS17 err: no positions"/>
+    <event id="248" name="valve39_no_lost_close" group="valve39_no_lost_close" trigger="valueAlarm" description="[752@Alarm]CS17 err: lost position close"/>
+    <event id="249" name="valve39_no_lost_open" group="valve39_no_lost_open" trigger="valueAlarm" description="[755@Alarm]CS17 err: lost position open"/>
+    <event id="250" name="valve39_timeout_close" group="valve39_timeout_close" trigger="valueAlarm" description="[758@Alarm]CS17 err: not reach close position "/>
+    <event id="251" name="valve39_timeout_open" group="valve39_timeout_open" trigger="valueAlarm" description="[761@Alarm]CS17 err: not reach open position "/>
+    <event id="252" name="valve40_both_pos" group="valve40_both_pos" trigger="valueAlarm" description="[764@Alarm]CS13 err: both positions"/>
+    <event id="253" name="valve40_no_pos" group="valve40_no_pos" trigger="valueAlarm" description="[767@Alarm]CS13 err: no positions"/>
+    <event id="254" name="valve40_no_lost_close" group="valve40_no_lost_close" trigger="valueAlarm" description="[770@Alarm]CS13 err: lost position close"/>
+    <event id="255" name="valve40_no_lost_open" group="valve40_no_lost_open" trigger="valueAlarm" description="[773@Alarm]CS13 err: lost position open"/>
+    <event id="256" name="valve40_timeout_close" group="valve40_timeout_close" trigger="valueAlarm" description="[776@Alarm]CS13 err: not reach close position"/>
+    <event id="257" name="valve40_timeout_open" group="valve40_timeout_open" trigger="valueAlarm" description="[779@Alarm]CS13 err: not reach open position"/>
+    <event id="258" name="valve41_both_pos" group="valve41_both_pos" trigger="valueAlarm" description="[782@Alarm]CS20 err: both positions"/>
+    <event id="259" name="valve41_no_pos" group="valve41_no_pos" trigger="valueAlarm" description="[785@Alarm]CS20 err: no positions"/>
+    <event id="260" name="valve41_no_lost_close" group="valve41_no_lost_close" trigger="valueAlarm" description="[788@Alarm]CS20 err: lost position close"/>
+    <event id="261" name="valve41_no_lost_open" group="valve41_no_lost_open" trigger="valueAlarm" description="[791@Alarm]CS20 err: lost position open"/>
+    <event id="262" name="valve41_timeout_close" group="valve41_timeout_close" trigger="valueAlarm" description="[794@Alarm]CS20 err: not reach close position"/>
+    <event id="263" name="valve41_timeout_open" group="valve41_timeout_open" trigger="valueAlarm" description="[797@Alarm]CS20 err: not reach open position "/>
+    <event id="264" name="valve42_both_pos" group="valve42_both_pos" trigger="valueAlarm" description="[800@Alarm]CS90 err: both positions"/>
+    <event id="265" name="valve42_no_pos" group="valve42_no_pos" trigger="valueAlarm" description="[803@Alarm]CS90 err: no positions"/>
+    <event id="266" name="valve42_no_lost_close" group="valve42_no_lost_close" trigger="valueAlarm" description="[806@Alarm]CS90 err: lost position close"/>
+    <event id="267" name="valve42_no_lost_open" group="valve42_no_lost_open" trigger="valueAlarm" description="[809@Alarm]CS90 err: lost position open"/>
+    <event id="268" name="valve42_timeout_close" group="valve42_timeout_close" trigger="valueAlarm" description="[812@Alarm]CS90 err: not reach close position "/>
+    <event id="269" name="valve42_timeout_open" group="valve42_timeout_open" trigger="valueAlarm" description="[815@Alarm]CS90 err: not reach open position "/>
+    <event id="270" name="valve43_both_pos" group="valve43_both_pos" trigger="valueAlarm" description="[818@Alarm]CS91 err: both positions"/>
+    <event id="271" name="valve43_no_pos" group="valve43_no_pos" trigger="valueAlarm" description="[821@Alarm]CS91 err: no positions"/>
+    <event id="272" name="valve43_no_lost_close" group="valve43_no_lost_close" trigger="valueAlarm" description="[824@Alarm]CS91 err: lost position close"/>
+    <event id="273" name="valve43_no_lost_open" group="valve43_no_lost_open" trigger="valueAlarm" description="[827@Alarm]CS91 err: lost position open"/>
+    <event id="274" name="valve43_timeout_close" group="valve43_timeout_close" trigger="valueAlarm" description="[830@Alarm]CS91 err: not reach close position "/>
+    <event id="275" name="valve43_timeout_open" group="valve43_timeout_open" trigger="valueAlarm" description="[833@Alarm]CS91 err: not reach open position "/>
+    <event id="276" name="valve44_both_pos" group="valve44_both_pos" trigger="valueAlarm" description="[836@Alarm]CS92 err: both positions"/>
+    <event id="277" name="valve44_no_pos" group="valve44_no_pos" trigger="valueAlarm" description="[839@Alarm]CS92 err: no positions"/>
+    <event id="278" name="valve44_no_lost_close" group="valve44_no_lost_close" trigger="valueAlarm" description="[842@Alarm]CS92 err: lost position close"/>
+    <event id="279" name="valve44_no_lost_open" group="valve44_no_lost_open" trigger="valueAlarm" description="[845@Alarm]CS92 err: lost position open"/>
+    <event id="280" name="valve44_timeout_close" group="valve44_timeout_close" trigger="valueAlarm" description="[848@Alarm]CS92 err: not reach close position "/>
+    <event id="281" name="valve44_timeout_open" group="valve44_timeout_open" trigger="valueAlarm" description="[851@Alarm]CS92 err: not reach open position "/>
+    <event id="282" name="valve45_both_pos" group="valve45_both_pos" trigger="valueAlarm" description="[854@Alarm]CS70 err: both positions"/>
+    <event id="283" name="valve45_no_pos" group="valve45_no_pos" trigger="valueAlarm" description="[857@Alarm]CS70 err: no positions"/>
+    <event id="284" name="valve45_no_lost_close" group="valve45_no_lost_close" trigger="valueAlarm" description="[860@Alarm]CS70 err: lost position close"/>
+    <event id="285" name="valve45_no_lost_open" group="valve45_no_lost_open" trigger="valueAlarm" description="[863@Alarm]CS70 err: lost position open"/>
+    <event id="286" name="valve45_timeout_close" group="valve45_timeout_close" trigger="valueAlarm" description="[866@Alarm]CS70 err: not reach close position "/>
+    <event id="287" name="valve45_timeout_open" group="valve45_timeout_open" trigger="valueAlarm" description="[869@Alarm]CS70 err: not reach open position "/>
+    <event id="288" name="valve46_both_pos" group="valve46_both_pos" trigger="valueAlarm" description="[872@Alarm]CS61 err: both positions"/>
+    <event id="289" name="valve46_no_pos" group="valve46_no_pos" trigger="valueAlarm" description="[875@Alarm]CS61 err: no positions"/>
+    <event id="290" name="valve46_no_lost_close" group="valve46_no_lost_close" trigger="valueAlarm" description="[878@Alarm]CS61 err: lost position close"/>
+    <event id="291" name="valve46_no_lost_open" group="valve46_no_lost_open" trigger="valueAlarm" description="[881@Alarm]CS61 err: lost position open"/>
+    <event id="292" name="valve46_timeout_close" group="valve46_timeout_close" trigger="valueAlarm" description="[884@Alarm]CS61 err: not reach close position"/>
+    <event id="293" name="valve46_timeout_open" group="valve46_timeout_open" trigger="valueAlarm" description="[887@Alarm]CS61 err: not reach open position"/>
+    <event id="294" name="valve47_both_pos" group="valve47_both_pos" trigger="valueAlarm" description="[890@Alarm]CS23 err: both positions"/>
+    <event id="295" name="valve47_no_pos" group="valve47_no_pos" trigger="valueAlarm" description="[893@Alarm]CS23 err: no positions"/>
+    <event id="296" name="valve47_no_lost_close" group="valve47_no_lost_close" trigger="valueAlarm" description="[896@Alarm]CS23 err: lost position close"/>
+    <event id="297" name="valve47_no_lost_open" group="valve47_no_lost_open" trigger="valueAlarm" description="[899@Alarm]CS23 err: lost position open"/>
+    <event id="298" name="valve47_timeout_close" group="valve47_timeout_close" trigger="valueAlarm" description="[902@Alarm]CS23 err: not reach close position "/>
+    <event id="299" name="valve47_timeout_open" group="valve47_timeout_open" trigger="valueAlarm" description="[905@Alarm]CS23 err: not reach open position "/>
+    <event id="300" name="valve48_both_pos" group="valve48_both_pos" trigger="valueAlarm" description="[908@Alarm]CS09 err: both positions"/>
+    <event id="301" name="valve48_no_pos" group="valve48_no_pos" trigger="valueAlarm" description="[911@Alarm]CS09 err: no positions"/>
+    <event id="302" name="valve48_no_lost_close" group="valve48_no_lost_close" trigger="valueAlarm" description="[914@Alarm]CS09 err: lost position close"/>
+    <event id="303" name="valve48_no_lost_open" group="valve48_no_lost_open" trigger="valueAlarm" description="[917@Alarm]CS09 err: lost position open"/>
+    <event id="304" name="valve48_timeout_close" group="valve48_timeout_close" trigger="valueAlarm" description="[920@Alarm]CS09 err: not reach close position "/>
+    <event id="305" name="valve48_timeout_open" group="valve48_timeout_open" trigger="valueAlarm" description="[923@Alarm]CS09 err: not reach open position "/>
+    <event id="306" name="valve49_both_pos" group="valve49_both_pos" trigger="valueAlarm" description="[926@Alarm]CS14 err: both positions"/>
+    <event id="307" name="valve49_no_pos" group="valve49_no_pos" trigger="valueAlarm" description="[929@Alarm]CS14 err: no positions"/>
+    <event id="308" name="valve49_no_lost_close" group="valve49_no_lost_close" trigger="valueAlarm" description="[932@Alarm]CS14 err: lost position close"/>
+    <event id="309" name="valve49_no_lost_open" group="valve49_no_lost_open" trigger="valueAlarm" description="[935@Alarm]CS14 err: lost position open"/>
+    <event id="310" name="valve49_timeout_close" group="valve49_timeout_close" trigger="valueAlarm" description="[938@Alarm]CS14 err: not reach close position "/>
+    <event id="311" name="valve49_timeout_open" group="valve49_timeout_open" trigger="valueAlarm" description="[941@Alarm]CS14 err: not reach open position "/>
+    <event id="312" name="valve50_both_pos" group="valve50_both_pos" trigger="valueAlarm" description="[944@Alarm]CS11 err: both positions"/>
+    <event id="313" name="valve50_no_pos" group="valve50_no_pos" trigger="valueAlarm" description="[947@Alarm]CS11 err: no positions"/>
+    <event id="314" name="valve50_no_lost_close" group="valve50_no_lost_close" trigger="valueAlarm" description="[950@Alarm]CS11 err: lost position close"/>
+    <event id="315" name="valve50_no_lost_open" group="valve50_no_lost_open" trigger="valueAlarm" description="[953@Alarm]CS11 err: lost position open"/>
+    <event id="316" name="valve50_timeout_close" group="valve50_timeout_close" trigger="valueAlarm" description="[956@Alarm]CS11 err: not reach close position "/>
+    <event id="317" name="valve50_timeout_open" group="valve50_timeout_open" trigger="valueAlarm" description="[959@Alarm]CS11 err: not reach open position "/>
+    <event id="318" name="valve51_both_pos" group="valve51_both_pos" trigger="valueAlarm" description="[962@Alarm]CS18 err: both positions"/>
+    <event id="319" name="valve51_no_pos" group="valve51_no_pos" trigger="valueAlarm" description="[965@Alarm]CS18 err: no positions"/>
+    <event id="320" name="valve51_no_lost_close" group="valve51_no_lost_close" trigger="valueAlarm" description="[968@Alarm]CS18 err: lost position close"/>
+    <event id="321" name="valve51_no_lost_open" group="valve51_no_lost_open" trigger="valueAlarm" description="[971@Alarm]CS18 err: lost position open"/>
+    <event id="322" name="valve51_timeout_close" group="valve51_timeout_close" trigger="valueAlarm" description="[974@Alarm]CS18 err: not reach close position "/>
+    <event id="323" name="valve51_timeout_open" group="valve51_timeout_open" trigger="valueAlarm" description="[977@Alarm]CS18 err: not reach open position "/>
+    <event id="324" name="valve52_both_pos" group="valve52_both_pos" trigger="valueAlarm" description="[980@Alarm]CS19 err: both positions"/>
+    <event id="325" name="valve52_no_pos" group="valve52_no_pos" trigger="valueAlarm" description="[983@Alarm]CS19 err: no positions"/>
+    <event id="326" name="valve52_no_lost_close" group="valve52_no_lost_close" trigger="valueAlarm" description="[986@Alarm]CS19 err: lost position close"/>
+    <event id="327" name="valve52_no_lost_open" group="valve52_no_lost_open" trigger="valueAlarm" description="[989@Alarm]CS19 err: lost position open"/>
+    <event id="328" name="valve52_timeout_close" group="valve52_timeout_close" trigger="valueAlarm" description="[992@Alarm]CS19 err: not reach close position "/>
+    <event id="329" name="valve52_timeout_open" group="valve52_timeout_open" trigger="valueAlarm" description="[995@Alarm]CS19 err: not reach open position "/>
+    <event id="330" name="valve53_both_pos" group="valve53_both_pos" trigger="valueAlarm" description="[998@Alarm]CS69 err: both positions"/>
+    <event id="331" name="valve53_no_pos" group="valve53_no_pos" trigger="valueAlarm" description="[1001@Alarm]CS69 err: no positions"/>
+    <event id="332" name="valve53_no_lost_close" group="valve53_no_lost_close" trigger="valueAlarm" description="[1004@Alarm]CS69 err: lost position close"/>
+    <event id="333" name="valve53_no_lost_open" group="valve53_no_lost_open" trigger="valueAlarm" description="[1007@Alarm]CS69 err: lost position open"/>
+    <event id="334" name="valve53_timeout_close" group="valve53_timeout_close" trigger="valueAlarm" description="[1010@Alarm]CS69 err: not reach close position "/>
+    <event id="335" name="valve53_timeout_open" group="valve53_timeout_open" trigger="valueAlarm" description="[1013@Alarm]CS69 err: not reach open position "/>
+    <event id="336" name="valve54_both_pos" group="valve54_both_pos" trigger="valueAlarm" description="[1016@Alarm]CS68 err: both positions"/>
+    <event id="337" name="valve54_no_pos" group="valve54_no_pos" trigger="valueAlarm" description="[1019@Alarm]CS68 err: no positions"/>
+    <event id="338" name="valve54_no_lost_close" group="valve54_no_lost_close" trigger="valueAlarm" description="[1022@Alarm]CS68 err: lost position close"/>
+    <event id="339" name="valve54_no_lost_open" group="valve54_no_lost_open" trigger="valueAlarm" description="[1025@Alarm]CS68 err: lost position open"/>
+    <event id="340" name="valve54_timeout_close" group="valve54_timeout_close" trigger="valueAlarm" description="[1028@Alarm]CS68 err: not reach close position "/>
+    <event id="341" name="valve54_timeout_open" group="valve54_timeout_open" trigger="valueAlarm" description="[1031@Alarm]CS68 err: not reach open position "/>
+    <event id="342" name="valve55_both_pos" group="valve55_both_pos" trigger="valueAlarm" description="[1034@Alarm]CS67 err: both positions"/>
+    <event id="343" name="valve55_no_pos" group="valve55_no_pos" trigger="valueAlarm" description="[1037@Alarm]CS67 err: no positions"/>
+    <event id="344" name="valve55_no_lost_close" group="valve55_no_lost_close" trigger="valueAlarm" description="[1040@Alarm]CS67 err: lost position close"/>
+    <event id="345" name="valve55_no_lost_open" group="valve55_no_lost_open" trigger="valueAlarm" description="[1043@Alarm]CS67 err: lost position open"/>
+    <event id="346" name="valve55_timeout_close" group="valve55_timeout_close" trigger="valueAlarm" description="[1046@Alarm]CS67 err: not reach close position "/>
+    <event id="347" name="valve55_timeout_open" group="valve55_timeout_open" trigger="valueAlarm" description="[1049@Alarm]CS67 err: not reach open position "/>
+    <event id="348" name="valve56_both_pos" group="valve56_both_pos" trigger="valueAlarm" description="[1052@Alarm]CS66 err: both positions"/>
+    <event id="349" name="valve56_no_pos" group="valve56_no_pos" trigger="valueAlarm" description="[1055@Alarm]CS66 err: no positions"/>
+    <event id="350" name="valve56_no_lost_close" group="valve56_no_lost_close" trigger="valueAlarm" description="[1058@Alarm]CS66 err: lost position close"/>
+    <event id="351" name="valve56_no_lost_open" group="valve56_no_lost_open" trigger="valueAlarm" description="[1061@Alarm]CS66 err: lost position open"/>
+    <event id="352" name="valve56_timeout_close" group="valve56_timeout_close" trigger="valueAlarm" description="[1064@Alarm]CS66 err: not reach close position "/>
+    <event id="353" name="valve56_timeout_open" group="valve56_timeout_open" trigger="valueAlarm" description="[1067@Alarm]CS66 err: not reach open position "/>
+    <event id="354" name="valve57_both_pos" group="valve57_both_pos" trigger="valueAlarm" description="[1070@Alarm]CS71 err: both positions"/>
+    <event id="355" name="valve57_no_pos" group="valve57_no_pos" trigger="valueAlarm" description="[1073@Alarm]CS71 err: no positions"/>
+    <event id="356" name="valve57_no_lost_close" group="valve57_no_lost_close" trigger="valueAlarm" description="[1076@Alarm]CS71 err: lost position close"/>
+    <event id="357" name="valve57_no_lost_open" group="valve57_no_lost_open" trigger="valueAlarm" description="[1079@Alarm]CS71 err: lost position open"/>
+    <event id="358" name="valve57_timeout_close" group="valve57_timeout_close" trigger="valueAlarm" description="[1082@Alarm]CS71 err: not reach close position "/>
+    <event id="359" name="valve57_timeout_open" group="valve57_timeout_open" trigger="valueAlarm" description="[1085@Alarm]CS71 err: not reach open position "/>
+    <event id="360" name="valve58_both_pos" group="valve58_both_pos" trigger="valueAlarm" description="[1088@Alarm]CS72 err: both positions"/>
+    <event id="361" name="valve58_no_pos" group="valve58_no_pos" trigger="valueAlarm" description="[1091@Alarm]CS72 err: no positions"/>
+    <event id="362" name="valve58_no_lost_close" group="valve58_no_lost_close" trigger="valueAlarm" description="[1094@Alarm]CS72 err: lost position close"/>
+    <event id="363" name="valve58_no_lost_open" group="valve58_no_lost_open" trigger="valueAlarm" description="[1097@Alarm]CS72 err: lost position open"/>
+    <event id="364" name="valve58_timeout_close" group="valve58_timeout_close" trigger="valueAlarm" description="[1100@Alarm]CS72 err: not reach close position "/>
+    <event id="365" name="valve58_timeout_open" group="valve58_timeout_open" trigger="valueAlarm" description="[1103@Alarm]CS72 err: not reach open position "/>
+    <event id="366" name="valve59_both_pos" group="valve59_both_pos" trigger="valueAlarm" description="[1106@Alarm]CS82 err: both positions"/>
+    <event id="367" name="valve59_no_pos" group="valve59_no_pos" trigger="valueAlarm" description="[1109@Alarm]CS82 err: no positions"/>
+    <event id="368" name="valve59_no_lost_close" group="valve59_no_lost_close" trigger="valueAlarm" description="[1112@Alarm]CS82 err: lost position close"/>
+    <event id="369" name="valve59_no_lost_open" group="valve59_no_lost_open" trigger="valueAlarm" description="[1115@Alarm]CS82 err: lost position open"/>
+    <event id="370" name="valve59_timeout_close" group="valve59_timeout_close" trigger="valueAlarm" description="[1118@Alarm]CS82 err: not reach close position "/>
+    <event id="371" name="valve59_timeout_open" group="valve59_timeout_open" trigger="valueAlarm" description="[1121@Alarm]CS82 err: not reach open position "/>
+    <event id="372" name="valve60_both_pos" group="valve60_both_pos" trigger="valueAlarm" description="[1124@Alarm]CS62 err: both positions"/>
+    <event id="373" name="valve60_no_pos" group="valve60_no_pos" trigger="valueAlarm" description="[1127@Alarm]CS62 err: no positions"/>
+    <event id="374" name="valve60_no_lost_close" group="valve60_no_lost_close" trigger="valueAlarm" description="[1130@Alarm]CS62 err: lost position close"/>
+    <event id="375" name="valve60_no_lost_open" group="valve60_no_lost_open" trigger="valueAlarm" description="[1133@Alarm]CS62 err: lost position open"/>
+    <event id="376" name="valve60_timeout_close" group="valve60_timeout_close" trigger="valueAlarm" description="[1136@Alarm]CS62 err: not reach close position "/>
+    <event id="377" name="valve60_timeout_open" group="valve60_timeout_open" trigger="valueAlarm" description="[1139@Alarm]CS62 err: not reach open position "/>
+    <event id="378" name="valve61_both_pos" group="valve61_both_pos" trigger="valueAlarm" description="[1142@Alarm]CS63 err: both positions"/>
+    <event id="379" name="valve61_no_pos" group="valve61_no_pos" trigger="valueAlarm" description="[1145@Alarm]CS63 err: no positions"/>
+    <event id="380" name="valve61_no_lost_close" group="valve61_no_lost_close" trigger="valueAlarm" description="[1148@Alarm]CS63 err: lost position close"/>
+    <event id="381" name="valve61_no_lost_open" group="valve61_no_lost_open" trigger="valueAlarm" description="[1151@Alarm]CS63 err: lost position open"/>
+    <event id="382" name="valve61_timeout_close" group="valve61_timeout_close" trigger="valueAlarm" description="[1154@Alarm]CS63 err: not reach close position "/>
+    <event id="383" name="valve61_timeout_open" group="valve61_timeout_open" trigger="valueAlarm" description="[1157@Alarm]CS63 err: not reach open position "/>
+    <event id="384" name="valve62_both_pos" group="valve62_both_pos" trigger="valueAlarm" description="[1160@Alarm]CS64 err: both positions"/>
+    <event id="385" name="valve62_no_pos" group="valve62_no_pos" trigger="valueAlarm" description="[1163@Alarm]CS64 err: no positions"/>
+    <event id="386" name="valve62_no_lost_close" group="valve62_no_lost_close" trigger="valueAlarm" description="[1166@Alarm]CS64 err: lost position close"/>
+    <event id="387" name="valve62_no_lost_open" group="valve62_no_lost_open" trigger="valueAlarm" description="[1169@Alarm]CS64 err: lost position open"/>
+    <event id="388" name="valve62_timeout_close" group="valve62_timeout_close" trigger="valueAlarm" description="[1172@Alarm]CS64 err: not reach close position "/>
+    <event id="389" name="valve62_timeout_open" group="valve62_timeout_open" trigger="valueAlarm" description="[1175@Alarm]CS64 err: not reach open position "/>
+    <event id="390" name="valve63_both_pos" group="valve63_both_pos" trigger="valueAlarm" description="[1178@Alarm]CS65 err: both positions"/>
+    <event id="391" name="valve63_no_pos" group="valve63_no_pos" trigger="valueAlarm" description="[1181@Alarm]CS65 err: no positions"/>
+    <event id="392" name="valve63_no_lost_close" group="valve63_no_lost_close" trigger="valueAlarm" description="[1184@Alarm]CS65 err: lost position close"/>
+    <event id="393" name="valve63_no_lost_open" group="valve63_no_lost_open" trigger="valueAlarm" description="[1187@Alarm]CS65 err: lost position open"/>
+    <event id="394" name="valve63_timeout_close" group="valve63_timeout_close" trigger="valueAlarm" description="[1190@Alarm]CS65 err: not reach close position "/>
+    <event id="395" name="valve63_timeout_open" group="valve63_timeout_open" trigger="valueAlarm" description="[1193@Alarm]CS65 err: not reach open position "/>
+    <event id="396" name="valve64_both_pos" group="valve64_both_pos" trigger="valueAlarm" description="[1196@Alarm]CS24 err: both positions"/>
+    <event id="397" name="valve64_no_pos" group="valve64_no_pos" trigger="valueAlarm" description="[1199@Alarm]CS24 err: no positions"/>
+    <event id="398" name="valve64_no_lost_close" group="valve64_no_lost_close" trigger="valueAlarm" description="[1202@Alarm]CS24 err: lost position close"/>
+    <event id="399" name="valve64_no_lost_open" group="valve64_no_lost_open" trigger="valueAlarm" description="[1205@Alarm]CS24 err: lost position open"/>
+    <event id="400" name="valve64_timeout_close" group="valve64_timeout_close" trigger="valueAlarm" description="[1208@Alarm]CS24 err: not reach close position "/>
+    <event id="401" name="valve64_timeout_open" group="valve64_timeout_open" trigger="valueAlarm" description="[1211@Alarm]CS24 err: not reach open position "/>
+    <event id="402" name="valve65_both_pos" group="valve65_both_pos" trigger="valueAlarm" description="[1214@Alarm]CS77 err: both positions"/>
+    <event id="403" name="valve65_no_pos" group="valve65_no_pos" trigger="valueAlarm" description="[1217@Alarm]CS77 err: no positions"/>
+    <event id="404" name="valve65_no_lost_close" group="valve65_no_lost_close" trigger="valueAlarm" description="[1220@Alarm]CS77 err: lost position close"/>
+    <event id="405" name="valve65_no_lost_open" group="valve65_no_lost_open" trigger="valueAlarm" description="[1223@Alarm]CS77 err: lost position open"/>
+    <event id="406" name="valve65_timeout_close" group="valve65_timeout_close" trigger="valueAlarm" description="[1226@Alarm]CS77 err: not reach close position "/>
+    <event id="407" name="valve65_timeout_open" group="valve65_timeout_open" trigger="valueAlarm" description="[1229@Alarm]CS77 err: not reach open position "/>
+    <event id="408" name="valve66_both_pos" group="valve66_both_pos" trigger="valueAlarm" description="[1232@Alarm]CS50 err: both positions"/>
+    <event id="409" name="valve66_no_pos" group="valve66_no_pos" trigger="valueAlarm" description="[1235@Alarm]CS50 err: no positions"/>
+    <event id="410" name="valve66_no_lost_close" group="valve66_no_lost_close" trigger="valueAlarm" description="[1238@Alarm]CS50 err: lost position close"/>
+    <event id="411" name="valve66_no_lost_open" group="valve66_no_lost_open" trigger="valueAlarm" description="[1241@Alarm]CS50 err: lost position open"/>
+    <event id="412" name="valve66_timeout_close" group="valve66_timeout_close" trigger="valueAlarm" description="[1244@Alarm]CS50 err: not reach close position "/>
+    <event id="413" name="valve66_timeout_open" group="valve66_timeout_open" trigger="valueAlarm" description="[1247@Alarm]CS50 err: not reach open position "/>
+    <event id="414" name="valve67_both_pos" group="valve67_both_pos" trigger="valueAlarm" description="[1250@Alarm]CS76 err: both positions"/>
+    <event id="415" name="valve67_no_pos" group="valve67_no_pos" trigger="valueAlarm" description="[1253@Alarm]CS76 err: no positions"/>
+    <event id="416" name="valve67_no_lost_close" group="valve67_no_lost_close" trigger="valueAlarm" description="[1256@Alarm]CS76 err: lost position close"/>
+    <event id="417" name="valve67_no_lost_open" group="valve67_no_lost_open" trigger="valueAlarm" description="[1259@Alarm]CS76 err: lost position open"/>
+    <event id="418" name="valve67_timeout_close" group="valve67_timeout_close" trigger="valueAlarm" description="[1262@Alarm]CS76 err: not reach close position "/>
+    <event id="419" name="valve67_timeout_open" group="valve67_timeout_open" trigger="valueAlarm" description="[1265@Alarm]CS76 err: not reach open position "/>
+    <event id="420" name="valve68_both_pos" group="valve68_both_pos" trigger="valueAlarm" description="[1268@Alarm]CS51 err: both positions"/>
+    <event id="421" name="valve68_no_pos" group="valve68_no_pos" trigger="valueAlarm" description="[1271@Alarm]CS51 err: no positions"/>
+    <event id="422" name="valve68_no_lost_close" group="valve68_no_lost_close" trigger="valueAlarm" description="[1274@Alarm]CS51 err: lost position close"/>
+    <event id="423" name="valve68_no_lost_open" group="valve68_no_lost_open" trigger="valueAlarm" description="[1277@Alarm]CS51 err: lost position open"/>
+    <event id="424" name="valve68_timeout_close" group="valve68_timeout_close" trigger="valueAlarm" description="[1280@Alarm]CS51 err: not reach close position "/>
+    <event id="425" name="valve68_timeout_open" group="valve68_timeout_open" trigger="valueAlarm" description="[1283@Alarm]CS51 err: not reach open position "/>
+    <event id="426" name="valve69_both_pos" group="valve69_both_pos" trigger="valueAlarm" description="[1286@Alarm]CS75 err: both positions"/>
+    <event id="427" name="valve69_no_pos" group="valve69_no_pos" trigger="valueAlarm" description="[1289@Alarm]CS75 err: no positions"/>
+    <event id="428" name="valve69_no_lost_close" group="valve69_no_lost_close" trigger="valueAlarm" description="[1292@Alarm]CS75 err: lost position close"/>
+    <event id="429" name="valve69_no_lost_open" group="valve69_no_lost_open" trigger="valueAlarm" description="[1295@Alarm]CS75 err: lost position open"/>
+    <event id="430" name="valve69_timeout_close" group="valve69_timeout_close" trigger="valueAlarm" description="[1298@Alarm]CS75 err: not reach close position "/>
+    <event id="431" name="valve69_timeout_open" group="valve69_timeout_open" trigger="valueAlarm" description="[1301@Alarm]CS75 err: not reach open position"/>
+    <event id="432" name="valve70_both_pos" group="valve70_both_pos" trigger="valueAlarm" description="[1304@Alarm]CS52 err: both positions"/>
+    <event id="433" name="valve70_no_pos" group="valve70_no_pos" trigger="valueAlarm" description="[1307@Alarm]CS52 err: no positions"/>
+    <event id="434" name="valve70_no_lost_close" group="valve70_no_lost_close" trigger="valueAlarm" description="[1310@Alarm]CS52 err: lost position close"/>
+    <event id="435" name="valve70_no_lost_open" group="valve70_no_lost_open" trigger="valueAlarm" description="[1313@Alarm]CS52 err: lost position open"/>
+    <event id="436" name="valve70_timeout_close" group="valve70_timeout_close" trigger="valueAlarm" description="[1316@Alarm]CS52 err: not reach close position "/>
+    <event id="437" name="valve70_timeout_open" group="valve70_timeout_open" trigger="valueAlarm" description="[1319@Alarm]CS52 err: not reach open position "/>
+    <event id="438" name="valve71_both_pos" group="valve71_both_pos" trigger="valueAlarm" description="[1322@Alarm]CS74 err: both positions"/>
+    <event id="439" name="valve71_no_pos" group="valve71_no_pos" trigger="valueAlarm" description="[1325@Alarm]CS74 err: no positions"/>
+    <event id="440" name="valve71_no_lost_close" group="valve71_no_lost_close" trigger="valueAlarm" description="[1328@Alarm]CS74 err: lost position close"/>
+    <event id="441" name="valve71_no_lost_open" group="valve71_no_lost_open" trigger="valueAlarm" description="[1331@Alarm]CS74 err: lost position open"/>
+    <event id="442" name="valve71_timeout_close" group="valve71_timeout_close" trigger="valueAlarm" description="[1334@Alarm]CS74 err: not reach close position "/>
+    <event id="443" name="valve71_timeout_open" group="valve71_timeout_open" trigger="valueAlarm" description="[1337@Alarm]CS74 err: not reach open position "/>
+    <event id="444" name="valve72_both_pos" group="valve72_both_pos" trigger="valueAlarm" description="[1340@Alarm]CS53 err: both positions"/>
+    <event id="445" name="valve72_no_pos" group="valve72_no_pos" trigger="valueAlarm" description="[1343@Alarm]CS53 err: no positions"/>
+    <event id="446" name="valve72_no_lost_close" group="valve72_no_lost_close" trigger="valueAlarm" description="[1346@Alarm]CS53 err: lost position close"/>
+    <event id="447" name="valve72_no_lost_open" group="valve72_no_lost_open" trigger="valueAlarm" description="[1349@Alarm]CS53 err: lost position open"/>
+    <event id="448" name="valve72_timeout_close" group="valve72_timeout_close" trigger="valueAlarm" description="[1352@Alarm]CS53 err: not reach close position "/>
+    <event id="449" name="valve72_timeout_open" group="valve72_timeout_open" trigger="valueAlarm" description="[1355@Alarm]CS53 err: not reach open position "/>
+    <event id="450" name="valve73_both_pos" group="valve73_both_pos" trigger="valueAlarm" description="[1358@Alarm]CS73 err: both positions"/>
+    <event id="451" name="valve73_no_pos" group="valve73_no_pos" trigger="valueAlarm" description="[1361@Alarm]CS73 err: no positions"/>
+    <event id="452" name="valve73_no_lost_close" group="valve73_no_lost_close" trigger="valueAlarm" description="[1364@Alarm]CS73 err: lost position close"/>
+    <event id="453" name="valve73_no_lost_open" group="valve73_no_lost_open" trigger="valueAlarm" description="[1367@Alarm]CS73 err: lost position open"/>
+    <event id="454" name="valve73_timeout_close" group="valve73_timeout_close" trigger="valueAlarm" description="[1370@Alarm]CS73 err: not reach close position "/>
+    <event id="455" name="valve73_timeout_open" group="valve73_timeout_open" trigger="valueAlarm" description="[1373@Alarm]CS73 err: not reach open position "/>
+    <event id="456" name="valve74_both_pos" group="valve74_both_pos" trigger="valueAlarm" description="[1376@Alarm]CS81 err: both positions"/>
+    <event id="457" name="valve74_no_pos" group="valve74_no_pos" trigger="valueAlarm" description="[1379@Alarm]CS81 err: no positions"/>
+    <event id="458" name="valve74_no_lost_close" group="valve74_no_lost_close" trigger="valueAlarm" description="[1382@Alarm]CS81 err: lost position close"/>
+    <event id="459" name="valve74_no_lost_open" group="valve74_no_lost_open" trigger="valueAlarm" description="[1385@Alarm]CS81 err: lost position open"/>
+    <event id="460" name="valve74_timeout_close" group="valve74_timeout_close" trigger="valueAlarm" description="[1388@Alarm]CS81 err: not reach close position "/>
+    <event id="461" name="valve74_timeout_open" group="valve74_timeout_open" trigger="valueAlarm" description="[1391@Alarm]CS81 err: not reach open position "/>
+    <event id="462" name="valve75_both_pos" group="valve75_both_pos" trigger="valueAlarm" description="[1394@Alarm]CS46 err: both positions"/>
+    <event id="463" name="valve75_no_pos" group="valve75_no_pos" trigger="valueAlarm" description="[1397@Alarm]CS46 err: no positions"/>
+    <event id="464" name="valve75_no_lost_close" group="valve75_no_lost_close" trigger="valueAlarm" description="[1400@Alarm]CS46 err: lost position close"/>
+    <event id="465" name="valve75_no_lost_open" group="valve75_no_lost_open" trigger="valueAlarm" description="[1403@Alarm]CS46 err: lost position open"/>
+    <event id="466" name="valve75_timeout_close" group="valve75_timeout_close" trigger="valueAlarm" description="[1406@Alarm]CS46 err: not reach close position "/>
+    <event id="467" name="valve75_timeout_open" group="valve75_timeout_open" trigger="valueAlarm" description="[1409@Alarm]CS46 err: not reach open position "/>
+    <event id="468" name="valve76_both_pos" group="valve76_both_pos" trigger="valueAlarm" description="[1412@Alarm]CS80 err: both positions"/>
+    <event id="469" name="valve76_no_pos" group="valve76_no_pos" trigger="valueAlarm" description="[1415@Alarm]CS80 err: no positions"/>
+    <event id="470" name="valve76_no_lost_close" group="valve76_no_lost_close" trigger="valueAlarm" description="[1418@Alarm]CS80 err: lost position close"/>
+    <event id="471" name="valve76_no_lost_open" group="valve76_no_lost_open" trigger="valueAlarm" description="[1421@Alarm]CS80 err: lost position open"/>
+    <event id="472" name="valve76_timeout_close" group="valve76_timeout_close" trigger="valueAlarm" description="[1424@Alarm]CS80 err: not reach close position "/>
+    <event id="473" name="valve76_timeout_open" group="valve76_timeout_open" trigger="valueAlarm" description="[1427@Alarm]CS80 err: not reach open position "/>
+    <event id="474" name="valve77_both_pos" group="valve77_both_pos" trigger="valueAlarm" description="[1430@Alarm]CS47 err: both positions"/>
+    <event id="475" name="valve77_no_pos" group="valve77_no_pos" trigger="valueAlarm" description="[1433@Alarm]CS47 err: no positions"/>
+    <event id="476" name="valve77_no_lost_close" group="valve77_no_lost_close" trigger="valueAlarm" description="[1436@Alarm]CS47 err: lost position close"/>
+    <event id="477" name="valve77_no_lost_open" group="valve77_no_lost_open" trigger="valueAlarm" description="[1439@Alarm]CS47 err: lost position open"/>
+    <event id="478" name="valve77_timeout_close" group="valve77_timeout_close" trigger="valueAlarm" description="[1442@Alarm]CS47 err: not reach close position "/>
+    <event id="479" name="valve77_timeout_open" group="valve77_timeout_open" trigger="valueAlarm" description="[1445@Alarm]CS47 err: not reach open position "/>
+    <event id="480" name="valve78_both_pos" group="valve78_both_pos" trigger="valueAlarm" description="[1448@Alarm]CS79 err: both positions"/>
+    <event id="481" name="valve78_no_pos" group="valve78_no_pos" trigger="valueAlarm" description="[1451@Alarm]CS79 err: no positions"/>
+    <event id="482" name="valve78_no_lost_close" group="valve78_no_lost_close" trigger="valueAlarm" description="[1454@Alarm]CS79 err: lost position close"/>
+    <event id="483" name="valve78_no_lost_open" group="valve78_no_lost_open" trigger="valueAlarm" description="[1457@Alarm]CS79 err: lost position open"/>
+    <event id="484" name="valve78_timeout_close" group="valve78_timeout_close" trigger="valueAlarm" description="[1460@Alarm]CS79 err: not reach close position "/>
+    <event id="485" name="valve78_timeout_open" group="valve78_timeout_open" trigger="valueAlarm" description="[1463@Alarm]CS79 err: not reach open position "/>
+    <event id="486" name="valve79_both_pos" group="valve79_both_pos" trigger="valueAlarm" description="[1466@Alarm]CS48 err: both positions"/>
+    <event id="487" name="valve79_no_pos" group="valve79_no_pos" trigger="valueAlarm" description="[1469@Alarm]CS48 err: no positions"/>
+    <event id="488" name="valve79_no_lost_close" group="valve79_no_lost_close" trigger="valueAlarm" description="[1472@Alarm]CS48 err: lost position close"/>
+    <event id="489" name="valve79_no_lost_open" group="valve79_no_lost_open" trigger="valueAlarm" description="[1475@Alarm]CS48 err: lost position open"/>
+    <event id="490" name="valve79_timeout_close" group="valve79_timeout_close" trigger="valueAlarm" description="[1478@Alarm]CS48 err: not reach close position "/>
+    <event id="491" name="valve79_timeout_open" group="valve79_timeout_open" trigger="valueAlarm" description="[1481@Alarm]CS48 err: not reach open position"/>
+    <event id="492" name="valve80_both_pos" group="valve80_both_pos" trigger="valueAlarm" description="[1484@Alarm]CS78 err: both positions"/>
+    <event id="493" name="valve80_no_pos" group="valve80_no_pos" trigger="valueAlarm" description="[1487@Alarm]CS78 err: no positions"/>
+    <event id="494" name="valve80_no_lost_close" group="valve80_no_lost_close" trigger="valueAlarm" description="[1490@Alarm]CS78 err: lost position close"/>
+    <event id="495" name="valve80_no_lost_open" group="valve80_no_lost_open" trigger="valueAlarm" description="[1493@Alarm]CS78 err: lost position open"/>
+    <event id="496" name="valve80_timeout_close" group="valve80_timeout_close" trigger="valueAlarm" description="[1496@Alarm]CS78 err: not reach close position "/>
+    <event id="497" name="valve80_timeout_open" group="valve80_timeout_open" trigger="valueAlarm" description="[1499@Alarm]CS78 err: not reach open position "/>
+    <event id="498" name="valve81_both_pos" group="valve81_both_pos" trigger="valueAlarm" description="[1502@Alarm]CS49 err: both positions"/>
+    <event id="499" name="valve81_no_pos" group="valve81_no_pos" trigger="valueAlarm" description="[1505@Alarm]CS49 err: no positions"/>
+    <event id="500" name="valve81_no_lost_close" group="valve81_no_lost_close" trigger="valueAlarm" description="[1508@Alarm]CS49 err: lost position close"/>
+    <event id="501" name="valve81_no_lost_open" group="valve81_no_lost_open" trigger="valueAlarm" description="[1511@Alarm]CS49 err: lost position open"/>
+    <event id="502" name="valve81_timeout_close" group="valve81_timeout_close" trigger="valueAlarm" description="[1514@Alarm]CS49 err: not reach close position "/>
+    <event id="503" name="valve81_timeout_open" group="valve81_timeout_open" trigger="valueAlarm" description="[1517@Alarm]CS49 err: not reach open position "/>
+    <event id="504" name="valve82_both_pos" group="valve82_both_pos" trigger="valueAlarm" description="[1520@Alarm]CS44 err: both positions"/>
+    <event id="505" name="valve82_no_pos" group="valve82_no_pos" trigger="valueAlarm" description="[1523@Alarm]CS44 err: no positions"/>
+    <event id="506" name="valve82_no_lost_close" group="valve82_no_lost_close" trigger="valueAlarm" description="[1526@Alarm]CS44 err: lost position close"/>
+    <event id="507" name="valve82_no_lost_open" group="valve82_no_lost_open" trigger="valueAlarm" description="[1529@Alarm]CS44 err: lost position open"/>
+    <event id="508" name="valve82_timeout_close" group="valve82_timeout_close" trigger="valueAlarm" description="[1532@Alarm]CS44 err: not reach close position "/>
+    <event id="509" name="valve82_timeout_open" group="valve82_timeout_open" trigger="valueAlarm" description="[1535@Alarm]CS44 err: not reach open position "/>
+    <event id="510" name="valve83_both_pos" group="valve83_both_pos" trigger="valueAlarm" description="[1538@Alarm]CS30 err: both positions"/>
+    <event id="511" name="valve83_no_pos" group="valve83_no_pos" trigger="valueAlarm" description="[1541@Alarm]CS30 err: no positions"/>
+    <event id="512" name="valve83_no_lost_close" group="valve83_no_lost_close" trigger="valueAlarm" description="[1544@Alarm]CS30 err: lost position close"/>
+    <event id="513" name="valve83_no_lost_open" group="valve83_no_lost_open" trigger="valueAlarm" description="[1547@Alarm]CS30 err: lost position open"/>
+    <event id="514" name="valve83_timeout_close" group="valve83_timeout_close" trigger="valueAlarm" description="[1550@Alarm]CS30 err: not reach close position "/>
+    <event id="515" name="valve83_timeout_open" group="valve83_timeout_open" trigger="valueAlarm" description="[1553@Alarm]CS30 err: not reach open position "/>
+    <event id="516" name="valve84_both_pos" group="valve84_both_pos" trigger="valueAlarm" description="[1556@Alarm]CS43 err: both positions"/>
+    <event id="517" name="valve84_no_pos" group="valve84_no_pos" trigger="valueAlarm" description="[1559@Alarm]CS43 err: no positions"/>
+    <event id="518" name="valve84_no_lost_close" group="valve84_no_lost_close" trigger="valueAlarm" description="[1562@Alarm]CS43 err: lost position close"/>
+    <event id="519" name="valve84_no_lost_open" group="valve84_no_lost_open" trigger="valueAlarm" description="[1565@Alarm]CS43 err: lost position open"/>
+    <event id="520" name="valve84_timeout_close" group="valve84_timeout_close" trigger="valueAlarm" description="[1568@Alarm]CS43 err: not reach close position "/>
+    <event id="521" name="valve84_timeout_open" group="valve84_timeout_open" trigger="valueAlarm" description="[1571@Alarm]CS43 err: not reach open position "/>
+    <event id="522" name="valve85_both_pos" group="valve85_both_pos" trigger="valueAlarm" description="[1574@Alarm]CS29 err: both positions"/>
+    <event id="523" name="valve85_no_pos" group="valve85_no_pos" trigger="valueAlarm" description="[1577@Alarm]CS29 err: no positions"/>
+    <event id="524" name="valve85_no_lost_close" group="valve85_no_lost_close" trigger="valueAlarm" description="[1580@Alarm]CS29 err: lost position close"/>
+    <event id="525" name="valve85_no_lost_open" group="valve85_no_lost_open" trigger="valueAlarm" description="[1583@Alarm]CS29 err: lost position open"/>
+    <event id="526" name="valve85_timeout_close" group="valve85_timeout_close" trigger="valueAlarm" description="[1586@Alarm]CS29 err: not reach close position "/>
+    <event id="527" name="valve85_timeout_open" group="valve85_timeout_open" trigger="valueAlarm" description="[1589@Alarm]CS29 err: not reach open position "/>
+    <event id="528" name="valve86_both_pos" group="valve86_both_pos" trigger="valueAlarm" description="[1592@Alarm]CS42 err: both positions"/>
+    <event id="529" name="valve86_no_pos" group="valve86_no_pos" trigger="valueAlarm" description="[1595@Alarm]CS42 err: no positions"/>
+    <event id="530" name="valve86_no_lost_close" group="valve86_no_lost_close" trigger="valueAlarm" description="[1598@Alarm]CS42 err: lost position close"/>
+    <event id="531" name="valve86_no_lost_open" group="valve86_no_lost_open" trigger="valueAlarm" description="[1601@Alarm]CS42 err: lost position open"/>
+    <event id="532" name="valve86_timeout_close" group="valve86_timeout_close" trigger="valueAlarm" description="[1604@Alarm]CS42 err: not reach close position "/>
+    <event id="533" name="valve86_timeout_open" group="valve86_timeout_open" trigger="valueAlarm" description="[1607@Alarm]CS42 err: not reach open position "/>
+    <event id="534" name="valve87_both_pos" group="valve87_both_pos" trigger="valueAlarm" description="[1610@Alarm]CS39 err: both positions"/>
+    <event id="535" name="valve87_no_pos" group="valve87_no_pos" trigger="valueAlarm" description="[1613@Alarm]CS39 err: no positions"/>
+    <event id="536" name="valve87_no_lost_close" group="valve87_no_lost_close" trigger="valueAlarm" description="[1616@Alarm]CS39 err: lost position close"/>
+    <event id="537" name="valve87_no_lost_open" group="valve87_no_lost_open" trigger="valueAlarm" description="[1619@Alarm]CS39 err: lost position open"/>
+    <event id="538" name="valve87_timeout_close" group="valve87_timeout_close" trigger="valueAlarm" description="[1622@Alarm]CS39 err: not reach close position "/>
+    <event id="539" name="valve87_timeout_open" group="valve87_timeout_open" trigger="valueAlarm" description="[1625@Alarm]CS39 err: not reach open position "/>
+    <event id="540" name="valve88_both_pos" group="valve88_both_pos" trigger="valueAlarm" description="[1628@Alarm]CS28 err: both positions"/>
+    <event id="541" name="valve88_no_pos" group="valve88_no_pos" trigger="valueAlarm" description="[1631@Alarm]CS28 err: no positions"/>
+    <event id="542" name="valve88_no_lost_close" group="valve88_no_lost_close" trigger="valueAlarm" description="[1634@Alarm]CS28 err: lost position close"/>
+    <event id="543" name="valve88_no_lost_open" group="valve88_no_lost_open" trigger="valueAlarm" description="[1637@Alarm]CS28 err: lost position open"/>
+    <event id="544" name="valve88_timeout_close" group="valve88_timeout_close" trigger="valueAlarm" description="[1640@Alarm]CS28 err: not reach close position "/>
+    <event id="545" name="valve88_timeout_open" group="valve88_timeout_open" trigger="valueAlarm" description="[1643@Alarm]CS28 err: not reach open position "/>
+    <event id="546" name="valve89_both_pos" group="valve89_both_pos" trigger="valueAlarm" description="[1646@Alarm]CS40 err: both positions"/>
+    <event id="547" name="valve89_no_pos" group="valve89_no_pos" trigger="valueAlarm" description="[1649@Alarm]CS40 err: no positions"/>
+    <event id="548" name="valve89_no_lost_close" group="valve89_no_lost_close" trigger="valueAlarm" description="[1652@Alarm]CS40 err: lost position close"/>
+    <event id="549" name="valve89_no_lost_open" group="valve89_no_lost_open" trigger="valueAlarm" description="[1655@Alarm]CS40 err: lost position open"/>
+    <event id="550" name="valve89_timeout_close" group="valve89_timeout_close" trigger="valueAlarm" description="[1658@Alarm]CS40 err: not reach close position "/>
+    <event id="551" name="valve89_timeout_open" group="valve89_timeout_open" trigger="valueAlarm" description="[1661@Alarm]CS40 err: not reach open position "/>
+    <event id="552" name="valve90_both_pos" group="valve90_both_pos" trigger="valueAlarm" description="[1664@Alarm]CS27 err: both positions"/>
+    <event id="553" name="valve90_no_pos" group="valve90_no_pos" trigger="valueAlarm" description="[1667@Alarm]CS27 err: no positions"/>
+    <event id="554" name="valve90_no_lost_close" group="valve90_no_lost_close" trigger="valueAlarm" description="[1670@Alarm]CS27 err: lost position close"/>
+    <event id="555" name="valve90_no_lost_open" group="valve90_no_lost_open" trigger="valueAlarm" description="[1673@Alarm]CS27 err: lost position open"/>
+    <event id="556" name="valve90_timeout_close" group="valve90_timeout_close" trigger="valueAlarm" description="[1676@Alarm]CS27 err: not reach close position "/>
+    <event id="557" name="valve90_timeout_open" group="valve90_timeout_open" trigger="valueAlarm" description="[1679@Alarm]CS27 err: not reach open position "/>
+    <event id="558" name="valve91_both_pos" group="valve91_both_pos" trigger="valueAlarm" description="[1682@Alarm]CS41 err: both positions"/>
+    <event id="559" name="valve91_no_pos" group="valve91_no_pos" trigger="valueAlarm" description="[1685@Alarm]CS41 err: no positions"/>
+    <event id="560" name="valve91_no_lost_close" group="valve91_no_lost_close" trigger="valueAlarm" description="[1688@Alarm]CS41 err: lost position close"/>
+    <event id="561" name="valve91_no_lost_open" group="valve91_no_lost_open" trigger="valueAlarm" description="[1691@Alarm]CS41 err: lost position open"/>
+    <event id="562" name="valve91_timeout_close" group="valve91_timeout_close" trigger="valueAlarm" description="[1694@Alarm]CS41 err: not reach close position "/>
+    <event id="563" name="valve91_timeout_open" group="valve91_timeout_open" trigger="valueAlarm" description="[1697@Alarm]CS41 err: not reach open position "/>
+    <event id="564" name="valve92_both_pos" group="valve92_both_pos" trigger="valueAlarm" description="[1700@Alarm]CS54 err: both positions"/>
+    <event id="565" name="valve92_no_pos" group="valve92_no_pos" trigger="valueAlarm" description="[1703@Alarm]CS54 err: no positions"/>
+    <event id="566" name="valve92_no_lost_close" group="valve92_no_lost_close" trigger="valueAlarm" description="[1706@Alarm]CS54 err: lost position close"/>
+    <event id="567" name="valve92_no_lost_open" group="valve92_no_lost_open" trigger="valueAlarm" description="[1709@Alarm]CS54 err: lost position open"/>
+    <event id="568" name="valve92_timeout_close" group="valve92_timeout_close" trigger="valueAlarm" description="[1712@Alarm]CS54 err: not reach close position"/>
+    <event id="569" name="valve92_timeout_open" group="valve92_timeout_open" trigger="valueAlarm" description="[1715@Alarm]CS54 err: not reach open position "/>
+    <event id="570" name="valve93_both_pos" group="valve93_both_pos" trigger="valueAlarm" description="[1718@Alarm]CS45 err: both positions"/>
+    <event id="571" name="valve93_no_pos" group="valve93_no_pos" trigger="valueAlarm" description="[1721@Alarm]CS45 err: no positions"/>
+    <event id="572" name="valve93_no_lost_close" group="valve93_no_lost_close" trigger="valueAlarm" description="[1724@Alarm]CS45 err: lost position close"/>
+    <event id="573" name="valve93_no_lost_open" group="valve93_no_lost_open" trigger="valueAlarm" description="[1727@Alarm]CS45 err: lost position open"/>
+    <event id="574" name="valve93_timeout_close" group="valve93_timeout_close" trigger="valueAlarm" description="[1730@Alarm]CS45 err: not reach close position "/>
+    <event id="575" name="valve93_timeout_open" group="valve93_timeout_open" trigger="valueAlarm" description="[1733@Alarm]CS45 err: not reach open position "/>
+    <event id="576" name="voltage_supervision_14" group="voltage_supervision_14" trigger="valueAlarm" description="[48@Alarm]SVC2 voltage supervision 14 err: HPU low oil level"/>
+    <event id="577" name="voltage_supervision_15" group="voltage_supervision_15" trigger="valueAlarm" description="[72@Alarm]SVC2 voltage supervision 15 err: HPU low oil pressure"/>
+    <event id="578" name="voltage_supervision_23" group="voltage_supervision_23" trigger="valueAlarm" description="[217@Alarm]SVC2 voltage supervision 23 err: F103"/>
+    <event id="579" name="voltage_supervision_22" group="voltage_supervision_22" trigger="valueAlarm" description="[220@Alarm]SVC2 voltage supervision 22 err: F102"/>
+    <event id="580" name="voltage_supervision_16" group="voltage_supervision_16" trigger="valueAlarm" description="[102@Alarm]SVC2 voltage supervision 16 err: HPU Pump 1 failure"/>
+    <event id="581" name="voltage_supervision_21" group="voltage_supervision_21" trigger="valueAlarm" description="[205@Alarm]SVC2 voltage supervision 21 err: F104"/>
+    <event id="582" name="voltage_supervision_29" group="voltage_supervision_29" trigger="valueAlarm" description="[298@Alarm]SVC2 voltage supervision 29 err: PSM"/>
+    <event id="583" name="voltage_supervision_18" group="voltage_supervision_18" trigger="valueAlarm" description="[127@Alarm]SVC2 voltage supervision 18 err: G1,G2"/>
+    <event id="584" name="voltage_supervision_17" group="voltage_supervision_17" trigger="valueAlarm" description="[109@Alarm]SVC2 voltage supervision 17 err: HPU Pump 2 failure"/>
+    <event id="585" name="voltage_supervision_19" group="voltage_supervision_19" trigger="valueAlarm" description="[163@Alarm]SVC2 voltage supervision 19 err: Main Power Supply"/>
+    <event id="586" name="voltage_supervision_28" group="voltage_supervision_28" trigger="valueAlarm" description="[289@Alarm]SVC2 voltage supervision 28 err: Filter Indication"/>
+    <event id="587" name="voltage_supervision_20" group="voltage_supervision_20" trigger="valueAlarm" description="[190@Alarm]SVC2 voltage supervision 20 err: Emergency Power Supply"/>
+    <event id="588" name="voltage_supervision_24" group="voltage_supervision_24" trigger="valueAlarm" description="[234@Alarm]SVC2 voltage supervision 24 err: F200"/>
+    <event id="589" name="voltage_supervision_27" group="voltage_supervision_27" trigger="valueAlarm" description="[259@Alarm]SVC2 voltage supervision 27 err: F203"/>
+    <event id="590" name="voltage_supervision_25" group="voltage_supervision_25" trigger="valueAlarm" description="[241@Alarm]SVC2 voltage supervision 25 err: F201"/>
+    <event id="591" name="voltage_supervision_26" group="voltage_supervision_26" trigger="valueAlarm" description="[249@Alarm]SVC2 voltage supervision 26 err: F202"/>
+</events>

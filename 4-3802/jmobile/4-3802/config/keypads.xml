@@ -1,0 +1,6 @@
+<keypads>
+ <keypad name="alphabet" loadOnStartup="true"/>
+ <keypad name="calendar" loadOnStartup="true"/>
+ <keypad name="numeric" loadOnStartup="true"/>
+ <keypad name="scheduleedit" loadOnStartup="true"/>
+</keypads>

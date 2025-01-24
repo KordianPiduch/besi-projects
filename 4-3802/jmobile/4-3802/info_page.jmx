@@ -1,0 +1,352 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" staticFile="opt/info_page.png" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="Project Information" px="0" id="info_page" py="0" dataWndSize="0,70" pageType="modal" pageName="info_page" pageSize="350,500" usedFonts="Roboto,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="500" forcePaint="8" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="3" L1="&lt;hmi ID>"/>
+    <MLText id="4" L1="&lt;Main OS>"/>
+    <MLText id="5" L1="HMI ID"/>
+    <MLText id="6" L1="project settings"/>
+    <MLText id="7" L1="Main OS"/>
+    <MLText id="13" L1="Vorweide 4&#xa;28259 Bremen Germany&#xa;&#xa;phone:  +49 - (0) 421 - 57643 - 0&#xa;fax:        +49 - (0) 421 - 58362 - 1&#xa;e-mail:   info@besi.de&#xa;web:       www.besi.de"/>
+    <MLText id="16" L1="Hull No."/>
+    <MLText id="17" L1="Besi No."/>
+    <MLText id="18" L1="PLC software ver."/>
+    <MLText id="19" L1="HMI software ver."/>
+    <MLText id="20" L1="&lt;shipyard name>"/>
+    <MLText id="21" L1="&lt;besi no>"/>
+    <MLText id="22" L1="&lt;hull no>"/>
+    <MLText id="23" L1="&lt;plc soft. ver.>"/>
+    <MLText id="27" L1="&lt;hmi soft. ver.>"/>
+    <MLText id="42" L1="redundancy status"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="img_besi_logo" static="true">
+   <wgtStyle imagePath="images/g4143.png" x="5" y="322" cx="170" cy="26.30" width="340" height="52.58"/>
+  </object>
+  <object class="LabelWgt" id="label_besi_address">
+   <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="378.21" font-size="10" keypad-type="None" cx="0" alignment="center" marker="true" cy="0" font-sizepx="13" width="350" wrapping="true" height="121.79" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="field_label1">
+   <wgtStyle x="5" y="10" cx="170" cy="15" width="340" height="30"/>
+   <object class="ShapeWgt" id="field_label1.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="164.85" cy="14.52" stroke="rgb(200,200,200)" width="340" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label1.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="174.15" alignment="center" cy="13.50" font-sizepx="16" width="339" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="shipyard_name" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="20"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label2">
+   <wgtStyle x="5" y="45" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label2.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label2.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label3">
+   <wgtStyle x="175" y="45" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label3.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label3.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="16" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="besi_no" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label4">
+   <wgtStyle x="5" y="80" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label4.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label4.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label5">
+   <wgtStyle x="175" y="80" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label5.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label5.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="16" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="hull_no" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="22"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label6">
+   <wgtStyle x="5" y="115" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label6.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label6.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label7">
+   <wgtStyle x="175" y="115" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label7.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label7.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="16" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-81" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|project_version" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="23"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label8">
+   <wgtStyle x="5" y="150" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label8.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label8.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label9">
+   <wgtStyle x="175" y="150" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label9.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label9.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="16" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink sourceType="Formula" attribute="text">
+      <xForms>
+       <xForm class="FormulaXForm" expression="$('ProjectID')+'-'+$('ProjectVersion')" compiledExpression="$0+'-'+$1" colorPalette="" name="Formula">
+        <dataLinks>
+         <dataLink class="TagMgrWgt" tagType="string-512" sourceType="Tag" tag="ProjectID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+         <dataLink class="TagMgrWgt" tagType="string-8" sourceType="Tag" tag="ProjectVersion" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$1"/>
+        </dataLinks>
+       </xForm>
+      </xForms>
+     </dataLink>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="info_page@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_redundancy_status">
+   <wgtStyle x="5" y="260" cx="0" cy="0" width="80" height="51"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" id="btn_redundancy_status.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\btn_rectround_blueup.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rectRound_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="40" cy="25.50" value="0" style="0" width="80" height="51" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="ShowDialogAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="redundancy_status.jmx" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="btn_redundancy_status.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.16" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="23.18" font-sizepx="13" width="71.11" wrapping="true" height="47.52" forcePaint="1" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="42">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project">
+   <wgtStyle x="91" y="260" cx="40" cy="25.50" width="80" height="51" forcePaint="4"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" id="btn_restart_project.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="25.50" x="0" y="0" height="51" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="ShowDialogAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="project_config.jmx" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="btn_restart_project.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.02" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="23.18" font-sizepx="13" width="71.11" wrapping="true" height="47.52" forcePaint="5" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="6">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label10">
+   <wgtStyle x="5" y="185" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label10.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label10.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label11">
+   <wgtStyle x="175" y="185" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label11.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label11.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="16" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label12">
+   <wgtStyle x="5" y="220" cx="82.50" cy="15" width="165" height="30"/>
+   <object class="ShapeWgt" id="field_label12.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="80" cy="14.52" stroke="rgb(200,200,200)" width="165" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label12.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="field_label13">
+   <wgtStyle x="175" y="220" cx="85" cy="15" width="170" height="30"/>
+   <object class="ShapeWgt" id="field_label13.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="82.42" cy="14.52" stroke="rgb(200,200,200)" width="170" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label13.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="11" keypad-type="None" cx="87.07" alignment="center" cy="13.50" font-sizepx="15" width="169" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="SysPropMgrWgt" tagType="string" sourceType="System" tag="Main OS Version" dataSource="_SysPropMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

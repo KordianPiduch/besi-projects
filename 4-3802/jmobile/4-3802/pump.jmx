@@ -1,0 +1,246 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Pump" dataWndSize="0,70" pageName="Pump" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="19" L1="CS100"/>
+    <MLText id="20" L1="CS101"/>
+    <MLText id="21" L1="CS102"/>
+    <MLText id="22" L1="CS103"/>
+    <MLText id="23" L1="CS104"/>
+    <MLText id="24" L1="CS105"/>
+    <MLText id="32" L1="CARGO PUMP ROOM"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="take_control_button-1.0:1.0" id="TakeControlBtn2">
+   <wgtStyle x="85" y="5" wgtStaticOpt="dynamic" cx="60" cy="20" width="120" height="40" forcePaint="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID_internal"/>
+   </dataLinks>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="HMI_ID_internal"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="ImageWgt1">
+   <wgtStyle imagePath="images/Cargo2.png" x="88.65" lock="true" y="12" cx="960" cy="540" width="1920" height="1080" forcePaint="1"/>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h25">
+   <wgtStyle x="794" y="145.62" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">6</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h1">
+   <wgtStyle x="865" y="61" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">7</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h2">
+   <wgtStyle x="1018.65" y="145.62" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">3</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h3">
+   <wgtStyle x="794" y="254" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">5</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h5">
+   <wgtStyle x="882" y="334" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">4</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v25">
+   <wgtStyle x="1050" y="202" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">1</param>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="946" vert-align="middle" y="156" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="947" vert-align="middle" y="260" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h6">
+   <wgtStyle x="378" y="432.11" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">13</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h7">
+   <wgtStyle x="444.56" y="347.49" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">14</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h8">
+   <wgtStyle x="598.21" y="432.11" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">10</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h9">
+   <wgtStyle x="377" y="540.49" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">12</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h10">
+   <wgtStyle x="597.56" y="540.49" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">9</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h11">
+   <wgtStyle x="461.56" y="620.49" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">11</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v1">
+   <wgtStyle x="633" y="488.49" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">8</param>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="527" vert-align="middle" y="442.49" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="529" vert-align="middle" y="546.49" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h12">
+   <wgtStyle x="798.44" y="701.41" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">20</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h13">
+   <wgtStyle x="869.44" y="616.79" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">21</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h14">
+   <wgtStyle x="1023.09" y="701.41" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">17</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h15">
+   <wgtStyle x="798.44" y="809.79" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">19</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h16">
+   <wgtStyle x="1022.44" y="809.79" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">16</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h17">
+   <wgtStyle x="886.44" y="889.79" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">18</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v2">
+   <wgtStyle x="1054.44" y="757.79" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">15</param>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="949" vert-align="middle" y="711.79" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="950" vert-align="middle" y="815.79" font-size="9" keypad-type="None" cx="21" alignment="center" cy="9.45" font-sizepx="12" width="40" wrapping="true" height="20" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.18" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="32"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Pump@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h4">
+   <wgtStyle x="1025" y="255" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="Confirm" alias="Confirm">false</param>
+    <param attrName="ValveID" alias="ValveID">2</param>
+   </links>
+  </object>
+ </object>
+</wgtPage>
