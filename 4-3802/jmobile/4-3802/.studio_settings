@@ -1,7 +1,7 @@
 [General]
 FTPPort=21
 HTTPPort=80
-OldIPRuntime=192.168.10.15
+OldIPRuntime=192.168.10.25
 FTPTimeout=25
 ShowAlarmImportView=0
 AlarmSyncList=OPC UA Client:prot12.

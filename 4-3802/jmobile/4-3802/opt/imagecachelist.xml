@@ -2,9 +2,8 @@
  <file isSvgFile="true" imgSize="32,32" numSizes="2" file="images/alarm.svg" numUses="2" dynamic="true" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="8,167" numSizes="1" file="images/widget_frame.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(237,237,237)"/>
  <file isSvgFile="true" imgSize="25,31" numSizes="1" file="images/sldrvrt_needle.svg" numUses="1" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
- <file isSvgFile="true" imgSize="24,24" numSizes="1" file="lib/hpu-1.0/images/li_shape_round.svg" numUses="5" dynamic="true" stroke="rgb(255,251,240)" fill="rgb(200,200,200)"/>
- <file isSvgFile="true" imgSize="24,24" numSizes="1" file="lib/hpu-1.0/images/li_shape_round.svg" numUses="4" dynamic="true" stroke="rgb(255,251,240)" fill="rgb(255,0,0)"/>
- <file isSvgFile="true" imgSize="48,48" numSizes="1" file="images/light_rect_blue.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(237,237,237)"/>
+ <file isSvgFile="true" imgSize="24,24" numSizes="1" file="images/li_shape_round.svg" numUses="5" dynamic="true" stroke="rgb(255,251,240)" fill="rgb(200,200,200)"/>
+ <file isSvgFile="true" imgSize="24,24" numSizes="1" file="images/li_shape_round.svg" numUses="4" dynamic="true" stroke="rgb(255,251,240)" fill="rgb(255,0,0)"/>
  <file isSvgFile="true" imgSize="70,30" numSizes="1" file="lib/redundancy_status-1.0/images/light_rect_blue.svg" numUses="8" dynamic="true" stroke="none" fill="rgb(255,0,0)"/>
  <file isSvgFile="true" imgSize="70,30" numSizes="1" file="lib/redundancy_status-1.0/images/light_rect_blue.svg" numUses="4" dynamic="true" stroke="none" fill="rgb(192,192,192)"/>
  <file isSvgFile="true" imgSize="25,20" numSizes="1" file="lib/valve_simulation-1.0/images/sldrhrz_needle.svg" numUses="1" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
@@ -23,7 +22,7 @@
  <file isSvgFile="true" prePath="keypads" imgSize="32,32" numSizes="15" file="images/btn_rect_grayup.svg" numUses="22" stroke="none" fill="rgb(237,237,237)"/>
  <file isSvgFile="true" imgSize="80,40" numSizes="12" file="images/btn_rectround_dwn.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="80,40" numSizes="12" file="images/btn_rectround_blueup.svg" numUses="12" stroke="none" fill="rgb(0,70,136)"/>
- <file isSvgFile="true" imgSize="31,32" numSizes="1" file="lib/hpu-1.0/images/frame_round_chrome.svg" numUses="9" stroke="none" fill="rgb(0,0,0)"/>
+ <file isSvgFile="true" imgSize="31,32" numSizes="1" file="images/frame_round_chrome.svg" numUses="9" stroke="none" fill="rgb(0,0,0)"/>
  <file isSvgFile="true" imgSize="250,50" numSizes="4" file="images/btn_rect_bluedown.svg" numUses="7" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="80,50" numSizes="6" file="images/btn_rect_dwn.svg" numUses="7" stroke="none" fill="rgb(102,102,102)"/>
  <file isSvgFile="true" imgSize="80,50" numSizes="6" file="images/btn_rect_blueup.svg" numUses="7" stroke="none" fill="rgb(102,102,102)"/>
@@ -69,7 +68,7 @@
  <file imgSize="107,42" numSizes="1" file="images/besi_logo.svg.png" numUses="1"/>
  <file imgSize="1919,1080" numSizes="1" file="images/cargo_0.0.7.png" numUses="1"/>
  <file imgSize="1920,1080" numSizes="1" file="images/cargo2.png" numUses="1"/>
- <file imgSize="1000,630" numSizes="1" file="lib/hpu-1.0/images/hpu.png" numUses="1"/>
+ <file imgSize="1000,630" numSizes="1" file="images/hpu.png" numUses="1"/>
  <file imgSize="483,34" numSizes="1" file="images/,images/,images/,images/" numUses="1"/>
  <file imgSize="1035,34" numSizes="1" file="images/,images/" numUses="1"/>
 </files>

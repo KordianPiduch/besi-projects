@@ -1,5 +1,5 @@
 <JMFiles>
- <ProjectInfo Size="9193092" AllowedSize="251658240"/>
+ <ProjectInfo Size="9155263" AllowedSize="251658240"/>
  <files>
   <file name="alarmpage.jmxb" size="12431" sha256="ae093fc3e3c3d2d2e3f2e94114cc4851875876cad9c51f73e6c50646d946ad78"/>
   <file name="audit_trail_info.jmxb" size="1278" sha256="e8a6dfbefc3837f401d61e9c4ba313e88c45ca5b1a53ec73196d1c4d5df4fd0b"/>
@@ -9,13 +9,12 @@
   <file name="cargo.jmxb" size="19443" sha256="7b384d38c78056c815bcb2c2ce8fb4515626e0f8325e7ba13fa979729fe1613b"/>
   <file name="dimmer.jmxb" size="3834" sha256="66e683b94686749d26f7a7229216f9e1fa3b484e76f27d775f309c293058ef44"/>
   <file name="dimmer.js" size="173" sha256="bd809efbe1a9156e5e7feffb7e692f7d850f800782d47cdb50c2f749c0008b2f"/>
-  <file name="hpu.jmxb" size="2132" sha256="f328a9e9d0f431687f0f10ab20a9d8fc9f1ad9b6c0578fd1622b848eb935f78f"/>
+  <file name="hpu.jmxb" size="20156" sha256="8a7c1125ddab5d1758a8867e230ebb265524f292dddb1bf31128fa197e0ca47f"/>
   <file name="images/Alarm.svg" size="637" sha256="9d54780f920318e8891d90379e749d76f112b48fa6ad1eb36b16fc1d5e5cb534"/>
   <file name="images/ArrowsIcon23.svg" size="492" sha256="33829c78525df91a829127bf38625a3a706c8d1efbaf3f5d7ba853eb47848a3e"/>
   <file name="images/Cargo2.png" size="53726" sha256="5265ed9d2e3fd947c3ea57f05b0ff62375cc590e0d757a974de6845c9275d486"/>
   <file name="images/Cargo_0.0.7.png" size="224055" sha256="a4c67f08d3be321a30372032e9f3f609fafab4f1bcdc6fd45d7fdafcd10528af"/>
   <file name="images/Info.svg" size="709" sha256="20f043cb120b31a5c33a09fde5e3422234c3507655f712b604b42f8f4d70cce0"/>
-  <file name="images/Light_rect_blue.svg" size="280" sha256="5ef1ffcda386c036e47871bbfcd0d7aa18a3b8e29d93133988f0a0a491ad7d3a"/>
   <file name="images/LightsIcon24.svg" size="4079" sha256="ad2fe09138518fc02646624936795cfcaa21e9e2c000cc7c9659fe6775f364b5"/>
   <file name="images/MenuLayout3.svg" size="500" sha256="41df78497cc2aa0b7c9b5c24e4ad88f7789b455335f7d7ce9c1b671dd967f91d"/>
   <file name="images/Monitor3.svg" size="526" sha256="37fcb26825cc1dde9fc007c213d69890023c5934e9b5c05e8bf7756dc7ac354f"/>
@@ -23,7 +22,10 @@
   <file name="images/Sldrvrt_needle.svg" size="424" sha256="410931dbd22f34accf6835ef2d67cdfee9f1d2b28bf3a076af015c08ca25e94c"/>
   <file name="images/besi_logo.svg.png" size="5537" sha256="6f269edcb99d115ebb885d382c9cb77f57df43aec8b796010820133ecc3d84ea"/>
   <file name="images/dwn_arrow_ico.svg" size="716" sha256="d1f35895a866bed5e9b60daea4c27363cbb20d2864cf217520f16ee9c725697b"/>
+  <file name="images/frame_round_chrome.svg" size="6263" sha256="b58fd5546a2773a0dad92a62999f80c430eb8b34a7cec0f70350934bfe8d51e3"/>
   <file name="images/g4143.png" size="12187" sha256="09f61a5f431ba5ccf73522c927c712754d6d1ed08eecc158d79dd93fdfa00e76"/>
+  <file name="images/hpu.png" size="49906" sha256="aecb9aee7f9ec563b7622ed8a539e2c578f1c6cddd8d76678d07a19f679f0567"/>
+  <file name="images/li_shape_round.svg" size="227" sha256="57d19f799ee56ef68efa09286261edfee5a642758a5a5f6fd451a5d209177ef2"/>
   <file name="images/search_icon.svg" size="653" sha256="c49ecdbd747e2c620a688255db75742e1133e6d683550b2ee482b20fd6328dd5"/>
   <file name="images/up_arrow_ico.svg" size="611" sha256="f05a0188406326eedc45686886eb913a7a7306871eded49a2bf08d1fa116f47d"/>
   <file name="images/widget_frame.svg" size="271" sha256="32921b5373eef4b122448b48c1cc0dc5dbc903a1c6566616a2736bb982746f9f"/>
@@ -57,9 +59,6 @@
   <file name="keypads\images\listArrow.svg" size="949" sha256="94737889e2364985aeddec925cb24aa8a74a338baea50d8a668b7cd0e24bdc82"/>
   <file name="keypads\numeric.jmx" size="15484" sha256="edadfb9079635d31f77b1fdfe4ed37c041427acf18cf3001250038e8a8295eea"/>
   <file name="keypads\scheduleedit.jmx" size="93727" sha256="adb795c1aa2f2eeb9394966e978bad999bd7b7d695c3ab1c429df4aab595fb57"/>
-  <file name="lib/hpu-1.0/images/frame_round_chrome.svg" size="6263" sha256="b58fd5546a2773a0dad92a62999f80c430eb8b34a7cec0f70350934bfe8d51e3"/>
-  <file name="lib/hpu-1.0/images/hpu.png" size="49906" sha256="aecb9aee7f9ec563b7622ed8a539e2c578f1c6cddd8d76678d07a19f679f0567"/>
-  <file name="lib/hpu-1.0/images/li_shape_round.svg" size="227" sha256="57d19f799ee56ef68efa09286261edfee5a642758a5a5f6fd451a5d209177ef2"/>
   <file name="lib/redundancy_status-1.0/images/Controller1.svg" size="527" sha256="0a081ee5bde2d934702cd49dde6debf6c1c351a32e148a2bc87dd43fa0bcfb18"/>
   <file name="lib/redundancy_status-1.0/images/Heart1.svg" size="837" sha256="1dc3ed60a60ed12dc84b90939c878f4a9e17af32afdd4d6b02b845a692dd851c"/>
   <file name="lib/redundancy_status-1.0/images/Light_rect_blue.svg" size="275" sha256="73702daffe0c8228b91caba3bc1a3ed4d6c06437cd3464f4d56acbc9243f08aa"/>
@@ -118,9 +117,9 @@
   <file name="usermgmttemplates\switchuserloginpage.jmx" size="8668" sha256="65acb4616c82a4f56c0442a7cd4b93545974c29b64147b066ca2b0ec541c6ffa"/>
   <file name="usermgmttemplates\switchuserloginpage_combo.jmx" size="9346" sha256="1535e37ec5652c92bdc192d8ecdd2c586b554e585b81025a9c58616f835e5cfa"/>
   <file name="usermgmttemplates\usereditor.jmx" size="20182" sha256="2e403c07cfa4000c4a1fcbabc894b5f9b88e8adbb77150094a3fd191a5f22a36"/>
-  <file name="valve_base.jmxb" size="1156" sha256="992444165775af964e7e8a7e38ad62db910a7475b872b089f550e0317547b084"/>
+  <file name="valve_base.jmxb" size="1156" sha256="e993eb0c101da7a0ab18bb3d1abf72b08e3e9bd970129381be77195308134062"/>
   <file name="valve_base_confirmation.jmxb" size="1056" sha256="de54526ebccf8c4058a0158e9e41a40ec796b04b57ad46b84b749bd4000d716f"/>
-  <file name="visuelements.jmxb" size="1565" sha256="b5cfb38130792f4a93d554a06a438b1425303e063a6856d89064c1b4f1593f22"/>
+  <file name="visuelements.jmxb" size="1565" sha256="91c33c97c3394c2d18ed15015816ca7902de3b95117d2f4afdc601097d71958e"/>
   <file name="4-3802.js" size="2063" sha256="a0ffa7563758cbd2b3cef4c24a97224910558935ea1e3c202573fa63f4a9c7e3"/>
   <file name="4-3802.jpr" size="12599" sha256="a2ebaaf7a99445428318ed19180ceef94ed552d7afbc2e3957267576794d20a5"/>
   <file name="4-3802.jprb" size="7776" sha256="d712107577726c2fe79b5632975354e23c384408c3449ccfba7ce13abc749618"/>
@@ -147,7 +146,7 @@
   <file name="config\reports.xml" size="739" sha256="1a10b39b38fd5284b0d3542ba174e82ffaf0af6fca258af5ecf1a5c8846d16bb"/>
   <file name="config\print.xml" size="178" sha256="7b6ad4a5e42637d7d8d8cda01d1e4782158976a2cd2b5f1f3723496ce73c8423"/>
   <file name="config\usermgnt_group.xml" size="3100" sha256="37032160afd132daf9bd5611d16c2da7488e1ac273f8a66b143bbfdc69244afb"/>
-  <file name="config\usermgnt_user.xml" size="4848" sha256="7e1ed7707eb6efe5155cef3341cda6f9750bba6d260cd0f08c939450468c4193"/>
+  <file name="config\usermgnt_user.xml" size="4848" sha256="81f1def083862bad109fa5bb36d1bd30ce99c7782e940bf0ff5ff62faf7f5a72"/>
   <file name="config\usermgnt_uiauth.xml" size="154392" sha256="3fbdc7faeeedfbff00eeab9495cec7473c1ee0a5314512822f7e0a21ce695b5a"/>
   <file name="config\ftpd_security_auth.xml" size="440" sha256="9530b78ab5c0748aa504e18f1b8e6f2aa07e7a106d1b03c154124d830b94ac96"/>
   <file name="config\httpd_security_auth.xml" size="1100" sha256="ce91e80e0291543ca9211a43b9df042512c43cfd6d4656122c9f380d224ce5b3"/>
@@ -156,7 +155,7 @@
   <file name="config\dbconnector.xml" size="56" sha256="9b014c196c6224a5e92b5332962a547028a6717e9e6d62e5230b4749279966ba"/>
   <file name="config\datatransfers.xml" size="78" sha256="09a060405021773df3699dc22108d9f866471cc92811d53f7fe41110e44dc00e"/>
   <file name="config\screensaver.xml" size="229" sha256="641e167e49c67f46faed00da51d989958ee769b754ebcd8f75d3aff276ae42bd"/>
-  <file name="opt\imagecachelist.xml" size="10737" sha256="f9e3304ec54a4012e1036b775f3044f5a1743f9fcace7db04f3fee918e32ac58"/>
+  <file name="opt\imagecachelist.xml" size="10534" sha256="267c881a3236d6b92887e53c2165c28b0a3d3fc1e751aa40ba399aacf7d6bc04"/>
   <file name="config\if_opcua.xml" size="354" sha256="e3d2735fa8c4febcd0fbcc5fce3529fb932bffd4d6110f14a7e940b304d9c242"/>
   <file name="config\opcserverconfig.ini" size="5712" sha256="09e607d34e8226facc7bef7a5351394093e46bb6adc7337e7197a669440cc352"/>
   <file name="config\opc.ua.custom.nodeset.0.xml" size="806885" sha256="914b13861acbaf3921d81f1a91424aa95d42dc626f14d7e8dd83445f4d3017e7"/>
@@ -171,12 +170,6 @@
   <file name="lib/device_network_info-1.0/device_network_info-1.0.jmxb" size="4475" sha256="f0351d6cd80aeaf0ea4db04e9967cbc241b12162ce3e5ea53c5094e464028a0b"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.props" size="533" sha256="3c3daeb086b9fd48394cbd03a6a369809db3a116b443e4776a079fb1a4ffe484"/>
-  <file name="lib/hpu-1.0/hpu-1.0.js" size="88" sha256="479497fcff9acafd2cd6184a1a56124d898c2f5fd39e62a09eeaaca4eee46730"/>
-  <file name="lib/hpu-1.0/hpu-1.0.jmx" size="29103" sha256="d75bc61f6879efbdaa1de1642152c444ffb18d7facb02a1d5ed789440c6441a9"/>
-  <file name="lib/hpu-1.0/hpu-1.0.png" size="8215" sha256="38173ecf7aeec0deb37d1cc1f1a75fb14b2fbe767ab764c355a5ccc76e728910"/>
-  <file name="lib/hpu-1.0/hpu-1.0.jmxb" size="17583" sha256="99617c0100f21752c0ef2a7aa4948f54fcc0802c6924c92529319eb8482e7112"/>
-  <file name="lib/hpu-1.0/hpu-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
-  <file name="lib/hpu-1.0/hpu-1.0.props" size="273" sha256="b983f92d9834b288e7bebcc0e5a0a487b3caeeac91396903da8a07dcf941aaf4"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.js" size="130" sha256="97a55773206bcefe3cf8e262ff1a3a147d1e92c1c4454300813d9bc8de3c8413"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.jmx" size="31169" sha256="d84b8784b6be5b95922f8fcae03ca6f62a2b1c98b004d679f5f72c952571bd5e"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.png" size="8871" sha256="6863e4319f2e8a43df1e07a87e6bdc565c908589c43c639c7a3c181894d57c38"/>
@@ -222,7 +215,7 @@
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.js" size="3262" sha256="251260f9c43fd12ac182b928bab24a4ce179f59b81aa3d0b80e08fac6b3216b6"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmx" size="6022" sha256="d18cf14636022eee38e29a938521d3d21fd32728c18af16bc266b0f65968fa93"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.png" size="5328" sha256="0c3e68cd85f6da354202c598f6d8b6d2c9bc1e7349dfa55e9cca87374930f1b9"/>
-  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmxb" size="3629" sha256="3007dab4b518eda0900ec7283ddd6a1712a3fce02d2e42f5ed663e8ba08ef22e"/>
+  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmxb" size="3533" sha256="c074f0e5a7b9ee036a80f61dae1409c29ae3659afd8e29b6bea67d7c2c909601"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.props" size="712" sha256="270e70e27729513bdb03fcdf280b9579b1fa7f733ea02199b4c13ba48112c5df"/>
   <file name="lib/valve_base_vertical-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>

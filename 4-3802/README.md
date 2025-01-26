@@ -10,4 +10,4 @@
     - fix bit numbers for inputs/outputs, incorrect bit order (missing .13 and there was 2x .12 bit used (typo))
     - restored original password for service user 
     - fix Context Menu button in project settigs (change in project setting to "onAction")
-    - 
+    - fixed password for admin user 
