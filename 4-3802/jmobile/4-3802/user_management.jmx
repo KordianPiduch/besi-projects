@@ -1,0 +1,103 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="1802" id="user_management" py="920" dataWndSize="0,70" pageType="non-modal" scriptFile="user_management.js" pageName="user_management" pageSize="110,160" usedFonts="Roboto Medium,Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="110" height="160" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="Switch User"/>
+    <MLText id="2" L1="Settings"/>
+    <MLText id="4" L1="Logout"/>
+    <MLText id="11" L1="user"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd1">
+   <wgtStyle x="5" y="5" cx="50" cy="15" width="100" height="30"/>
+   <object class="ButtonWgt" id="BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="50" cy="15" value="0" style="0" width="100" height="30" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="ShowDialogAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="switch_user.jmx" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="3.71" vert-align="middle" y="0.68" font-size="12" keypad-type="None" cx="44.44" alignment="center" cy="13.64" font-sizepx="13" width="88.89" font-bold="true" wrapping="true" height="27.96" forcePaint="1" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="0">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd3">
+   <wgtStyle x="5" y="40" cx="50" cy="15" width="100" height="30"/>
+   <object class="ButtonWgt" id="BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="50" cy="15" value="0" style="0" width="100" height="30" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="LogOutAction" actionID="2" event="onMouseClick" actionWgt="_UserMgr" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="3.71" vert-align="middle" y="0.68" font-size="12" keypad-type="None" cx="44.44" alignment="center" cy="13.64" font-sizepx="13" width="88.89" font-bold="true" wrapping="true" height="27.96" forcePaint="1" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="4">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd4">
+   <wgtStyle x="5" y="75" cx="50" cy="15" width="100" height="30"/>
+   <object class="ButtonWgt" id="BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="50" cy="15" value="0" style="0" width="100" height="30" fill="rgb(0,70,136)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="JavaScriptAction" f="user_settings" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnStd4.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="3.71" vert-align="middle" y="0.68" font-size="12" keypad-type="None" cx="44.44" alignment="center" cy="13.64" font-sizepx="13" width="88.89" font-bold="true" wrapping="true" height="27.96" forcePaint="1" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="2">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="user_management@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="user">
+   <wgtStyle x="5" y="120" cx="50" cy="15" width="100" height="30"/>
+   <object class="ShapeWgt" id="user.background">
+    <wgtStyle ry="2" x="0" y="0" cx="47.04" cy="14.52" stroke="rgb(200,200,200)" width="97.03" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="user.name">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="2.97" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="49.70" alignment="center" cy="13.50" font-sizepx="16" width="96.03" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-255" sourceType="Tag" tag="HMI_USER" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="ButtonWgt" id="user.hotspotbtn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="../../shared/gallery/images/bu_other/win-like.svg" x="0" form="hotspot" pushColor="rgb(128,128,0)" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" y="0" dx="1" dy="-1" cx="47.77" cy="14.71" value="0" width="97.03" height="30" fill="rgb(160,160,164)" forcePaint="1" downFillColor="rgb(160,160,164)"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

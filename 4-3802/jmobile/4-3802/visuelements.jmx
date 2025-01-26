@@ -1,0 +1,47 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="VisuElements" pageType="template" dataWndSize="0,70" pageName="VisuElements" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="1920" height="1080" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_TemplatePageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupSubscribeWgt" id="VisuElements@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="LineWgt" id="line" static="true">
+   <wgtStyle x="130" anchorIdx="1" y="330" stroke-width="2" cx="117.14" cy="0.04" stroke="rgb(40,40,40)" width="250" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h">
+   <wgtStyle x="170" y="295" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">-1</param>
+    <param attrName="Confirm" alias="Confirm">true</param>
+    <param attrName="ValveID" alias="ValveID">1</param>
+   </links>
+  </object>
+  <object class="LineWgt" id="line3" static="true">
+   <wgtStyle x="515" anchorIdx="1" y="185" stroke-width="2" cx="117.14" cy="0.04" stroke="rgb(40,40,40)" width="0" height="250"/>
+  </object>
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v">
+   <wgtStyle x="480" y="330" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">-1</param>
+    <param attrName="Confirm" alias="Confirm">true</param>
+    <param attrName="ValveID" alias="ValveID">1</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="take_control_button-1.0:1.0" id="TakeControlBtn2">
+   <wgtStyle x="105" y="101" wgtStaticOpt="dynamic" cx="60" cy="20" width="120" height="40" forcePaint="28"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID_internal"/>
+   </dataLinks>
+   <links>
+    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
+    <param attrName="HMI_ID_internal"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>
