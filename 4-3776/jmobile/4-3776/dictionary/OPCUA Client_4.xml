@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tag_dictionary>
+    <name>OPCUA Client_4</name>
+    <protocol>OPCU</protocol>
+    <tag_importer_version>OPC UA Discovery v1.0</tag_importer_version>
+    <import_options ver="1.0" importType="hierarchical"/>
+    <tag_locator>
+        <locator>tagName</locator>
+    </tag_locator>
+    <hasDataModel>true</hasDataModel>
+</tag_dictionary>

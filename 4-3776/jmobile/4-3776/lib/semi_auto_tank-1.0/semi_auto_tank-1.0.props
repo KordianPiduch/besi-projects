@@ -1,0 +1,6 @@
+<defs>
+ <g attributeName="semi_auto_tank-1.0:1.0" showChildNodes="0" id="custom_properties" inherit="basicgroup_properties">
+  <info></info>
+  <text isCompound="true" attributeName="TankID" display="TankID" attributeType="param" updateProps="true" default="true"/>
+ </g>
+</defs>

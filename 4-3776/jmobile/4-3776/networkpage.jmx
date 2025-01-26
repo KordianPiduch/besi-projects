@@ -1,0 +1,42 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="NetworkPage" dataWndSize="0,70" pageName="NetworkPage" pageSize="1920,1080" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="2" L1="NETWORK PAGE"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="redundancy_status-1.0:1.0" id="wgtRedundancyStatus">
+   <wgtStyle x="1550" y="100" wgtStaticOpt="dynamic" cx="175" cy="115" width="350" height="230" forcePaint="17"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="NetworkPage@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="device_network_info-1.0:1.0" id="GroupWgt1">
+   <wgtStyle x="80" y="162" wgtStaticOpt="dynamic" cx="100" cy="53" width="200" height="106" forcePaint="17"/>
+   <links>
+    <param attrName="ping">ping_status_master</param>
+    <param attrName="title" alias="title">PLC 1</param>
+    <param attrName="ip" alias="ip">192.168.10.10</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="device_network_info-1.0:1.0" id="GroupWgt2">
+   <wgtStyle x="80" y="314.57" wgtStaticOpt="dynamic" cx="100" cy="53" width="200" height="106" forcePaint="17"/>
+   <links>
+    <param attrName="ping">ping_status_slave</param>
+    <param attrName="title" alias="title">PLC 2</param>
+    <param attrName="ip" alias="ip">192.168.10.20</param>
+   </links>
+  </object>
+ </object>
+</wgtPage>
