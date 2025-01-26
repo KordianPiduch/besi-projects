@@ -1,0 +1,5 @@
+<printdetails spoolFolder="4-3802-2.0.3/reportspool" ramquota="16000000" maxpixmapsize="16000000" diskquota="-1" spoolMediaType="0">
+ <printerPorts>
+  <port>File</port>
+ </printerPorts>
+</printdetails>
