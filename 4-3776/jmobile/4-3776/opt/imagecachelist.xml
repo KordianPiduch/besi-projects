@@ -90,6 +90,8 @@
  <file isSvgFile="true" prePath="keypads" imgSize="16,15" numSizes="1" file="images/keyboard-grab-dark.svg" numUses="1" stroke="none" fill="rgb(23,30,40)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="48,48" numSizes="1" file="images/btndown_icon.svg" numUses="1" stroke="none" fill="rgb(76,76,77)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="48,48" numSizes="1" file="images/btnup_icon.svg" numUses="1" stroke="none" fill="rgb(76,76,77)"/>
+ <file isSvgFile="true" imgSize="100,40" numSizes="1" file="lib/wgtresetallvalves-1.0/images/btn_rect_dwn.svg" numUses="1" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="100,40" numSizes="1" file="lib/wgtresetallvalves-1.0/images/btn_rect_blueup.svg" numUses="1" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="30,30" numSizes="1" file="images/network3.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="239,61" numSizes="1" file="images/btn_rect_dwn.svg" numUses="1" stroke="none" fill="rgb(0,147,0)"/>
  <file isSvgFile="true" imgSize="239,61" numSizes="1" file="images/btn_rect_blueup.svg" numUses="1" stroke="none" fill="rgb(0,147,0)"/>
