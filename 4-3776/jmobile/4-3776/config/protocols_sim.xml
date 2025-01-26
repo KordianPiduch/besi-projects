@@ -101,8 +101,8 @@
   <offline_opt>true</offline_opt>
   <offline_rpt>3</offline_rpt>
   <dictionaries>
-   <dictionaryname nodeId="Node1" autoSync="false" dictionaryFilterNode="false">OPCUA Client_4</dictionaryname>
-   <dictionaryname nodeId="Node2" autoSync="false" dictionaryFilterNode="false">OPCUA Client</dictionaryname>
+   <dictionaryname autoSync="false" dictionaryFilterNode="false" nodeId="Node1">OPCUA Client_6</dictionaryname>
+   <dictionaryname autoSync="false" dictionaryFilterNode="false" nodeId="Node2">OPCUA Client</dictionaryname>
   </dictionaries>
   <simFlags>0</simFlags>
   <displayName>OPC UA Client</displayName>

@@ -1,0 +1,948 @@
+<customWgt>
+ <links>
+  <param attrName="tank_prefix"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="tank_dialog_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="-4752" y="-397" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="Tank Name"/>
+   <MLText id="1" L1="measured volume [m3]"/>
+   <MLText id="2" L1="measured weight [t]"/>
+   <MLText id="3" L1="measured height [m]"/>
+   <MLText id="4" L1="sensor pressure [mBar]"/>
+   <MLText id="5" L1="sensor current [mA]"/>
+   <MLText id="6" L1="HHL alarm"/>
+   <MLText id="7" L1="HL alarm"/>
+   <MLText id="8" L1="LL alarm"/>
+   <MLText id="9" L1="alarm delay [s]"/>
+   <MLText id="10" L1="sensor range [mBar]"/>
+   <MLText id="11" L1="mounting height [cm]"/>
+   <MLText id="12" L1="tank height [m]"/>
+   <MLText id="13" L1="max volume [m3]"/>
+   <MLText id="14" L1="density [kg/m3]"/>
+   <MLText id="15" L1="status: OK"/>
+   <MLText id="16" L1="status: LL"/>
+   <MLText id="17" L1="status: HL"/>
+   <MLText id="18" L1="status: HHL"/>
+   <MLText id="19" L1="temperature [°C]"/>
+   <MLText id="20" L1="HL alarm [°C]"/>
+   <MLText id="21" L1="status: OK"/>
+   <MLText id="22" L1="status: high temperature"/>
+   <MLText id="23" L1="status: sensor failure"/>
+   <MLText id="24" L1=""/>
+   <MLText id="25" L1=""/>
+   <MLText id="26" L1=""/>
+   <MLText id="27" L1="status: sensor failure"/>
+   <MLText id="28" L1="Label"/>
+   <MLText id="29" L1="Label"/>
+   <MLText id="30" L1="HL"/>
+   <MLText id="31" L1="LL"/>
+   <MLText id="32" L1="HL"/>
+   <MLText id="33" L1="HL"/>
+   <MLText id="34" L1="LL"/>
+   <MLText id="35" L1="Label"/>
+   <MLText id="36" L1="Label"/>
+   <MLText id="37" L1="vol"/>
+   <MLText id="38" L1="HL alarm by level switch"/>
+   <MLText id="39" L1="LL alarm by level switch"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" customType="Bargraphs" id="*.bargraph_alarm_high">
+  <wgtStyle x="0" y="0" mtx="0.909091,0,0,0,1.47193,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="0" cy="0" width="22" height="186.83" forcePaint="16"/>
+  <links>
+   <attr attrName="min" alias="*.bar.min;*.ticks.min;*.lbl.min"/>
+   <attr attrName="max" alias="*.bar.max;*.ticks.max;*.lbl.max"/>
+   <attr attrName="visibility2" alias="*.ticks.visibility;*.lbl.visibility"/>
+   <attr attrName="autoAdjust" alias="*.Scale.ticks.autoAdjust;*.Scale.lbl.autoAdjust"/>
+   <attr attrName="align" alias="*.ticks.align;*.lbl.align"/>
+   <attr attrName="__bar_reverseScale" alias="*.bar.reverseScale;*.ticks.!reverseScale;*.lbl.!reverseScale"/>
+   <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+  </links>
+  <object class="BargraphWgt" id="*.bargraph_alarm_high.bar" hmiStyle="hmi-type:*barv">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" x="0" form="vertical" y="0" wgtStaticOpt="dynamic" reverseScale="true" cx="10.56" cy="93.42" value="40" max="100" width="22" height="186.83" fill="rgb(240,0,0)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="value">
+     <xForms>
+      <xForm class="FormulaXForm" expression="100-$('value:wgtTankSett.section_alarms.sett_field1.value_button')" compiledExpression="100-$0" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="value" dataSource="*.section_alarms.sett_field1.value_button" widgetType="Widget" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelsWgt" id="*.bargraph_alarm_high.lbl">
+   <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" step="1" cx="27.43" cy="86.61" x="-37" numberFormat="1" showThousandSeparator="false" y="-5.12" labelNames="" font-sizepx="13" height="199" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="96" max="100" align="1" vert-align="top" forcePaint="16" usingFormat="" labelFreq="6" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+  </object>
+  <object class="TicksWgt" id="*.bargraph_alarm_high.ticks">
+   <wgtStyle form="vertical" tickSize2="12" tickFreq="1" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="false" alarmMinorWidth="2" cx="25.98" cy="94.58" x="-14.73" y="-1.12" height="189.17" alarmColorMajor="rgb(206,21,78)" alarmMax="30" endAngle="200" strokeMajor="rgb(200,200,200)" width="52" max="100" align="1" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="6" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" startAngle="-10" visibility="false" alarmMajorWidth="2" alarmMin="8"/>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Bargraphs" id="*.bargraph_alarm_high_high">
+  <wgtStyle x="-528" lock="true" y="-44" mtx="0.909091,0,0,0,1.47193,0,0,0,1" visibility="false" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="10" cy="137.50" width="22" height="186.83" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_HHL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <links>
+   <attr attrName="min" alias="*.bar.min;*.ticks.min;*.lbl.min"/>
+   <attr attrName="max" alias="*.bar.max;*.ticks.max;*.lbl.max"/>
+   <attr attrName="visibility2" alias="*.ticks.visibility;*.lbl.visibility"/>
+   <attr attrName="autoAdjust" alias="*.Scale.ticks.autoAdjust;*.Scale.lbl.autoAdjust"/>
+   <attr attrName="align" alias="*.ticks.align;*.lbl.align"/>
+   <attr attrName="__bar_reverseScale" alias="*.bar.reverseScale;*.ticks.!reverseScale;*.lbl.!reverseScale"/>
+   <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+  </links>
+  <object class="BargraphWgt" id="*.bargraph_alarm_high_high.bar" hmiStyle="hmi-type:*barv">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" x="0" form="vertical" y="0" wgtStaticOpt="dynamic" reverseScale="true" cx="10.56" cy="93.42" value="20" max="100" width="22" height="186.83" fill="rgb(240,0,0)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="value">
+     <xForms>
+      <xForm class="FormulaXForm" expression="100-$('value:wgtTankSett.section_alarms.sett_field.value_button')" compiledExpression="100-$0" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="value" dataSource="*.section_alarms.sett_field.value_button" widgetType="Widget" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelsWgt" id="*.bargraph_alarm_high_high.lbl">
+   <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" step="1" cx="27.43" cy="86.61" x="-37" numberFormat="1" showThousandSeparator="false" y="-5.12" labelNames="" font-sizepx="13" height="199" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="96" max="100" align="1" vert-align="top" forcePaint="16" usingFormat="" labelFreq="6" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+  </object>
+  <object class="TicksWgt" id="*.bargraph_alarm_high_high.ticks">
+   <wgtStyle form="vertical" tickSize2="12" tickFreq="1" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="false" alarmMinorWidth="2" cx="25.98" cy="94.58" x="-14.73" y="-1.12" height="189.17" alarmColorMajor="rgb(206,21,78)" alarmMax="10" endAngle="200" strokeMajor="rgb(200,200,200)" width="52" max="100" align="1" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="6" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" startAngle="-10" visibility="false" alarmMajorWidth="2" alarmMin="8"/>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Bargraphs" id="*.bargraph_alarm_low">
+  <wgtStyle x="528" y="44" mtx="0.909091,0,0,0,1.47193,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="10" cy="137.50" width="22" height="186.83" forcePaint="16"/>
+  <links>
+   <attr attrName="min" alias="*.bar.min;*.ticks.min;*.lbl.min"/>
+   <attr attrName="max" alias="*.bar.max;*.ticks.max;*.lbl.max"/>
+   <attr attrName="visibility2" alias="*.ticks.visibility;*.lbl.visibility"/>
+   <attr attrName="autoAdjust" alias="*.Scale.ticks.autoAdjust;*.Scale.lbl.autoAdjust"/>
+   <attr attrName="align" alias="*.ticks.align;*.lbl.align"/>
+   <attr attrName="__bar_reverseScale" alias="*.bar.reverseScale;*.ticks.!reverseScale;*.lbl.!reverseScale"/>
+   <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+  </links>
+  <object class="BargraphWgt" id="*.bargraph_alarm_low.bar" hmiStyle="hmi-type:*barv">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" x="0" form="vertical" y="0" wgtStaticOpt="dynamic" reverseScale="false" cx="10.56" cy="93.42" value="20" max="100" width="22" height="186.83" fill="rgb(240,0,0)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_LL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelsWgt" id="*.bargraph_alarm_low.lbl">
+   <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="27.43" cy="86.61" x="-37" numberFormat="1" showThousandSeparator="false" y="-5.12" labelNames="" font-sizepx="13" height="199" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="96" max="100" align="1" vert-align="top" forcePaint="16" usingFormat="" labelFreq="6" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+  </object>
+  <object class="TicksWgt" id="*.bargraph_alarm_low.ticks">
+   <wgtStyle form="vertical" tickSize2="12" tickFreq="1" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="25.98" cy="94.58" x="-14.73" y="-1.12" height="189.17" alarmColorMajor="rgb(206,21,78)" alarmMax="10" endAngle="200" strokeMajor="rgb(200,200,200)" width="52" max="100" align="1" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="6" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" startAngle="-10" visibility="false" alarmMajorWidth="2" alarmMin="8"/>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.field_title">
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="285" cy="15" width="570" height="30" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.field_title.roundrect1">
+   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="276.37" cy="14.52" stroke="rgb(200,200,200)" width="570" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.field_title.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="291.95" alignment="center" cy="13.50" font-sizepx="16" width="569" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.section_measurements">
+  <wgtStyle x="0" y="44" wgtStaticOpt="dynamic" cx="112" cy="73" width="224" height="146" forcePaint="16"/>
+  <object class="GroupWgt" id="*.section_measurements.sett_field">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_measurements.sett_field.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_measurements.sett_field.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_measurements.sett_field.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_measurements.sett_field.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|volume" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_measurements.sett_field1">
+   <wgtStyle x="0" y="29" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_measurements.sett_field1.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_measurements.sett_field1.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_measurements.sett_field1.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="2"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_measurements.sett_field1.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink sourceType="Formula" attribute="value">
+      <xForms>
+       <xForm class="FormulaXForm" expression="$('value:wgtTankSett.section_measurements.sett_field.value_button')*$('value:wgtTankSett.section_sensor.sett_field4.value_button')/1000" compiledExpression="$0*$1/1000" colorPalette="" name="Formula">
+        <dataLinks>
+         <dataLink sourceType="Widget" tag="value" dataSource="*.section_measurements.sett_field.value_button" widgetType="Widget" readWrite="R" attribute="$0"/>
+         <dataLink sourceType="Widget" tag="value" dataSource="*.section_sensor.sett_field4.value_button" widgetType="Widget" readWrite="R" attribute="$1"/>
+        </dataLinks>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_measurements.sett_field2">
+   <wgtStyle x="0" y="58" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_measurements.sett_field2.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_measurements.sett_field2.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_measurements.sett_field2.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="3"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_measurements.sett_field2.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|measuring_height" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_measurements.sett_field3">
+   <wgtStyle x="0" y="87" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_measurements.sett_field3.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_measurements.sett_field3.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_measurements.sett_field3.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="4"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_measurements.sett_field3.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|measuring_pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_measurements.sett_field4">
+   <wgtStyle x="0" y="116" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_measurements.sett_field4.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_measurements.sett_field4.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_measurements.sett_field4.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="5"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_measurements.sett_field4.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|sensor_input_mA" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.section_alarms">
+  <wgtStyle x="0" y="204" wgtStaticOpt="dynamic" cx="112" cy="58.50" width="224" height="117" forcePaint="16"/>
+  <object class="GroupWgt" id="*.section_alarms.sett_field">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_HHL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+   </dataLinks>
+   <object class="GroupWgt" id="*.section_alarms.sett_field.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_alarms.sett_field.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_alarms.sett_field.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="6"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_alarms.sett_field.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_HHL" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_alarms.sett_field1">
+   <wgtStyle x="0" y="29" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_alarms.sett_field1.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_alarms.sett_field1.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_alarms.sett_field1.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="7"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_alarms.sett_field1.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_HL" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_alarms.sett_field2">
+   <wgtStyle x="0" y="58" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_alarms.sett_field2.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_alarms.sett_field2.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_alarms.sett_field2.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="8"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_alarms.sett_field2.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_LL" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_alarms.sett_field3">
+   <wgtStyle x="0" y="87" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_alarms.sett_field3.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_alarms.sett_field3.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_alarms.sett_field3.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="9"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_alarms.sett_field3.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="3600" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_delay" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithIcon" id="*.save_button">
+  <wgtStyle x="535" y="1.50" wgtStaticOpt="dynamic" cx="13.50" cy="13.50" width="27" height="27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.save_button.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(102,102,102)" changeTextColor="true" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(192,192,192)" releasePath="lib\tank_dialog-1.0\images\Btn_rect_blueUp.svg" width="27" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\tank_dialog-1.0\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|save" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="*.save_button.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/FileSettings.svg" x="3.78" lock="true" y="2.70" wgtStaticOpt="dynamic" stroke-width="1" cx="10.80" cy="10.80" stroke="rgb(237,237,237)" enableCache="true" width="21.60" height="21.60" fill="rgb(255,255,255)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Bargraphs" id="*.BarStd_background">
+  <wgtStyle x="495" y="44" mtx="1.36364,0,0,0,1.47193,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="15" cy="137.50" width="22" height="186.83" forcePaint="16"/>
+  <links>
+   <attr attrName="min" alias="*.bar.min;*.ticks.min;*.lbl.min"/>
+   <attr attrName="max" alias="*.bar.max;*.ticks.max;*.lbl.max"/>
+   <attr attrName="visibility2" alias="*.ticks.visibility;*.lbl.visibility"/>
+   <attr attrName="autoAdjust" alias="*.Scale.ticks.autoAdjust;*.Scale.lbl.autoAdjust"/>
+   <attr attrName="align" alias="*.ticks.align;*.lbl.align"/>
+   <attr attrName="__bar_reverseScale" alias="*.bar.reverseScale;*.ticks.!reverseScale;*.lbl.!reverseScale"/>
+   <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+  </links>
+  <object class="BargraphWgt" id="*.BarStd_background.bar" hmiStyle="hmi-type:*barv">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" x="0" form="vertical" y="0" wgtStaticOpt="dynamic" reverseScale="false" cx="10.56" cy="93.42" value="100" max="100" width="22" height="186.83" fill="rgb(200,200,200)" forcePaint="16"/>
+  </object>
+  <object class="LabelsWgt" id="*.BarStd_background.lbl">
+   <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="27.43" cy="86.61" x="-37" numberFormat="1" showThousandSeparator="false" y="-5.12" labelNames="" font-sizepx="13" height="199" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="96" max="100" align="1" vert-align="top" forcePaint="16" usingFormat="" labelFreq="6" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+  </object>
+  <object class="TicksWgt" id="*.BarStd_background.ticks">
+   <wgtStyle form="vertical" tickSize2="12" tickFreq="1" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="25.98" cy="94.58" x="-14.73" y="-1.12" height="189.17" alarmColorMajor="rgb(206,21,78)" alarmMax="10" endAngle="200" strokeMajor="rgb(200,200,200)" width="52" max="100" align="1" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="6" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" startAngle="-10" visibility="false" alarmMajorWidth="2" alarmMin="8"/>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Bargraphs" id="*.bargraph">
+  <wgtStyle x="444.55" y="36.46" mtx="1.36364,0,0,0,1.47193,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="65.45" cy="146.46" width="96" height="199" forcePaint="16"/>
+  <links>
+   <attr attrName="min" alias="*.bar.min;*.ticks.min;*.lbl.min"/>
+   <attr attrName="max" alias="*.bar.max;*.ticks.max;*.lbl.max"/>
+   <attr attrName="visibility2" alias="*.ticks.visibility;*.lbl.visibility"/>
+   <attr attrName="autoAdjust" alias="*.Scale.ticks.autoAdjust;*.Scale.lbl.autoAdjust"/>
+   <attr attrName="align" alias="*.ticks.align;*.lbl.align"/>
+   <attr attrName="__bar_reverseScale" alias="*.bar.reverseScale;*.ticks.!reverseScale;*.lbl.!reverseScale"/>
+   <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+  </links>
+  <object class="BargraphWgt" id="*.bargraph.bar" hmiStyle="hmi-type:*barv">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" x="37" form="vertical" y="5.12" wgtStaticOpt="dynamic" reverseScale="false" cx="10.56" cy="93.42" value="99999.9" max="100" width="22" height="186.83" fill="rgb(0,70,136)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="value">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$('value:wgtTankSett.section_measurements.sett_field.value_button')/$('value:wgtTankSett.section_sensor.sett_field3.value_button')*100" compiledExpression="$0/$1*100" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="value" dataSource="*.section_measurements.sett_field.value_button" widgetType="Widget" readWrite="R" attribute="$0"/>
+        <dataLink sourceType="Widget" tag="value" dataSource="*.section_sensor.sett_field3.value_button" widgetType="Widget" readWrite="R" attribute="$1"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelsWgt" id="*.bargraph.lbl">
+   <wgtStyle form="vertical" min="0" timeSpec="local" tickFreq="5" font-size="8" reverseScale="true" step="1" cx="27.43" cy="86.61" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="11" height="199" rotated="true" font-color="rgb(255,255,255)" endAngle="185" readWrite="true" width="96" max="100" align="1" vert-align="top" forcePaint="16" usingFormat="" labelFreq="6" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" value="" text="" keypad-type="None"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="TicksWgt" id="*.bargraph.ticks">
+   <wgtStyle form="vertical" tickSize2="12" tickFreq="1" stroke-linecap="butt" halfMajorTickSize="22" reverseScale="true" alarmMinorWidth="2" cx="25.98" cy="94.58" x="22.27" y="4" height="189.17" alarmColorMajor="rgb(192,192,192)" endAngle="200" strokeMajor="rgb(255,255,255)" width="52" max="100" align="1" alarmColorMinor="rgb(192,192,192)" tickSize="6" forcePaint="16" labelFreq="6" strokeMinor="rgb(255,255,255)" wgtStaticOpt="dynamic" startAngle="-10" alarmMajorWidth="2"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="strokeMajor"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="strokeMinor"/>
+   </dataLinks>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.help_label_hl_alarm_per">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="225" vert-align="middle" y="237" font-size="12" visibility="false" keypad-type="None" cx="1.02" alignment="center" cy="9" font-sizepx="16" width="1" wrapping="true" height="19" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_HL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="25"/>
+   <action class="JavaScriptAction" f="this.help_label_hl_alarm_per_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_hhl_alarm_per">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="227" vert-align="middle" y="208" font-size="12" visibility="false" keypad-type="None" cx="1.02" alignment="center" cy="9" font-sizepx="16" width="1" wrapping="true" height="19" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|alarm_per_HHL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="26"/>
+   <action class="JavaScriptAction" f="this.help_label_hhl_alarm_per_onDataUpdate" actionID="1" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="GroupWgt" id="*.section_sensor">
+  <wgtStyle x="250" y="44" wgtStaticOpt="dynamic" cx="112" cy="87.50" width="224" height="175" forcePaint="16"/>
+  <object class="GroupWgt" id="*.section_sensor.sett_field">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="10"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|sensor_range" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field1">
+   <wgtStyle x="0" y="29" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field1.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field1.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field1.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="11"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field1.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|sensor_mounting_height" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field2">
+   <wgtStyle x="0" y="58" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field2.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field2.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field2.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="12"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field2.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|tank_max_height" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field3">
+   <wgtStyle x="0" y="87" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field3.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field3.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field3.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="13"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field3.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|tank_max_volume" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field4">
+   <wgtStyle x="0" y="116" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field4.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field4.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field4.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="14"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field4.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|density" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.tank_status">
+   <wgtStyle x="0" y="145" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="ShapeWgt" id="*.section_sensor.tank_status.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="108.60" cy="14.52" stroke="rgb(200,200,200)" width="224" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="MsgTextWgt" id="*.section_sensor.tank_status.msgtext1">
+    <wgtStyle frameColor="rgb(200,200,200)" min="0" font-size="10" cx="128.18" cy="13.50" x="0" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" width="223" alignment="center" max="5" continous="true" vert-align="middle" forcePaint="16" viewindex="false" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="0" keypad-type="None">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+      <msg index="4"/>
+      <msg index="5"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|status" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="15"/>
+      <textid idx="1" val="16"/>
+      <textid idx="2" val="17"/>
+      <textid idx="3" val="18"/>
+      <textid idx="4" val="24"/>
+      <textid idx="5" val="27"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.temperature">
+  <wgtStyle x="250" y="232" wgtStaticOpt="dynamic" cx="112" cy="44" width="224" height="88" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|temp|enable" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="GroupWgt" id="*.temperature.curr_temp">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.temperature.curr_temp.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.temperature.curr_temp.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.temperature.curr_temp.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="19"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.temperature.curr_temp.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|temp|temperature" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.temperature.hl_alarm">
+   <wgtStyle x="0" y="29" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.temperature.hl_alarm.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.temperature.hl_alarm.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.temperature.hl_alarm.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="20"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.temperature.hl_alarm.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|temp|alarm_temp" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.temperature.temp_status">
+   <wgtStyle x="0" y="58" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="ShapeWgt" id="*.temperature.temp_status.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="108.60" cy="14.52" stroke="rgb(200,200,200)" width="224" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="MsgTextWgt" id="*.temperature.temp_status.msgtext1">
+    <wgtStyle frameColor="rgb(200,200,200)" min="0" font-size="10" cx="128.18" cy="13.50" x="0" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" width="223" alignment="center" max="2" continous="true" vert-align="middle" forcePaint="16" viewindex="false" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="0" keypad-type="None">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|temp|status" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="21"/>
+      <textid idx="1" val="22"/>
+      <textid idx="2" val="23"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Lights" id="*.light_HL">
+  <wgtStyle x="553" y="60" cx="15" cy="15" width="30" height="30" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_switch_HL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="IndicatorWgt" id="*.light_HL.ind" hmiStyle="hmi-type:light; type:light">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" cx="15" cy="14.16" stroke="none" bkgColor="rgb(244,0,0);rgb(192,192,192)" width="30" height="30" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|level_switch_HL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.light_HL.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="10" keypad-type="None" cx="15" alignment="center" cy="15" font-sizepx="13" width="30" font-bold="true" height="30" forcePaint="16" font-color="rgb(230,230,230)"/>
+   <dataLinks>
+    <dataLink sourceType="Widget" tag="frame" dataSource="LgtStd3.ind" tagIndex="-1" readWrite="R" attribute="fill">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+       <value i="0">0</value>
+       <value i="1">1</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="*.light_HL.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <wgtStyle x="9.94" y="6.81" fill-opacity="0.5" cx="5.19" cy="6.06" enableCache="true" width="10.39" height="12.11" forcePaint="16"/>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="Lights" id="*.light_LL">
+  <wgtStyle x="553" y="276" cx="15" cy="15" width="30" height="30" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_switch_LL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="IndicatorWgt" id="*.light_LL.ind" hmiStyle="hmi-type:light; type:light">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" cx="15" cy="14.16" stroke="none" bkgColor="rgb(192,192,192);rgb(244,0,0)" width="30" height="30" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|level_switch_LL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.light_LL.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="10" keypad-type="None" cx="15" alignment="center" cy="15" font-sizepx="13" width="30" font-bold="true" height="30" forcePaint="16" font-color="rgb(230,230,230)"/>
+   <dataLinks>
+    <dataLink sourceType="Widget" tag="frame" dataSource="*.light_LL.ind" tagIndex="-1" readWrite="R" attribute="fill">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+       <value i="0">0</value>
+       <value i="1">1</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="34"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="*.light_LL.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <wgtStyle x="9.94" y="6.81" fill-opacity="0.5" cx="5.19" cy="6.06" enableCache="true" width="10.39" height="12.11" forcePaint="16"/>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.label1">
+  <wgtStyle frameColor="rgb(192,192,192)" font-size="10" wrapping="true" cx="114.73" cy="13.50" x="0" y="233" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="223" alignment="center" vert-align="middle" forcePaint="16" frame="true" font-family="Roboto" keypad-type="None"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_switch_HL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="38"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.label2">
+  <wgtStyle frameColor="rgb(192,192,192)" font-size="10" wrapping="true" cx="114.73" cy="13.50" x="0" y="262" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="223" alignment="center" vert-align="middle" forcePaint="16" frame="true" font-family="Roboto" keypad-type="None"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${tank_prefix}|alarm|enable_switch_LL" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="39"/>
+  </links>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithIcon" id="*.simulation_button">
+  <wgtStyle x="496.50" y="1.50" wgtStaticOpt="dynamic" cx="13.50" cy="13.50" width="27" height="27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.simulation_button.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(102,102,102)" changeTextColor="true" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(192,192,192)" releasePath="lib\tank_dialog-1.0\images\Btn_rect_blueUp.svg" width="27" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\tank_dialog-1.0\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+   </dataLinks>
+   <links>
+    <action class="ShowDialogAction" actionID="0" event="onMouseClick" actionWgt="_PageMgr" pageName="simulation_tank.jmx" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="*.simulation_button.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <wgtStyle imagePath="lib/tank_dialog-1.0/images/Adjustments1.svg" x="3.78" lock="true" y="2.70" wgtStaticOpt="dynamic" stroke-width="1" cx="10.80" cy="10.80" stroke="rgb(237,237,237)" enableCache="true" width="21.60" height="21.60" fill="rgb(255,255,255)" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+ </object>
+</customWgt>

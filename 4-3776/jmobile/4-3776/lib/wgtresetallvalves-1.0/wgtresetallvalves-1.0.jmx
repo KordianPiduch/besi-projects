@@ -1,0 +1,29 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="wgtResetAllValves_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="reset valves failure"/>
+  </MLTexts>
+ </object>
+ <object class="ButtonWgt" id="*.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+  <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="50" cy="20" x="0" y="0" height="40" downFillColor="rgb(0,176,199)" releasePath="lib\wgtresetallvalves-1.0\images\Btn_rect_blueUp.svg" width="100" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\wgtresetallvalves-1.0\images\Btn_rect_Dwn.svg"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[${SystemID}]|system_control[${SystemID}][${HMI_ID}]|in_control" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+ </object>
+ <object class="LabelWgt" id="*.lbl" hmiStyle="hmi-type:wgtlabel">
+  <wgtStyle font-family="Roboto Medium" x="3.71" vert-align="middle" y="0.91" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="44.44" alignment="center" cy="18.19" font-sizepx="13" width="88.89" wrapping="true" height="37.28" forcePaint="16" font-color="rgb(237,237,237)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[${SystemID}]|system_control[${SystemID}][${HMI_ID}]|in_control" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="0">
+    <MLFontFamily L1="Roboto Medium"/>
+   </lang>
+  </links>
+ </object>
+</customWgt>

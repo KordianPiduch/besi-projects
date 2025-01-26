@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="GroupWgt" id="GroupWgt8.GroupWgt28">
    <wgtStyle x="793" lock="true" y="910" cx="60" cy="45" width="120" height="90" forcePaint="1"/>
@@ -681,105 +681,129 @@
    </object>
   </object>
   <object class="GroupWgt" id="piping">
-   <wgtStyle staticFile="opt/Ballastpiping.png" x="190" lock="true" y="84" cx="775" cy="456.50" width="1550" height="913" forcePaint="33"/>
+   <wgtStyle staticFile="opt/ballastpiping.png" x="250" lock="true" y="84" cx="716" cy="456.50" width="1432" height="913" forcePaint="33"/>
    <object class="LineWgt" id="piping.line" static="true">
-    <wgtStyle x="0" anchorIdx="1" y="426" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="1550" height="0"/>
+    <wgtStyle x="130" y="425" stroke-width="3" cx="585.56" cy="0" stroke="rgb(60,179,113)" width="1171.11" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line1" static="true">
-    <wgtStyle x="0" anchorIdx="1" y="486" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="1550" height="0"/>
+    <wgtStyle x="130" anchorIdx="1" y="485" stroke-width="3" cx="585.83" cy="0.50" stroke="rgb(60,179,113)" width="1171.67" height="1"/>
    </object>
    <object class="LineWgt" id="piping.line12" static="true">
-    <wgtStyle x="1470" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="1409" y="101" mtx="0,1,0,-1,0,0,1,0,1" stroke-width="3" cx="0.50" cy="151.94" stroke="rgb(60,179,113)" width="303.89" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line13" static="true">
-    <wgtStyle x="1470" anchorIdx="1" y="486" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="1410" anchorIdx="1" y="505" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-0.50" cy="153.50" stroke="rgb(60,179,113)" width="307" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line14" static="true">
-    <wgtStyle x="560" anchorIdx="1" y="291" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="320" height="0"/>
+    <wgtStyle x="500" anchorIdx="1" y="291" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="320" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line15" static="true">
-    <wgtStyle x="702" anchorIdx="1" y="203" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="257" height="0"/>
+    <wgtStyle x="642" anchorIdx="1" y="203" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="257" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line16" static="true">
-    <wgtStyle x="836" anchorIdx="1" y="0" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
+    <wgtStyle x="776" anchorIdx="1" y="0" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line18" static="true">
-    <wgtStyle x="702" anchorIdx="1" y="88" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="738" height="0"/>
+    <wgtStyle x="642" anchorIdx="1" y="88" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="738" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line17" static="true">
-    <wgtStyle x="959" anchorIdx="1" y="0" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
+    <wgtStyle x="899" anchorIdx="1" y="0" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line19" static="true">
-    <wgtStyle x="702" anchorIdx="1" y="711" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="257" height="0"/>
+    <wgtStyle x="642" anchorIdx="1" y="711" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="257" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line20" static="true">
-    <wgtStyle x="836" anchorIdx="1" y="713" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
+    <wgtStyle x="776" anchorIdx="1" y="713" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line21" static="true">
-    <wgtStyle x="959" anchorIdx="1" y="713" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
+    <wgtStyle x="899" anchorIdx="1" y="713" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="200" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line22" static="true">
-    <wgtStyle x="570" anchorIdx="1" y="625" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="320" height="0"/>
+    <wgtStyle x="510" anchorIdx="1" y="625" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="320" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line3" static="true">
-    <wgtStyle x="1015" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
+    <wgtStyle x="955" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line4" static="true">
-    <wgtStyle x="1015" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="955" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line2" static="true">
-    <wgtStyle x="1040" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
+    <wgtStyle x="980" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line5" static="true">
-    <wgtStyle x="1040" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="980" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line27" static="true">
-    <wgtStyle x="1282" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="1232" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line28" static="true">
-    <wgtStyle x="1282" anchorIdx="1" y="266" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
+    <wgtStyle x="1232" anchorIdx="1" y="266" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line29" static="true">
-    <wgtStyle x="1307" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="1247" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line30" static="true">
-    <wgtStyle x="1307" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
+    <wgtStyle x="1247" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line31" static="true">
-    <wgtStyle x="1215" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="1155" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line32" static="true">
-    <wgtStyle x="1215" anchorIdx="1" y="486" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="1155" anchorIdx="1" y="486" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line6" static="true">
-    <wgtStyle x="519.06" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
+    <wgtStyle x="459.06" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line7" static="true">
-    <wgtStyle x="519.06" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="459.06" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line8" static="true">
-    <wgtStyle x="544.06" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
+    <wgtStyle x="484.06" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="315" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line9" static="true">
-    <wgtStyle x="544.06" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="484.06" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line23" static="true">
-    <wgtStyle x="237" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="177" anchorIdx="1" y="434" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line24" static="true">
-    <wgtStyle x="237" anchorIdx="1" y="266" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
+    <wgtStyle x="177" anchorIdx="1" y="266" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line25" static="true">
-    <wgtStyle x="262" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
+    <wgtStyle x="194" anchorIdx="1" y="426" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="50" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line26" static="true">
-    <wgtStyle x="262" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
+    <wgtStyle x="194" anchorIdx="1" y="496" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="150" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line10" static="true">
-    <wgtStyle x="325" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="265" anchorIdx="1" y="101" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
    </object>
    <object class="LineWgt" id="piping.line11" static="true">
-    <wgtStyle x="325" anchorIdx="1" y="486" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+    <wgtStyle x="265" anchorIdx="1" y="486" mtx="0,1,0,-1,0,0,0,0,1" stroke-width="3" cx="-3.39" cy="91.75" stroke="rgb(60,179,113)" width="325" height="0"/>
+   </object>
+   <object class="LineWgt" id="piping.line33" static="true">
+    <wgtStyle x="0" y="405" stroke-width="3" cx="478.61" cy="0.50" stroke="rgb(60,179,113)" width="130" height="0"/>
+   </object>
+   <object class="LineWgt" id="piping.line34" static="true">
+    <wgtStyle x="0" y="506" stroke-width="3" cx="478.61" cy="0.50" stroke="rgb(60,179,113)" width="130" height="0"/>
+   </object>
+   <object class="LineWgt" id="piping.line35" static="true">
+    <wgtStyle x="130" anchorIdx="1" y="486" stroke-width="3" cx="0" cy="14.17" stroke="rgb(60,179,113)" width="0" height="20"/>
+   </object>
+   <object class="LineWgt" id="piping.line36" static="true">
+    <wgtStyle x="130" anchorIdx="1" y="405" stroke-width="3" cx="0" cy="14.17" stroke="rgb(60,179,113)" width="0" height="20"/>
+   </object>
+   <object class="LineWgt" id="piping.line38" static="true">
+    <wgtStyle x="1301" y="404" stroke-width="3" cx="478.61" cy="0.50" stroke="rgb(60,179,113)" width="130" height="0"/>
+   </object>
+   <object class="LineWgt" id="piping.line39" static="true">
+    <wgtStyle x="1302" y="505" stroke-width="3" cx="478.61" cy="0.50" stroke="rgb(60,179,113)" width="130" height="0"/>
+   </object>
+   <object class="LineWgt" id="piping.line42" static="true">
+    <wgtStyle x="1301" anchorIdx="1" y="485" stroke-width="3" cx="0" cy="14.17" stroke="rgb(60,179,113)" width="0" height="20"/>
+   </object>
+   <object class="LineWgt" id="piping.line43" static="true">
+    <wgtStyle x="1301" anchorIdx="1" y="404" stroke-width="3" cx="0" cy="14.17" stroke="rgb(60,179,113)" width="0" height="20"/>
    </object>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank23">
@@ -891,7 +915,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank4">
-   <wgtStyle x="1505" y="645" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
+   <wgtStyle x="1524" y="645" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">4</param>
    </links>
@@ -909,7 +933,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank1">
-   <wgtStyle x="1690" y="360" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
+   <wgtStyle x="1690" y="335.78" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">1</param>
    </links>
@@ -926,172 +950,12 @@
     <param attrName="TankID" alias="TankID">14</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve26">
-   <wgtStyle x="1565" y="475" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">26</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve27">
-   <wgtStyle x="1565" y="535" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">27</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve22">
-   <wgtStyle x="1370" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">22</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve24">
-   <wgtStyle x="1435" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">24</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve25">
-   <wgtStyle x="1461" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">25</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve23">
-   <wgtStyle x="1370" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">23</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve20">
-   <wgtStyle x="1169" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">20</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve21">
-   <wgtStyle x="1194" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">21</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve8">
-   <wgtStyle x="812" y="340" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">8</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve9">
-   <wgtStyle x="912" y="340" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">9</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve10">
-   <wgtStyle x="812" y="674" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">10</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve11">
-   <wgtStyle x="912" y="674" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">11</param>
-   </links>
-  </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve2">
    <wgtStyle x="857" y="509" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="Confirm" alias="Confirm">false</param>
     <param attrName="ValveID" alias="ValveID">2</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve13">
-   <wgtStyle x="698" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">13</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve12">
-   <wgtStyle x="673" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">12</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve14">
-   <wgtStyle x="480" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">12</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve16">
-   <wgtStyle x="390" y="441" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">16</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve15">
-   <wgtStyle x="480" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">15</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve17">
-   <wgtStyle x="416" y="575" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">17</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve18">
-   <wgtStyle x="300" y="475" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">18</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve19">
-   <wgtStyle x="300" y="535" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">19</param>
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve3">
@@ -1102,28 +966,12 @@
     <param attrName="ValveID" alias="ValveID">3</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve33333">
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve33">
    <wgtStyle x="857" y="858" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">3</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve6">
-   <wgtStyle x="990" y="792" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">6</param>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve7">
-   <wgtStyle x="1114" y="792" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">7</param>
+    <param attrName="ValveID" alias="ValveID">33</param>
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve1">
@@ -1142,14 +990,6 @@
     <param attrName="ValveID" alias="ValveID">32</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve5">
-   <wgtStyle x="1114" y="224" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">5</param>
-   </links>
-  </object>
   <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump5">
    <wgtStyle x="963" y="126" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="17"/>
    <links>
@@ -1157,14 +997,6 @@
     <param attrName="PumpID" alias="PumpID">5</param>
     <param attrName="direction" alias="direction"/>
     <param attrName="setting_type" alias="setting_type"/>
-   </links>
-  </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve4">
-   <wgtStyle x="990" y="224" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="81"/>
-   <links>
-    <param attrName="SYSTEM_ID">1</param>
-    <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">4</param>
    </links>
   </object>
   <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump6">
@@ -1177,7 +1009,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump7">
-   <wgtStyle x="963" y="833" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="17"/>
+   <wgtStyle x="963" y="836" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="PumpID" alias="PumpID">7</param>
@@ -1186,7 +1018,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="pump_vertical-1.0:1.0" id="pump8">
-   <wgtStyle x="1086" y="833" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="17"/>
+   <wgtStyle x="1086" y="836" wgtStaticOpt="dynamic" cx="52" cy="60" width="104" height="120" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="PumpID" alias="PumpID">8</param>
@@ -1262,6 +1094,193 @@
    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
    <links>
     <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="wgtResetAllValves-1.0:1.0" id="BtnStd1">
+   <wgtStyle x="220" y="5" wgtStaticOpt="dynamic" cx="50" cy="20" width="100" height="40" forcePaint="29"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="visibility">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID"/>
+   </dataLinks>
+   <links>
+    <param attrName="HMI_ID"/>
+    <param attrName="SystemID" alias="SystemID">1</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve26">
+   <wgtStyle x="1555" y="452" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">26</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve27">
+   <wgtStyle x="1555" y="555" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">27</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve8">
+   <wgtStyle x="802" y="339" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">8</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve9">
+   <wgtStyle x="902" y="339" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">9</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve10">
+   <wgtStyle x="802" y="674" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">10</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve11">
+   <wgtStyle x="902" y="674" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">11</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve18">
+   <wgtStyle x="290" y="454" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">18</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve19">
+   <wgtStyle x="290" y="555" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="16"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">19</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve16">
+   <wgtStyle x="391" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">16</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve17">
+   <wgtStyle x="407" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">17</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve14">
+   <wgtStyle x="480" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">14</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve15">
+   <wgtStyle x="480" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">15</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve12">
+   <wgtStyle x="674" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">12</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve13">
+   <wgtStyle x="699" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">13</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve6">
+   <wgtStyle x="990" y="782" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">6</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve7">
+   <wgtStyle x="1113" y="782" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">7</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve4">
+   <wgtStyle x="990" y="217" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">4</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve20">
+   <wgtStyle x="1169" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">20</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve21">
+   <wgtStyle x="1195" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">21</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve22">
+   <wgtStyle x="1370" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">22</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve24">
+   <wgtStyle x="1446" y="437" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">24</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve23">
+   <wgtStyle x="1369" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">23</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve25">
+   <wgtStyle x="1461" y="562" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">25</param>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_vertical-1.0:1.0" id="valve5">
+   <wgtStyle x="1114" y="217" wgtStaticOpt="dynamic" cx="41" cy="40" width="82" height="80" forcePaint="81"/>
+   <links>
+    <param attrName="SYSTEM_ID">1</param>
+    <param attrName="ValveID" alias="ValveID">5</param>
    </links>
   </object>
  </object>

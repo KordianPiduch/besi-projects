@@ -1,0 +1,1028 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="SemiAutoData" py="0" dataWndSize="0,70" pageType="non-modal" pageName="SemiAutoData" pageSize="800,600" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="800" height="600" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="missing position"/>
+    <MLText id="1" L1="ok"/>
+    <MLText id="3" L1="emergency stop"/>
+    <MLText id="4" L1="not triggered"/>
+    <MLText id="5" L1="triggered"/>
+    <MLText id="6" L1="Name"/>
+    <MLText id="7" L1="Raw"/>
+    <MLText id="8" L1="[valves] sea chest external"/>
+    <MLText id="9" L1="Health Check Name"/>
+    <MLText id="10" L1="Unhealthy"/>
+    <MLText id="11" L1="Healthy"/>
+    <MLText id="12" L1="[valves] sea chest internal"/>
+    <MLText id="13" L1="[valves] cross section"/>
+    <MLText id="14" L1="activated"/>
+    <MLText id="15" L1="operation"/>
+    <MLText id="16" L1="failure"/>
+    <MLText id="17" L1="current step"/>
+    <MLText id="18" L1="total steps"/>
+    <MLText id="19" L1="loading data available"/>
+    <MLText id="20" L1="[valves] pump suction"/>
+    <MLText id="21" L1="[valves] pump discharge"/>
+    <MLText id="22" L1="[valves] tanks"/>
+    <MLText id="23" L1="pump selection ok"/>
+    <MLText id="24" L1="Value"/>
+    <MLText id="25" L1="sea chest valves ok"/>
+    <MLText id="26" L1="cross section valve ok"/>
+    <MLText id="27" L1="BOOL"/>
+    <MLText id="28" L1="INT"/>
+    <MLText id="29" L1="[tanks] portside"/>
+    <MLText id="30" L1="[tanks] starboard"/>
+    <MLText id="31" L1="BOOL"/>
+    <MLText id="33" L1="[pumps] portside"/>
+    <MLText id="34" L1="disabled"/>
+    <MLText id="35" L1="activated"/>
+    <MLText id="36" L1="[pumps] starboard"/>
+    <MLText id="38" L1="[drafts] all"/>
+    <MLText id="39" L1="[deflections] all"/>
+    <MLText id="40" L1="ok"/>
+    <MLText id="41" L1="not ok"/>
+    <MLText id="42" L1="ballast"/>
+    <MLText id="43" L1="de-ballast"/>
+    <MLText id="44" L1="no data"/>
+    <MLText id="45" L1="ok"/>
+    <MLText id="46" L1="-----"/>
+    <MLText id="47" L1="no pump selected"/>
+    <MLText id="48" L1="ok"/>
+    <MLText id="49" L1="BOOL"/>
+    <MLText id="50" L1="[inclinometers] all"/>
+    <MLText id="51" L1="incorrect position"/>
+    <MLText id="52" L1="ok"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="SemiAutoDataGrid">
+   <wgtStyle x="10" y="10" wgtStaticOpt="dynamic" cx="190" cy="235.50" width="380" height="471" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="11">
+     <colProperties>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="200" stretch="1" maxWidth="300"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="70" stretch="1" maxWidth="70"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.10" x="1" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.10" x="200" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.10" x="270" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="24"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_activated">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="40" rowSpan="1" aspectRatio="111:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_operation">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="160" rowSpan="1" aspectRatio="37:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_failure">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="120" rowSpan="1" aspectRatio="37:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_step">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="240" rowSpan="1" aspectRatio="37:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_steps">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="280" rowSpan="1" aspectRatio="37:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_loading_data">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="37:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_pump_selection">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="320" rowSpan="1" aspectRatio="37:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="23"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_sea_chest">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="360" rowSpan="1" aspectRatio="66:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_cross_section_valve">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="66:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_activated_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="40" rowSpan="1" aspectRatio="69:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_failure_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="120" rowSpan="1" aspectRatio="23:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_operation_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="160" rowSpan="1" aspectRatio="23:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_loading_data_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="200" rowSpan="1" aspectRatio="23:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_pump_selection_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="320" rowSpan="1" aspectRatio="23:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_sea_chest_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="360" rowSpan="1" aspectRatio="23:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_cross_section_valve_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="400" rowSpan="1" aspectRatio="23:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_step_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="unsignedShort" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_steps_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="280" rowSpan="1" aspectRatio="23:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="unsignedShort" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_activated_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="8:3" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="40" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="2" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="34"/>
+      <textid idx="1" val="35"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_failure_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="120" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="4" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="40"/>
+      <textid idx="1" val="41"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_operation_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="160" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="5" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="42"/>
+      <textid idx="1" val="43"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_loading_data_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="200" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="6" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="44"/>
+      <textid idx="1" val="45"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_step_value">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="46"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_steps_value">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="280" rowSpan="1" aspectRatio="109:39" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="46"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_pump_selection_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="320" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="9" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="47"/>
+      <textid idx="1" val="48"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_sea_chest_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="360" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="10" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="51"/>
+      <textid idx="1" val="52"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_cross_section_valve_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="400" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="11" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="0"/>
+      <textid idx="1" val="1"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_emergency_stop">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="80" rowSpan="1" aspectRatio="66:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_emergency_stop_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="80" rowSpan="1" aspectRatio="23:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_activated_value1">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="80" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="3" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="4"/>
+      <textid idx="1" val="5"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="SemiAutoData@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="SemiAutoDataGrid1">
+   <wgtStyle x="410" y="10" wgtStaticOpt="dynamic" cx="190" cy="286.50" width="380" height="573" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="14">
+     <colProperties>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="5" leftStroke="1" minWidth="200" stretch="1" maxWidth="300"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="70" stretch="1" maxWidth="70"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="80" stretch="1" maxWidth="80"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.21" cy="17.10" x="6" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.10" x="230" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="40.46" cy="17.10" x="300" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="37" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="78" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="24"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.21" cy="17.55" x="6" maxWidth="100000" y="40" rowSpan="1" aspectRatio="111:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck1_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="40" rowSpan="1" aspectRatio="69:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_external" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck1_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="8:3" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="40" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="2" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_external" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="80" rowSpan="1" aspectRatio="76:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="120" rowSpan="1" aspectRatio="76:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="13"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck4">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="160" rowSpan="1" aspectRatio="76:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="20"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck5">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="200" rowSpan="1" aspectRatio="76:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck6">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="240" rowSpan="1" aspectRatio="76:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="22"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck2_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="80" rowSpan="1" aspectRatio="23:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_internal" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck3_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="120" rowSpan="1" aspectRatio="23:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_cross_section" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck4_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="160" rowSpan="1" aspectRatio="23:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_suction" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck5_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="200" rowSpan="1" aspectRatio="23:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_discharge" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck6_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_ballast_tanks" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck2_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="80" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="3" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_internal" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck3_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="120" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="4" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_cross_section" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck4_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="160" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="5" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_suction" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck5_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="200" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="6" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_discharge" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck6_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="240" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="7" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_ballast_tanks" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck7">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="280" rowSpan="1" aspectRatio="76:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="29"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck8">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="320" rowSpan="1" aspectRatio="76:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="30"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck7_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="280" rowSpan="1" aspectRatio="23:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="31"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck8_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="320" rowSpan="1" aspectRatio="23:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_starboard" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck7_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="280" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="8" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck8_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="320" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="9" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_starboard" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck9">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="360" rowSpan="1" aspectRatio="76:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="33"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck10">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="400" rowSpan="1" aspectRatio="76:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="36"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck9_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="360" rowSpan="1" aspectRatio="23:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck10_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="400" rowSpan="1" aspectRatio="23:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck9_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="360" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="10" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck10_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="400" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="11" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck11">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="440" rowSpan="1" aspectRatio="76:13" rowOcc="12" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="38"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck11_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="440" rowSpan="1" aspectRatio="23:13" rowOcc="12" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck11_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="440" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="12" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck12">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="480" rowSpan="1" aspectRatio="76:13" rowOcc="13" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="39"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck12_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="480" rowSpan="1" aspectRatio="23:13" rowOcc="13" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="49"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck12_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="480" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="13" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck13">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="520" rowSpan="1" aspectRatio="76:13" rowOcc="14" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="50"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck13_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="520" rowSpan="1" aspectRatio="23:13" rowOcc="14" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="49"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck13_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="520" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="14" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="10"/>
+      <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>
