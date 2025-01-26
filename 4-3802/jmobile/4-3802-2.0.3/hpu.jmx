@@ -1,0 +1,409 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="HPU" dataWndSize="0,70" pageName="HPU" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="3" L1=""/>
+    <MLText id="0" L1="HPU"/>
+    <MLText id="2" L1="Failure"/>
+    <MLText id="4" L1="Standby"/>
+    <MLText id="6" L1="Running"/>
+    <MLText id="8" L1="Failure"/>
+    <MLText id="10" L1="Standby"/>
+    <MLText id="12" L1="Running"/>
+    <MLText id="14" L1="Low Oil &#xa;Level"/>
+    <MLText id="16" L1="Pressure Present"/>
+    <MLText id="18" L1="Low Oil &#xa;Pressure"/>
+    <MLText id="20" L1="Pump 2"/>
+    <MLText id="21" L1="Pump1"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.18" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="HPU@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle x="460" lock="true" y="225" wgtStaticOpt="dynamic" cx="500" cy="315" width="1000" height="630" forcePaint="17"/>
+   <object class="ImageWgt" id="GroupWgt5.image2">
+    <wgtStyle imagePath="images/hpu.png" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="1" cx="0" cy="0" stroke="none" width="1000" height="630" fill="none" forcePaint="17"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.field_label10">
+    <wgtStyle x="285" y="118" wgtStaticOpt="dynamic" cx="40" cy="15" width="80" height="30" forcePaint="17"/>
+    <object class="ShapeWgt" id="GroupWgt5.field_label10.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="153" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt5.field_label10.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="40.97" alignment="center" cy="13.50" font-sizepx="16" width="79" wrapping="true" height="29" forcePaint="153" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="21"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.field_label1">
+    <wgtStyle x="443" y="118" wgtStaticOpt="dynamic" cx="40" cy="15" width="80" height="30" forcePaint="17"/>
+    <object class="ShapeWgt" id="GroupWgt5.field_label1.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="38.79" cy="14.52" stroke="rgb(200,200,200)" width="80" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="153" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt5.field_label1.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="40.97" alignment="center" cy="13.50" font-sizepx="16" width="79" wrapping="true" height="29" forcePaint="153" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="20"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt1">
+    <wgtStyle x="556" y="140" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+    <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt1.LgtSmp6">
+     <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+     <links>
+      <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt1.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+      <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+     </object>
+     <object class="IndicatorWgt" id="GroupWgt5.GroupWgt1.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+      <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(255,0,0);rgb(200,200,200)" width="24" height="24" forcePaint="25"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|low_oil_pressure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+      </dataLinks>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt1.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+      <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+      <links>
+       <lang class="MLTextLink" textid="3"/>
+      </links>
+     </object>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt1.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+      <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="GroupWgt5.GroupWgt1.label6">
+     <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="18"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt2">
+    <wgtStyle x="556" y="94" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+    <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt2.LgtSmp6">
+     <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+     <links>
+      <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt2.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+      <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+     </object>
+     <object class="IndicatorWgt" id="GroupWgt5.GroupWgt2.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+      <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(200,200,200);rgb(0,128,0)" width="24" height="24" forcePaint="25"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pressure_present" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+      </dataLinks>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt2.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+      <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+      <links>
+       <lang class="MLTextLink" textid="3"/>
+      </links>
+     </object>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt2.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+      <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="GroupWgt5.GroupWgt2.label6">
+     <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="16"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt3">
+    <wgtStyle x="590" y="395" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+    <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt3.LgtSmp6">
+     <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+     <links>
+      <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+     </links>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt3.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+      <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+     </object>
+     <object class="IndicatorWgt" id="GroupWgt5.GroupWgt3.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+      <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(255,0,0);rgb(200,200,200)" width="24" height="24" forcePaint="25"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|low_oil_level" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+      </dataLinks>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt3.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+      <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+      <links>
+       <lang class="MLTextLink" textid="3"/>
+      </links>
+     </object>
+     <object class="ImageWgt" id="GroupWgt5.GroupWgt3.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+      <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="GroupWgt5.GroupWgt3.label6">
+     <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="14"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt7">
+    <wgtStyle x="269" y="336" wgtStaticOpt="dynamic" cx="55" cy="59" width="110" height="118" forcePaint="17"/>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt7.GroupWgt4">
+     <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt7.GroupWgt4.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt4.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt7.GroupWgt4.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(200,200,200);rgb(0,128,0)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_running" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt4.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt4.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt4.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="12"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt7.GroupWgt5">
+     <wgtStyle x="0" y="35" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt7.GroupWgt5.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt5.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt7.GroupWgt5.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(200,200,200);rgb(255,128,64)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_standby" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt5.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt5.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt5.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="10"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt7.GroupWgt6">
+     <wgtStyle x="0" y="70" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt7.GroupWgt6.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="12" cy="12" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt6.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt7.GroupWgt6.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(255,0,0);rgb(200,200,200)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_failure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt6.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt7.GroupWgt6.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt7.GroupWgt6.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="8"/>
+      </links>
+     </object>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt4">
+    <wgtStyle x="434" y="336" wgtStaticOpt="dynamic" cx="55" cy="59" width="110" height="118" forcePaint="17"/>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt4.GroupWgt4">
+     <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt4.GroupWgt4.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="0" cy="0" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt4.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt4.GroupWgt4.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(200,200,200);rgb(0,128,0)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_running" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt4.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt4.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt4.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="6"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt4.GroupWgt5">
+     <wgtStyle x="0" y="35" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt4.GroupWgt5.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="0" cy="0" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt5.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt4.GroupWgt5.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(200,200,200);rgb(255,128,64)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_standby" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt5.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt5.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt5.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="4"/>
+      </links>
+     </object>
+    </object>
+    <object class="GroupWgt" id="GroupWgt5.GroupWgt4.GroupWgt6">
+     <wgtStyle x="0" y="70" wgtStaticOpt="dynamic" cx="55" cy="24" width="110" height="48" forcePaint="17"/>
+     <object class="GroupWgt" customType="Light" id="GroupWgt5.GroupWgt4.GroupWgt6.LgtSmp6">
+      <wgtStyle x="0" y="12" wgtStaticOpt="dynamic" cx="0" cy="0" width="24" height="24" forcePaint="17"/>
+      <links>
+       <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+      </links>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt6.LgtSmp6.frmImg" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd">
+       <wgtStyle imagePath="images/frame_round_chrome.svg" x="-4.62" y="-3.69" visibility="false" wgtStaticOpt="dynamic" cx="15.46" cy="15.93" enableCache="true" width="30.91" height="31.85" forcePaint="16"/>
+      </object>
+      <object class="IndicatorWgt" id="GroupWgt5.GroupWgt4.GroupWgt6.LgtSmp6.ind" hmiStyle="hmi-type:light; type:light">
+       <wgtStyle imagePath="images/li_shape_round.svg" x="0" y="0" wgtStaticOpt="dynamic" cx="11.99" cy="12" stroke="rgb(255,251,240)" bkgColor="rgb(255,0,0);rgb(200,200,200)" width="24" height="24" forcePaint="25"/>
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_failure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </object>
+      <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt6.LgtSmp6.lbl" hmiStyle="hmi-type:wgtlabel">
+       <wgtStyle font-family="Roboto" x="1.39" vert-align="middle" y="1.85" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="10.15" alignment="center" cy="10.39" font-sizepx="13" width="20.30" height="20.77" forcePaint="16"/>
+       <links>
+        <lang class="MLTextLink" textid="3"/>
+       </links>
+      </object>
+      <object class="ImageWgt" id="GroupWgt5.GroupWgt4.GroupWgt6.LgtSmp6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+       <wgtStyle x="6.46" y="6.46" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="4.16" cy="4.84" enableCache="true" width="8.30" height="9.70" forcePaint="16"/>
+      </object>
+     </object>
+     <object class="LabelWgt" id="GroupWgt5.GroupWgt4.GroupWgt6.label6">
+      <wgtStyle font-family="Roboto" x="30" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="0" marker="true" cy="0" font-sizepx="16" width="80" wrapping="true" height="48" forcePaint="153" font-color="rgb(255,255,255)"/>
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="2"/>
+      </links>
+     </object>
+    </object>
+   </object>
+  </object>
+ </object>
+</wgtPage>

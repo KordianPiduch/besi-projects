@@ -1,0 +1,553 @@
+<groups>
+ <group Type="Auto">
+  <name>4-3802-2.0.3@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_IP</tag>
+  <tag>HMI_USER</tag>
+  <tag>IP Address</tag>
+  <tag>This Client User-Name</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>valve_dialog_base_x</tag>
+  <tag>valve_dialog_base_y</tag>
+ </group>
+ <group Type="Auto">
+  <name>AddUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Force Logoff Time</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AlarmPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AuditTrail@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>background_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Cargo@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[22]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[22]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[22]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[23]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[23]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[23]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[24]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[24]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[24]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[25]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[25]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[25]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[26]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[26]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[26]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[27]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[27]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[27]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[28]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[28]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[28]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[29]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[29]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[29]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[30]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[30]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[30]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[31]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[31]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[31]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[32]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[32]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[32]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[33]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[33]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[33]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[34]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[34]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[34]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[35]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[35]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[35]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[36]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[36]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[36]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[37]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[37]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[37]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[38]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[38]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[38]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[39]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[39]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[39]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[40]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[40]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[40]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[41]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[41]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[41]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[42]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[42]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[42]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[43]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[43]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[43]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[44]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[44]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[44]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[45]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[45]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[45]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[46]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[46]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[46]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[47]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[47]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[47]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[48]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[48]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[48]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[49]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[49]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[49]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[50]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[50]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[50]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[51]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[51]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[51]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[52]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[52]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[52]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[53]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[53]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[53]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[54]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[54]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[54]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[55]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[55]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[55]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[56]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[56]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[56]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[57]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[57]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[57]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[58]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[58]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[58]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[59]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[59]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[59]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[60]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[60]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[60]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[61]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[61]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[61]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[62]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[62]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[62]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[63]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[63]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[63]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[64]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[64]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[64]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[65]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[65]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[65]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[66]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[66]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[66]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[67]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[67]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[67]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[68]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[68]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[68]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[69]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[69]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[69]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[70]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[70]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[70]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[71]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[71]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[71]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[72]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[72]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[72]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[73]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[73]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[73]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[74]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[74]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[74]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[75]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[75]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[75]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[76]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[76]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[76]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[77]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[77]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[77]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[78]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[78]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[78]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[79]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[79]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[79]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[80]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[80]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[80]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[81]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[81]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[81]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[82]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[82]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[82]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[83]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[83]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[83]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[84]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[84]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[84]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[85]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[85]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[85]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[86]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[86]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[86]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[87]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[87]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[87]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[88]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[88]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[88]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[89]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[89]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[89]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[90]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[90]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[90]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[91]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[91]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[91]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[92]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[92]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[92]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[93]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[93]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[93]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|press_take_control</tag>
+  <tag>background_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>ChangePassword@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>DeleteUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>HPU@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|low_oil_level</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|low_oil_pressure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pressure_present</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_running</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump1_standby</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_running</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HPU|pump2_standby</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>NetworkPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_in_control</tag>
+  <tag>PingPC1</tag>
+  <tag>PingPC2</tag>
+  <tag>SlavePingPLC3</tag>
+  <tag>SlavePingPLC4</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>ip_address</tag>
+  <tag>ping_status_master</tag>
+  <tag>ping_status_slave</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>Pump@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[10]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[10]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[10]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[11]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[11]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[11]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[12]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[12]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[12]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[13]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[13]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[13]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[14]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[14]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[14]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[15]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[15]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[15]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[16]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[16]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[16]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[17]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[17]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[17]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[18]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[18]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[18]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[19]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[19]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[19]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[20]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[20]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[20]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[21]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[21]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[21]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[2]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[3]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[3]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[3]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[4]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[4]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[4]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[5]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[5]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[5]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[6]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[6]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[6]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[7]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[7]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[7]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[8]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[8]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[8]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[9]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[9]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[9]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|press_take_control</tag>
+  <tag>background_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>UserEditor@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>VisuElements@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|failure</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|status</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[1]|system_control[1][]|press_take_control</tag>
+  <tag>background_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>audit_trail_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>base_template@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm not acknowledged</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>counter_time_string</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>timer_user_logout_box_visibility</tag>
+ </group>
+ <group Type="Auto">
+  <name>dimmer@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Display Brightness</tag>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>info_page@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>HMI_OS</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|project_version</tag>
+  <tag>ProjectName</tag>
+  <tag>bar_color</tag>
+  <tag>besi_no</tag>
+  <tag>frame_color</tag>
+  <tag>hull_no</tag>
+  <tag>shipyard_name</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>login_timer_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>loginpage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>menu@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>project_config@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>theme</tag>
+ </group>
+ <group Type="Auto">
+  <name>redundancy_status@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|master_in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_healthy</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|redundancy_status|slave_in_control</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>ip_address</tag>
+  <tag>ping_status_master</tag>
+  <tag>ping_status_slave</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_valve@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|name</tag>
+  <tag>|simulation|close</tag>
+  <tag>|simulation|open</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>switch_user@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_USER</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_operator@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_service@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>USB Drive Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_confirm</tag>
+  <tag>valve_prefix</tag>
+  <tag>|name</tag>
+  <tag>|press_close</tag>
+  <tag>|press_open</tag>
+  <tag>|reset</tag>
+ </group>
+ <group Type="Auto">
+  <name>valve_base_confirmation@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+  <tag>valve_prefix</tag>
+  <tag>|press_open</tag>
+ </group>
+</groups>
