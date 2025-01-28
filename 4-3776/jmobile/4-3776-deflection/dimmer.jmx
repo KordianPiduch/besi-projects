@@ -1,0 +1,77 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="1770" id="dimmer" py="0" dataWndSize="0,70" pageType="non-modal" scriptFile="dimmer.js" pageName="dimmer" pageSize="50,300" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="50" height="300" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithIcon" id="dimmer1">
+   <wgtStyle x="0" y="0" cx="25" cy="25" width="50" height="50"/>
+   <object class="ButtonWgt" id="dimmer1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(102,102,102)" cx="25" cy="25" x="0" y="0" height="50" downFillColor="rgb(192,192,192)" releasePath="images\Btn_rect_blueUp.svg" width="50" forcePaint="8" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+    </dataLinks>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="ImageWgt" id="dimmer1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle imagePath="images/LightsIcon24.svg" x="5" lock="true" y="5" stroke-width="1" cx="20" cy="20" stroke="rgb(237,237,237)" enableCache="true" width="40" height="40" fill="rgb(255,255,255)" forcePaint="1"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="dimmer@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="Sliders" id="SldrVrt1">
+   <wgtStyle x="-1" y="78.69" mtx="1.2945,0,0,0,1.02506,0,0,0,1" groupStyle="xform-scaling" cx="26" cy="97.50" width="40.17" height="190.23"/>
+   <links>
+    <attr attrName="__scale_lbl_visibility2" alias="*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="visibility2" alias="*.scale.ticks.visibility;*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="align" alias="*.scale.ticks.align;*.scale.lbl.align"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.scale.ticks.reverseScale;*.scale.lbl.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.scale.ticks.labelFreq;*.scale.lbl.labelFreq"/>
+    <attr attrName="toolTipFontName" alias="*.ndl.toolTipFontName"/>
+    <attr attrName="__ndl_min" alias="*.ndl.min;*.scale.ticks.min;*.scale.lbl.min"/>
+    <attr attrName="__ndl_max" alias="*.ndl.max;*.scale.ticks.max;*.scale.lbl.max"/>
+   </links>
+   <object class="GroupWgt" customType="LinearScale" id="SldrVrt1.scale">
+    <wgtStyle x="-20.40" y="8.75" mtx="0.877011,0,0,0,0.650092,0,0,0,1" visibility="false" groupStyle="xform-scaling" cx="45.60" cy="87.77" width="0" height="0"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="SldrVrt1.scale.lbl">
+     <wgtStyle form="vertical" min="15" timeSpec="local" tickFreq="5" font-size="0" reverseScale="true" step="1" cx="25.43" cy="116.24" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="267.11" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="89.01" max="255" align="1" vert-align="top" usingFormat="" labelFreq="3" startAngle="-20" font-family="Roboto" value="" text="" visibility="false" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="SldrVrt1.scale.ticks" static="true">
+     <wgtStyle form="vertical" min="15" tickSize2="12" tickFreq="5" stroke-width="2" stroke-linecap="butt" reverseScale="true" alarmMinorWidth="2" cx="19.80" cy="125.31" x="25.19" y="7.49" minorStroke-width="2" height="250.61" alarmColorMajor="rgb(206,21,78)" alarmMax="100" endAngle="200" strokeMajor="rgb(200,200,200)" width="39.64" max="255" align="1" alarmColorMinor="rgb(206,21,78)" tickSize="7" labelFreq="5" strokeMinor="rgb(200,200,200)" visibility="false" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="ImageWgt" id="SldrVrt1.img" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd-vsldr">
+    <wgtStyle imagePath="images/widget_frame.svg" x="16.50" y="13.38" mtx="1,1.57489e-08,0,1.76116e-09,1,0,0,0,1" cx="3.36" cy="79.59" width="6.18" height="162.92" fill="rgb(237,237,237)" forcePaint="65"/>
+   </object>
+   <object class="NeedleWgt" id="SldrVrt1.ndl" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:top-vthmb">
+    <wgtStyle form="vertical" min="15" reverseScale="true" cx="19.59" cy="175.69" x="0" y="0" toolTipFontName="Roboto" height="190.23" mtx="1,-7.99784e-10,0,-5.81929e-10,1,0,1.10702e-07,3.21273e-08,1" width="40.17" max="255" discrete="true" forcePaint="73" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(76,76,77)" writeMode="0" acceptClick="true" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="SysPropMgrWgt" sourceType="System" tag="Display Brightness" dataSource="_SysPropMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <links>
+     <action class="JavaScriptAction" f="SldrVrt1_ndl_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+    </links>
+    <object class="ImageWgt" id="SldrVrt1.ndl.img">
+     <wgtStyle imagePath="images/Sldrvrt_needle.svg" x="-1.78" y="106.70" mtx="1,2.29795e-10,0,3.54125e-10,1,0,0,0,1" stroke-width="1" cx="12.35" cy="15.61" stroke="rgb(237,237,237)" width="24.72" height="31.22" fill="rgb(0,70,136)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+ </object>
+</wgtPage>

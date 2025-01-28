@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_tree name="root" nodeIDField="0" protocolName="OPCU" type="container">
+    <property_alias>
+        <property display="Tag name" name="tagName"/>
+        <property display="Description" name="comment"/>
+        <property display="OPCUA type" name="typeName"/>
+        <property display="Data type" name="icomType"/>
+        <property display="Tag URI" name="tagURI"/>
+        <property display="R/W" name="rw"/>
+        <property display="EU low" name="minValue"/>
+        <property display="EU high" name="maxValue"/>
+        <property display="Engineering units" name="info2"/>
+    </property_alias>
+    <data_type name="OPCUAServer@BESI-2" type="container">
+        <data_type name="Objects" type="container">
+            <data_type name="DeviceSet" type="container">
+                <data_type name="WAGO 750-8212 PFC200 G2 2ETH RS" type="container">
+                    <data_type name="Resources" type="container">
+                        <data_type name="Application" type="container">
+                            <data_type name="GlobalVars" type="container">
+                                <data_type name="slave_to_master" type="container">
+                                    <data_type name="slave_plc_in_control" typeName="Boolean" tagName="OPCUAServer@BESI-2|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|slave_to_master|slave_plc_in_control" info0="4" info1="NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.slave_to_master.slave_plc_in_control" icomType="boolean" tagURI="unknownID?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.slave_to_master.slave_plc_in_control?boolean" type="basic" rw="R/W"/>
+                                    <data_type name="slave_plc_in_standby" typeName="Boolean" tagName="OPCUAServer@BESI-2|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|slave_to_master|slave_plc_in_standby" info0="4" info1="NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.slave_to_master.slave_plc_in_standby" icomType="boolean" tagURI="unknownID?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.slave_to_master.slave_plc_in_standby?boolean" type="basic" rw="R/W"/>
+                                </data_type>
+                            </data_type>
+                        </data_type>
+                    </data_type>
+                </data_type>
+            </data_type>
+        </data_type>
+    </data_type>
+</data_tree>

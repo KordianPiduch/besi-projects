@@ -1,0 +1,9 @@
+<defs>
+ <g attributeName="valve_stepless_vertical-1.0:1.0" showChildNodes="0" id="custom_properties" inherit="basicgroup_properties">
+  <info></info>
+  <text isCompound="true" attributeName="ValveID" display="ValveID" editChild="true" attributeType="param" attachTag="true" updateProps="true" default="true"/>
+  <text attributeName="SYSTEM_ID" display="SYSTEM_ID" editChild="true" attributeType="param" updateProps="true" default="true">system identifier, number representation of ballast/bilge/fuel .. etc system
+
+use "-1" to disable control via "take control" button</text>
+ </g>
+</defs>

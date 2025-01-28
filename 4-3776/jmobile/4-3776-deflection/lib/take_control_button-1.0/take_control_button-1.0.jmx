@@ -1,0 +1,43 @@
+<customWgt>
+ <links>
+  <param attrName="SYSTEM_ID"/>
+  <param attrName="HMI_ID_internal"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="take_control_button_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="take control"/>
+   <MLText id="1" L1="in ctrl"/>
+   <MLText id="2" L1="Label"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.BtnStd1">
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="60" cy="20" width="120" height="40" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="60" cy="20" x="0" y="0" height="40" downFillColor="rgb(0,176,199)" releasePath="lib\take_control_button-1.0\images\Btn_rect_blueUp.svg" width="120" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\take_control_button-1.0\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[${SYSTEM_ID}]|system_control[${SYSTEM_ID}][${HMI_ID_internal}]|press_take_control" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="4.45" vert-align="middle" y="0.91" font-size="11" wgtStaticOpt="dynamic" keypad-type="None" cx="53.34" alignment="center" cy="18.19" font-sizepx="15" width="106.67" wrapping="true" height="37.27" forcePaint="16" font-color="rgb(237,237,237)"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="IndicatorWgt" id="*.BtnIllum1.ind1" hmiStyle="type:light">
+  <wgtStyle imagePath="lib/take_control_button-1.0/images/Btn_blue_light.svg" x="109" y="3" stroke-width="0" cx="3.03" cy="3.01" stroke="rgb(255,255,255)" bkgColor="rgb(1,50,96);rgb(139,194,63)" width="8" height="8" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[${SYSTEM_ID}]|system_control[${SYSTEM_ID}][${HMI_ID_internal}]|in_control" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="frame"/>
+  </dataLinks>
+  <links>
+   <action class="JavaScriptAction" f="this.BtnIllum1_ind1_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+</customWgt>

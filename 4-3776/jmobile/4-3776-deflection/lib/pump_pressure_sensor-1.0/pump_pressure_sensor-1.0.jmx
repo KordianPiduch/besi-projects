@@ -1,0 +1,172 @@
+<customWgt>
+ <links>
+  <param attrName="sensor"/>
+  <param attrName="pump_prefix"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="pump_pressure_sensor_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="max. pressure [bar]"/>
+   <MLText id="1" L1="min. pressure [bar]"/>
+   <MLText id="2" L1="pressure [bar]"/>
+   <MLText id="3" L1="status: Failure"/>
+   <MLText id="4" L1="status: OK"/>
+   <MLText id="5" L1="sensor name"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" id="*.section_sensor">
+  <wgtStyle x="0" y="40" wgtStaticOpt="dynamic" cx="112" cy="58.50" width="224" height="117" forcePaint="16"/>
+  <object class="GroupWgt" id="*.section_sensor.sett_field2">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field2.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field2.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field2.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="0"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field2.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|max_pressure" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field3">
+   <wgtStyle x="0" y="29" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field3.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field3.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field3.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field3.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" readWrite="true" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|min_pressure" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.sett_field4">
+   <wgtStyle x="0" y="58" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="GroupWgt" id="*.section_sensor.sett_field4.name">
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="72.50" cy="15" width="145" height="30" forcePaint="16"/>
+    <object class="ShapeWgt" id="*.section_sensor.sett_field4.name.roundrect1">
+     <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="*.section_sensor.sett_field4.name.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="74.27" alignment="center" cy="13.50" font-sizepx="13" width="144" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="2"/>
+     </links>
+    </object>
+   </object>
+   <object class="NumericWgt" id="*.section_sensor.sett_field4.value_button">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" disabled="true" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(102,102,102)" width="79" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameFill"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="*.section_sensor.tank_status">
+   <wgtStyle x="0" y="87" wgtStaticOpt="dynamic" cx="112" cy="15" width="224" height="30" forcePaint="16"/>
+   <object class="ShapeWgt" id="*.section_sensor.tank_status.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="108.60" cy="14.52" stroke="rgb(200,200,200)" width="224" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="MsgTextWgt" id="*.section_sensor.tank_status.msgtext1">
+    <wgtStyle frameColor="rgb(200,200,200)" min="0" font-size="10" cx="128.18" cy="13.50" x="0" y="0" font-sizepx="13" height="29" font-color="rgb(255,255,255)" width="223" alignment="center" max="1" continous="true" vert-align="middle" forcePaint="16" viewindex="false" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="0" keypad-type="None">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="4"/>
+      <textid idx="1" val="3"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.field_title">
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="137" cy="15" width="274" height="30" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.field_title.roundrect1">
+   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="132.85" cy="14.52" stroke="rgb(200,200,200)" width="274" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.field_title.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="140.34" alignment="center" cy="13.50" font-sizepx="16" width="273" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+ </object>
+ <object class="BargraphWgt" id="*.BargraphSeg1" hmiStyle="hmi-type:*barv">
+  <wgtStyle imagePath="lib/pump_pressure_sensor-1.0/images/barseg_vert_flat.svg" x="240" form="segments" y="40" wgtStaticOpt="dynamic" reverseScale="false" nodeCount="10" cx="16" cy="58.50" value="5" max="10" color="rgb(102,102,102)" width="32" height="117" fill="rgb(0,70,136)" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|min_pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="min"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|max_pressure" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="max"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="Color"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|${sensor}_sensor|pressure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+  </dataLinks>
+ </object>
+</customWgt>
