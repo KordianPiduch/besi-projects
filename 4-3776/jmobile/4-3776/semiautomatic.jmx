@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="SemiAutomatic" dataWndSize="0,70" pageName="SemiAutomatic" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="SemiAutomatic" dataWndSize="0,70" pageName="SemiAutomatic" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -1497,12 +1497,12 @@
    </object>
   </object>
   <object class="GroupWgt" customType="ButtonsWithLabel" id="semi_auto.grid.semi_tank1.BtnStd3">
-   <wgtStyle x="635" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="16"/>
+   <wgtStyle x="635" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="17"/>
    <object class="ButtonWgt" id="semi_auto.grid.semi_tank1.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="299" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="299" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
    </object>
    <object class="LabelWgt" id="semi_auto.grid.semi_tank1.BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="16" font-color="rgb(255,255,255)"/>
+    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="17" font-color="rgb(255,255,255)"/>
     <links>
      <lang class="MLTextLink" textid="4">
       <MLFontFamily L1="Roboto Medium"/>
@@ -1511,12 +1511,12 @@
    </object>
   </object>
   <object class="GroupWgt" customType="ButtonsWithLabel" id="semi_auto.grid.semi_tank1.BtnStd4">
-   <wgtStyle x="1455" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="16"/>
+   <wgtStyle x="1455" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="17"/>
    <object class="ButtonWgt" id="semi_auto.grid.semi_tank1.BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="299" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="299" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
    </object>
    <object class="LabelWgt" id="semi_auto.grid.semi_tank1.BtnStd4.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="16" font-color="rgb(255,255,255)"/>
+    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="17" font-color="rgb(255,255,255)"/>
     <links>
      <lang class="MLTextLink" textid="5">
       <MLFontFamily L1="Roboto Medium"/>

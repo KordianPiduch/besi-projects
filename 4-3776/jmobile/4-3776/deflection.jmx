@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Deflection" dataWndSize="0,70" pageName="Deflection" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Deflection" dataWndSize="0,70" pageName="Deflection" pageSize="1920,1080" usedFonts="Roboto,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -19,7 +19,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert5">
-   <wgtStyle staticFile="opt/deflectiongauvert5.png" x="641" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert5.png" x="641" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -56,7 +56,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert1">
-   <wgtStyle staticFile="opt/deflectiongauvert1.png" x="491" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert1.png" x="491" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -93,7 +93,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert2">
-   <wgtStyle staticFile="opt/deflectiongauvert2.png" x="341" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert2.png" x="341" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -130,7 +130,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert3">
-   <wgtStyle staticFile="opt/deflectiongauvert3.png" x="191" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert3.png" x="191" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -167,7 +167,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert4">
-   <wgtStyle staticFile="opt/deflectiongauvert4.png" x="41" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert4.png" x="41" y="621" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -204,7 +204,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert6">
-   <wgtStyle staticFile="opt/deflectiongauvert6.png" x="641" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert6.png" x="641" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -241,7 +241,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert7">
-   <wgtStyle staticFile="opt/deflectiongauvert7.png" x="491" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert7.png" x="491" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -278,7 +278,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert8">
-   <wgtStyle staticFile="opt/deflectiongauvert8.png" x="341" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert8.png" x="341" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -315,7 +315,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert9">
-   <wgtStyle staticFile="opt/deflectiongauvert9.png" x="191" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert9.png" x="191" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>
@@ -352,7 +352,7 @@
    </object>
   </object>
   <object class="GroupWgt" customType="LinearGauge" id="GauVert10">
-   <wgtStyle staticFile="opt/deflectiongauvert10.png" x="41" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
+   <wgtStyle staticFile="opt/DeflectionGauVert10.png" x="41" y="161" groupStyle="xform-scaling" cx="39" cy="175.50" width="78" height="351" forcePaint="33"/>
    <links>
     <attr attrName="min" alias="*.ndl.min;*.Scale.lbl.min;*.Scale.ticks.min"/>
     <attr attrName="max" alias="*.ndl.max;*.Scale.lbl.max;*.Scale.ticks.max"/>

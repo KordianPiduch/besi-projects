@@ -691,12 +691,21 @@
   <tag>bar_color</tag>
  </group>
  <group Type="Auto">
-  <name>project_config@$GroupSubscrWgt@$0</name>
+  <name>project_config_all@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|backup</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|global_load</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|global_save</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>theme</tag>
+ </group>
+ <group Type="Auto">
+  <name>project_config_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|backup</tag>
   <tag>bar_color</tag>
   <tag>frame_color</tag>
   <tag>text_color</tag>
@@ -760,6 +769,14 @@
   <tag>ip_address</tag>
   <tag>ping_status_master</tag>
   <tag>ping_status_slave</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_atm_press@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
   <tag>text_color</tag>
  </group>
  <group Type="Auto">

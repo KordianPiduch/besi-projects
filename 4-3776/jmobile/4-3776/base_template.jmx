@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="TemplatePageWgt" downloadPrepDone="false" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="1920" height="1080" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -12,7 +12,6 @@
    <MLTexts>
     <MLText id="0" L1="false"/>
     <MLText id="2" L1="timer"/>
-    <MLText id="5" L1="contex menu"/>
     <MLText id="6" L1="user"/>
     <MLText id="11" L1="SIMULATION"/>
     <MLText id="13" L1="Heel:"/>
@@ -348,24 +347,19 @@
     </links>
    </object>
   </object>
-  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project7">
-   <wgtStyle x="232.72" y="1035" mtx="1,0,0,0,1,0,0,0,1" cx="0" cy="0" width="80" height="40" forcePaint="4"/>
-   <links>
-    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
-   </links>
-   <object class="ButtonWgt" id="btn_restart_project7.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="20" x="0" y="0" height="40" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" mtx="1,0,0,0,1,0,0,0,1" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
+  <object class="GroupWgt" customType="ButtonsWithIcon" id="btn_alarm1">
+   <wgtStyle x="220" y="1032.50" cx="40" cy="22.50" width="80" height="45" forcePaint="5"/>
+   <object class="ButtonWgt" id="btn_alarm1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(102,102,102)" cx="40" cy="22.50" x="0" y="0" height="45" downFillColor="rgb(192,192,192)" releasePath="images\Btn_rect_blueUp.svg" width="80" forcePaint="13" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+    </dataLinks>
     <links>
      <action class="ContextMenuAction" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
     </links>
    </object>
-   <object class="LabelWgt" id="btn_restart_project7.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="0.91" font-size="12" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" cx="35.55" alignment="center" cy="18.18" font-sizepx="13" width="71.11" wrapping="true" height="37.27" forcePaint="5" font-color="rgb(237,237,237)"/>
-    <links>
-     <lang class="MLTextLink" textid="5">
-      <MLFontFamily L1="Roboto Medium"/>
-     </lang>
-    </links>
+   <object class="ImageWgt" id="btn_alarm1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle imagePath="images/CommIcon60.svg" x="25" lock="true" y="6.30" stroke-width="1" cx="16" cy="15.75" stroke="rgb(237,237,237)" enableCache="true" width="32" height="31.50" fill="rgb(255,255,255)" forcePaint="5"/>
    </object>
   </object>
  </object>
