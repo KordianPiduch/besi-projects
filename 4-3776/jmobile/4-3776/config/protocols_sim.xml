@@ -33,7 +33,7 @@
   <displayName>Ping</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
+  <enableSimProtocol>false</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot3</id>
@@ -51,7 +51,7 @@
   <displayName>Ping</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
+  <enableSimProtocol>false</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot6</id>
@@ -101,7 +101,7 @@
   <offline_opt>true</offline_opt>
   <offline_rpt>3</offline_rpt>
   <dictionaries>
-   <dictionaryname nodeId="Node1" autoSync="false" dictionaryFilterNode="false">OPCUA Client_4</dictionaryname>
+   <dictionaryname nodeId="Node1" autoSync="false" dictionaryFilterNode="false">OPCUA Client_7</dictionaryname>
    <dictionaryname nodeId="Node2" autoSync="false" dictionaryFilterNode="false">OPCUA Client</dictionaryname>
   </dictionaries>
   <simFlags>0</simFlags>

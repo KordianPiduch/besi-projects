@@ -36,12 +36,14 @@
       <page class="DialogWgt" type="dialog" name="user_management_operator" size="350,280" file="user_management_operator.jmx"/>
       <page class="DialogWgt" type="dialog" name="user_management_service" size="350,415" file="user_management_service.jmx"/>
       <page class="DialogWgt" type="dialog" name="audit_trail_info" size="350,300" file="audit_trail_info.jmx"/>
-      <page class="DialogWgt" type="dialog" name="project_config" size="350,300" file="project_config.jmx"/>
+      <page class="DialogWgt" type="dialog" name="project_config_all" size="350,300" file="project_config_all.jmx"/>
       <page class="DialogWgt" type="dialog" name="login_timer_info" size="350,150" file="login_timer_info.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_valve" size="240,200" file="simulation_valve.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_tank" size="350,150" file="simulation_tank.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_pump" size="350,300" file="simulation_pump.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_draft" size="350,150" file="simulation_draft.jmx"/>
+      <page class="DialogWgt" type="dialog" name="simulation_atm_press" size="350,170" file="simulation_atm_press.jmx"/>
+      <page class="DialogWgt" type="dialog" name="project_config_base" size="350,130" file="project_config_base.jmx"/>
      </pages>
      <templatePages>
       <templatePage class="TemplatePageWgt" type="template" name="base_template" file="base_template.jmx"/>
@@ -82,7 +84,7 @@
       <group name="general">
        <page name="info_page"/>
        <page name="menu"/>
-       <page name="project_config"/>
+       <page name="project_config_all"/>
       </group>
      </groups>
     </category>

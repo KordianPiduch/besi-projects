@@ -1,0 +1,15 @@
+<defs>
+ <g attributeName="pump_horizontal-1.0:1.0" showChildNodes="0" id="custom_properties" inherit="basicgroup_properties">
+  <info></info>
+  <text attributeName="PumpID" display="PumpID" editChild="true" attributeType="param" attachTag="true" updateProps="true" default="true"/>
+  <text attributeName="SYSTEM_ID" display="SYSTEM_ID" attributeType="param" attachTag="true" updateProps="true" default="true">system identifier, number representation of ballast/bilge/fuel .. etc system
+
+use "-1" to disable control via "take control" button</text>
+  <text attributeName="setting_type" display="setting_type" editChild="true" attributeType="param" attachTag="true" updateProps="true" default="true">available:
+ - simple 
+if not provided default</text>
+  <text isCompound="true" attributeName="direction" display="direction" attributeType="param" attachTag="true" updateProps="true" default="true">available:
+ - left
+default: right</text>
+ </g>
+</defs>

@@ -1,0 +1,74 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" staticFile="opt/deflection_info.png" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="deflection_info" py="0" dataWndSize="0,70" pageType="modal" pageName="deflection_info" pageSize="350,300" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="300" forcePaint="8" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="base line"/>
+    <MLText id="1" L1="warning level line"/>
+    <MLText id="2" L1="alarm level line"/>
+    <MLText id="4" L1="deflection line"/>
+   </MLTexts>
+  </object>
+  <object class="LineWgt" id="line">
+   <wgtStyle x="33.22" anchorIdx="1" y="50.62" stroke-width="2" cx="25.21" cy="18.60" stroke="rgb(255,255,255)" width="50.42" height="37.20" forcePaint="136"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="LineWgt" id="line1" static="true">
+   <wgtStyle x="33.22" anchorIdx="1" y="107.83" stroke-width="2" cx="25.21" cy="18.60" stroke="rgb(0,0,255)" width="50.42" height="37.20"/>
+  </object>
+  <object class="LineWgt" id="line2" static="true">
+   <wgtStyle x="33.22" anchorIdx="1" y="165.03" stroke-width="2" cx="25.21" cy="18.60" stroke="rgb(255,104,32)" width="50.42" height="37.20"/>
+  </object>
+  <object class="LineWgt" id="line3" static="true">
+   <wgtStyle x="33.22" anchorIdx="1" y="222.24" stroke-width="2" cx="25.21" cy="18.60" stroke="rgb(255,0,0)" width="50.42" height="37.20"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="113.43" vert-align="middle" y="45.73" font-size="12" keypad-type="None" cx="101.93" cy="18.90" font-sizepx="16" width="198" wrapping="true" height="41" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="113.43" vert-align="middle" y="102.93" font-size="12" keypad-type="None" cx="101.93" cy="18.90" font-sizepx="16" width="198" wrapping="true" height="41" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="113.43" vert-align="middle" y="162.63" font-size="12" keypad-type="None" cx="101.93" cy="18.90" font-sizepx="16" width="198" wrapping="true" height="41" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="113.43" vert-align="middle" y="219.84" font-size="12" keypad-type="None" cx="101.93" cy="18.90" font-sizepx="16" width="198" wrapping="true" height="41" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="deflection_info@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>
