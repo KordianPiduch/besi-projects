@@ -44,7 +44,7 @@ Width: <TODO>
 - Loading Computer
 
 ## Requirements 
-- Codesys v3.5 SP20
+- Codesys v3.5 SP20 Patch 5
 - jMobile Studio 4.5.1 (523)
 
 ## Functional Description
