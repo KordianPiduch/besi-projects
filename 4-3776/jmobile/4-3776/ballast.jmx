@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="GroupWgt" id="GroupWgt8.GroupWgt28">
    <wgtStyle x="793" lock="true" y="910" cx="60" cy="45" width="120" height="90" forcePaint="1"/>
@@ -681,7 +681,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="piping">
-   <wgtStyle staticFile="opt/Ballastpiping.png" x="190" lock="true" y="84" cx="775" cy="456.50" width="1550" height="913" forcePaint="33"/>
+   <wgtStyle staticFile="opt/ballastpiping.png" x="190" lock="true" y="84" cx="775" cy="456.50" width="1550" height="913" forcePaint="33"/>
    <object class="LineWgt" id="piping.line" static="true">
     <wgtStyle x="0" anchorIdx="1" y="426" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="1550" height="0"/>
    </object>
@@ -1051,7 +1051,7 @@
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">12</param>
+    <param attrName="ValveID" alias="ValveID">14</param>
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve16">

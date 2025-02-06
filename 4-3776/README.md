@@ -63,3 +63,8 @@ Lifting capacity : 4000 MT
 | mimic_to_master | 1203 | 4  |
 | slave_to_mimic  | 1204 | 5  |
 | mimic_to_slave  | 1204 | 6  |
+
+### Semi-Automatic mode mapping
+
+#### tank to valve
+
