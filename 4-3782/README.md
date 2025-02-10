@@ -67,3 +67,6 @@ The signals sent by the starter to the remote control of the valve are operation
 ## Project History
 ### 1.0.0
 init version 
+
+### 1.0.1
+bump codesys project version to SP20 Patch5
