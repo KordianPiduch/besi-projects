@@ -63,6 +63,10 @@ The signals sent to the starter by remote control of the valve are start (potent
 The signals sent by the starter to the remote control of the valve are operation (potential free normal open) and power permissible (potential free normal open).
 ```
 
+## Special requests
+- pump control (specification in Functional Description / Pump Control)
+- UREA TK has additional LOW LOW LEVEL alarm 
+
 
 ## Project History
 ### 1.0.0
