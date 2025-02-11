@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="BallastER" dataWndSize="0,70" pageName="BallastER" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="BallastER" dataWndSize="0,70" pageName="BallastER" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -25,7 +25,7 @@
     <param attrName="TankID" alias="TankID">12</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h">
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump1">
    <wgtStyle x="424.11" lock="true" y="314.23" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
@@ -34,7 +34,7 @@
     <param attrName="setting_type" alias="setting_type"/>
    </links>
   </object>
-  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump_h1">
+  <object class="GroupWgt" customType="pump_horizontal-1.0:1.0" id="pump2">
    <wgtStyle x="424.11" lock="true" y="488" wgtStaticOpt="dynamic" cx="60.50" cy="43.50" width="121" height="87" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">1</param>
@@ -43,15 +43,15 @@
     <param attrName="setting_type" alias="setting_type"/>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="stepless_h">
-   <wgtStyle x="605.41" lock="true" y="326" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="17"/>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve8">
+   <wgtStyle x="670" lock="true" y="326" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="ValveID" alias="ValveID">8</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="stepless_h1">
-   <wgtStyle x="605.41" lock="true" y="498.50" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="17"/>
+  <object class="GroupWgt" customType="valve_stepless-1.0:1.0" id="valve9">
+   <wgtStyle x="670" lock="true" y="498.50" wgtStaticOpt="dynamic" cx="40" cy="41.50" width="80" height="83" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="ValveID" alias="ValveID">9</param>
@@ -60,7 +60,7 @@
   <object class="GroupSubscribeWgt" id="BallastER@$GroupSubscrWgt@$0">
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v">
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve4">
    <wgtStyle x="1191.17" lock="true" y="620.19" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
