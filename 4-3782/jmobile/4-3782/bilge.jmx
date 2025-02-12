@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Bilge" dataWndSize="0,70" pageName="Bilge" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Bilge" dataWndSize="0,70" pageName="Bilge" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -28,7 +28,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v1">
-   <wgtStyle x="1584" lock="true" y="465" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
+   <wgtStyle x="1584" lock="true" y="425" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">2</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -44,7 +44,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v3">
-   <wgtStyle x="1309" lock="true" y="465" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
+   <wgtStyle x="1309" lock="true" y="425" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">2</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -100,7 +100,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v10">
-   <wgtStyle x="213" lock="true" y="465" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
+   <wgtStyle x="78" lock="true" y="408" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">2</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -108,7 +108,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v11">
-   <wgtStyle x="213" lock="true" y="598" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
+   <wgtStyle x="78" lock="true" y="634" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">2</param>
     <param attrName="Confirm" alias="Confirm">false</param>
