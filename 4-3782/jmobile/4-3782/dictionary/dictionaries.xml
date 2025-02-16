@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tag_dictionaries>
     <dictionary_name>OPCUA Client.xml</dictionary_name>
-    <dictionary_name>OPCUA Client_3.xml</dictionary_name>
     <dictionary_name>OPCUA Client_1.xml</dictionary_name>
+    <dictionary_name>OPCUA Client_3.xml</dictionary_name>
+    <dictionary_name>OPCUA Client_2.xml</dictionary_name>
 </tag_dictionaries>

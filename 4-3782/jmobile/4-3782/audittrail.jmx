@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="AuditTrail" dataWndSize="0,70" pageName="AuditTrail" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="AuditTrail" dataWndSize="0,70" pageName="AuditTrail" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -233,7 +233,7 @@
        <action class="ScrollEventsBackwardAction" actionID="1" scrollInterval="0" event="onMouseClick" actionWgt="_EventMgr" eventName="AuditView.Table.evntwgt.evntbfrwgt" attribute="onMouseClick"/>
       </links>
      </object>
-     <object class="ImageWgt" id="AuditView.Buttons.bckwbtn.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+     <object class="ImageWgt" id="AuditView.Buttons.bckwbtn.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
       <wgtStyle imagePath="images/dwn_arrow_ico.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="16.75" cy="17" stroke="rgb(237,237,237)" enableCache="true" width="33.54" height="34" fill="none" forcePaint="17"/>
      </object>
     </object>

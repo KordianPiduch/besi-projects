@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="TemplatePageWgt" downloadPrepDone="false" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto">
+ <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="1920" height="1080" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -375,7 +375,7 @@
      <action class="ContextMenuAction" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
     </links>
    </object>
-   <object class="ImageWgt" id="btn_alarm1.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+   <object class="ImageWgt" id="btn_alarm1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
     <wgtStyle imagePath="images/CommIcon60.svg" x="25" lock="true" y="6.30" stroke-width="1" cx="16" cy="15.75" stroke="rgb(237,237,237)" enableCache="true" width="32" height="31.50" fill="rgb(255,255,255)" forcePaint="5"/>
    </object>
   </object>

@@ -1,6 +1,6 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="false" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName=" " px="0" id="valve_base" py="0" dataWndSize="0,70" pageType="modal" pageName="valve_base" pageSize="155,225" usedFonts="Roboto Medium,Roboto">
-  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="155" height="225" forcePaint="520" v="04.05.01.523"/>
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName=" " px="0" id="valve_base" py="0" dataWndSize="0,70" pageType="modal" pageName="valve_base" pageSize="155,225" usedFonts="Roboto Medium,Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="155" height="225" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="valve_dialog_base_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="px"/>
    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="valve_dialog_base_y" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="py"/>

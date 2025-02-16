@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeWell" dataWndSize="0,70" pageName="BilgeWell" pageSize="1920,1080" usedFonts="Roboto">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeWell" dataWndSize="0,70" pageName="BilgeWell" pageSize="1920,1080" usedFonts="Roboto">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -213,7 +213,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd3">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24" x="1" maxWidth="100000" y="1" rowSpan="1" aspectRatio="1:1" rowOcc="1" horItemOverflow="0" height="48" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[1]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -241,7 +241,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd1">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="50" rowSpan="1" aspectRatio="1:1" rowOcc="2" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd1.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[2]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -269,7 +269,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd2">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="100" rowSpan="1" aspectRatio="1:1" rowOcc="3" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd2.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[3]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -297,7 +297,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd4">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="150" rowSpan="1" aspectRatio="1:1" rowOcc="4" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd4.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[4]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -325,7 +325,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd5">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="1:1" rowOcc="5" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd5.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[5]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -353,7 +353,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd6">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="250" rowSpan="1" aspectRatio="1:1" rowOcc="6" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd6.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[6]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -381,7 +381,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd7">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="300" rowSpan="1" aspectRatio="1:1" rowOcc="7" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd7.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[7]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -409,7 +409,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd8">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="350" rowSpan="1" aspectRatio="1:1" rowOcc="8" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd8.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[8]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -437,7 +437,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd9">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="1:1" rowOcc="9" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd9.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[9]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -465,7 +465,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd10">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="450" rowSpan="1" aspectRatio="1:1" rowOcc="10" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd10.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[10]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -493,7 +493,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd11">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="500" rowSpan="1" aspectRatio="1:1" rowOcc="11" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd11.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[11]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -521,7 +521,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd12">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="550" rowSpan="1" aspectRatio="1:1" rowOcc="12" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd12.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[12]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -549,7 +549,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd13">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="600" rowSpan="1" aspectRatio="1:1" rowOcc="13" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd13.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[13]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -577,7 +577,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd14">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="650" rowSpan="1" aspectRatio="1:1" rowOcc="14" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd14.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[14]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -605,7 +605,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd15">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="700" rowSpan="1" aspectRatio="1:1" rowOcc="15" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd15.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[15]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -633,7 +633,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd16">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="750" rowSpan="1" aspectRatio="1:1" rowOcc="16" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout7.LgtStd16.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[16]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -802,7 +802,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.LgtStd3">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24" x="1" maxWidth="100000" y="1" rowSpan="1" aspectRatio="1:1" rowOcc="1" horItemOverflow="0" height="48" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[17]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -830,7 +830,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd17">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="50" rowSpan="1" aspectRatio="1:1" rowOcc="2" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd17.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[18]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -848,7 +848,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd1">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="100" rowSpan="1" aspectRatio="1:1" rowOcc="3" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd1.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[19]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -866,7 +866,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd2">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="150" rowSpan="1" aspectRatio="1:1" rowOcc="4" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd2.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[20]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -884,7 +884,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd3">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="1:1" rowOcc="5" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[21]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -902,7 +902,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd4">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="250" rowSpan="1" aspectRatio="1:1" rowOcc="6" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd4.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[22]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -920,7 +920,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd5">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="300" rowSpan="1" aspectRatio="1:1" rowOcc="7" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd5.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[23]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -938,7 +938,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd6">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="350" rowSpan="1" aspectRatio="1:1" rowOcc="8" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd6.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[24]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -956,7 +956,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd7">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="1:1" rowOcc="9" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd7.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[25]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -974,7 +974,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd8">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="450" rowSpan="1" aspectRatio="1:1" rowOcc="10" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd8.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[26]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -992,7 +992,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd9">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="500" rowSpan="1" aspectRatio="1:1" rowOcc="11" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd9.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[27]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>
@@ -1010,7 +1010,7 @@
    <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd10">
     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="550" rowSpan="1" aspectRatio="1:1" rowOcc="12" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd10.ind" hmiStyle="hmi-type:light; type:light">
-     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="25"/>
      <dataLinks>
       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[28]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
      </dataLinks>

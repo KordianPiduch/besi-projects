@@ -23,13 +23,13 @@
  <object class="GroupWgt" id="*.pump_symbol">
   <wgtStyle x="42.40" y="38.65" wgtStaticOpt="dynamic" cx="21.51" cy="21" width="41.20" height="42" forcePaint="16"/>
   <object class="ShapeWgt" id="*.pump_symbol.circle">
-   <wgtStyle ry="19" x="0" y="0" wgtStaticOpt="dynamic" cx="20.08" cy="21" stroke="rgb(200,200,200)" width="40.16" height="42" fill="rgb(127,127,127)" nodeName="ellipse" forcePaint="16" rx="22"/>
+   <wgtStyle ry="19" x="0" y="0" wgtStaticOpt="dynamic" cx="20.08" cy="21" stroke="rgb(200,200,200)" width="40.16" height="42" fill="rgb(127,127,127)" forcePaint="16" nodeName="ellipse" rx="22"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    </dataLinks>
   </object>
   <object class="ShapeWgt" id="*.pump_symbol.triangle">
-   <wgtStyle x="8.20" y="4" mtx="0,1,0,-1,0,0,33,0,1" wgtStaticOpt="dynamic" cx="17" cy="16.50" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="33" height="33" fill="rgb(237,237,237)" nodeName="polygon" forcePaint="16"/>
+   <wgtStyle x="8.20" y="4" mtx="0,1,0,-1,0,0,33,0,1" wgtStaticOpt="dynamic" cx="17" cy="16.50" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="33" height="33" fill="rgb(237,237,237)" forcePaint="16" nodeName="polygon"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|running" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill">
      <xForms>
@@ -61,14 +61,14 @@
    </dataLinks>
   </object>
   <object class="ShapeWgt" id="*.pressure_sensor_up.circle1">
-   <wgtStyle ry="19" x="59.58" y="12.91" wgtStaticOpt="dynamic" cx="4.88" cy="4.47" stroke="rgb(102,102,102)" width="9.75" height="8.94" fill="rgb(102,102,102)" nodeName="ellipse" forcePaint="16" rx="22"/>
+   <wgtStyle ry="19" x="59.58" y="12.91" wgtStaticOpt="dynamic" cx="4.88" cy="4.47" stroke="rgb(102,102,102)" width="9.75" height="8.94" fill="rgb(102,102,102)" forcePaint="16" nodeName="ellipse" rx="22"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
    </dataLinks>
   </object>
   <object class="ShapeWgt" id="*.pressure_sensor_up.roundrect1">
-   <wgtStyle ry="20" x="0" y="0.99" wgtStaticOpt="dynamic" cx="18.90" cy="13.94" stroke="rgb(102,102,102)" width="39" height="28.80" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="20"/>
+   <wgtStyle ry="20" x="0" y="0.99" wgtStaticOpt="dynamic" cx="18.90" cy="13.94" stroke="rgb(102,102,102)" width="39" height="28.80" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="20"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
@@ -92,7 +92,7 @@
   <object class="GroupWgt" id="*.pressure_sensor_up.warn_sign">
    <wgtStyle x="5.42" y="4.97" wgtStaticOpt="dynamic" cx="14.63" cy="10.93" width="29.25" height="21.85" forcePaint="16"/>
    <object class="ShapeWgt" id="*.pressure_sensor_up.warn_sign.background">
-    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -108,7 +108,7 @@
    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[${PumpID}]|sttPump|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
   </dataLinks>
   <object class="ShapeWgt" id="*.pump_warn_sign.background">
-   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    </dataLinks>
@@ -172,14 +172,14 @@
    </dataLinks>
   </object>
   <object class="ShapeWgt" id="*.pressure_sensor_down.circle1">
-   <wgtStyle ry="19" x="59.58" y="12.91" wgtStaticOpt="dynamic" cx="4.88" cy="4.47" stroke="rgb(102,102,102)" width="9.75" height="8.94" fill="rgb(102,102,102)" nodeName="ellipse" forcePaint="16" rx="22"/>
+   <wgtStyle ry="19" x="59.58" y="12.91" wgtStaticOpt="dynamic" cx="4.88" cy="4.47" stroke="rgb(102,102,102)" width="9.75" height="8.94" fill="rgb(102,102,102)" forcePaint="16" nodeName="ellipse" rx="22"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
    </dataLinks>
   </object>
   <object class="ShapeWgt" id="*.pressure_sensor_down.roundrect1">
-   <wgtStyle ry="20" x="0" y="0.99" wgtStaticOpt="dynamic" cx="18.90" cy="13.94" stroke="rgb(102,102,102)" width="39" height="28.80" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="20"/>
+   <wgtStyle ry="20" x="0" y="0.99" wgtStaticOpt="dynamic" cx="18.90" cy="13.94" stroke="rgb(102,102,102)" width="39" height="28.80" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="20"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
@@ -203,7 +203,7 @@
   <object class="GroupWgt" id="*.pressure_sensor_down.warn_sign">
    <wgtStyle x="5.42" y="4.97" wgtStaticOpt="dynamic" cx="14.62" cy="10.93" width="29.25" height="21.85" forcePaint="16"/>
    <object class="ShapeWgt" id="*.pressure_sensor_down.warn_sign.background">
-    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
+    <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="14.63" cy="10.60" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="29.25" height="21.85" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>

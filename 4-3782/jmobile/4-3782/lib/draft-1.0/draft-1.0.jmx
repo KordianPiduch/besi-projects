@@ -13,7 +13,7 @@
   </MLTexts>
  </object>
  <object class="ShapeWgt" id="*.background">
-  <wgtStyle ry="20" x="0" y="0" wgtStaticOpt="dynamic" cx="48.48" cy="19.35" stroke="rgb(102,102,102)" width="100" height="40" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="5"/>
+  <wgtStyle ry="20" x="0" y="0" wgtStaticOpt="dynamic" cx="48.48" cy="19.35" stroke="rgb(102,102,102)" width="100" height="40" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="5"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
@@ -51,7 +51,7 @@
    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|drafts|drafts[${DraftID}]|sttDraft|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
   </dataLinks>
   <object class="ShapeWgt" id="*.warning.background">
-   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    </dataLinks>

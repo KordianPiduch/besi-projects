@@ -90,7 +90,7 @@
  <object class="GroupWgt" id="*.set_point_button_custom">
   <wgtStyle x="7.22" y="43.27" wgtStaticOpt="dynamic" cx="57.78" cy="21.64" width="115.56" height="43.27" forcePaint="16"/>
   <object class="ShapeWgt" id="*.set_point_button_custom.background">
-   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="55.91" cy="21.64" stroke="rgb(0,70,136)" width="115.56" height="43.27" fill="rgb(0,70,136)" nodeName="rect" forcePaint="16"/>
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="55.91" cy="21.64" stroke="rgb(0,70,136)" width="115.56" height="43.27" fill="rgb(0,70,136)" forcePaint="16" nodeName="rect"/>
   </object>
   <object class="LabelWgt" id="*.set_point_button_custom.label_set_point">
    <wgtStyle frameColor="none" font-size="8" wrapping="true" cx="33.29" cy="19.47" x="0" y="0" font-sizepx="11" height="42.27" font-color="rgb(255,255,255)" width="64" alignment="center" vert-align="middle" forcePaint="16" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" keypad-type="None"/>
