@@ -1,0 +1,1040 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeWell" dataWndSize="0,70" pageName="BilgeWell" pageSize="1920,1080" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="3" L1="BILGE WELL"/>
+    <MLText id="9" L1="BILGE TANK LEVEL HIGH"/>
+    <MLText id="10" L1="ME A/C COND. WATER TANK LEVEL HIGH"/>
+    <MLText id="11" L1="E/R BILGE WELL (AFT) LEVEL HIGH"/>
+    <MLText id="12" L1="E/R BILGE WELL (FORE.P) LEVEL HIGH"/>
+    <MLText id="14" L1="BILGE OF M/E FOUNDATION LEVEL HIGH"/>
+    <MLText id="15" L1="E.F.P.RM BILGE LEVEL HIGH"/>
+    <MLText id="16" L1="No.1 VALVE RECESS BILGE LEVEL HIGH"/>
+    <MLText id="17" L1="No.2 VALVE RECESS BILGE LEVEL HIGH"/>
+    <MLText id="19" L1="No.3 VALVE RECESS BILGE LEVEL HIGH"/>
+    <MLText id="20" L1="FR20~38 VOID (P)  LEVEL HIGH FR20~38"/>
+    <MLText id="21" L1="FR17~38 VOID (S)  LEVEL HIGH FR17~38"/>
+    <MLText id="22" L1="NO.1 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="23" L1="NO.1 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="24" L1="NO.2 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="25" L1="NO.2 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="26" L1="NO.3 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="27" L1="NO.3 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="28" L1="NO.4 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="29" L1="NO.4 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="30" L1="NO.5 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="31" L1="NO.5 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="32" L1="NO.6 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="33" L1="NO.6 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="34" L1="NO.7 C/H B.W.(P) LEVEL HIGH"/>
+    <MLText id="35" L1="NO.7 C/H B.W.(S) LEVEL HIGH"/>
+    <MLText id="36" L1="FR17~35 VOID (P)  LEVEL HIGH FR17~35"/>
+    <MLText id="37" L1="ER COFFERDAM  LEVEL HIGH"/>
+    <MLText id="42" L1=" "/>
+    <MLText id="43" L1="E/R BILGE WELL (FORE.S) LEVEL HIGH"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GridLayout7">
+   <wgtStyle x="240" y="110" wgtStaticOpt="dynamic" cx="325" cy="438" width="650" height="876" forcePaint="17">
+    <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(255,255,255)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="2" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="16">
+     <colProperties>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="50"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object class="LabelWgt" id="GridLayout7.label1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="21.60" x="50" maxWidth="100000" y="1" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="47" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="50" rowSpan="1" aspectRatio="794:55" rowOcc="2" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="100" rowSpan="1" aspectRatio="794:55" rowOcc="3" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label4">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="150" rowSpan="1" aspectRatio="794:55" rowOcc="4" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label5">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="200" rowSpan="1" aspectRatio="794:55" rowOcc="5" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="43"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label6">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="250" rowSpan="1" aspectRatio="794:55" rowOcc="6" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label7">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="300" rowSpan="1" aspectRatio="794:55" rowOcc="7" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label8">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="350" rowSpan="1" aspectRatio="794:55" rowOcc="8" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label9">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="400" rowSpan="1" aspectRatio="794:55" rowOcc="9" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label10">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="450" rowSpan="1" aspectRatio="794:55" rowOcc="10" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label11">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="500" rowSpan="1" aspectRatio="794:55" rowOcc="11" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="20"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label12">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="550" rowSpan="1" aspectRatio="794:55" rowOcc="12" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label13">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="600" rowSpan="1" aspectRatio="794:55" rowOcc="13" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="22"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label14">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="650" rowSpan="1" aspectRatio="794:55" rowOcc="14" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="23"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label15">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="700" rowSpan="1" aspectRatio="794:55" rowOcc="15" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="24"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout7.label16">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.80" cy="22.05" x="50" maxWidth="100000" y="750" rowSpan="1" aspectRatio="794:55" rowOcc="16" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24" x="1" maxWidth="100000" y="1" rowSpan="1" aspectRatio="1:1" rowOcc="1" horItemOverflow="0" height="48" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[1]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd3.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24" font-sizepx="13" width="48" height="48" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd1.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="10.90" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.69" enableCache="true" width="16.62" height="19.38" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="50" rowSpan="1" aspectRatio="1:1" rowOcc="2" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd1.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[2]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd2.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="100" rowSpan="1" aspectRatio="1:1" rowOcc="3" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd2.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[3]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd2.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd4.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd2.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd4">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="150" rowSpan="1" aspectRatio="1:1" rowOcc="4" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd4.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[4]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd4.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd5.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd4.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd5">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="1:1" rowOcc="5" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd5.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[5]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd5.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd6.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd5.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd6">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="250" rowSpan="1" aspectRatio="1:1" rowOcc="6" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd6.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[6]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd6.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd7.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd7">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="300" rowSpan="1" aspectRatio="1:1" rowOcc="7" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd7.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[7]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd7.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd8.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd7.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd8">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="350" rowSpan="1" aspectRatio="1:1" rowOcc="8" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd8.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[8]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd8.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd9.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd8.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd9">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="1:1" rowOcc="9" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd9.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[9]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd9.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd10.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd9.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd10">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="450" rowSpan="1" aspectRatio="1:1" rowOcc="10" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd10.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[10]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd10.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd11.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd10.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd11">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="500" rowSpan="1" aspectRatio="1:1" rowOcc="11" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd11.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[11]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd11.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd12.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd11.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd12">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="550" rowSpan="1" aspectRatio="1:1" rowOcc="12" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd12.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[12]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd12.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd13.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd12.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd13">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="600" rowSpan="1" aspectRatio="1:1" rowOcc="13" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd13.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[13]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd13.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd14.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd13.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd14">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="650" rowSpan="1" aspectRatio="1:1" rowOcc="14" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd14.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[14]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd14.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd15.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd14.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd15">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="700" rowSpan="1" aspectRatio="1:1" rowOcc="15" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd15.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[15]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd15.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd16.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd15.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout7.LgtStd16">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="750" rowSpan="1" aspectRatio="1:1" rowOcc="16" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout7.LgtStd16.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[16]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.LgtStd16.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd3.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.LgtStd16.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="page_name">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" lock="true" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="BilgeWell@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="GridLayout1">
+   <wgtStyle x="1030" y="110" wgtStaticOpt="dynamic" cx="325" cy="438" width="650" height="876" forcePaint="17">
+    <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(255,255,255)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="2" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="12">
+     <colProperties>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="50"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="50" stretch="1" selStrokeColor="none" minHeight="0" topMargin="0"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object class="LabelWgt" id="GridLayout1.label17">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="21.60" x="50" maxWidth="100000" y="1" rowSpan="1" aspectRatio="397:28" rowOcc="1" horItemOverflow="0" height="47" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label18">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="50" rowSpan="1" aspectRatio="397:28" rowOcc="2" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label19">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="100" rowSpan="1" aspectRatio="397:28" rowOcc="3" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label20">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="150" rowSpan="1" aspectRatio="397:28" rowOcc="4" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="29"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label21">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="200" rowSpan="1" aspectRatio="397:28" rowOcc="5" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="30"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label22">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="250" rowSpan="1" aspectRatio="397:28" rowOcc="6" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="31"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label23">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="300" rowSpan="1" aspectRatio="397:28" rowOcc="7" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label24">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="350" rowSpan="1" aspectRatio="397:28" rowOcc="8" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="33"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label25">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="400" rowSpan="1" aspectRatio="397:28" rowOcc="9" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label26">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="450" rowSpan="1" aspectRatio="397:28" rowOcc="10" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="35"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label27">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="500" rowSpan="1" aspectRatio="397:28" rowOcc="11" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="36"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GridLayout1.label28">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="306.81" cy="22.05" x="50" maxWidth="100000" y="550" rowSpan="1" aspectRatio="397:28" rowOcc="12" horItemOverflow="0" height="48" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="598" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="37"/>
+    </links>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.LgtStd3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24" x="1" maxWidth="100000" y="1" rowSpan="1" aspectRatio="1:1" rowOcc="1" horItemOverflow="0" height="48" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="22.66" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="48" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[17]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.LgtStd3.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24" font-sizepx="13" width="48" height="48" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout1.LgtStd3.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.LgtStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="10.90" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.69" enableCache="true" width="16.62" height="19.38" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd17">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="50" rowSpan="1" aspectRatio="1:1" rowOcc="2" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd17.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[18]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd17.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd17.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd1">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="100" rowSpan="1" aspectRatio="1:1" rowOcc="3" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd1.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[19]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd1.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd2">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="150" rowSpan="1" aspectRatio="1:1" rowOcc="4" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd2.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[20]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd2.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd2.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd3">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="1:1" rowOcc="5" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd3.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[21]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd3.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd4">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="250" rowSpan="1" aspectRatio="1:1" rowOcc="6" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd4.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[22]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd4.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd4.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd5">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="300" rowSpan="1" aspectRatio="1:1" rowOcc="7" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd5.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[23]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd5.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd5.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd6">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="350" rowSpan="1" aspectRatio="1:1" rowOcc="8" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd6.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[24]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd6.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd6.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd7">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="1:1" rowOcc="9" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd7.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[25]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd7.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd7.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd8">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="450" rowSpan="1" aspectRatio="1:1" rowOcc="10" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd8.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[26]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd8.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd8.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd9">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="500" rowSpan="1" aspectRatio="1:1" rowOcc="11" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd9.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[27]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd9.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="17" font-color="rgb(230,230,230)"/>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd9.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="Lights" id="GridLayout1.GridLayout7.LgtStd10">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="24" cy="24.50" x="1" maxWidth="100000" y="550" rowSpan="1" aspectRatio="1:1" rowOcc="12" horItemOverflow="0" height="49" minWidth="0" preserveAspectRatio="0" width="48" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="IndicatorWgt" id="GridLayout1.GridLayout7.LgtStd10.ind" hmiStyle="hmi-type:light; type:light">
+     <wgtStyle imagePath="images/light_round_orange.svg" x="0" y="0" bdrSize="0.10,0.11,0.08,0.08" wgtStaticOpt="dynamic" cx="24" cy="23.13" stroke="none" bkgColor="rgb(255,0,0);rgb(0,128,0)" width="48" height="49" forcePaint="17"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[28]" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GridLayout1.GridLayout7.LgtStd10.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24" alignment="center" cy="24.50" font-sizepx="13" width="48" height="49" forcePaint="153" font-color="rgb(230,230,230)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="frame" dataSource="GridLayout7.LgtStd3.ind" tagIndex="-1" readWrite="R" attribute="fill">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#e6e6e6;#ffffff" name="ColorPaletteCustom">
+         <value i="0">0</value>
+         <value i="1">1</value>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="42"/>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout1.GridLayout7.LgtStd10.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+     <wgtStyle x="15.91" y="11.13" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.89" enableCache="true" width="16.62" height="19.78" forcePaint="16"/>
+    </object>
+   </object>
+  </object>
+ </object>
+</wgtPage>

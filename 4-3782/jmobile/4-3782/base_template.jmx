@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto">
+ <object class="TemplatePageWgt" downloadPrepDone="false" staticOptEnable="true" id="base_template" pageType="template" dataWndSize="0,70" scriptFile="base_template.js" pageName="base_template" pageSize="1920,1080" usedFonts="Roboto">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="1920" height="1080" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -14,12 +14,12 @@
     <MLText id="2" L1="timer"/>
     <MLText id="6" L1="user"/>
     <MLText id="11" L1="SIMULATION"/>
+    <MLText id="12" L1="Atm. Press.:"/>
     <MLText id="13" L1="Heel:"/>
+    <MLText id="14" L1="mbar"/>
     <MLText id="15" L1="°"/>
     <MLText id="16" L1="Trim:"/>
     <MLText id="17" L1="m"/>
-    <MLText id="18" L1="Atm. Press.:"/>
-    <MLText id="19" L1="mbar"/>
    </MLTexts>
   </object>
   <object class="ShapeWgt" id="upper_bar">
@@ -224,44 +224,6 @@
     </object>
    </object>
   </object>
-  <object class="GroupWgt" id="atm_press_indication">
-   <wgtStyle x="1510" y="1040" cx="100" cy="15" width="200" height="30" forcePaint="9"/>
-   <dataLinks>
-    <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|enable" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
-   </dataLinks>
-   <object class="ShapeWgt" id="atm_press_indication.background">
-    <wgtStyle ry="2" x="0" y="0" cx="96.97" cy="14.52" stroke="rgb(200,200,200)" width="200" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="137" rx="2"/>
-    <dataLinks>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
-    </dataLinks>
-   </object>
-   <object class="LabelWgt" id="atm_press_indication.name">
-    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="3" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="51.22" cy="13.50" font-sizepx="16" width="99" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
-    <dataLinks>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-    </dataLinks>
-    <links>
-     <lang class="MLTextLink" textid="18"/>
-    </links>
-   </object>
-   <object class="NumericWgt" id="atm_press_indication.numeric1">
-    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="12" step="1" cx="27.06" cy="12.86" disabled="true" decimalDigits="1" x="90" numberFormat="1" showThousandSeparator="true" y="0" font-sizepx="16" height="29" font-color="rgb(255,255,255)" width="59" alignment="center" max="3.40282e+38" vert-align="middle" forcePaint="137" usingFormat="" font-family="Roboto" text="9999.9" value="9999.9" keypad-type="Numeric"/>
-    <dataLinks>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|atmospheric_pressure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
-    </dataLinks>
-   </object>
-   <object class="LabelWgt" id="atm_press_indication.unit">
-    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="150" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="25.60" cy="13.50" font-sizepx="16" width="49" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
-    <dataLinks>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-    </dataLinks>
-    <links>
-     <lang class="MLTextLink" textid="19"/>
-    </links>
-   </object>
-  </object>
   <object class="GroupWgt" id="user">
    <wgtStyle x="1407" y="1040" cx="50" cy="15" width="100" height="30" forcePaint="1"/>
    <object class="ShapeWgt" id="user.background">
@@ -345,6 +307,76 @@
     <links>
      <action class="JavaScriptAction" f="simulation_indication_hotspotbtn_onMouseClick" actionID="0" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
     </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="atm_press_indication">
+   <wgtStyle x="1510" y="1040" cx="101" cy="16" width="202" height="32" forcePaint="9"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|enable" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+   </dataLinks>
+   <object class="ShapeWgt" id="atm_press_indication.background">
+    <wgtStyle x="0" y="0" cx="0" cy="0" stroke="rgb(200,200,200)" width="200" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="137"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="atm_press_indication.name">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="3" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="51.22" cy="13.50" font-sizepx="16" width="99" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="atm_press_indication.numeric1">
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="12" step="1" cx="27.06" cy="12.86" disabled="true" decimalDigits="1" x="90" numberFormat="1" showThousandSeparator="true" y="0" font-sizepx="16" height="29" font-color="rgb(255,255,255)" width="59" alignment="center" max="3.40282e+38" vert-align="middle" forcePaint="137" usingFormat="" font-family="Roboto" text="9999.9" value="9999.9" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|atmospheric_pressure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="atm_press_indication.unit">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="150" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="25.60" cy="13.50" font-sizepx="16" width="49" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+   <object class="ButtonWgt" id="atm_press_indication.hotspotbtn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="../../shared/gallery/images/bu_other/win-like.svg" x="-1" form="hotspot" pushColor="rgb(128,128,0)" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" y="0" dx="1" dy="-1" cx="98.46" cy="14.71" value="0" width="200" height="30" fill="rgb(160,160,164)" forcePaint="73" downFillColor="rgb(160,160,164)"/>
+    <dataLinks>
+     <dataLink sourceType="Formula" attribute="disabled">
+      <xForms>
+       <xForm class="FormulaXForm" expression="$Not($('OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+        <dataLinks>
+         <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+        </dataLinks>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action class="ShowDialogAction" actionID="0" event="onMouseHold" actionWgt="_PageMgr" pageName="simulation_atm_press.jmx" attribute="onMouseHold"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithIcon" id="btn_alarm1">
+   <wgtStyle x="220" y="1032.50" cx="40" cy="22.50" width="80" height="45" forcePaint="5"/>
+   <object class="ButtonWgt" id="btn_alarm1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" changeTextColor="true" fill="rgb(102,102,102)" cx="40" cy="22.50" x="0" y="0" height="45" downFillColor="rgb(192,192,192)" releasePath="images\Btn_rect_blueUp.svg" width="80" forcePaint="13" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="upColor"/>
+    </dataLinks>
+    <links>
+     <action class="ContextMenuAction" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="ImageWgt" id="btn_alarm1.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+    <wgtStyle imagePath="images/CommIcon60.svg" x="25" lock="true" y="6.30" stroke-width="1" cx="16" cy="15.75" stroke="rgb(237,237,237)" enableCache="true" width="32" height="31.50" fill="rgb(255,255,255)" forcePaint="5"/>
    </object>
   </object>
  </object>

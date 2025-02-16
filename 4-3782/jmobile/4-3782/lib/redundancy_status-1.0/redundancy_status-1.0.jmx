@@ -6,11 +6,11 @@
   </langs>
   <MLTexts>
    <MLText id="3" L1="Redundancy Status"/>
-   <MLText id="4" L1="Master"/>
+   <MLText id="4" L1="Main (PLC1)"/>
    <MLText id="5" L1="ping"/>
    <MLText id="6" L1="health"/>
    <MLText id="7" L1="in control"/>
-   <MLText id="8" L1="Slave"/>
+   <MLText id="8" L1="Backup (PLC2)"/>
    <MLText id="9" L1="ping"/>
    <MLText id="10" L1="health"/>
    <MLText id="11" L1="in control"/>
@@ -129,7 +129,7 @@
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="ping_status_master" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
     </dataLinks>
    </object>
-   <object class="ImageWgt" id="*.GroupWgt1.LgtStd5.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <object class="ImageWgt" id="*.GroupWgt1.LgtStd5.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
     <wgtStyle imagePath="lib/redundancy_status-1.0/images/Network3.svg" x="25" y="5" wgtStaticOpt="dynamic" stroke-width="2" fill-opacity="0.5" cx="10.11" cy="10.01" stroke="rgb(230,230,230)" enableCache="true" width="20" height="20" fill="none" forcePaint="16"/>
    </object>
   </object>
@@ -253,7 +253,7 @@
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="ping_status_slave" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
     </dataLinks>
    </object>
-   <object class="ImageWgt" id="*.GroupWgt2.LgtStd5.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+   <object class="ImageWgt" id="*.GroupWgt2.LgtStd5.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
     <wgtStyle imagePath="lib/redundancy_status-1.0/images/Network3.svg" x="25" y="5" wgtStaticOpt="dynamic" stroke-width="2" fill-opacity="0.5" cx="10.11" cy="10.01" stroke="rgb(230,230,230)" enableCache="true" width="20" height="20" fill="none" forcePaint="16"/>
    </object>
   </object>

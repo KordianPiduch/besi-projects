@@ -545,5 +545,24 @@
     </object>
    </object>
   </object>
+  <object class="GroupWgt" customType="wgtResetAllValves-1.0:1.0" id="BtnStd1">
+   <wgtStyle x="210" y="5" wgtStaticOpt="dynamic" cx="50" cy="20" width="100" height="40" forcePaint="28"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="visibility">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID"/>
+   </dataLinks>
+   <links>
+    <param attrName="HMI_ID"/>
+    <param attrName="SystemID" alias="SystemID">1</param>
+   </links>
+  </object>
  </object>
 </wgtPage>

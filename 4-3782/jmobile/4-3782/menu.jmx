@@ -1,6 +1,6 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="menu" py="0" dataWndSize="0,70" pageType="modal" pageName="menu" pageSize="300,500" usedFonts="Roboto Medium">
-  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="300" height="500" forcePaint="520" v="04.05.01.523"/>
+ <object class="DialogWgt" downloadPrepDone="false" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="menu" py="0" dataWndSize="0,70" pageType="modal" pageName="menu" pageSize="300,530" usedFonts="Roboto Medium">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(102,102,102)" width="300" height="530" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
   </dataLinks>
@@ -23,6 +23,7 @@
     <MLText id="4" L1="Bilge"/>
     <MLText id="5" L1="Bilge ER / Fore"/>
     <MLText id="6" L1="Fuel"/>
+    <MLText id="7" L1="Bilge Well Table"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" customType="ButtonsWithIcon" id="BtnStd1">
@@ -41,7 +42,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="GroupWgt1">
-   <wgtStyle x="25" y="440" cx="125" cy="25" width="250" height="50"/>
+   <wgtStyle x="25" y="470" cx="125" cy="25" width="250" height="50"/>
    <object class="GroupWgt" customType="ButtonsWithIcon" id="GroupWgt1.BtnStd2">
     <wgtStyle x="0" y="0" cx="40" cy="25" width="80" height="50"/>
     <object class="ButtonWgt" id="GroupWgt1.BtnStd2.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
@@ -86,8 +87,8 @@
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
   <object class="GroupWgt" id="GridLayout7">
-   <wgtStyle x="25" y="46.91" wgtStaticOpt="dynamic" cx="125" cy="194" width="250" height="388" forcePaint="17">
-    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="2" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="1" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="6">
+   <wgtStyle x="25" y="46.91" wgtStaticOpt="dynamic" cx="125" cy="221.50" width="250" height="443" forcePaint="17">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="1" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="7">
      <colProperties>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
      </colProperties>
@@ -98,11 +99,12 @@
       <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="60" stretch="1" selStrokeColor="none" minHeight="60" topMargin="5"/>
       <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="60" stretch="1" selStrokeColor="none" minHeight="60" topMargin="5"/>
       <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="60" stretch="1" selStrokeColor="none" minHeight="60" topMargin="5"/>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="60" stretch="1" selStrokeColor="none" minHeight="60" topMargin="5"/>
      </rowProperties>
     </gridGroupLayout>
    </wgtStyle>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum2">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="19" rowSpan="1" aspectRatio="250:49" rowOcc="1" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="5" rowSpan="1" aspectRatio="250:49" rowOcc="1" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum2.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -123,7 +125,7 @@
     </object>
    </object>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum1">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="319" rowSpan="1" aspectRatio="5:1" rowOcc="6" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="365" rowSpan="1" aspectRatio="5:1" rowOcc="7" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum1.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -144,7 +146,7 @@
     </object>
    </object>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum3">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="79" rowSpan="1" aspectRatio="31:6" rowOcc="2" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="65" rowSpan="1" aspectRatio="31:6" rowOcc="2" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum3.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.36" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -165,7 +167,7 @@
     </object>
    </object>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum4">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="139" rowSpan="1" aspectRatio="5:1" rowOcc="3" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="125" rowSpan="1" aspectRatio="5:1" rowOcc="3" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum4.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -186,7 +188,7 @@
     </object>
    </object>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum5">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="199" rowSpan="1" aspectRatio="5:1" rowOcc="4" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="185" rowSpan="1" aspectRatio="5:1" rowOcc="4" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum5.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -207,7 +209,7 @@
     </object>
    </object>
    <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum6">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="259" rowSpan="1" aspectRatio="5:1" rowOcc="5" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="245" rowSpan="1" aspectRatio="5:1" rowOcc="5" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
     <object class="ButtonWgt" id="GridLayout7.BtnIllum6.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
      <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
      <links>
@@ -224,6 +226,27 @@
      </links>
     </object>
     <object class="ImageWgt" id="GridLayout7.BtnIllum6.icoImg" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon">
+     <wgtStyle imagePath="images/Monitor3.svg" x="10" y="10.01" wgtStaticOpt="dynamic" stroke-width="0" cx="15" cy="13.36" stroke="rgb(237,237,237)" width="30" height="30.04" fill="rgb(255,255,255)" forcePaint="17"/>
+    </object>
+   </object>
+   <object class="GroupWgt" customType="ButtonsWithLightLabelAndIcon" id="GridLayout7.BtnIllum7">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="125" cy="25" x="0" maxWidth="100000" y="305" rowSpan="1" aspectRatio="5:1" rowOcc="6" horItemOverflow="0" height="50" minWidth="0" preserveAspectRatio="0" width="250" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+    <object class="ButtonWgt" id="GridLayout7.BtnIllum7.btn" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn">
+     <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" x="0" form="standard" needlePath="images\Btn_rect_blueDown.svg" y="0" wgtStaticOpt="dynamic" cx="119.07" cy="22.37" value="0" style="0" width="250" height="50" fill="rgb(0,70,136)" forcePaint="17" downFillColor="rgb(0,176,199)" bdrImageSize="42.00,38.00"/>
+     <links>
+      <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+      <action class="LoadPageAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="bilgewell.jmx" attribute="onMouseClick"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GridLayout7.BtnIllum7.lbl" hmiStyle="hmi-type:wgtlabel">
+     <wgtStyle font-family="Roboto Medium" x="60" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="116.38" cy="32.13" font-sizepx="16" width="190" wrapping="true" height="50" forcePaint="17" font-color="rgb(255,255,255)"/>
+     <links>
+      <lang class="MLTextLink" textid="7">
+       <MLFontFamily L1="Roboto Medium"/>
+      </lang>
+     </links>
+    </object>
+    <object class="ImageWgt" id="GridLayout7.BtnIllum7.icoImg" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon">
      <wgtStyle imagePath="images/Monitor3.svg" x="10" y="10.01" wgtStaticOpt="dynamic" stroke-width="0" cx="15" cy="13.36" stroke="rgb(237,237,237)" width="30" height="30.04" fill="rgb(255,255,255)" forcePaint="17"/>
     </object>
    </object>

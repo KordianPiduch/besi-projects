@@ -11,17 +11,18 @@
      <pages>
       <page class="PageWgt" type="normal" name="Ballast" size="1920,1080" file="ballast.jmx"/>
       <page class="DialogWgt" type="dialog" name="info_page" size="350,550" file="info_page.jmx"/>
-      <page class="DialogWgt" type="dialog" name="menu" size="300,500" file="menu.jmx"/>
+      <page class="DialogWgt" type="dialog" name="menu" size="300,530" file="menu.jmx"/>
       <page class="DialogWgt" type="dialog" name="dimmer" size="50,300" file="dimmer.jmx"/>
       <page class="DialogWgt" type="dialog" name="redundancy_status" size="360,260" file="redundancy_status.jmx"/>
-      <page class="DialogWgt" type="dialog" name="valve_base" size="90,140" file="valve_base.jmx"/>
+      <page class="DialogWgt" type="dialog" name="valve_base" size="155,225" file="valve_base.jmx"/>
       <page class="DialogWgt" type="dialog" name="valve_base_confirmation" size="400,150" file="valve_base_confirmation.jmx"/>
-      <page class="DialogWgt" type="dialog" name="valve_stepless" size="90,175" file="valve_stepless.jmx"/>
+      <page class="DialogWgt" type="dialog" name="valve_stepless" size="130,238" file="valve_stepless.jmx"/>
       <page class="DialogWgt" type="dialog" name="valve_stepless_autoadjust" size="400,150" file="valve_stepless_autoadjust.jmx"/>
       <page class="PageWgt" type="normal" name="BallastER" size="1920,1080" file="ballaster.jmx"/>
       <page class="PageWgt" type="normal" name="Bilge" size="1920,1080" file="bilge.jmx"/>
       <page class="PageWgt" type="normal" name="BilgeER" size="1920,1080" file="bilgeer.jmx"/>
       <page class="PageWgt" type="normal" name="Fuel" size="1920,1080" file="fuel.jmx"/>
+      <page class="PageWgt" type="normal" name="BilgeWell" size="1920,1080" file="bilgewell.jmx"/>
       <page class="PageWgt" type="normal" name="AuditTrail" size="1920,1080" file="audittrail.jmx"/>
       <page class="PageWgt" type="normal" name="AlarmPage" size="1920,1080" file="alarmpage.jmx"/>
       <page class="PageWgt" type="normal" name="NetworkPage" size="1920,1080" file="networkpage.jmx"/>
@@ -36,12 +37,14 @@
       <page class="DialogWgt" type="dialog" name="user_management_operator" size="350,280" file="user_management_operator.jmx"/>
       <page class="DialogWgt" type="dialog" name="user_management_service" size="350,415" file="user_management_service.jmx"/>
       <page class="DialogWgt" type="dialog" name="audit_trail_info" size="350,300" file="audit_trail_info.jmx"/>
-      <page class="DialogWgt" type="dialog" name="project_config" size="350,300" file="project_config.jmx"/>
       <page class="DialogWgt" type="dialog" name="login_timer_info" size="350,150" file="login_timer_info.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_valve" size="240,200" file="simulation_valve.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_tank" size="350,150" file="simulation_tank.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_pump" size="350,300" file="simulation_pump.jmx"/>
       <page class="DialogWgt" type="dialog" name="simulation_draft" size="350,150" file="simulation_draft.jmx"/>
+      <page class="DialogWgt" type="dialog" name="simulation_atm_press" size="350,170" file="simulation_atm_press.jmx"/>
+      <page class="DialogWgt" type="dialog" name="project_config_all" size="350,300" file="project_config_all.jmx"/>
+      <page class="DialogWgt" type="dialog" name="project_config_base" size="350,130" file="project_config_base.jmx"/>
      </pages>
      <templatePages>
       <templatePage class="TemplatePageWgt" type="template" name="base_template" file="base_template.jmx"/>
@@ -82,7 +85,6 @@
       <group name="general">
        <page name="info_page"/>
        <page name="menu"/>
-       <page name="project_config"/>
       </group>
      </groups>
     </category>

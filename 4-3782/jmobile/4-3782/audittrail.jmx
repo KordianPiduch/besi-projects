@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="AuditTrail" dataWndSize="0,70" pageName="AuditTrail" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="AuditTrail" dataWndSize="0,70" pageName="AuditTrail" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -8,56 +8,56 @@
    </langs>
    <MLTexts>
     <MLText id="2" L1="AUDIT TRAIL"/>
-    <MLText id="3" L1="From:"/>
-    <MLText id="4" L1="Filter:"/>
-    <MLText id="5" L1="Label"/>
-    <MLText id="6" L1="Label"/>
-    <MLText id="7" L1="Label"/>
-    <MLText id="8" L1="Label"/>
-    <MLText id="9" L1="Label"/>
-    <MLText id="10" L1="Label"/>
-    <MLText id="11" L1="1 Min"/>
-    <MLText id="12" L1="All"/>
-    <MLText id="13" L1="4 Weeks"/>
-    <MLText id="14" L1="2 Weeks"/>
-    <MLText id="15" L1="1 Week"/>
-    <MLText id="16" L1="5 Days"/>
-    <MLText id="17" L1="2 Days"/>
-    <MLText id="18" L1="1 Day"/>
-    <MLText id="19" L1="12 Hours"/>
-    <MLText id="20" L1="8 Hours"/>
-    <MLText id="21" L1="4 Hours"/>
-    <MLText id="22" L1="2 Hours"/>
-    <MLText id="23" L1="1 Hour"/>
-    <MLText id="24" L1="30 Mins"/>
-    <MLText id="25" L1="10 Mins"/>
-    <MLText id="26" L1="5 Mins"/>
-    <MLText id="27" L1="Timestamp"/>
-    <MLText id="28" L1="Information"/>
-    <MLText id="29" L1="Operation"/>
-    <MLText id="30" L1="UserName"/>
-    <MLText id="31" L1="Record ID"/>
-    <MLText id="32" L1="Information"/>
-    <MLText id="33" L1="Status"/>
-    <MLText id="34" L1="UserName"/>
-    <MLText id="35" L1="Operation"/>
-    <MLText id="36" L1="Interface"/>
-    <MLText id="37" L1="Time"/>
-    <MLText id="38" L1="Date"/>
-    <MLText id="39" L1="Timestamp"/>
-    <MLText id="40" L1="X"/>
-    <MLText id="41" L1="Audit View"/>
-    <MLText id="42" L1="To:"/>
-    <MLText id="43" L1="Refresh"/>
-    <MLText id="44" L1="Record ID"/>
-    <MLText id="45" L1="Information"/>
-    <MLText id="46" L1="UserName"/>
-    <MLText id="47" L1="Operation"/>
-    <MLText id="48" L1="Timestamp"/>
-    <MLText id="49" L1="Status"/>
+    <MLText id="50" L1="Filter:"/>
+    <MLText id="51" L1="Label"/>
+    <MLText id="52" L1="Label"/>
+    <MLText id="53" L1="Label"/>
     <MLText id="54" L1="help var to refresh table"/>
+    <MLText id="55" L1="Label"/>
+    <MLText id="56" L1="Label"/>
+    <MLText id="57" L1="Label"/>
+    <MLText id="58" L1="1 Min"/>
+    <MLText id="59" L1="All"/>
+    <MLText id="60" L1="4 Weeks"/>
     <MLText id="61" L1="Audit Trail is hidden&#xa;Please login to view Audit Logs"/>
+    <MLText id="62" L1="2 Weeks"/>
+    <MLText id="63" L1="1 Week"/>
+    <MLText id="64" L1="5 Days"/>
+    <MLText id="65" L1="2 Days"/>
+    <MLText id="66" L1="1 Day"/>
+    <MLText id="67" L1="12 Hours"/>
+    <MLText id="68" L1="8 Hours"/>
+    <MLText id="69" L1="4 Hours"/>
+    <MLText id="70" L1="2 Hours"/>
+    <MLText id="71" L1="1 Hour"/>
+    <MLText id="72" L1="30 Mins"/>
+    <MLText id="73" L1="10 Mins"/>
+    <MLText id="74" L1="5 Mins"/>
     <MLText id="75" L1="Save"/>
+    <MLText id="76" L1="Timestamp"/>
+    <MLText id="77" L1="Information"/>
+    <MLText id="78" L1="Operation"/>
+    <MLText id="79" L1="UserName"/>
+    <MLText id="80" L1="Record ID"/>
+    <MLText id="81" L1="Information"/>
+    <MLText id="82" L1="Status"/>
+    <MLText id="83" L1="UserName"/>
+    <MLText id="84" L1="Operation"/>
+    <MLText id="85" L1="Interface"/>
+    <MLText id="86" L1="Time"/>
+    <MLText id="87" L1="Date"/>
+    <MLText id="88" L1="Timestamp"/>
+    <MLText id="89" L1="X"/>
+    <MLText id="90" L1="Audit View"/>
+    <MLText id="91" L1="To:"/>
+    <MLText id="92" L1="Refresh"/>
+    <MLText id="93" L1="Record ID"/>
+    <MLText id="94" L1="Information"/>
+    <MLText id="95" L1="UserName"/>
+    <MLText id="96" L1="Operation"/>
+    <MLText id="97" L1="Timestamp"/>
+    <MLText id="98" L1="Status"/>
+    <MLText id="102" L1="From:"/>
    </MLTexts>
   </object>
   <object class="LabelWgt" id="page_name">
@@ -65,417 +65,6 @@
    <links>
     <lang class="MLTextLink" textid="2"/>
    </links>
-  </object>
-  <object class="GroupWgt" customType="Audit_View" id="AuditView">
-   <wgtStyle x="20" y="100" wgtStaticOpt="dynamic" cx="940" cy="450" width="1880" height="900" forcePaint="17">
-    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="5" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="2" gridVerOverFlow="2" gridScrollBgColor="none" gridScrollColor="rgb(200,200,200)" gridScrollOffset="2" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(0,0,0)" gridNRows="5">
-     <colProperties>
-      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="0" minWidth="100" stretch="1" maxWidth="100"/>
-      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="200" stretch="7" maxWidth="10000"/>
-      <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="75" stretch="1" maxWidth="75"/>
-     </colProperties>
-     <rowProperties>
-      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="21" stretch="1" selStrokeColor="none" minHeight="21" topMargin="0"/>
-      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="8" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="42" stretch="2" selStrokeColor="none" minHeight="42" topMargin="0"/>
-      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="48" stretch="2" selStrokeColor="none" minHeight="48" topMargin="0"/>
-      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="10000" stretch="9" selStrokeColor="none" minHeight="0" topMargin="2"/>
-      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="39" stretch="2" selStrokeColor="none" minHeight="39" topMargin="5"/>
-     </rowProperties>
-    </gridGroupLayout>
-   </wgtStyle>
-   <links>
-    <attr attrName="__evntwgt_evntbfrwgt_timeSpec" alias="*.Table.evntwgt.evntbfrwgt.timeSpec;*.Duration.dtTo.timeSpec;*.Duration.dtFrom.timeSpec"/>
-    <attr attrName="__evntwgt_evntbfrwgt_dateFormat" alias="*.Table.evntwgt.evntbfrwgt.dateFormat;*.Duration.dtTo.usingFormat;*.Duration.dtFrom.usingFormat"/>
-   </links>
-   <object class="LabelWgt" id="AuditView.Title">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="12635.25" cy="13.77" x="2" maxWidth="100000" y="0" rowSpan="1" aspectRatio="37:9" rowOcc="1" horItemOverflow="0" height="21" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="98" bottonMargin="0" vert-align="top" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
-    <dataLinks>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-    </dataLinks>
-    <links>
-     <lang class="MLTextLink" textid="41">
-      <MLFontFamily L1="Roboto Medium"/>
-     </lang>
-    </links>
-   </object>
-   <object class="GroupWgt" id="AuditView.Duration">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="938" cy="14.77" x="2" maxWidth="100000" y="21" rowSpan="1" aspectRatio="65:4" rowOcc="2" horItemOverflow="0" height="34" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
-    <object class="ComboBoxWgt" id="AuditView.Duration.comboDur">
-     <wgtStyle font-size="10" type="1" list="1 Min,5 Mins,10 Mins,30 Mins,1 Hour,2 Hours,4 Hours,8 Hours,12 Hours,1 Day,2 Days,5 Days,1 Week,2 Weeks,4 Weeks,All" cx="137.31" dropdownBorderColor="rgb(200,200,200)" cy="19.81" x="1346.72" y="0" dropdownButtonWidth="30" dropdownButtonImageWidth="10" listData="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0" dropdownButtonBgColor="rgb(237,237,237)" font-sizepx="13" height="30.42" dropdownFontColor="rgb(76,76,77)" font-color="rgb(76,76,77)" width="529.28" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="25" wgtStaticOpt="dynamic" font-family="Roboto" text="" keypad-type="None" index="1" bgColor="rgb(237,237,237)" dropdownSelFontColor="rgb(76,76,77)" borderColor="rgb(237,237,237)" dropdownSelBgColor="rgb(0,176,199)"/>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="PageDuration" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R/W" attribute="data"/>
-     </dataLinks>
-     <links>
-      <lang class="MLComboBoxLink:list:">
-       <MLFontFamily L1="Roboto"/>
-       <textid idx="0" val="11"/>
-       <textid idx="1" val="26"/>
-       <textid idx="2" val="25"/>
-       <textid idx="3" val="24"/>
-       <textid idx="4" val="23"/>
-       <textid idx="5" val="22"/>
-       <textid idx="6" val="21"/>
-       <textid idx="7" val="20"/>
-       <textid idx="8" val="19"/>
-       <textid idx="9" val="18"/>
-       <textid idx="10" val="17"/>
-       <textid idx="11" val="16"/>
-       <textid idx="12" val="15"/>
-       <textid idx="13" val="14"/>
-       <textid idx="14" val="13"/>
-       <textid idx="15" val="12"/>
-      </lang>
-     </links>
-    </object>
-    <object class="GroupWgt" customType="ButtonsWithLabel" id="AuditView.Duration.Refresh">
-     <wgtStyle x="1056.52" y="0" wgtStaticOpt="dynamic" cx="130.62" cy="15.21" width="261.24" height="30.42" forcePaint="17"/>
-     <object class="ButtonWgt" id="AuditView.Duration.Refresh.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="130.63" cy="15.19" x="0" y="0" height="30.42" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="261.24" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
-      <links>
-       <action class="RefreshEventAction" actionID="1" wgtName="AuditView.Table.evntwgt.evntbfrwgt" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Duration.Refresh.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="9.68" vert-align="middle" y="0.69" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="116.12" alignment="center" cy="13.83" font-sizepx="13" width="232.24" wrapping="true" height="28.35" forcePaint="17" font-color="rgb(237,237,237)"/>
-      <links>
-       <lang class="MLTextLink" textid="43">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-    </object>
-    <object class="LabelWgt" id="AuditView.Duration.lblFrom">
-     <wgtStyle font-family="Roboto Medium" x="0" vert-align="middle" y="0.87" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="70.26" cy="8.96" font-sizepx="13" width="140.56" font-bold="true" height="17.89" forcePaint="153" font-color="rgb(76,76,77)"/>
-     <dataLinks>
-      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     </dataLinks>
-     <links>
-      <lang class="MLTextLink" textid="3">
-       <MLFontFamily L1="Roboto Medium"/>
-      </lang>
-     </links>
-    </object>
-    <object class="NumericWgt" id="AuditView.Duration.dtFrom">
-     <wgtStyle form="date-time" min="0" timeSpec="local" font-size="10" step="1" cx="804.53" cy="11.43" x="160.29" numberFormat="0" showThousandSeparator="false" y="0.87" font-sizepx="13" height="17.89" font-color="rgb(76,76,77)" width="780.37" max="4096" vert-align="middle" forcePaint="153" usingFormat="MM/DD/YY - hh:mm:ss" wgtStaticOpt="dynamic" font-family="Roboto" value="-1" text="-1" keypad-type="None"/>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="min" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R" attribute="value"/>
-      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     </dataLinks>
-    </object>
-    <object class="NumericWgt" id="AuditView.Duration.dtTo">
-     <wgtStyle form="date-time" min="0" timeSpec="local" font-size="10" step="1" cx="804.53" cy="11.43" x="160.29" numberFormat="0" showThousandSeparator="false" y="16.11" font-sizepx="13" height="17.89" font-color="rgb(76,76,77)" width="780.37" max="4096" vert-align="middle" forcePaint="217" usingFormat="MM/DD/YY - hh:mm:ss" wgtStaticOpt="dynamic" font-family="Roboto" value="-1" text="-1" keypad-type="None"/>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="max" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R" attribute="value"/>
-      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     </dataLinks>
-    </object>
-    <object class="LabelWgt" id="AuditView.Duration.lblTo">
-     <wgtStyle font-family="Roboto Medium" x="0" vert-align="middle" y="18.79" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="66.30" cy="6.72" font-sizepx="13" width="132.60" font-bold="true" height="13.42" forcePaint="153" font-color="rgb(76,76,77)"/>
-     <dataLinks>
-      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     </dataLinks>
-     <links>
-      <lang class="MLTextLink" textid="42">
-       <MLFontFamily L1="Roboto Medium"/>
-      </lang>
-     </links>
-    </object>
-   </object>
-   <object class="GroupWgt" id="AuditView.Buttons">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="36.99" cy="17" x="1805" maxWidth="100000" y="866" rowSpan="1" aspectRatio="33:16" rowOcc="5" horItemOverflow="0" height="34" minWidth="0" preserveAspectRatio="0" width="73" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="3" colSpan="1"/>
-    <object class="GroupWgt" customType="ButtonsWithIcon" id="AuditView.Buttons.bckwbtn">
-     <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="16.77" cy="17" width="33.54" height="34" forcePaint="17"/>
-     <object class="ButtonWgt" id="AuditView.Buttons.bckwbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="15.79" cy="17" x="0.99" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="31.55" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
-      <links>
-       <action class="ScrollEventsBackwardAction" actionID="1" scrollInterval="0" event="onMouseClick" actionWgt="_EventMgr" eventName="AuditView.Table.evntwgt.evntbfrwgt" attribute="onMouseClick"/>
-      </links>
-     </object>
-     <object class="ImageWgt" id="AuditView.Buttons.bckwbtn.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
-      <wgtStyle imagePath="images/dwn_arrow_ico.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="16.75" cy="17" stroke="rgb(237,237,237)" enableCache="true" width="33.54" height="34" fill="none" forcePaint="17"/>
-     </object>
-    </object>
-    <object class="GroupWgt" customType="ButtonsWithIcon" id="AuditView.Buttons.fwdbtn">
-     <wgtStyle x="39.46" y="0" wgtStaticOpt="dynamic" cx="16.77" cy="17" width="33.54" height="34" forcePaint="17"/>
-     <object class="ButtonWgt" id="AuditView.Buttons.fwdbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="15.79" cy="17" x="0.99" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="31.55" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
-      <links>
-       <action class="ScrollEventsForwardAction" actionID="1" scrollInterval="0" event="onMouseClick" actionWgt="_EventMgr" eventName="AuditView.Table.evntwgt.evntbfrwgt" attribute="onMouseClick"/>
-      </links>
-     </object>
-     <object class="ImageWgt" id="AuditView.Buttons.fwdbtn.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
-      <wgtStyle imagePath="images/up_arrow_ico.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="16.75" cy="17" stroke="rgb(237,237,237)" enableCache="true" width="33.54" height="34" fill="none" forcePaint="17"/>
-     </object>
-    </object>
-   </object>
-   <object class="GroupWgt" id="AuditView.Table">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="895.92" cy="376.73" x="2" maxWidth="100000" y="113" rowSpan="1" aspectRatio="258:91" rowOcc="4" horItemOverflow="0" height="746" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
-    <object class="GroupWgt" id="AuditView.Table.evntwgt">
-     <wgtStyle x="1424.04" y="539.25" wgtStaticOpt="dynamic" cx="138.97" cy="96.02" width="277.93" height="192.04" forcePaint="17"/>
-     <object class="AuditBufferWgt" xmlFileWgt="auditview.table.xmlfle" dateFormat="MM/dd/yy - hh:mm:ss" BlockDuration="86400" timeSpec="local" StartTime="-3600" id="AuditView.Table.evntwgt.evntbfrwgt" EventBuffer="AuditTrail" StopTime="0" NumSamples="512" PageDuration="3600">
-      <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" width="117.71" height="192.04" forcePaint="25"/>
-      <dataLinks>
-       <dataLink sourceType="Data" dataSource="AuditView.Table.evntwgt.idalevntwgt" readWrite="R" attribute="ReadSource"/>
-      </dataLinks>
-     </object>
-     <object class="IdalEventsWgt" id="AuditView.Table.evntwgt.idalevntwgt">
-      <wgtStyle x="160.22" y="0" wgtStaticOpt="dynamic" width="117.71" height="192.04" forcePaint="17"/>
-     </object>
-    </object>
-    <object class="XMLFileWgt" id="AuditView.Table.xmlFle" fileName="config/eventlistinfo.xml">
-     <wgtStyle x="1258.89" y="538.75" wgtStaticOpt="dynamic" width="150.42" height="192.04" forcePaint="17"/>
-    </object>
-    <object class="TableAuditSrcWgt" id="AuditView.Table.AuditSrcWgt">
-     <wgtStyle x="1101.72" y="539.25" wgtStaticOpt="dynamic" filterExp1="" filterExp2="" sortingMode="1" filterCol1="UserName" AuditWgt="AuditView.Table.evntwgt.evntbfrwgt" filterCol2="Operation" hasStaticHeader="1" width="152.48" height="206.75" forcePaint="1040">
-      <header>
-       <col index="0"/>
-       <col index="1"/>
-       <col index="2"/>
-       <col index="3"/>
-       <col index="4"/>
-       <col index="5"/>
-       <col index="6"/>
-       <col index="7"/>
-       <col index="8"/>
-      </header>
-     </wgtStyle>
-     <links>
-      <lang class="MLMsgLink:col:">
-       <MLFontFamily L1="Roboto"/>
-       <textid idx="0" val="31"/>
-       <textid idx="1" val="39"/>
-       <textid idx="2" val="38"/>
-       <textid idx="3" val="37"/>
-       <textid idx="4" val="36"/>
-       <textid idx="5" val="35"/>
-       <textid idx="6" val="34"/>
-       <textid idx="7" val="33"/>
-       <textid idx="8" val="32"/>
-      </lang>
-     </links>
-    </object>
-    <object class="TableGroupWgt" id="AuditView.Table.Data">
-     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="938" cy="369.36" x="0" maxWidth="100000" y="0" rowSpan="1" aspectRatio="137:44" rowOcc="2" horItemOverflow="0" height="738.72" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="25" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1">
-      <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="5" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="1" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="6" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="2">
-       <colProperties>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="0" minWidth="75" stretch="1" maxWidth="100"/>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="160" stretch="1" maxWidth="200"/>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="90" stretch="1" maxWidth="150"/>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="115" stretch="1" maxWidth="300"/>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="75" stretch="1" maxWidth="200"/>
-        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="85" stretch="1" maxWidth="100000"/>
-       </colProperties>
-       <rowProperties>
-        <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="1" topStrokeColor="rgb(200,200,200)" bottonStrokeColor="rgb(200,200,200)" maxHeight="30" stretch="2" selStrokeColor="none" minHeight="30" topMargin="2"/>
-        <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="1" topStrokeColor="rgb(200,200,200)" bottonStrokeColor="rgb(200,200,200)" maxHeight="30" stretch="2" selStrokeColor="none" minHeight="30" topMargin="2"/>
-       </rowProperties>
-      </gridGroupLayout>
-     </wgtStyle>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="model" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="tableModel"/>
-     </dataLinks>
-     <object class="LabelWgt" id="AuditView.Table.Data.recordid">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="48.57" cy="12.33" x="2" maxWidth="100000" y="2" rowSpan="1" aspectRatio="2:1" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="95" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="recordID" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="44">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.timedate">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="98.13" cy="12.33" x="102" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Timestamp" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="48">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.operation">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="147.50" cy="11.84" x="452" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="295" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="4" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Operation" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="47">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.username">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="72.50" cy="11.84" x="302" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="145" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="UserName" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="46">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.info">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="461" cy="11.84" x="952" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="922" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="6" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Information" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="45">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.recordid1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="47.50" cy="11.84" x="2" maxWidth="100000" y="32" rowSpan="1" aspectRatio="21:5" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="95" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="recordID" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="10"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.timedate1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="97.50" cy="11.84" x="102" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Timestamp" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="9"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.username1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="72.50" cy="11.84" x="302" maxWidth="100000" y="32" rowSpan="1" aspectRatio="21:5" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="145" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="UserName" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="8"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.operation1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="148.78" cy="12.33" x="452" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="295" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="4" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Operation" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="7"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.info1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="461" cy="11.84" x="952" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="922" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="6" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Information" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="6"/>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.status">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="97.50" cy="11.84" x="752" maxWidth="100000" y="2" rowSpan="1" aspectRatio="3:1" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="5" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Status" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="49">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Table.Data.status1">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="98.84" cy="12.33" x="752" maxWidth="100000" y="32" rowSpan="1" aspectRatio="3:1" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="5" colSpan="1"/>
-      <dataLinks>
-       <dataLink sourceType="Widget" tag="Status" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
-       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-      </dataLinks>
-      <links>
-       <lang class="MLTextLink" textid="5"/>
-      </links>
-     </object>
-    </object>
-   </object>
-   <object class="GroupWgt" id="AuditView.Filter">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="935.69" cy="21.50" x="2" maxWidth="100000" y="63" rowSpan="1" aspectRatio="130:9" rowOcc="3" horItemOverflow="0" height="43" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
-    <object class="LabelWgt" id="AuditView.Filter.lblFilter">
-     <wgtStyle font-family="Roboto" x="9.42" vert-align="middle" y="18.39" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="123.69" cy="16.63" font-sizepx="13" width="323.96" height="17.31" forcePaint="153" font-color="rgb(76,76,77)"/>
-     <dataLinks>
-      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
-     </dataLinks>
-     <links>
-      <lang class="MLTextLink" textid="4"/>
-     </links>
-    </object>
-    <object class="ComboBoxWgt" id="AuditView.Filter.comboFilter">
-     <wgtStyle font-size="10" type="1" list="Timestamp,UserName,Operation,Information" cx="125.34" dropdownBorderColor="rgb(200,200,200)" cy="22.13" x="395.24" y="8" imageList="images/,images/,images/,images/" dropdownButtonWidth="30" dropdownButtonImageWidth="10" listData="Timestamp,UserName,Operation,Information" dropdownButtonBgColor="rgb(237,237,237)" font-sizepx="13" height="34" dropdownFontColor="rgb(76,76,77)" font-color="rgb(76,76,77)" width="482.99" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="25" wgtStaticOpt="dynamic" font-family="Roboto" text="" keypad-type="None" index="1" bgColor="rgb(237,237,237)" dropdownSelFontColor="rgb(76,76,77)" borderColor="rgb(237,237,237)" dropdownSelBgColor="rgb(0,176,199)"/>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="filterCol1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R/W" attribute="data"/>
-     </dataLinks>
-     <links>
-      <lang class="MLComboBoxLink:list:">
-       <MLFontFamily L1="Roboto"/>
-       <textid idx="0" val="27"/>
-       <textid idx="1" val="30"/>
-       <textid idx="2" val="29"/>
-       <textid idx="3" val="28"/>
-      </lang>
-     </links>
-    </object>
-    <object class="ShapeWgt" id="AuditView.Filter.bg">
-     <wgtStyle x="905.31" y="8" wgtStaticOpt="dynamic" stroke-width="0.1" cx="406.56" cy="16.99" stroke="rgb(237,237,237)" width="840.33" height="34" fill="rgb(237,237,237)" nodeName="rect" forcePaint="17"/>
-    </object>
-    <object class="NumericWgt" id="AuditView.Filter.Value">
-     <wgtStyle frameColor="rgb(173,173,173)" form="Numeric" timeSpec="local" font-size="10" cx="385.51" cy="16.10" x="981.39" numberFormat="0" showThousandSeparator="false" y="9" font-sizepx="13" height="33" font-color="rgb(76,76,77)" frameFill="rgb(225,225,225)" readWrite="true" width="753.45" alignment="right" vert-align="middle" forcePaint="1048" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="" keypad-type="Alphabet"/>
-     <dataLinks>
-      <dataLink sourceType="Widget" tag="filterExp1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R/W" attribute="value"/>
-     </dataLinks>
-    </object>
-    <object class="ImageWgt" id="AuditView.Filter.fltrico">
-     <wgtStyle imagePath="images/search_icon.svg" x="912" y="10" wgtStaticOpt="dynamic" stroke-width="1" cx="15.01" cy="14.99" stroke="rgb(200,200,200)" width="30" height="30" fill="rgb(200,200,200)" forcePaint="17"/>
-    </object>
-    <object class="GroupWgt" customType="ButtonsWithLabel" id="AuditView.Filter.clearbtn">
-     <wgtStyle x="1769.94" y="8" wgtStaticOpt="dynamic" cx="53.03" cy="17" width="106.06" height="34" forcePaint="17"/>
-     <object class="ButtonWgt" id="AuditView.Filter.clearbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="53.06" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="106.06" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
-      <links>
-       <action class="WriteTagAction" actionID="1" TagValue="" event="onMouseClick" actionWgt="_TagMgr" attribute="onMouseClick">
-        <dataLinks>
-         <dataLink sourceType="Widget" tag="filterExp1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="tagSrc"/>
-        </dataLinks>
-       </action>
-       <action class="WriteTagAction" actionID="2" TagValue="" event="onMouseClick" actionWgt="_TagMgr" attribute="onMouseClick">
-        <dataLinks>
-         <dataLink sourceType="Widget" tag="value" dataSource="AuditView.Filter.Value" tagIndex="-1" readWrite="R" attribute="tagSrc"/>
-        </dataLinks>
-       </action>
-      </links>
-     </object>
-     <object class="LabelWgt" id="AuditView.Filter.clearbtn.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="4.06" vert-align="middle" y="0.79" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="48.66" alignment="center" cy="15.83" font-sizepx="13" width="97.36" wrapping="true" height="32.42" forcePaint="17" font-color="rgb(237,237,237)"/>
-      <links>
-       <lang class="MLTextLink" textid="40">
-        <MLFontFamily L1="Roboto Medium"/>
-       </lang>
-      </links>
-     </object>
-    </object>
-    <object class="LineWgt" id="AuditView.Filter.separator">
-     <wgtStyle x="0" anchorIdx="1" y="0" wgtStaticOpt="dynamic" cx="929.39" cy="0.26" stroke="rgb(230,230,230)" width="1871.41" height="0.52" forcePaint="17"/>
-    </object>
-   </object>
   </object>
   <object class="GroupWgt" customType="ButtonsWithLabel" id="save_button">
    <wgtStyle x="1740.50" y="968" cx="36" cy="16" width="72" height="32" forcePaint="5"/>
@@ -518,6 +107,417 @@
    <links>
     <action class="ShowDialogAction" actionID="0" event="onMouseUp" actionWgt="_PageMgr" pageName="audit_trail_info.jmx" attribute="onMouseRelease"/>
    </links>
+  </object>
+  <object class="GroupWgt" customType="Audit_View" id="AuditView">
+   <wgtStyle x="20" y="100" wgtStaticOpt="dynamic" cx="940" cy="450" width="1880" height="900" forcePaint="17">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="5" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="2" gridVerOverFlow="2" gridScrollBgColor="none" gridScrollColor="rgb(200,200,200)" gridScrollOffset="2" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(0,0,0)" gridNRows="5">
+     <colProperties>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="0" minWidth="100" stretch="1" maxWidth="100"/>
+      <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="200" stretch="7" maxWidth="10000"/>
+      <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="75" stretch="1" maxWidth="75"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="21" stretch="1" selStrokeColor="none" minHeight="21" topMargin="0"/>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="8" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="42" stretch="2" selStrokeColor="none" minHeight="42" topMargin="0"/>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="5" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="48" stretch="2" selStrokeColor="none" minHeight="48" topMargin="0"/>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="10000" stretch="9" selStrokeColor="none" minHeight="0" topMargin="2"/>
+      <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="39" stretch="2" selStrokeColor="none" minHeight="39" topMargin="5"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <links>
+    <attr attrName="__evntwgt_evntbfrwgt_timeSpec" alias="*.Table.evntwgt.evntbfrwgt.timeSpec;*.Duration.dtTo.timeSpec;*.Duration.dtFrom.timeSpec"/>
+    <attr attrName="__evntwgt_evntbfrwgt_dateFormat" alias="*.Table.evntwgt.evntbfrwgt.dateFormat;*.Duration.dtTo.usingFormat;*.Duration.dtFrom.usingFormat"/>
+   </links>
+   <object class="LabelWgt" id="AuditView.Title">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="12635.25" cy="13.77" x="2" maxWidth="100000" y="0" rowSpan="1" aspectRatio="37:9" rowOcc="1" horItemOverflow="0" height="21" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="98" bottonMargin="0" vert-align="top" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="90">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+   <object class="GroupWgt" id="AuditView.Duration">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="938" cy="14.77" x="2" maxWidth="100000" y="21" rowSpan="1" aspectRatio="65:4" rowOcc="2" horItemOverflow="0" height="34" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
+    <object class="ComboBoxWgt" id="AuditView.Duration.comboDur">
+     <wgtStyle font-size="10" type="1" list="1 Min,5 Mins,10 Mins,30 Mins,1 Hour,2 Hours,4 Hours,8 Hours,12 Hours,1 Day,2 Days,5 Days,1 Week,2 Weeks,4 Weeks,All" cx="137.31" dropdownBorderColor="rgb(200,200,200)" cy="19.81" x="1346.72" y="0" dropdownButtonWidth="30" dropdownButtonImageWidth="10" listData="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0" dropdownButtonBgColor="rgb(237,237,237)" font-sizepx="13" height="30.42" dropdownFontColor="rgb(76,76,77)" font-color="rgb(76,76,77)" width="529.28" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="25" wgtStaticOpt="dynamic" font-family="Roboto" text="" keypad-type="None" index="1" bgColor="rgb(237,237,237)" dropdownSelFontColor="rgb(76,76,77)" borderColor="rgb(237,237,237)" dropdownSelBgColor="rgb(0,176,199)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="PageDuration" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R/W" attribute="data"/>
+     </dataLinks>
+     <links>
+      <lang class="MLComboBoxLink:list:">
+       <MLFontFamily L1="Roboto"/>
+       <textid idx="0" val="58"/>
+       <textid idx="1" val="74"/>
+       <textid idx="2" val="73"/>
+       <textid idx="3" val="72"/>
+       <textid idx="4" val="71"/>
+       <textid idx="5" val="70"/>
+       <textid idx="6" val="69"/>
+       <textid idx="7" val="68"/>
+       <textid idx="8" val="67"/>
+       <textid idx="9" val="66"/>
+       <textid idx="10" val="65"/>
+       <textid idx="11" val="64"/>
+       <textid idx="12" val="63"/>
+       <textid idx="13" val="62"/>
+       <textid idx="14" val="60"/>
+       <textid idx="15" val="59"/>
+      </lang>
+     </links>
+    </object>
+    <object class="GroupWgt" customType="ButtonsWithLabel" id="AuditView.Duration.Refresh">
+     <wgtStyle x="1056.52" y="0" wgtStaticOpt="dynamic" cx="130.62" cy="15.21" width="261.24" height="30.42" forcePaint="17"/>
+     <object class="ButtonWgt" id="AuditView.Duration.Refresh.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="130.63" cy="15.19" x="0" y="0" height="30.42" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="261.24" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+      <links>
+       <action class="RefreshEventAction" actionID="1" wgtName="AuditView.Table.evntwgt.evntbfrwgt" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Duration.Refresh.lbl" hmiStyle="hmi-type:wgtlabel">
+      <wgtStyle font-family="Roboto Medium" x="9.68" vert-align="middle" y="0.69" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="116.12" alignment="center" cy="13.83" font-sizepx="13" width="232.24" wrapping="true" height="28.35" forcePaint="17" font-color="rgb(237,237,237)"/>
+      <links>
+       <lang class="MLTextLink" textid="92">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+    </object>
+    <object class="LabelWgt" id="AuditView.Duration.lblFrom">
+     <wgtStyle font-family="Roboto Medium" x="0" vert-align="middle" y="0.87" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="70.26" cy="8.96" font-sizepx="13" width="140.56" font-bold="true" height="17.89" forcePaint="153" font-color="rgb(76,76,77)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="102">
+       <MLFontFamily L1="Roboto Medium"/>
+      </lang>
+     </links>
+    </object>
+    <object class="NumericWgt" id="AuditView.Duration.dtFrom">
+     <wgtStyle form="date-time" min="0" timeSpec="local" font-size="10" step="1" cx="804.53" cy="11.43" x="160.29" numberFormat="0" showThousandSeparator="false" y="0.87" font-sizepx="13" height="17.89" font-color="rgb(76,76,77)" width="780.37" max="4096" vert-align="middle" forcePaint="153" usingFormat="DD/MM/YYYY - hh:mm:ss" wgtStaticOpt="dynamic" font-family="Roboto" value="-1" text="-1" keypad-type="None"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="min" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R" attribute="value"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+    </object>
+    <object class="NumericWgt" id="AuditView.Duration.dtTo">
+     <wgtStyle form="date-time" min="0" timeSpec="local" font-size="10" step="1" cx="804.53" cy="11.43" x="160.29" numberFormat="0" showThousandSeparator="false" y="16.11" font-sizepx="13" height="17.89" font-color="rgb(76,76,77)" width="780.37" max="4096" vert-align="middle" forcePaint="217" usingFormat="DD/MM/YYYY - hh:mm:ss" wgtStaticOpt="dynamic" font-family="Roboto" value="-1" text="-1" keypad-type="None"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="max" dataSource="AuditView.Table.evntwgt.evntbfrwgt" tagIndex="-1" readWrite="R" attribute="value"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="AuditView.Duration.lblTo">
+     <wgtStyle font-family="Roboto Medium" x="0" vert-align="middle" y="18.79" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="66.30" cy="6.72" font-sizepx="13" width="132.60" font-bold="true" height="13.42" forcePaint="153" font-color="rgb(76,76,77)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="91">
+       <MLFontFamily L1="Roboto Medium"/>
+      </lang>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="AuditView.Buttons">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="36.99" cy="17" x="1805" maxWidth="100000" y="866" rowSpan="1" aspectRatio="33:16" rowOcc="5" horItemOverflow="0" height="34" minWidth="0" preserveAspectRatio="0" width="73" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="3" colSpan="1"/>
+    <object class="GroupWgt" customType="ButtonsWithIcon" id="AuditView.Buttons.bckwbtn">
+     <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="16.77" cy="17" width="33.54" height="34" forcePaint="17"/>
+     <object class="ButtonWgt" id="AuditView.Buttons.bckwbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="15.79" cy="17" x="0.99" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="31.55" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
+      <links>
+       <action class="ScrollEventsBackwardAction" actionID="1" scrollInterval="0" event="onMouseClick" actionWgt="_EventMgr" eventName="AuditView.Table.evntwgt.evntbfrwgt" attribute="onMouseClick"/>
+      </links>
+     </object>
+     <object class="ImageWgt" id="AuditView.Buttons.bckwbtn.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+      <wgtStyle imagePath="images/dwn_arrow_ico.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="16.75" cy="17" stroke="rgb(237,237,237)" enableCache="true" width="33.54" height="34" fill="none" forcePaint="17"/>
+     </object>
+    </object>
+    <object class="GroupWgt" customType="ButtonsWithIcon" id="AuditView.Buttons.fwdbtn">
+     <wgtStyle x="39.46" y="0" wgtStaticOpt="dynamic" cx="16.77" cy="17" width="33.54" height="34" forcePaint="17"/>
+     <object class="ButtonWgt" id="AuditView.Buttons.fwdbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="15.79" cy="17" x="0.99" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="31.55" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
+      <links>
+       <action class="ScrollEventsForwardAction" actionID="1" scrollInterval="0" event="onMouseClick" actionWgt="_EventMgr" eventName="AuditView.Table.evntwgt.evntbfrwgt" attribute="onMouseClick"/>
+      </links>
+     </object>
+     <object class="ImageWgt" id="AuditView.Buttons.fwdbtn.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+      <wgtStyle imagePath="images/up_arrow_ico.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="16.75" cy="17" stroke="rgb(237,237,237)" enableCache="true" width="33.54" height="34" fill="none" forcePaint="17"/>
+     </object>
+    </object>
+   </object>
+   <object class="GroupWgt" id="AuditView.Table">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="895.92" cy="376.73" x="2" maxWidth="100000" y="113" rowSpan="1" aspectRatio="258:91" rowOcc="4" horItemOverflow="0" height="746" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
+    <object class="GroupWgt" id="AuditView.Table.evntwgt">
+     <wgtStyle x="1424.04" y="539.25" wgtStaticOpt="dynamic" cx="138.97" cy="96.02" width="277.93" height="192.04" forcePaint="17"/>
+     <object class="AuditBufferWgt" xmlFileWgt="auditview.table.xmlfle" dateFormat="dd/MM/yyyy - hh:mm:ss" BlockDuration="86400" timeSpec="local" StartTime="-3600" id="AuditView.Table.evntwgt.evntbfrwgt" EventBuffer="AuditTrail" StopTime="0" NumSamples="512" PageDuration="3600">
+      <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" width="117.71" height="192.04" forcePaint="25"/>
+      <dataLinks>
+       <dataLink sourceType="Data" dataSource="AuditView.Table.evntwgt.idalevntwgt" readWrite="R" attribute="ReadSource"/>
+      </dataLinks>
+     </object>
+     <object class="IdalEventsWgt" id="AuditView.Table.evntwgt.idalevntwgt">
+      <wgtStyle x="160.22" y="0" wgtStaticOpt="dynamic" width="117.71" height="192.04" forcePaint="17"/>
+     </object>
+    </object>
+    <object class="XMLFileWgt" id="AuditView.Table.xmlFle" fileName="config/eventlistinfo.xml">
+     <wgtStyle x="1258.89" y="538.75" wgtStaticOpt="dynamic" width="150.42" height="192.04" forcePaint="17"/>
+    </object>
+    <object class="TableAuditSrcWgt" id="AuditView.Table.AuditSrcWgt">
+     <wgtStyle x="1101.72" y="539.25" wgtStaticOpt="dynamic" filterExp1="" filterExp2="" sortingMode="1" filterCol1="UserName" AuditWgt="AuditView.Table.evntwgt.evntbfrwgt" filterCol2="Operation" hasStaticHeader="1" width="152.48" height="206.75" forcePaint="1040">
+      <header>
+       <col index="0"/>
+       <col index="1"/>
+       <col index="2"/>
+       <col index="3"/>
+       <col index="4"/>
+       <col index="5"/>
+       <col index="6"/>
+       <col index="7"/>
+       <col index="8"/>
+      </header>
+     </wgtStyle>
+     <links>
+      <lang class="MLMsgLink:col:">
+       <MLFontFamily L1="Roboto"/>
+       <textid idx="0" val="80"/>
+       <textid idx="1" val="88"/>
+       <textid idx="2" val="87"/>
+       <textid idx="3" val="86"/>
+       <textid idx="4" val="85"/>
+       <textid idx="5" val="84"/>
+       <textid idx="6" val="83"/>
+       <textid idx="7" val="82"/>
+       <textid idx="8" val="81"/>
+      </lang>
+     </links>
+    </object>
+    <object class="TableGroupWgt" id="AuditView.Table.Data">
+     <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="938" cy="369.36" x="0" maxWidth="100000" y="0" rowSpan="1" aspectRatio="137:44" rowOcc="2" horItemOverflow="0" height="738.72" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="25" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1">
+      <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="5" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="1" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="6" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="2">
+       <colProperties>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="0" minWidth="75" stretch="1" maxWidth="100"/>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="160" stretch="1" maxWidth="200"/>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="90" stretch="1" maxWidth="150"/>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="115" stretch="1" maxWidth="300"/>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="75" stretch="1" maxWidth="200"/>
+        <colProperty rightMargin="2" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="2" leftStroke="1" minWidth="85" stretch="1" maxWidth="100000"/>
+       </colProperties>
+       <rowProperties>
+        <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="1" topStrokeColor="rgb(200,200,200)" bottonStrokeColor="rgb(200,200,200)" maxHeight="30" stretch="2" selStrokeColor="none" minHeight="30" topMargin="2"/>
+        <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="2" bottonStroke="1" topStrokeColor="rgb(200,200,200)" bottonStrokeColor="rgb(200,200,200)" maxHeight="30" stretch="2" selStrokeColor="none" minHeight="30" topMargin="2"/>
+       </rowProperties>
+      </gridGroupLayout>
+     </wgtStyle>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="model" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="tableModel"/>
+     </dataLinks>
+     <object class="LabelWgt" id="AuditView.Table.Data.recordid">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="48.57" cy="12.33" x="2" maxWidth="100000" y="2" rowSpan="1" aspectRatio="2:1" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="95" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="recordID" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="93">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.timedate">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="98.13" cy="12.33" x="102" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Timestamp" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="97">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.operation">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="147.50" cy="11.84" x="452" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="295" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="4" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Operation" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="96">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.username">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="72.50" cy="11.84" x="302" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="145" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="UserName" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="95">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.info">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="461" cy="11.84" x="952" maxWidth="100000" y="2" rowSpan="1" aspectRatio="65:23" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="922" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="6" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Information" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="94">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.recordid1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="47.50" cy="11.84" x="2" maxWidth="100000" y="32" rowSpan="1" aspectRatio="21:5" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="95" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="recordID" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="57"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.timedate1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="97.50" cy="11.84" x="102" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Timestamp" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="56"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.username1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="72.50" cy="11.84" x="302" maxWidth="100000" y="32" rowSpan="1" aspectRatio="21:5" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="145" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="UserName" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="55"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.operation1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="148.78" cy="12.33" x="452" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="295" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="4" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Operation" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="53"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.info1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="461" cy="11.84" x="952" maxWidth="100000" y="32" rowSpan="1" aspectRatio="106:25" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="922" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="6" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Information" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="52"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.status">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="10" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="97.50" cy="11.84" x="752" maxWidth="100000" y="2" rowSpan="1" aspectRatio="3:1" rowOcc="1" horItemOverflow="0" height="25" font-sizepx="13" font-bold="true" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto Medium" maxHeight="100000" keypad-type="None" colOcc="5" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Status" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="98">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Table.Data.status1">
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" font-size="9" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="98.84" cy="12.33" x="752" maxWidth="100000" y="32" rowSpan="1" aspectRatio="3:1" rowOcc="2" horItemOverflow="0" height="25" font-sizepx="12" minWidth="0" font-color="rgb(76,76,77)" preserveAspectRatio="0" width="195" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="5" colSpan="1"/>
+      <dataLinks>
+       <dataLink sourceType="Widget" tag="Status" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="text"/>
+       <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      </dataLinks>
+      <links>
+       <lang class="MLTextLink" textid="51"/>
+      </links>
+     </object>
+    </object>
+   </object>
+   <object class="GroupWgt" id="AuditView.Filter">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="935.69" cy="21.50" x="2" maxWidth="100000" y="63" rowSpan="1" aspectRatio="130:9" rowOcc="3" horItemOverflow="0" height="43" minWidth="0" preserveAspectRatio="0" width="1876" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="3"/>
+    <object class="LabelWgt" id="AuditView.Filter.lblFilter">
+     <wgtStyle font-family="Roboto" x="9.42" vert-align="middle" y="18.39" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="123.69" cy="16.63" font-sizepx="13" width="323.96" height="17.31" forcePaint="153" font-color="rgb(76,76,77)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="50"/>
+     </links>
+    </object>
+    <object class="ComboBoxWgt" id="AuditView.Filter.comboFilter">
+     <wgtStyle font-size="10" type="1" list="Timestamp,UserName,Operation,Information" cx="125.34" dropdownBorderColor="rgb(200,200,200)" cy="22.13" x="395.24" y="8" imageList="images/,images/,images/,images/" dropdownButtonWidth="30" dropdownButtonImageWidth="10" listData="Timestamp,UserName,Operation,Information" dropdownButtonBgColor="rgb(237,237,237)" font-sizepx="13" height="34" dropdownFontColor="rgb(76,76,77)" font-color="rgb(76,76,77)" width="482.99" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="25" wgtStaticOpt="dynamic" font-family="Roboto" text="" keypad-type="None" index="1" bgColor="rgb(237,237,237)" dropdownSelFontColor="rgb(76,76,77)" borderColor="rgb(237,237,237)" dropdownSelBgColor="rgb(0,176,199)"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="filterCol1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R/W" attribute="data"/>
+     </dataLinks>
+     <links>
+      <lang class="MLComboBoxLink:list:">
+       <MLFontFamily L1="Roboto"/>
+       <textid idx="0" val="76"/>
+       <textid idx="1" val="79"/>
+       <textid idx="2" val="78"/>
+       <textid idx="3" val="77"/>
+      </lang>
+     </links>
+    </object>
+    <object class="ShapeWgt" id="AuditView.Filter.bg">
+     <wgtStyle x="905.31" y="8" wgtStaticOpt="dynamic" stroke-width="0.1" cx="406.56" cy="16.99" stroke="rgb(237,237,237)" width="840.33" height="34" fill="rgb(237,237,237)" nodeName="rect" forcePaint="17"/>
+    </object>
+    <object class="NumericWgt" id="AuditView.Filter.Value">
+     <wgtStyle frameColor="rgb(173,173,173)" form="Numeric" timeSpec="local" font-size="10" cx="385.51" cy="16.10" x="981.39" numberFormat="0" showThousandSeparator="false" y="9" font-sizepx="13" height="33" font-color="rgb(76,76,77)" frameFill="rgb(225,225,225)" readWrite="true" width="753.45" alignment="right" vert-align="middle" forcePaint="1048" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="" keypad-type="Alphabet"/>
+     <dataLinks>
+      <dataLink sourceType="Widget" tag="filterExp1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R/W" attribute="value"/>
+     </dataLinks>
+    </object>
+    <object class="ImageWgt" id="AuditView.Filter.fltrico">
+     <wgtStyle imagePath="images/search_icon.svg" x="912" y="10" wgtStaticOpt="dynamic" stroke-width="1" cx="15.01" cy="14.99" stroke="rgb(200,200,200)" width="30" height="30" fill="rgb(200,200,200)" forcePaint="17"/>
+    </object>
+    <object class="GroupWgt" customType="ButtonsWithLabel" id="AuditView.Filter.clearbtn">
+     <wgtStyle x="1769.94" y="8" wgtStaticOpt="dynamic" cx="53.03" cy="17" width="106.06" height="34" forcePaint="17"/>
+     <object class="ButtonWgt" id="AuditView.Filter.clearbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="53.06" cy="17" x="0" y="0" height="34" downFillColor="rgb(0,176,199)" releasePath="images\btn_rect_blueup.svg" width="106.06" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\btn_rect_dwn.svg"/>
+      <links>
+       <action class="WriteTagAction" actionID="1" TagValue="" event="onMouseClick" actionWgt="_TagMgr" attribute="onMouseClick">
+        <dataLinks>
+         <dataLink sourceType="Widget" tag="filterExp1" dataSource="AuditView.Table.AuditSrcWgt" tagIndex="-1" readWrite="R" attribute="tagSrc"/>
+        </dataLinks>
+       </action>
+       <action class="WriteTagAction" actionID="2" TagValue="" event="onMouseClick" actionWgt="_TagMgr" attribute="onMouseClick">
+        <dataLinks>
+         <dataLink sourceType="Widget" tag="value" dataSource="AuditView.Filter.Value" tagIndex="-1" readWrite="R" attribute="tagSrc"/>
+        </dataLinks>
+       </action>
+      </links>
+     </object>
+     <object class="LabelWgt" id="AuditView.Filter.clearbtn.lbl" hmiStyle="hmi-type:wgtlabel">
+      <wgtStyle font-family="Roboto Medium" x="4.06" vert-align="middle" y="0.79" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="48.66" alignment="center" cy="15.83" font-sizepx="13" width="97.36" wrapping="true" height="32.42" forcePaint="17" font-color="rgb(237,237,237)"/>
+      <links>
+       <lang class="MLTextLink" textid="89">
+        <MLFontFamily L1="Roboto Medium"/>
+       </lang>
+      </links>
+     </object>
+    </object>
+    <object class="LineWgt" id="AuditView.Filter.separator">
+     <wgtStyle x="0" anchorIdx="1" y="0" wgtStaticOpt="dynamic" cx="929.39" cy="0.26" stroke="rgb(230,230,230)" width="1871.41" height="0.52" forcePaint="17"/>
+    </object>
+   </object>
   </object>
   <object class="GroupWgt" id="block_view">
    <wgtStyle x="0" y="60" cx="960" cy="475" width="1920" height="950" forcePaint="73"/>

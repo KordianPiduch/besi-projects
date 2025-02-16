@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="project_config" py="0" dataWndSize="0,70" pageType="modal" scriptFile="project_config.js" pageName="project_config" pageSize="350,300" usedFonts="Roboto,Roboto Medium">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="project_config_all" py="0" dataWndSize="0,70" pageType="modal" scriptFile="project_config_all.js" pageName="project_config_all" pageSize="350,300" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="300" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -13,13 +13,11 @@
     <MLText id="0" L1="reload ALL settings"/>
     <MLText id="1" L1="save ALL settings"/>
     <MLText id="3" L1="simulation mode"/>
-    <MLText id="4" L1="contex menu"/>
     <MLText id="17" L1="project settings"/>
     <MLText id="20" L1="change     theme"/>
     <MLText id="33" L1="restart       project"/>
     <MLText id="34" L1="backup settings"/>
     <MLText id="35" L1="user settings"/>
-    <MLText id="55" L1="TODO: hide     labels"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" id="title">
@@ -125,24 +123,7 @@
     </links>
    </object>
   </object>
-  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project3">
-   <wgtStyle x="5" y="125" visibility="false" cx="40" cy="25" width="80" height="50" forcePaint="4"/>
-   <links>
-    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
-   </links>
-   <object class="ButtonWgt" id="btn_restart_project3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
-   </object>
-   <object class="LabelWgt" id="btn_restart_project3.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.14" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="22.73" font-sizepx="13" width="71.11" wrapping="true" height="46.59" forcePaint="5" font-color="rgb(237,237,237)"/>
-    <links>
-     <lang class="MLTextLink" textid="55">
-      <MLFontFamily L1="Roboto Medium"/>
-     </lang>
-    </links>
-   </object>
-  </object>
-  <object class="GroupSubscribeWgt" id="project_config@$GroupSubscrWgt@$0">
+  <object class="GroupSubscribeWgt" id="project_config_all@$GroupSubscrWgt@$0">
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
   <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project5">
@@ -180,26 +161,6 @@
     <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.14" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="22.73" font-sizepx="13" width="71.11" wrapping="true" height="46.59" forcePaint="5" font-color="rgb(237,237,237)"/>
     <links>
      <lang class="MLTextLink" textid="1">
-      <MLFontFamily L1="Roboto Medium"/>
-     </lang>
-    </links>
-   </object>
-  </object>
-  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project7">
-   <wgtStyle x="92" y="125" cx="0" cy="0" width="80" height="50" forcePaint="4"/>
-   <links>
-    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
-   </links>
-   <object class="ButtonWgt" id="btn_restart_project7.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
-    <links>
-     <action class="ContextMenuAction" actionID="1" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
-    </links>
-   </object>
-   <object class="LabelWgt" id="btn_restart_project7.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.14" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="22.73" font-sizepx="13" width="71.11" wrapping="true" height="46.59" forcePaint="5" font-color="rgb(237,237,237)"/>
-    <links>
-     <lang class="MLTextLink" textid="4">
       <MLFontFamily L1="Roboto Medium"/>
      </lang>
     </links>

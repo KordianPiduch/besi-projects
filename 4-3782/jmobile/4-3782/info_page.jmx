@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" staticFile="opt/info_page.png" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="Project Information" px="0" id="info_page" py="0" dataWndSize="0,70" pageType="modal" pageName="info_page" pageSize="350,550" usedFonts="Roboto,Roboto Medium">
+ <object class="DialogWgt" staticFile="opt/info_page.png" downloadPrepDone="false" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="Project Information" px="0" id="info_page" py="0" dataWndSize="0,70" pageType="modal" scriptFile="info_page.js" pageName="info_page" pageSize="350,550" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="550" forcePaint="8" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -10,9 +10,9 @@
     <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
+    <MLText id="2" L1="project settings"/>
     <MLText id="3" L1="&lt;hmi ID>"/>
     <MLText id="5" L1="HMI ID"/>
-    <MLText id="6" L1="project settings"/>
     <MLText id="8" L1="HMI OS"/>
     <MLText id="9" L1="&lt;hmi Main OS>"/>
     <MLText id="13" L1="Vorweide 4&#xa;28259 Bremen Germany&#xa;&#xa;phone:  +49 - (0) 421 - 57643 - 0&#xa;fax:        +49 - (0) 421 - 58362 - 1&#xa;e-mail:   info@besi.de&#xa;web:       www.besi.de"/>
@@ -249,27 +249,6 @@
     </links>
    </object>
   </object>
-  <object class="GroupWgt" customType="ButtonsWithLabel" id="btn_restart_project">
-   <wgtStyle x="91" y="280" cx="0" cy="0" width="80" height="50" forcePaint="4"/>
-   <links>
-    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
-   </links>
-   <object class="ButtonWgt" id="btn_restart_project.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
-    <links>
-     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
-     <action class="ShowDialogAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="project_config.jmx" attribute="onMouseClick"/>
-    </links>
-   </object>
-   <object class="LabelWgt" id="btn_restart_project.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.14" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="22.73" font-sizepx="13" width="71.11" wrapping="true" height="46.59" forcePaint="5" font-color="rgb(237,237,237)"/>
-    <links>
-     <lang class="MLTextLink" textid="6">
-      <MLFontFamily L1="Roboto Medium"/>
-     </lang>
-    </links>
-   </object>
-  </object>
   <object class="GroupWgt" id="field_label10">
    <wgtStyle x="5" y="185" cx="82.50" cy="15" width="165" height="30"/>
    <object class="ShapeWgt" id="field_label10.roundrect1">
@@ -345,6 +324,27 @@
     </dataLinks>
     <links>
      <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="btnProjectSettings">
+   <wgtStyle x="91" y="280" cx="0" cy="0" width="80" height="50" forcePaint="4"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ButtonWgt" id="btnProjectSettings.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="40" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="images\btn_rectround_blueup.svg" width="80" forcePaint="5" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rectRound_Dwn.svg"/>
+    <links>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+     <action class="JavaScriptAction" f="btnProjectSettings_btn_onMouseClick" actionID="2" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="btnProjectSettings.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="2.97" vert-align="middle" y="1.14" font-size="12" keypad-type="None" cx="35.55" alignment="center" cy="22.73" font-sizepx="13" width="71.11" wrapping="true" height="46.59" forcePaint="5" font-color="rgb(237,237,237)"/>
+    <links>
+     <lang class="MLTextLink" textid="2">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
     </links>
    </object>
   </object>

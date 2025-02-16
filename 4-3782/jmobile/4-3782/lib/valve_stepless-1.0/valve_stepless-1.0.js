@@ -26,8 +26,20 @@ this.button_onMouseClick = function(me,eventInfo)
     }
     if (!remote_mode && in_control == 1){
         project.setTag("valve_prefix", _valve_id);
-        project.setTag("valve_dialog_base_x", this.wgtValve.getProperty("x"));
-        project.setTag("valve_dialog_base_y", this.wgtValve.getProperty("y")-20);
+        // stepless valve popup size 130x238
+        // position assumed for 1920x1080 screens, HARDCODED :( otherwise for simulation with larger resolutions screens popups would be outside page
+        if (this.wgtValve.getProperty("x") < 50){
+            project.setTag("valve_dialog_base_x", this.wgtValve.getProperty("x"));
+        }else if (this.wgtValve.getProperty("x") > 1800 ){
+            project.setTag("valve_dialog_base_x", this.wgtValve.getProperty("x")-(130 - this.wgtValve.getProperty("width")));
+        }else{
+            project.setTag("valve_dialog_base_x", this.wgtValve.getProperty("x")- (130 - this.wgtValve.getProperty("width")) / 2);
+        }
+        if (this.wgtValve.getProperty("y") > 840){
+            project.setTag("valve_dialog_base_y", this.wgtValve.getProperty("y")-238 + this.wgtValve.getProperty("height"));
+        }else{
+            project.setTag("valve_dialog_base_y", this.wgtValve.getProperty("y"));
+        }
         project.showDialog("valve_stepless.jmx");
     }
     
