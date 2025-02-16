@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Fuel" dataWndSize="0,70" pageName="Fuel" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Fuel" dataWndSize="0,70" pageName="Fuel" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -40,7 +40,7 @@
    <wgtStyle imagePath="images/4-3782-fuel.png" x="0" lock="true" y="50" cx="960" cy="490" stroke="rgb(200,200,200)" width="1920" height="980" fill="rgb(230,230,230)" forcePaint="1"/>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve_v10">
-   <wgtStyle x="1732" lock="true" y="451" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
+   <wgtStyle x="1732" lock="true" y="415" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">3</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -48,7 +48,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h">
-   <wgtStyle x="507.58" lock="true" y="176.48" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <wgtStyle x="460" lock="true" y="209" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">3</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -56,7 +56,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base-1.0:1.0" id="valve_h1">
-   <wgtStyle x="507.58" lock="true" y="255.86" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
+   <wgtStyle x="460" lock="true" y="297" wgtStaticOpt="dynamic" cx="30" cy="29" width="60" height="58" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID" alias="SYSTEM_ID">3</param>
     <param attrName="Confirm" alias="Confirm">false</param>
@@ -94,13 +94,13 @@
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank5">
-   <wgtStyle x="384" lock="true" y="158" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
+   <wgtStyle x="334" lock="true" y="191" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">15</param>
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank6">
-   <wgtStyle x="276" lock="true" y="158" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
+   <wgtStyle x="226" lock="true" y="191" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">13</param>
    </links>
@@ -136,7 +136,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="tank-1.0:1.0" id="tank12">
-   <wgtStyle x="846.45" lock="true" y="886" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
+   <wgtStyle x="866" lock="true" y="886" wgtStaticOpt="dynamic" cx="50" cy="62.50" width="100" height="125" forcePaint="17"/>
    <links>
     <param attrName="TankID" alias="TankID">23</param>
    </links>
