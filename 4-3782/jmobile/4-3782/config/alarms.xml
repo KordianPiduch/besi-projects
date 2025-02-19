@@ -14,12 +14,25 @@
             <MLText id="5" L1="Not Triggered Not Acked"/>
             <MLText id="6" L1="Triggered Acked"/>
             <MLText id="8" L1="FPV07 err: load csv file failed"/>
+            <MLText id="9" L1="voltage supervision err: main power supply"/>
+            <MLText id="10" L1="voltage supervision err: emergency power supply"/>
             <MLText id="11" L1="FPV07 err: save csv file failed"/>
+            <MLText id="12" L1="voltage supervision err: G1, G2"/>
+            <MLText id="13" L1="voltage supervision err: F100"/>
             <MLText id="14" L1="FPV07 err: main sensor failure"/>
+            <MLText id="15" L1="voltage supervision err: F200"/>
+            <MLText id="16" L1="voltage supervision err: temperature alarm"/>
             <MLText id="17" L1="FPV07 err: backup sensor failure"/>
+            <MLText id="18" L1="voltage supervision err: Q2"/>
+            <MLText id="19" L1="voltage supervision err: Q3"/>
             <MLText id="20" L1="FPV07 err: both positions"/>
+            <MLText id="21" L1="voltage supervision err: Q4"/>
+            <MLText id="22" L1="voltage supervision err: Q5"/>
             <MLText id="23" L1="FPV07 err: no position"/>
+            <MLText id="24" L1="voltage supervision err: Q6"/>
+            <MLText id="25" L1="voltage supervision err: Q7"/>
             <MLText id="26" L1="FPV07 err: lost position close"/>
+            <MLText id="27" L1="voltage supervision err: Q8"/>
             <MLText id="29" L1="FPV07 err: lost position open"/>
             <MLText id="32" L1="FPV07 err: not reach close position in time"/>
             <MLText id="35" L1="FPV07 err: not reach open position in time"/>
@@ -76,20 +89,48 @@
             <MLText id="188" L1="BAV23 err: load csv file failed"/>
             <MLText id="191" L1="BAV23 err: save csv file failed"/>
             <MLText id="194" L1="BAV23 err: main sensor failure"/>
+            <MLText id="205" L1="bilge well alarm: BILGE TANK LEVEL HIGH"/>
             <MLText id="197" L1="BAV23 err: backup sensor failure"/>
+            <MLText id="198" L1="bilge well alarm: ME A/C COND. WATER TANK LEVEL HIGH"/>
+            <MLText id="199" L1="bilge well alarm: E/R BILGE WELL (AFT) LEVEL HIGH"/>
             <MLText id="200" L1="BAV23 err: both positions"/>
+            <MLText id="201" L1="bilge well alarm: E/R BILGE WELL (FORE.P) LEVEL HIGH"/>
+            <MLText id="202" L1="bilge well alarm: E/R BILGE WELL (FORE.S) LEVEL HIGH"/>
             <MLText id="203" L1="BAV23 err: no position"/>
+            <MLText id="204" L1="bilge well alarm: BILGE OF M/E FOUNDATION LEVEL HIGH"/>
+            <MLText id="238" L1="bilge well alarm: E.F.P.RM BILGE LEVEL HIGH"/>
             <MLText id="206" L1="BAV23 err: lost position close"/>
+            <MLText id="207" L1="bilge well alarm: No.1 VALVE RECESS BILGE LEVEL HIGH"/>
+            <MLText id="208" L1="bilge well alarm: No.2 VALVE RECESS BILGE LEVEL HIGH"/>
             <MLText id="209" L1="BAV23 err: lost position open"/>
+            <MLText id="210" L1="bilge well alarm: No.3 VALVE RECESS BILGE LEVEL HIGH"/>
+            <MLText id="211" L1="bilge well alarm: FR20~38 VOID (P)  LEVEL HIGH FR20~38"/>
             <MLText id="212" L1="BAV23 err: not reach close position in time"/>
+            <MLText id="213" L1="bilge well alarm: FR17~38 VOID (S)  LEVEL HIGH FR17~38"/>
+            <MLText id="214" L1="bilge well alarm: NO.1 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="215" L1="BAV23 err: not reach open position in time"/>
+            <MLText id="216" L1="bilge well alarm: NO.1 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="217" L1="bilge well alarm: NO.2 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="218" L1="BAV23 err: calibration needed"/>
+            <MLText id="219" L1="bilge well alarm: NO.2 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="220" L1="bilge well alarm: NO.3 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="221" L1="BAV23 err: not reach specified position in time"/>
+            <MLText id="222" L1="bilge well alarm: NO.3 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="223" L1="bilge well alarm: NO.4 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="224" L1="BAV24 err: load csv file failed"/>
+            <MLText id="225" L1="bilge well alarm: NO.4 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="226" L1="bilge well alarm: NO.5 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="227" L1="BAV24 err: save csv file failed"/>
+            <MLText id="228" L1="bilge well alarm: NO.5 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="229" L1="bilge well alarm: NO.6 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="230" L1="BAV24 err: main sensor failure"/>
+            <MLText id="231" L1="bilge well alarm: NO.6 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="232" L1="bilge well alarm: NO.7 C/H B.W.(P) LEVEL HIGH"/>
             <MLText id="233" L1="BAV24 err: backup sensor failure"/>
+            <MLText id="234" L1="bilge well alarm: NO.7 C/H B.W.(S) LEVEL HIGH"/>
+            <MLText id="235" L1="bilge well alarm: FR17~35 VOID (P)  LEVEL HIGH FR17~35"/>
             <MLText id="236" L1="BAV24 err: both positions"/>
+            <MLText id="237" L1="bilge well alarm: ER COFFERDAM  LEVEL HIGH"/>
             <MLText id="239" L1="BAV24 err: no position"/>
             <MLText id="242" L1="BAV24 err: lost position close"/>
             <MLText id="245" L1="BAV24 err: lost position open"/>
@@ -829,7 +870,6 @@
             <MLText id="2699" L1="PLC2 err: controller disconnected"/>
             <MLText id="2702" L1="PLC3 err: controller disconnected"/>
             <MLText id="2705" L1="PLC4 err: controller disconnected"/>
-            <MLText id="3056" L1="TWB1 (P) warn: high high level triggered"/>
             <MLText id="2767" L1="TWB1 (P) warn: high level triggered"/>
             <MLText id="2770" L1="TWB1 (P) warn: low level triggered"/>
             <MLText id="2773" L1="TWB1 (S) warn: high high level triggered"/>
@@ -913,20 +953,8 @@
             <MLText id="3007" L1="F.W.T. (S) warn: high high level triggered"/>
             <MLText id="3010" L1="F.W.T. (S) warn: high level triggered"/>
             <MLText id="3013" L1="F.W.T. (S) warn: low level triggered"/>
-            <MLText id="3016" L1="voltage supervision 1 err"/>
-            <MLText id="3019" L1="voltage supervision 2 err"/>
-            <MLText id="3022" L1="voltage supervision 3 err"/>
-            <MLText id="3025" L1="voltage supervision 4 err"/>
-            <MLText id="3028" L1="voltage supervision 5 err"/>
-            <MLText id="3031" L1="voltage supervision 6 err"/>
-            <MLText id="3034" L1="voltage supervision 7 err"/>
-            <MLText id="3037" L1="voltage supervision 8 err"/>
-            <MLText id="3040" L1="voltage supervision 9 err"/>
-            <MLText id="3043" L1="voltage supervision 10 err"/>
-            <MLText id="3046" L1="voltage supervision 11 err"/>
-            <MLText id="3049" L1="voltage supervision 12 err"/>
-            <MLText id="3052" L1="voltage supervision 13 err"/>
             <MLText id="3055" L1="Urea T. warn: low low level triggered"/>
+            <MLText id="3056" L1="TWB1 (P) warn: high high level triggered"/>
         </MLTexts>
     </multiLangs>
     <defaultColors notTriggeredTxtColor="#aaaaaa" notTriggeredBgColor="#ffffff" disabledTxtColor="#000000" disabledBgColor="#ffffff" triggeredTxtColor="#d20000" triggeredBgColor="#ffffff" triggeredNotAckedTxtColor="#d20000" triggeredNotAckedBgColor="#ffffff" notTriggeredAckedTxtColor="#aaaaaa" notTriggeredAckedBgColor="#ffffff" notTriggeredNotAckedTxtColor="#aaaaaa" notTriggeredNotAckedBgColor="#ffffff" triggeredAckedTxtColor="#000000" triggeredAckedBgColor="#ffffff" ackTxtColor="#ff0000" ackBgColor="#ffff00"/>
@@ -26145,7 +26173,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3016@Alarm]voltage supervision 1 err</description>
+        <description>[9@Alarm]voltage supervision err: main power supply</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26173,7 +26201,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3019@Alarm]voltage supervision 2 err</description>
+        <description>[10@Alarm]voltage supervision err: emergency power supply</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26201,7 +26229,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3022@Alarm]voltage supervision 3 err</description>
+        <description>[12@Alarm]voltage supervision err: G1, G2</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26229,7 +26257,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3025@Alarm]voltage supervision 4 err</description>
+        <description>[13@Alarm]voltage supervision err: F100</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26257,7 +26285,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3028@Alarm]voltage supervision 5 err</description>
+        <description>[15@Alarm]voltage supervision err: F200</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26285,7 +26313,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3031@Alarm]voltage supervision 6 err</description>
+        <description>[16@Alarm]voltage supervision err: temperature alarm</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26313,7 +26341,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3034@Alarm]voltage supervision 7 err</description>
+        <description>[18@Alarm]voltage supervision err: Q2</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26341,7 +26369,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3037@Alarm]voltage supervision 8 err</description>
+        <description>[19@Alarm]voltage supervision err: Q3</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26369,7 +26397,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3040@Alarm]voltage supervision 9 err</description>
+        <description>[21@Alarm]voltage supervision err: Q4</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26397,7 +26425,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3043@Alarm]voltage supervision 10 err</description>
+        <description>[22@Alarm]voltage supervision err: Q5</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26425,7 +26453,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3046@Alarm]voltage supervision 11 err</description>
+        <description>[24@Alarm]voltage supervision err: Q6</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26453,7 +26481,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3049@Alarm]voltage supervision 12 err</description>
+        <description>[25@Alarm]voltage supervision err: Q7</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26481,7 +26509,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[3052@Alarm]voltage supervision 13 err</description>
+        <description>[27@Alarm]voltage supervision err: Q8</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -26511,7 +26539,6 @@
         <triggeredTxtColor>#000000</triggeredTxtColor>
         <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
         <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
-        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
         <actions/>
         <useractions/>
         <description>[3055@Alarm]Urea T. warn: low low level triggered</description>
@@ -26520,6 +26547,930 @@
         <customFields>
             <customField_1></customField_1>
             <customField_2></customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="915" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm1</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[1]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[205@Alarm]bilge well alarm: BILGE TANK LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="916" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm2</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[2]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[198@Alarm]bilge well alarm: ME A/C COND. WATER TANK LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="917" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm3</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[3]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[199@Alarm]bilge well alarm: E/R BILGE WELL (AFT) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="918" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm4</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[4]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[201@Alarm]bilge well alarm: E/R BILGE WELL (FORE.P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="919" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm5</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[5]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[202@Alarm]bilge well alarm: E/R BILGE WELL (FORE.S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="920" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm6</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[6]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[204@Alarm]bilge well alarm: BILGE OF M/E FOUNDATION LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="921" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm7</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[7]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[238@Alarm]bilge well alarm: E.F.P.RM BILGE LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="922" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm8</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[8]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[207@Alarm]bilge well alarm: No.1 VALVE RECESS BILGE LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="923" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm9</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[9]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[208@Alarm]bilge well alarm: No.2 VALVE RECESS BILGE LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="924" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm10</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[10]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[210@Alarm]bilge well alarm: No.3 VALVE RECESS BILGE LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="925" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm11</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[11]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[211@Alarm]bilge well alarm: FR20~38 VOID (P)  LEVEL HIGH FR20~38</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="926" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm12</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[12]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[213@Alarm]bilge well alarm: FR17~38 VOID (S)  LEVEL HIGH FR17~38</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="927" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm13</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[13]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[214@Alarm]bilge well alarm: NO.1 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="928" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm14</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[14]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[216@Alarm]bilge well alarm: NO.1 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="929" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm15</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[15]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[217@Alarm]bilge well alarm: NO.2 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="930" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm16</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[16]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[219@Alarm]bilge well alarm: NO.2 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="931" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm17</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[17]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[220@Alarm]bilge well alarm: NO.3 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="932" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm18</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[18]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[222@Alarm]bilge well alarm: NO.3 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="933" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm19</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[19]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[223@Alarm]bilge well alarm: NO.4 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="934" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm20</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[20]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[225@Alarm]bilge well alarm: NO.4 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="935" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm21</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[21]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[226@Alarm]bilge well alarm: NO.5 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="936" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm22</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[22]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[228@Alarm]bilge well alarm: NO.5 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="937" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm23</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[23]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[229@Alarm]bilge well alarm: NO.6 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="938" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm24</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[24]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[231@Alarm]bilge well alarm: NO.6 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="939" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm25</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[25]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[232@Alarm]bilge well alarm: NO.7 C/H B.W.(P) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="940" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm26</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[26]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[234@Alarm]bilge well alarm: NO.7 C/H B.W.(S) LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="941" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm27</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[27]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[235@Alarm]bilge well alarm: FR17~35 VOID (P)  LEVEL HIGH FR17~35</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="942" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm28</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|BilgeWellIndication|BilgeWellIndication[28]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[237@Alarm]bilge well alarm: ER COFFERDAM  LEVEL HIGH</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
         </customFields>
         <value>1</value>
         <logMask>76</logMask>

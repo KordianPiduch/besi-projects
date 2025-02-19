@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeWell" dataWndSize="0,70" pageName="BilgeWell" pageSize="1920,1080" usedFonts="Roboto">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="BilgeWell" dataWndSize="0,70" pageName="BilgeWell" pageSize="1920,1080" usedFonts="Roboto">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -7,17 +7,18 @@
     <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
+    <MLText id="0" L1="E.F.P.RM BILGE LEVEL HIGH"/>
+    <MLText id="1" L1="FR20~38 VOID (P)  LEVEL HIGH FR20~38"/>
+    <MLText id="2" L1="ER COFFERDAM  LEVEL HIGH"/>
     <MLText id="3" L1="BILGE WELL"/>
     <MLText id="9" L1="BILGE TANK LEVEL HIGH"/>
     <MLText id="10" L1="ME A/C COND. WATER TANK LEVEL HIGH"/>
     <MLText id="11" L1="E/R BILGE WELL (AFT) LEVEL HIGH"/>
     <MLText id="12" L1="E/R BILGE WELL (FORE.P) LEVEL HIGH"/>
     <MLText id="14" L1="BILGE OF M/E FOUNDATION LEVEL HIGH"/>
-    <MLText id="15" L1="E.F.P.RM BILGE LEVEL HIGH"/>
     <MLText id="16" L1="No.1 VALVE RECESS BILGE LEVEL HIGH"/>
     <MLText id="17" L1="No.2 VALVE RECESS BILGE LEVEL HIGH"/>
     <MLText id="19" L1="No.3 VALVE RECESS BILGE LEVEL HIGH"/>
-    <MLText id="20" L1="FR20~38 VOID (P)  LEVEL HIGH FR20~38"/>
     <MLText id="21" L1="FR17~38 VOID (S)  LEVEL HIGH FR17~38"/>
     <MLText id="22" L1="NO.1 C/H B.W.(P) LEVEL HIGH"/>
     <MLText id="23" L1="NO.1 C/H B.W.(S) LEVEL HIGH"/>
@@ -34,7 +35,6 @@
     <MLText id="34" L1="NO.7 C/H B.W.(P) LEVEL HIGH"/>
     <MLText id="35" L1="NO.7 C/H B.W.(S) LEVEL HIGH"/>
     <MLText id="36" L1="FR17~35 VOID (P)  LEVEL HIGH FR17~35"/>
-    <MLText id="37" L1="ER COFFERDAM  LEVEL HIGH"/>
     <MLText id="42" L1=" "/>
     <MLText id="43" L1="E/R BILGE WELL (FORE.S) LEVEL HIGH"/>
    </MLTexts>
@@ -126,7 +126,7 @@
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
     <links>
-     <lang class="MLTextLink" textid="15"/>
+     <lang class="MLTextLink" textid="0"/>
     </links>
    </object>
    <object class="LabelWgt" id="GridLayout7.label8">
@@ -162,7 +162,7 @@
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
     <links>
-     <lang class="MLTextLink" textid="20"/>
+     <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
    <object class="LabelWgt" id="GridLayout7.label12">
@@ -234,7 +234,7 @@
       <lang class="MLTextLink" textid="42"/>
      </links>
     </object>
-    <object class="ImageWgt" id="GridLayout7.LgtStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <object class="ImageWgt" id="GridLayout7.LgtStd3.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
      <wgtStyle x="15.91" y="10.90" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.69" enableCache="true" width="16.62" height="19.38" forcePaint="16"/>
     </object>
    </object>
@@ -796,7 +796,7 @@
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
     <links>
-     <lang class="MLTextLink" textid="37"/>
+     <lang class="MLTextLink" textid="2"/>
     </links>
    </object>
    <object class="GroupWgt" customType="Lights" id="GridLayout1.LgtStd3">
@@ -823,7 +823,7 @@
       <lang class="MLTextLink" textid="42"/>
      </links>
     </object>
-    <object class="ImageWgt" id="GridLayout1.LgtStd3.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <object class="ImageWgt" id="GridLayout1.LgtStd3.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
      <wgtStyle x="15.91" y="10.90" wgtStaticOpt="dynamic" fill-opacity="0.5" cx="8.31" cy="9.69" enableCache="true" width="16.62" height="19.38" forcePaint="16"/>
     </object>
    </object>
