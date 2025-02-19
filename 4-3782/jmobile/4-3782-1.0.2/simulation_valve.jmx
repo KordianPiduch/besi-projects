@@ -1,0 +1,27 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="false" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="simulation" px="0" id="simulation_valve" py="0" dataWndSize="0,70" pageType="non-modal" pageName="simulation_valve" pageSize="240,200" usedFonts="Roboto Medium,Roboto,Roboto Light">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="240" height="200" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupSubscribeWgt" id="simulation_valve@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="valve_simulation-1.0:1.0" id="valveSimulator">
+   <wgtStyle x="30" y="15" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="100" cy="85.25" width="200" height="170.50" forcePaint="24"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-255" sourceType="Tag" tag="valve_prefix" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="valve_prefix"/>
+   </dataLinks>
+   <links>
+    <param attrName="valve_prefix"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>
