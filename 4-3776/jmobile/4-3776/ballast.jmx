@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
+ <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="Ballast" dataWndSize="0,70" pageName="Ballast" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium,Roboto Light">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="GroupWgt" id="GroupWgt8.GroupWgt28">
    <wgtStyle x="793" lock="true" y="910" cx="60" cy="45" width="120" height="90" forcePaint="1"/>
@@ -681,7 +681,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="piping">
-   <wgtStyle staticFile="opt/Ballastpiping.png" x="190" lock="true" y="84" cx="775" cy="456.50" width="1550" height="913" forcePaint="33"/>
+   <wgtStyle staticFile="opt/ballastpiping.png" x="190" lock="true" y="84" cx="775" cy="456.50" width="1550" height="913" forcePaint="33"/>
    <object class="LineWgt" id="piping.line" static="true">
     <wgtStyle x="0" anchorIdx="1" y="426" stroke-width="3" cx="91.75" cy="3.39" stroke="rgb(60,179,113)" width="1550" height="0"/>
    </object>
@@ -1051,7 +1051,7 @@
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">12</param>
+    <param attrName="ValveID" alias="ValveID">14</param>
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve16">
@@ -1102,12 +1102,12 @@
     <param attrName="ValveID" alias="ValveID">3</param>
    </links>
   </object>
-  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve33333">
+  <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve33">
    <wgtStyle x="857" y="858" wgtStaticOpt="dynamic" cx="32.50" cy="31" width="65" height="62" forcePaint="17"/>
    <links>
     <param attrName="SYSTEM_ID">1</param>
     <param attrName="Confirm" alias="Confirm">false</param>
-    <param attrName="ValveID" alias="ValveID">3</param>
+    <param attrName="ValveID" alias="ValveID">33</param>
    </links>
   </object>
   <object class="GroupWgt" customType="valve_base_vertical-1.0:1.0" id="valve6">
@@ -1262,6 +1262,25 @@
    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="460" vert-align="middle" y="0" font-size="20" keypad-type="None" cx="512.20" alignment="center" cy="22.50" font-sizepx="27" width="999" wrapping="true" height="49" forcePaint="1" font-color="rgb(255,255,255)"/>
    <links>
     <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="wgtResetAllValves-1.0:1.0" id="BtnStd1">
+   <wgtStyle x="220" y="5" wgtStaticOpt="dynamic" cx="50" cy="20" width="100" height="40" forcePaint="29"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="visibility">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="HMI_ID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="HMI_ID"/>
+   </dataLinks>
+   <links>
+    <param attrName="HMI_ID"/>
+    <param attrName="SystemID" alias="SystemID">1</param>
    </links>
   </object>
  </object>

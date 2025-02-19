@@ -9,6 +9,8 @@
    <MLTexts>
     <MLText id="2" L1="SEMI-AUTOMATIC MODE"/>
     <MLText id="3" L1="Mode&#xa;Status"/>
+    <MLText id="4" L1="Execute All PS"/>
+    <MLText id="5" L1="Execute All SB"/>
     <MLText id="6" L1="ACTIVE"/>
     <MLText id="8" L1="STEP"/>
     <MLText id="9" L1="OF"/>
@@ -1158,7 +1160,7 @@
    </links>
   </object>
   <object class="GroupWgt" id="GridLayout3">
-   <wgtStyle x="139.75" y="80.22" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="836.50" cy="40.50" width="1673" height="81" forcePaint="17">
+   <wgtStyle x="139.75" y="80.22" wgtStaticOpt="dynamic" cx="836.50" cy="40.50" width="1673" height="81" forcePaint="17">
     <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="2" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="6" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="1">
      <colProperties>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="25" leftStroke="0" minWidth="0" stretch="1" maxWidth="250"/>
@@ -1260,10 +1262,10 @@
     <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GridLayout1.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd3">
      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="119.50" cy="30.50" x="5" maxWidth="100000" y="10" rowSpan="1" aspectRatio="287:81" rowOcc="1" horItemOverflow="0" height="61" minWidth="0" preserveAspectRatio="0" width="239" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
      <object class="ButtonWgt" id="GridLayout3.GridLayout1.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="119.50" cy="30.50" x="0" y="0" height="61" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="239" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="119.50" cy="30.50" x="0" y="0" height="61" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="239" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
      </object>
      <object class="LabelWgt" id="GridLayout3.GridLayout1.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="8.87" vert-align="middle" y="1.39" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="106.23" alignment="center" cy="27.73" font-sizepx="16" width="212.43" wrapping="true" height="56.85" forcePaint="17" font-color="rgb(255,255,255)"/>
+      <wgtStyle font-family="Roboto Medium" x="8.87" vert-align="middle" y="1.39" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="106.23" alignment="center" cy="27.73" font-sizepx="16" width="212.43" wrapping="true" height="56.85" forcePaint="17" font-color="rgb(255,255,255)"/>
       <links>
        <lang class="MLTextLink" textid="16">
         <MLFontFamily L1="Roboto Medium"/>
@@ -1286,10 +1288,10 @@
     <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GridLayout3.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd4">
      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="120" cy="30.50" x="5" maxWidth="100000" y="10" rowSpan="1" aspectRatio="137:27" rowOcc="1" horItemOverflow="0" height="61" minWidth="0" preserveAspectRatio="0" width="240" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
      <object class="ButtonWgt" id="GridLayout3.GridLayout3.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(220,0,0)" cx="120" cy="30.50" x="0" y="0" height="61" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="240" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+      <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(220,0,0)" cx="120" cy="30.50" x="0" y="0" height="61" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="240" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
      </object>
      <object class="LabelWgt" id="GridLayout3.GridLayout3.GridLayout3.GroupWgt1.GridLayout7.GridLayout4.BtnStd4.lbl" hmiStyle="hmi-type:wgtlabel">
-      <wgtStyle font-family="Roboto Medium" x="8.91" vert-align="middle" y="1.38" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="106.65" alignment="center" cy="27.74" font-sizepx="16" width="213.34" wrapping="true" height="56.85" forcePaint="17" font-color="rgb(255,255,255)"/>
+      <wgtStyle font-family="Roboto Medium" x="8.91" vert-align="middle" y="1.38" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="106.65" alignment="center" cy="27.74" font-sizepx="16" width="213.34" wrapping="true" height="56.85" forcePaint="17" font-color="rgb(255,255,255)"/>
       <links>
        <lang class="MLTextLink" textid="17">
         <MLFontFamily L1="Roboto Medium"/>
@@ -1348,10 +1350,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd1">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="14" x="79" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="28" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="3" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.64" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="12" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.64" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="12" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="46">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1362,10 +1364,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd2">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="14" x="116" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="28" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="4" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd2.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd2.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.64" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.64" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="47">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1376,10 +1378,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd3">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="14" x="42" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="28" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="2" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="14" x="0" y="0" height="28" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout29.BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="1.01" vert-align="middle" y="0.64" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="12.01" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="1.01" vert-align="middle" y="0.64" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="12.01" alignment="center" cy="12.73" font-sizepx="13" width="23.99" wrapping="true" height="26.09" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="33">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1414,10 +1416,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd1">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="13.50" x="79" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="27" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="3" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.62" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.62" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="46">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1428,10 +1430,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd2">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="13.50" x="116" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="27" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="4" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd2.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd2.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.62" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="0.99" vert-align="middle" y="0.62" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="11.99" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="47">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1442,10 +1444,10 @@
       <object class="GroupWgt" customType="ButtonsWithLabel" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd3">
        <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="13.50" cy="13.50" x="42" maxWidth="100000" y="5" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="27" minWidth="0" preserveAspectRatio="0" width="27" bottonMargin="0" leftMargin="0" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="2" colSpan="1"/>
        <object class="ButtonWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+        <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="13.50" cy="13.50" x="0" y="0" height="27" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="27" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
        </object>
        <object class="LabelWgt" id="GridLayout3.GroupWgt1.GridLayout7.GridLayout1.GridLayout3.GridLayout2.GroupWgt1.GridLayout7.GridLayout1.BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
-        <wgtStyle font-family="Roboto Medium" x="1.01" vert-align="middle" y="0.62" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="12.01" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
+        <wgtStyle font-family="Roboto Medium" x="1.01" vert-align="middle" y="0.62" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="12.01" alignment="center" cy="12.27" font-sizepx="13" width="23.99" wrapping="true" height="25.16" forcePaint="17" font-color="rgb(237,237,237)"/>
         <links>
          <lang class="MLTextLink" textid="33">
           <MLFontFamily L1="Roboto Medium"/>
@@ -1492,6 +1494,34 @@
       <lang class="MLTextLink" textid="52"/>
      </links>
     </object>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="semi_auto.grid.semi_tank1.BtnStd3">
+   <wgtStyle x="635" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="17"/>
+   <object class="ButtonWgt" id="semi_auto.grid.semi_tank1.BtnStd3.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="299" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+   </object>
+   <object class="LabelWgt" id="semi_auto.grid.semi_tank1.BtnStd3.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="17" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="4">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="semi_auto.grid.semi_tank1.BtnStd4">
+   <wgtStyle x="1455" y="324" wgtStaticOpt="dynamic" cx="149.50" cy="25" width="299" height="50" forcePaint="17"/>
+   <object class="ButtonWgt" id="semi_auto.grid.semi_tank1.BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="149.50" cy="25" x="0" y="0" height="50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="299" forcePaint="17" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+   </object>
+   <object class="LabelWgt" id="semi_auto.grid.semi_tank1.BtnStd4.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-family="Roboto Medium" x="11.10" vert-align="middle" y="1.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="132.89" alignment="center" cy="22.73" font-sizepx="16" width="265.76" wrapping="true" height="46.60" forcePaint="17" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="5">
+      <MLFontFamily L1="Roboto Medium"/>
+     </lang>
+    </links>
    </object>
   </object>
  </object>

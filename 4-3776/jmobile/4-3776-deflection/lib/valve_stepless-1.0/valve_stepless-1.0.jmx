@@ -1,0 +1,109 @@
+<customWgt>
+ <links>
+  <param attrName="SYSTEM_ID"/>
+  <param attrName="ValveID"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="valve_stepless_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="VAL 999"/>
+   <MLText id="1" L1="100 %"/>
+   <MLText id="2" L1="Calibration"/>
+   <MLText id="3" L1="o"/>
+   <MLText id="4" L1="c"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" id="*.valve_symbol">
+  <wgtStyle x="30" y="18" wgtStaticOpt="dynamic" cx="10" cy="17.50" width="20" height="35" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.valve_symbol.triangle_bottom">
+   <wgtStyle x="0" y="17" wgtStaticOpt="dynamic" cx="10" cy="8.73" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(237,237,237)" forcePaint="16" nodeName="polygon"/>
+  </object>
+  <object class="ShapeWgt" id="*.valve_symbol.triangle_upper">
+   <wgtStyle x="0" y="0" mtx="-1,0,0,0,-1,0,20,18,1" wgtStaticOpt="dynamic" cx="10" cy="9.27" points="76,122 95,88 114,122 " width="20" height="18" fill="rgb(237,237,237)" forcePaint="16" nodeName="polygon"/>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.valve_name">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="10" vert-align="middle" y="0" font-size="9" wgtStaticOpt="dynamic" keypad-type="None" cx="30.73" alignment="center" cy="9.45" font-sizepx="12" width="59" wrapping="true" height="20" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="0"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.valve_per">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="10" vert-align="middle" y="50" font-size="9" wgtStaticOpt="dynamic" keypad-type="None" cx="30.73" alignment="center" cy="9.45" font-sizepx="12" width="59" wrapping="true" height="20" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|stepless|position_per" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="1"/>
+   <action class="JavaScriptAction" f="this.valve_per_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="MsgTextWgt" id="*.status_msg">
+  <wgtStyle frameColor="none" min="6" font-size="9" frameSize="0" cx="45.78" cy="9" x="0" y="63" font-sizepx="12" height="20" blink="true" font-color="rgb(255,255,255)" width="80" alignment="center" max="6" continous="true" vert-align="middle" forcePaint="16" viewindex="false" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="" value="6" keypad-type="None">
+   <msgtxt>
+    <msg index="6"/>
+   </msgtxt>
+  </wgtStyle>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|status" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLMsgLink:messages:">
+    <MLFontFamily L1="Roboto"/>
+    <textid idx="6" val="2"/>
+   </lang>
+   <action class="JavaScriptAction" f="this.status_msg_onDataUpdate" actionID="0" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="GroupWgt" id="*.warning_sign">
+  <wgtStyle x="42" y="32" wgtStaticOpt="dynamic" cx="13.50" cy="11" width="27" height="22" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="ShapeWgt" id="*.warning_sign.background">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" fill="rgb(127,127,127)" forcePaint="16" nodeName="polygon"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="*.warning_sign.Warning">
+   <wgtStyle imagePath="lib/valve_stepless-1.0/images/Warning.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="13.50" cy="11" stroke="rgb(240,0,0)" width="27" height="22" fill="rgb(240,0,0)" forcePaint="16"/>
+  </object>
+ </object>
+ <object class="ButtonWgt" id="*.button" hmiStyle="type:btn">
+  <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="momentary" fill="rgb(160,160,164)" cx="29.54" cy="31.86" x="10" y="3" height="65" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="60" forcePaint="16" wgtStaticOpt="dynamic" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+  <links>
+   <action class="JavaScriptAction" f="this.button_onMouseClick" actionID="0" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+   <action class="JavaScriptAction" f="this.button_onMouseHold" actionID="1" event="onMouseHold" actionWgt="_WgtMgr" attribute="onMouseHold"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_pos_open">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="9.50" vert-align="middle" y="21.49" font-size="12" visibility="false" keypad-type="None" cx="10.41" alignment="center" cy="9.15" font-sizepx="16" width="19.33" wrapping="true" height="19.34" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|position_open" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="3"/>
+   <action class="JavaScriptAction" f="this.valve_per_onDataUpdate" actionID="1" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+ <object class="LabelWgt" id="*.help_label_pos_close">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="9.50" vert-align="middle" y="39.83" font-size="12" visibility="false" keypad-type="None" cx="10.41" alignment="center" cy="9.15" font-sizepx="16" width="19.33" wrapping="true" height="19.34" forcePaint="16" font-color="rgb(76,76,77)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[${ValveID}]|sttValve|position_close" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="4"/>
+   <action class="JavaScriptAction" f="this.valve_per_onDataUpdate" actionID="1" event="onDataUpdate" actionWgt="_WgtMgr" attribute="onDataUpdate"/>
+  </links>
+ </object>
+</customWgt>
