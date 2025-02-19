@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="TemplatePageWgt" downloadPrepDone="false" staticOptEnable="true" id="VisuElements" pageType="template" dataWndSize="0,70" pageName="VisuElements" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
+ <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="VisuElements" pageType="template" dataWndSize="0,70" pageName="VisuElements" pageSize="1920,1080" usedFonts="Roboto,Roboto Light,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="1920" height="1080" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_TemplatePageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>

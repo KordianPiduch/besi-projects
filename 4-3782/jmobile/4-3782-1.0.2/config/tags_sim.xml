@@ -39064,4 +39064,15 @@
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
+    <tag>
+        <name>ProjectName</name>
+        <refreshTime>1000</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <resourceLocator>VRBL://Tag1?string-512</resourceLocator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
 </tags>

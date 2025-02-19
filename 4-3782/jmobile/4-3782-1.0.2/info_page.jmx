@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" staticFile="opt/info_page.png" downloadPrepDone="false" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="Project Information" px="0" id="info_page" py="0" dataWndSize="0,70" pageType="modal" scriptFile="info_page.js" pageName="info_page" pageSize="350,550" usedFonts="Roboto,Roboto Medium">
+ <object class="DialogWgt" staticFile="opt/info_page.png" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="Project Information" px="0" id="info_page" py="0" dataWndSize="0,70" pageType="modal" scriptFile="info_page.js" pageName="info_page" pageSize="350,550" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="550" forcePaint="8" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
@@ -208,16 +208,7 @@
    <object class="LabelWgt" id="field_label9.label1">
     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="84.51" alignment="center" cy="13.50" font-sizepx="16" width="164" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
     <dataLinks>
-     <dataLink sourceType="Formula" attribute="text">
-      <xForms>
-       <xForm class="FormulaXForm" expression="$('ProjectID')+'-'+$('ProjectVersion')" compiledExpression="$0+'-'+$1" colorPalette="" name="Formula">
-        <dataLinks>
-         <dataLink class="TagMgrWgt" tagType="string-512" sourceType="Tag" tag="ProjectID" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
-         <dataLink class="TagMgrWgt" tagType="string-8" sourceType="Tag" tag="ProjectVersion" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$1"/>
-        </dataLinks>
-       </xForm>
-      </xForms>
-     </dataLink>
+     <dataLink class="TagMgrWgt" tagType="string-512" sourceType="Tag" tag="ProjectName" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
     <links>

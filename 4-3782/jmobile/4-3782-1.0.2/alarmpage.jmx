@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="PageWgt" downloadPrepDone="false" templateFile="base_template.jmx" staticOptEnable="true" id="AlarmPage" dataWndSize="0,70" pageName="AlarmPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
+ <object class="PageWgt" downloadPrepDone="true" templateFile="base_template.jmx" staticOptEnable="true" id="AlarmPage" dataWndSize="0,70" pageName="AlarmPage" pageSize="1920,1080" usedFonts="Roboto,Roboto Medium">
   <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="1920" height="1080" forcePaint="512" v="04.05.01.523"/>
   <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
    <wgtStyle x="0" y="0" width="0" height="0"/>
@@ -269,15 +269,15 @@
       </links>
      </object>
      <object class="GroupWgt" customType="Shape Button" id="ActiveAlarmsTable.Table.Table.selectchk">
-      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="3" minHeight="0" verItemUnderflow="0" rightMargin="10" cx="10.50" cy="10.50" x="29" maxWidth="100000" y="37" rowSpan="1" aspectRatio="25:25" rowOcc="2" horItemOverflow="0" height="21" minWidth="0" preserveAspectRatio="1" width="21" bottonMargin="3" leftMargin="10" forcePaint="17" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
+      <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="3" minHeight="0" verItemUnderflow="0" rightMargin="10" cx="10.50" cy="10.50" x="29" maxWidth="100000" y="37" rowSpan="1" aspectRatio="25:25" rowOcc="2" horItemOverflow="0" height="21" minWidth="0" mtx="1,0,0,0,1,0,0,0,1" preserveAspectRatio="1" width="21" bottonMargin="3" forcePaint="17" leftMargin="10" wgtStaticOpt="dynamic" maxHeight="100000" colOcc="1" colSpan="1"/>
       <object class="ButtonWgt" id="ActiveAlarmsTable.Table.Table.selectchk.btn" hmiStyle="type:btn">
-       <wgtStyle form="rectangle" pushColor="rgb(0,176,199)" dx="1" dy="-1" type="maintained" fill="rgb(255,255,255)" x="0" y="0" needleColor="rgb(0,176,199)" stroke="rgb(200,200,200)" height="21" downFillColor="rgb(190,190,190)" releasePath="images\win-like.svg" width="21" forcePaint="25" wgtStaticOpt="dynamic" value="0" needlePath="images\win-like-press.svg"/>
+       <wgtStyle form="rectangle" pushColor="rgb(0,176,199)" dx="1" dy="-1" type="maintained" fill="rgb(255,255,255)" x="0" y="0" needleColor="rgb(0,176,199)" stroke="rgb(200,200,200)" height="21" downFillColor="rgb(190,190,190)" releasePath="images\win-like.svg" mtx="1,0,0,0,1,0,0,0,1" width="21" forcePaint="25" wgtStaticOpt="dynamic" value="0" needlePath="images\win-like-press.svg"/>
        <dataLinks>
         <dataLink sourceType="Widget" tag="alSelect" dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" tagIndex="-1" readWrite="R/W" attribute="value"/>
        </dataLinks>
       </object>
       <object class="LabelWgt" id="ActiveAlarmsTable.Table.Table.selectchk.txt">
-       <wgtStyle font-family="Roboto" x="3.26" vert-align="middle" y="7.14" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="7.80" alignment="center" cy="3.49" font-sizepx="13" width="15.20" wrapping="true" height="6.72" forcePaint="16"/>
+       <wgtStyle font-family="Roboto" x="3.26" vert-align="middle" y="7.14" font-size="12" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" keypad-type="None" cx="7.80" alignment="center" cy="3.49" font-sizepx="13" width="15.20" wrapping="true" height="6.72" forcePaint="16"/>
        <links>
         <lang class="MLTextLink" textid="1"/>
        </links>

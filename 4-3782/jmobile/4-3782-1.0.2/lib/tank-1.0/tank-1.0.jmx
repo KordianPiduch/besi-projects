@@ -18,7 +18,7 @@
   </MLTexts>
  </object>
  <object class="ShapeWgt" id="*.background">
-  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="48.39" cy="62.50" stroke="rgb(102,102,102)" width="100" height="125" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16"/>
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="48.39" cy="62.50" stroke="rgb(102,102,102)" width="100" height="125" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>

@@ -14,6 +14,13 @@
   <tag>valve_dialog_base_y</tag>
  </group>
  <group Type="Auto">
+  <name>AddUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Force Logoff Time</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
   <name>AlarmPage@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>Alarm triggered</tag>
@@ -401,6 +408,18 @@
   <tag>System Time</tag>
  </group>
  <group Type="Auto">
+  <name>ChangePassword@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>DeleteUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
   <name>Fuel@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>HMI_ID</tag>
@@ -534,6 +553,12 @@
   <tag>text_color</tag>
  </group>
  <group Type="Auto">
+  <name>UserEditor@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
   <name>VisuElements@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>HMI_ID</tag>
@@ -622,8 +647,7 @@
   <tag>HMI_ID</tag>
   <tag>HMI_OS</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|project_version</tag>
-  <tag>ProjectID</tag>
-  <tag>ProjectVersion</tag>
+  <tag>ProjectName</tag>
   <tag>bar_color</tag>
   <tag>besi_no</tag>
   <tag>frame_color</tag>
@@ -634,6 +658,12 @@
  <group Type="Auto">
   <name>login_timer_info@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>loginpage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
   <tag>text_color</tag>
  </group>
  <group Type="Auto">
