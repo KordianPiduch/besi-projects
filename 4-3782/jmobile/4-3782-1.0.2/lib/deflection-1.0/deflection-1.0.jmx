@@ -1,0 +1,69 @@
+<customWgt>
+ <links>
+  <param attrName="DeflectionID"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="deflection_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="Deflection Name"/>
+   <MLText id="1" L1=""/>
+  </MLTexts>
+ </object>
+ <object class="ShapeWgt" id="*.background">
+  <wgtStyle ry="20" x="0" y="0" wgtStaticOpt="dynamic" cx="48.48" cy="19.35" stroke="rgb(102,102,102)" width="100" height="40" fill="rgb(102,102,102)" nodeName="rect" forcePaint="16" rx="5"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+  </dataLinks>
+ </object>
+ <object class="LabelWgt" id="*.name">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" wgtStaticOpt="dynamic" keypad-type="None" cx="51.22" alignment="center" cy="9" font-sizepx="13" width="99" wrapping="true" height="19" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[${DeflectionID}]|sttDeflection|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="0"/>
+  </links>
+ </object>
+ <object class="NumericWgt" id="*.value">
+  <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="31.57" cy="9" decimalDigits="1" x="0" numberFormat="1" showThousandSeparator="false" y="20" font-sizepx="16" height="20" font-color="rgb(255,255,255)" width="69" alignment="right" max="32767" vert-align="middle" forcePaint="16" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto" text="999.9" value="999.9" keypad-type="Numeric"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[${DeflectionID}]|sttDeflection|measuring_height" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+  </dataLinks>
+ </object>
+ <object class="LabelWgt" id="*.unit">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="70" vert-align="middle" y="20" font-size="11" wgtStaticOpt="dynamic" keypad-type="None" cx="10.24" alignment="center" cy="9" font-sizepx="15" width="19" wrapping="true" height="19" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="1"/>
+  </links>
+ </object>
+ <object class="GroupWgt" id="*.warning">
+  <wgtStyle x="5" y="15" wgtStaticOpt="dynamic" cx="13.50" cy="11" width="27" height="22" forcePaint="16"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[${DeflectionID}]|sttDeflection|failure" tagIndex="-1" widgetType="Project" readWrite="R" attribute="visibility"/>
+  </dataLinks>
+  <object class="ShapeWgt" id="*.warning.background">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="13.50" cy="10.67" stroke="rgb(200,200,200)" points="76,122 95,88 114,122 " width="27" height="22" blink="true" fill="rgb(127,127,127)" nodeName="polygon" forcePaint="16"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="*.warning.Warning">
+   <wgtStyle imagePath="lib/deflection-1.0/images/Warning.svg" x="0" y="0" wgtStaticOpt="dynamic" stroke-width="2" cx="13.50" cy="11" stroke="rgb(240,0,0)" width="27" height="22" blink="true" fill="rgb(240,0,0)" forcePaint="16"/>
+  </object>
+ </object>
+ <object class="ButtonWgt" id="*.hotspotbtn" hmiStyle="type:btn">
+  <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="momentary" fill="rgb(160,160,164)" cx="49.23" cy="19.61" x="0" y="0" height="40" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="100" forcePaint="16" wgtStaticOpt="dynamic" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+  <links>
+   <action class="JavaScriptAction" f="this.hotspotbtn_onMouseClick" actionID="0" event="onMouseClick" actionWgt="_WgtMgr" attribute="onMouseClick"/>
+  </links>
+ </object>
+</customWgt>

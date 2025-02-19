@@ -1,0 +1,87 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="simulation_atm_press" py="0" dataWndSize="0,70" pageType="non-modal" pageName="simulation_atm_press" pageSize="350,170" usedFonts="Roboto,Roboto Light">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="350" height="170" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="18" L1="Atmospheric Pressure"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="field_label1">
+   <wgtStyle x="5" y="10" cx="170" cy="15" width="340" height="30"/>
+   <object class="ShapeWgt" id="field_label1.roundrect1">
+    <wgtStyle ry="2" x="0" y="0" cx="164.85" cy="14.52" stroke="rgb(200,200,200)" width="340" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="136" rx="2"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="field_label1.label1">
+    <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" keypad-type="None" cx="174.15" alignment="center" cy="13.50" font-sizepx="16" width="339" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="simulation_atm_press@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="Sliders" id="SldrHrz1">
+   <wgtStyle x="74.50" y="64.52" mtx="1.29299,0,0,0,1.62513,0,0,0,1" groupStyle="xform-scaling" cx="100.50" cy="27" width="155.45" height="33.23"/>
+   <links>
+    <attr attrName="__scale_lbl_visibility2" alias="*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="visibility2" alias="*.scale.ticks.visibility;*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="align" alias="*.scale.ticks.align;*.scale.lbl.align"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.scale.ticks.reverseScale;*.scale.lbl.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.scale.ticks.labelFreq;*.scale.lbl.labelFreq"/>
+    <attr attrName="toolTipFontName" alias="*.ndl.toolTipFontName"/>
+    <attr attrName="__ndl_min" alias="*.ndl.min;*.scale.ticks.min;*.scale.lbl.min"/>
+    <attr attrName="__ndl_max" alias="*.ndl.max;*.scale.ticks.max;*.scale.lbl.max"/>
+   </links>
+   <object class="GroupWgt" customType="LinearScale" id="SldrHrz1.scale">
+    <wgtStyle x="8.24" y="-15.04" mtx="0.528468,0,0,0,0.954897,0,0,0,1" visibility="false" groupStyle="xform-scaling" cx="69.76" cy="46.79" width="0" height="0"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="SldrHrz1.scale.lbl">
+     <wgtStyle form="horizontal" min="0" timeSpec="local" tickFreq="5" font-size="0" step="1" cx="113.67" cy="34.04" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="64.44" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="264" max="32767" vert-align="top" usingFormat="" labelFreq="3" startAngle="-20" font-family="Roboto" value="" text="" visibility="false" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="SldrHrz1.scale.ticks" static="true">
+     <wgtStyle form="horizontal" tickSize2="10" tickFreq="5" stroke-width="2" stroke-linecap="butt" reverseScale="false" alarmMinorWidth="2" cx="121.20" cy="7.69" x="9.86" y="17.25" minorStroke-width="2" height="30.79" alarmColorMajor="rgb(206,21,78)" alarmMax="100" endAngle="200" strokeMajor="rgb(200,200,200)" width="244.40" align="0" max="32767" alarmColorMinor="rgb(206,21,78)" tickSize="6" labelFreq="5" strokeMinor="rgb(200,200,200)" visibility="false" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="ImageWgt" id="SldrHrz1.img" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd-hsldr">
+    <wgtStyle imagePath="images/widget_frame.svg" x="12.99" y="13" cx="64.41" cy="1.89" enableCache="true" width="129.16" height="4.92" fill="rgb(237,237,237)" forcePaint="65"/>
+   </object>
+   <object class="NeedleWgt" id="SldrHrz1.ndl" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:top-hthmb">
+    <wgtStyle x="0" form="horizontal" y="0" toolTipTextColor="rgb(76,76,77)" toolTipFontSize="12" writeMode="0" toolTipBgColor="rgb(255,255,255)" toolTipFontName="Roboto" cx="13.81" cy="16.42" max="32767" discrete="true" width="155.45" acceptClick="true" height="33.23" moveStep="1" forcePaint="73"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="SldrHrz1.ndl.img" hmiStyle="hmi-type:---">
+     <wgtStyle imagePath="images/Sldrhrz_needle.svg" x="116.78" y="-1.91" stroke-width="1" cx="11.78" cy="9.84" stroke="rgb(237,237,237)" width="24.75" height="19.69" fill="rgb(0,70,136)" forcePaint="65"/>
+    </object>
+   </object>
+  </object>
+  <object class="NumericWgt" id="numeric1">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="23" cy="9" x="149.50" numberFormat="1" showThousandSeparator="false" y="123.26" font-sizepx="16" height="20" font-color="rgb(255,255,255)" readWrite="true" width="50" alignment="center" max="32767" vert-align="middle" forcePaint="201" usingFormat="" font-family="Roboto Light" text="99999" value="99999" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

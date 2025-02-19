@@ -1,0 +1,29 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName=" " px="0" id="valve_stepless" py="0" dataWndSize="0,70" pageType="modal" pageName="valve_stepless" pageSize="130,238" usedFonts="Roboto Medium,Roboto,Roboto Light">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="130" height="238" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="valve_dialog_base_x" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="px"/>
+   <dataLink class="TagMgrWgt" tagType="int" sourceType="Tag" tag="valve_dialog_base_y" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="py"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupSubscribeWgt" id="valve_stepless@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="valve_stepless_dialog-1.1:1.1" id="wgtDialogStepless">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="65" cy="119" width="130" height="238" forcePaint="24"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-255" sourceType="Tag" tag="valve_prefix" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="valve_prefix"/>
+   </dataLinks>
+   <links>
+    <param attrName="valve_prefix" alias="valve_prefix"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

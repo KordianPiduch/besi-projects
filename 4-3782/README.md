@@ -74,3 +74,9 @@ init version
 
 ### 1.0.1
 bump codesys project version to SP20 Patch5
+
+### 1.0.2
+update mimics to include more details. 
+add bilge wells alarms 
+add Low Low Level Alarm for Urea TK (tank26) -> without saving to SD
+update base library using template 1.1.5

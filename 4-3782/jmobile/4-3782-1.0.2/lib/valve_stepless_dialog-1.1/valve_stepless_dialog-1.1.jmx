@@ -1,0 +1,128 @@
+<customWgt>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="valve_stepless_dialog__1_1:1_1_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="open"/>
+   <MLText id="1" L1="close"/>
+   <MLText id="2" L1="VAL 999"/>
+   <MLText id="3" L1="auto adjust"/>
+   <MLText id="4" L1="set point[%]"/>
+   <MLText id="5" L1="reset"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.open">
+  <wgtStyle x="7.22" y="93.76" wgtStaticOpt="dynamic" cx="27.44" cy="21.64" width="54.89" height="43.27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.open.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="27.44" cy="21.64" x="0" y="0" height="43.27" downFillColor="rgb(0,176,199)" releasePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_blueUp.svg" width="54.89" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" tag="|press_open" dataSource="_TagMgr" _tag="${valve_prefix}|press_open" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+   <links>
+    <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="*.open.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="2.04" vert-align="middle" y="0.98" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24.40" alignment="center" cy="19.67" font-sizepx="13" width="48.79" wrapping="true" height="40.33" forcePaint="16" font-color="rgb(237,237,237)"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.close">
+  <wgtStyle x="67.89" y="93.76" wgtStaticOpt="dynamic" cx="27.44" cy="21.64" width="54.89" height="43.27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.close.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="27.44" cy="21.64" x="0" y="0" height="43.27" downFillColor="rgb(0,176,199)" releasePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_blueUp.svg" width="54.89" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" tag="|press_close" dataSource="_TagMgr" _tag="${valve_prefix}|press_close" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+   <links>
+    <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="*.close.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="2.04" vert-align="middle" y="0.98" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="24.40" alignment="center" cy="19.67" font-sizepx="13" width="48.79" wrapping="true" height="40.33" forcePaint="16" font-color="rgb(237,237,237)"/>
+   <links>
+    <lang class="MLTextLink" textid="1">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="LabelWgt" id="*.name">
+  <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="66.59" alignment="center" cy="13.63" font-sizepx="16" width="129" wrapping="true" height="29.29" forcePaint="16" font-color="rgb(255,255,255)"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" sourceType="Tag" tag="|name" dataSource="_TagMgr" _tag="${valve_prefix}|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="2"/>
+  </links>
+ </object>
+ <object class="ButtonWgt" id="*.hotspotbtn" hmiStyle="type:btn">
+  <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="momentary" fill="rgb(160,160,164)" cx="64" cy="14.14" x="0" y="0" height="28.85" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="130" forcePaint="16" wgtStaticOpt="dynamic" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+  <links>
+   <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+  </links>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.auto_adjust">
+  <wgtStyle x="7.22" y="144.24" wgtStaticOpt="dynamic" cx="57.78" cy="21.64" width="115.56" height="43.27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.auto_adjust.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="57.78" cy="21.64" x="0" y="0" height="43.27" downFillColor="rgb(0,176,199)" releasePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_blueUp.svg" width="115.56" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_Dwn.svg"/>
+   <links>
+    <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+    <action class="ShowDialogAction" actionID="2" event="onMouseClick" actionWgt="_PageMgr" pageName="valve_stepless_autoadjust.jmx" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="*.auto_adjust.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="4.29" vert-align="middle" y="0.98" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="51.36" alignment="center" cy="19.67" font-sizepx="13" width="102.73" wrapping="true" height="40.33" forcePaint="16" font-color="rgb(237,237,237)"/>
+   <links>
+    <lang class="MLTextLink" textid="3">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.set_point_button_custom">
+  <wgtStyle x="7.22" y="43.27" wgtStaticOpt="dynamic" cx="57.78" cy="21.64" width="115.56" height="43.27" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.set_point_button_custom.background">
+   <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="55.91" cy="21.64" stroke="rgb(0,70,136)" width="115.56" height="43.27" fill="rgb(0,70,136)" forcePaint="16" nodeName="rect"/>
+  </object>
+  <object class="LabelWgt" id="*.set_point_button_custom.label_set_point">
+   <wgtStyle frameColor="none" font-size="8" wrapping="true" cx="33.29" cy="19.47" x="0" y="0" font-sizepx="11" height="42.27" font-color="rgb(255,255,255)" width="64" alignment="center" vert-align="middle" forcePaint="16" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" keypad-type="None"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="*.set_point_button_custom.set_point">
+   <wgtStyle frameColor="none" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="48.85" cy="18.55" x="0" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="13" font-bold="true" height="42.27" description="set point" font-color="rgb(255,255,255)" readWrite="true" width="107.33" alignment="right" max="100" vert-align="middle" forcePaint="16" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" tag="|stepless|set_point" dataSource="_TagMgr" _tag="${valve_prefix}|stepless|set_point" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.BtnStd1">
+  <wgtStyle x="7.22" y="194.73" cx="57.78" cy="21.64" width="115.56" height="43.27" forcePaint="16"/>
+  <object class="ButtonWgt" id="*.BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="57.78" cy="21.64" x="0" y="0" height="43.27" downFillColor="rgb(0,176,199)" releasePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_blueUp.svg" width="115.56" forcePaint="16" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="lib\valve_stepless_dialog-1.1\images\Btn_rect_Dwn.svg"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" tag="|reset" dataSource="_TagMgr" _tag="${valve_prefix}|reset" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+   <links>
+    <action class="CloseDialogAction" actionID="0" closeParam="Selected" event="onMouseClick" actionWgt="_PageMgr" pageName="" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="*.BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="4.29" vert-align="middle" y="0.98" font-size="12" keypad-type="None" cx="51.36" alignment="center" cy="19.67" font-sizepx="13" width="102.71" wrapping="true" height="40.33" forcePaint="16" font-color="rgb(237,237,237)"/>
+   <links>
+    <lang class="MLTextLink" textid="5">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</customWgt>
