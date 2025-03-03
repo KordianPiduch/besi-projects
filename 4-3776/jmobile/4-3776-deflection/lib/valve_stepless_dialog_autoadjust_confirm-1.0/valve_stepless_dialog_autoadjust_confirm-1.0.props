@@ -1,0 +1,6 @@
+<defs>
+ <g attributeName="valve_stepless_dialog_autoadjust_confirm-1.0:1.0" showChildNodes="0" id="custom_properties" inherit="basicgroup_properties">
+  <info></info>
+  <text attributeName="valve_prefix" display="valve_prefix" editChild="true" attributeType="param" updateProps="true" default="true"/>
+ </g>
+</defs>

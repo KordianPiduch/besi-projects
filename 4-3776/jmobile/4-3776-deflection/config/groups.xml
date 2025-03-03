@@ -1,0 +1,246 @@
+<groups>
+ <group Type="Auto">
+  <name>4-3776-deflection@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_IP</tag>
+  <tag>HMI_USER</tag>
+  <tag>IP Address</tag>
+  <tag>This Client User-Name</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AddUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Force Logoff Time</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>AlarmPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Deflection@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[10]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[10]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[10]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[1]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[2]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[2]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[2]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[3]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[3]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[3]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[4]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[4]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[4]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[5]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[5]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[5]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[6]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[6]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[6]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[7]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[7]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[7]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[8]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[8]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[8]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[9]|sttDeflection|failure</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[9]|sttDeflection|measuring_height</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|deflections|deflections[9]|sttDeflection|name</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_alarm_level_in_cm</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_warning_level_in_cm</tag>
+  <tag>background_color</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>DeleteUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>NetworkPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>ping_status_plc7</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>UserEditor@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>audit_trail_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>base_template@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm not acknowledged</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>counter_time_string</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>timer_user_logout_box_visibility</tag>
+ </group>
+ <group Type="Auto">
+  <name>deflection_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>dimmer@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Display Brightness</tag>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>draft_settings@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>draft_prefix</tag>
+  <tag>frame_color</tag>
+  <tag>sensor_bargraph_reverse</tag>
+  <tag>text_color</tag>
+  <tag>|density</tag>
+  <tag>|failure</tag>
+  <tag>|max_height</tag>
+  <tag>|measuring_height</tag>
+  <tag>|measuring_pressure</tag>
+  <tag>|name</tag>
+  <tag>|save</tag>
+  <tag>|sensor_input_mA</tag>
+  <tag>|sensor_mounting_height</tag>
+  <tag>|sensor_range</tag>
+ </group>
+ <group Type="Auto">
+  <name>info_page@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>HMI_OS</tag>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|project_version</tag>
+  <tag>ProjectID</tag>
+  <tag>ProjectVersion</tag>
+  <tag>bar_color</tag>
+  <tag>besi_no</tag>
+  <tag>frame_color</tag>
+  <tag>hull_no</tag>
+  <tag>shipyard_name</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>login_timer_info@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>loginpage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>menu@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>project_config_all@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-7|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|simulation_mode</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>project_config_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>theme</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_draft@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>draft_prefix</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>simulation_tank@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>tank_prefix</tag>
+  <tag>text_color</tag>
+  <tag>|name</tag>
+  <tag>|simulation|sensor</tag>
+ </group>
+ <group Type="Auto">
+  <name>switch_user@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_USER</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_base@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_operator@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
+  <name>user_management_service@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client User-Name</tag>
+  <tag>USB Drive Name</tag>
+  <tag>audit_trail_refresh</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+</groups>

@@ -1,22 +1,30 @@
 <JMFiles>
- <ProjectInfo Size="4717351" AllowedSize="251658240"/>
+ <ProjectInfo Size="8945949" AllowedSize="251658240"/>
  <files>
-  <file name="alarmpage.jmxb" size="14432" sha256="c4b905578bdb7744d84e62ba2a4fc0a2857ad5ea01a5d51834945e9ded8f0361"/>
-  <file name="audit_trail_info.jmxb" size="1278" sha256="e3158c935fc4b057162f1ebd61241e9dbf12122b2f951a34bc6e3d6bcc00b934"/>
+  <file name="alarmpage.jmxb" size="12431" sha256="b5241d24d0d81cf977fc9c332a408372f0deacb8f343208bc7d695d5059a73ea"/>
+  <file name="audit_trail_info.jmxb" size="1278" sha256="34d90827055623abd04770f14373e9eb6aea8d254cd6b40bcbbfe42187cb3c4e"/>
   <file name="audittrail.jmxb" size="21207" sha256="b0f7a3de01382fab188df95afa37e96d60c7cd159c7e11ac03068c4e6a9409a5"/>
-  <file name="base_template.jmxb" size="14747" sha256="8755cafb973f1f52b8b0ccad0a6f4383f1c7d6097daf788721b1a16e0ad0d430"/>
-  <file name="base_template.js" size="525" sha256="4b171b43de487036d682805138fd4fb26897fa90d1249ef08bc1ca4d78650149"/>
+  <file name="ballast.jmxb" size="49208" sha256="65ef7b34735cf6f1bf6a815b489debc1fea0eefce4d5a04b74d1f470280d8cc2"/>
+  <file name="base_template.jmxb" size="17056" sha256="6a521b7cdc719f96c907646bc49144d4e60868d46271c4723330ed3ece81a151"/>
+  <file name="base_template.js" size="665" sha256="f557aa28f30015da64310aa8e85e472580b59801f08360a2e89bad230fd43bf6"/>
+  <file name="bilge.jmxb" size="2913" sha256="6c74f168bac41b1189c1845db31d8e0f8d9ef11ae2febcbc21565b86e6178744"/>
+  <file name="deflection.jmxb" size="32956" sha256="f3f7f6390d67eda516f7eda845c84098f531d8e1e55702c550f3a3f6ef027255"/>
   <file name="dimmer.jmxb" size="3834" sha256="66e683b94686749d26f7a7229216f9e1fa3b484e76f27d775f309c293058ef44"/>
   <file name="dimmer.js" size="173" sha256="bd809efbe1a9156e5e7feffb7e692f7d850f800782d47cdb50c2f749c0008b2f"/>
-  <file name="draft_settings.jmxb" size="1014" sha256="19f6381e73b74de2f40719b12322fa4660028677228c5685bf834504af34002f"/>
+  <file name="draft_settings.jmxb" size="1026" sha256="809f38d1e62106c3668124bac9ca65885019c6da035d02eb8e1430cdaa262f70"/>
+  <file name="hpu.jmxb" size="1666" sha256="a060cca6ba0753c5d4eed26b6b8364b5c0c5774d81cedacc731500995465924e"/>
   <file name="images/Alarm.svg" size="637" sha256="9d54780f920318e8891d90379e749d76f112b48fa6ad1eb36b16fc1d5e5cb534"/>
   <file name="images/ArrowsIcon23.svg" size="497" sha256="5d6b37c02c4696836c82f59e5849c7e8de3668b9b4b1b1e7603b08cc63d4eddd"/>
+  <file name="images/CommIcon60.svg" size="699" sha256="0935a3f0ff8c215a60b582bc4a98f77c13185a574449c4859e4e1d0c7bd3eebe"/>
   <file name="images/Info.svg" size="709" sha256="20f043cb120b31a5c33a09fde5e3422234c3507655f712b604b42f8f4d70cce0"/>
   <file name="images/LightsIcon24.svg" size="4089" sha256="19d85f630694752b4794969a3973b2c08308696baaf0e6bdc9faffb07de1cb43"/>
   <file name="images/MenuLayout3.svg" size="500" sha256="41df78497cc2aa0b7c9b5c24e4ad88f7789b455335f7d7ce9c1b671dd967f91d"/>
   <file name="images/Monitor3.svg" size="526" sha256="37fcb26825cc1dde9fc007c213d69890023c5934e9b5c05e8bf7756dc7ac354f"/>
   <file name="images/Network3.svg" size="747" sha256="0207b1eabaa5defb3f8f76cac147086473a5da1a6f4e9755a0597b616fcda3c7"/>
+  <file name="images/Sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
   <file name="images/Sldrvrt_needle.svg" size="430" sha256="824ee55eeada206f28e8459345f2e100ca10d82948a04d688c54b8e66e445938"/>
+  <file name="images/Vert_gaugeframe.svg" size="484" sha256="516b2f1fddda032cb434b91fa1ae64de01e43f53a569070cded3007d5fbc0384"/>
+  <file name="images/Vert_gaugeneedle.svg" size="444" sha256="0917cc317461e80fae549305343459fe0a0dc46d3f9e1bcd8f889dc33fb80384"/>
   <file name="images/besi_logo.svg.png" size="5537" sha256="6f269edcb99d115ebb885d382c9cb77f57df43aec8b796010820133ecc3d84ea"/>
   <file name="images/dwn_arrow_ico.svg" size="716" sha256="d1f35895a866bed5e9b60daea4c27363cbb20d2864cf217520f16ee9c725697b"/>
   <file name="images/g4143.png" size="12187" sha256="09f61a5f431ba5ccf73522c927c712754d6d1ed08eecc158d79dd93fdfa00e76"/>
@@ -24,14 +32,15 @@
   <file name="images/up_arrow_ico.svg" size="611" sha256="f05a0188406326eedc45686886eb913a7a7306871eded49a2bf08d1fa116f47d"/>
   <file name="images/widget_frame.svg" size="276" sha256="644ca64256c549939cd79f570b85552ea3e7f1bf3c23825af5fc500d20f10b4f"/>
   <file name="images\Btn_rectRound_Dwn.svg" size="293" sha256="aec922f7ed6efa4f32252f39001dffef0ea61fdc62d221562033ad9ecda0bb3f"/>
-  <file name="images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="images\Btn_rect_Dwn.svg" size="1696" sha256="8a2e3397d8559ea1b487d7082bcb5c92bad5e64e9fe9cc31d568ec0568a3529c"/>
   <file name="images\Btn_rect_blueDown.svg" size="277" sha256="9d5a8539f2472cae74b61ad21f1cad5422f423361dcaf50630770f7e033ed93f"/>
   <file name="images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="images\btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
-  <file name="images\btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="images\btn_rect_dwn.svg" size="1696" sha256="8a2e3397d8559ea1b487d7082bcb5c92bad5e64e9fe9cc31d568ec0568a3529c"/>
   <file name="images\btn_rect_grayup.svg" size="266" sha256="b75b7630c0c690e4dd75e203f03c5c2d62c4731b3be8320269c41f0ef08f3626"/>
   <file name="images\btn_rectround_blueup.svg" size="317" sha256="40b757c3b0b213ea37ef7da226827454b1a488d289fa8c8c55a43585b81ceb6c"/>
-  <file name="info_page.jmxb" size="13811" sha256="d1103b40022fcc6a6e3fd2121c2a777d169f35e82f254ef0e8a2216651afb051"/>
+  <file name="info_page.jmxb" size="13926" sha256="535b64fed0eceefa05046fd3b54b8045d3cb69b947457f0351a94aa7baa278d8"/>
+  <file name="info_page.js" size="272" sha256="dced940f7de54136470dab136a8c80b25a516fea242ea8c81d8a40c6724c8a3f"/>
   <file name="keypads\alphabet.jmx" size="36889" sha256="8d35c9d555924b9b8679eb4e6e45ed0a7358bb84ebcfde3775464568e1446328"/>
   <file name="keypads\calendar.jmx" size="9995" sha256="18d705e5bda1e7410e2a7c78553abce3999bbadcd32958adb495b9e72ac1b606"/>
   <file name="keypads\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
@@ -53,12 +62,22 @@
   <file name="keypads\images\listArrow.svg" size="961" sha256="5697901a9c14e00aeadefbf2b3d7f52f16dbec3dd5e0fb290d9abc43f85beb1f"/>
   <file name="keypads\numeric.jmx" size="15484" sha256="edadfb9079635d31f77b1fdfe4ed37c041427acf18cf3001250038e8a8295eea"/>
   <file name="keypads\scheduleedit.jmx" size="93727" sha256="adb795c1aa2f2eeb9394966e978bad999bd7b7d695c3ab1c429df4aab595fb57"/>
+  <file name="lib/deflection-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/draft-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
+  <file name="lib/draft_dialog-1.0/images/Adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
   <file name="lib/draft_dialog-1.0/images/FileSettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
   <file name="lib/draft_dialog-1.0/images/bar_vert_gradient.svg" size="636" sha256="1d7f2e5818a48807291b3d710ca2649d3d19eb881e6782e77a162f3ae76cebdc"/>
+  <file name="lib/draft_simulation-1.0/images/Sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/draft_simulation-1.0/images/widget_frame.svg" size="276" sha256="644ca64256c549939cd79f570b85552ea3e7f1bf3c23825af5fc500d20f10b4f"/>
+  <file name="lib/hpu-1.0/images/frame_round_chrome.svg" size="6263" sha256="b58fd5546a2773a0dad92a62999f80c430eb8b34a7cec0f70350934bfe8d51e3"/>
+  <file name="lib/hpu-1.0/images/hpu.png" size="49906" sha256="aecb9aee7f9ec563b7622ed8a539e2c578f1c6cddd8d76678d07a19f679f0567"/>
+  <file name="lib/hpu-1.0/images/li_shape_round.svg" size="227" sha256="57d19f799ee56ef68efa09286261edfee5a642758a5a5f6fd451a5d209177ef2"/>
+  <file name="lib/pump_dialog_simple-1.0/images/Adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
   <file name="lib/pump_dialog_simple-1.0/images/FileSettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
   <file name="lib/pump_horizontal-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/pump_pressure_sensor-1.0/images/barseg_vert_flat.svg" size="942" sha256="49381e1222809ea1f5aa6ad6356876e5dc51038cab21e0694e9fb8bb46f3c96e"/>
+  <file name="lib/pump_simulation-1.0/images/Sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/pump_simulation-1.0/images/widget_frame.svg" size="276" sha256="644ca64256c549939cd79f570b85552ea3e7f1bf3c23825af5fc500d20f10b4f"/>
   <file name="lib/pump_vertical-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/redundancy_status-1.0/images/Controller1.svg" size="527" sha256="0a081ee5bde2d934702cd49dde6debf6c1c351a32e148a2bc87dd43fa0bcfb18"/>
   <file name="lib/redundancy_status-1.0/images/Heart1.svg" size="837" sha256="1dc3ed60a60ed12dc84b90939c878f4a9e17af32afdd4d6b02b845a692dd851c"/>
@@ -68,11 +87,16 @@
   <file name="lib/tank-1.0/images/Gear2.svg" size="2653" sha256="9fea4a685356045daf12ce53aab1c7d6e60686bd248c7b7c4866e739eb0198c7"/>
   <file name="lib/tank-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/tank-1.0/images/bar_vert_gradient.svg" size="636" sha256="1d7f2e5818a48807291b3d710ca2649d3d19eb881e6782e77a162f3ae76cebdc"/>
+  <file name="lib/tank_dialog-1.0/images/Adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
   <file name="lib/tank_dialog-1.0/images/FileSettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
   <file name="lib/tank_dialog-1.0/images/bar_vert_gradient.svg" size="636" sha256="1d7f2e5818a48807291b3d710ca2649d3d19eb881e6782e77a162f3ae76cebdc"/>
   <file name="lib/tank_dialog-1.0/images/light_round_orange.svg" size="278" sha256="993797d3259427ca00c14356033e30a859e89d3af94949192be101b50eb83a5e"/>
+  <file name="lib/tank_simulation-1.0/images/Sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/tank_simulation-1.0/images/widget_frame.svg" size="276" sha256="644ca64256c549939cd79f570b85552ea3e7f1bf3c23825af5fc500d20f10b4f"/>
   <file name="lib/valve_base-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/valve_base_vertical-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
+  <file name="lib/valve_simulation-1.0/images/Sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/valve_simulation-1.0/images/widget_frame.svg" size="276" sha256="644ca64256c549939cd79f570b85552ea3e7f1bf3c23825af5fc500d20f10b4f"/>
   <file name="lib/valve_stepless-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/valve_stepless_vertical-1.0/images/Warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib\draft_dialog-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
@@ -81,6 +105,8 @@
   <file name="lib\pump_base_dialog-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\pump_dialog_simple-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib\pump_dialog_simple-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\take_control_button-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib\take_control_button-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\tank-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
@@ -91,31 +117,53 @@
   <file name="lib\valve_base_dialog-1.1\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\valve_base_dialog_confirmation-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib\valve_base_dialog_confirmation-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="lib\valve_simulation-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="lib\valve_simulation-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\valve_stepless_dialog-1.1\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib\valve_stepless_dialog-1.1\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib\valve_stepless_dialog_autoadjust_confirm-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib\valve_stepless_dialog_autoadjust_confirm-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
-  <file name="login_timer_info.jmxb" size="1086" sha256="59b27d4eae6c7f4d1a5df9b9f52f8111e2cc5090850d9b3f1bd65d84704b2009"/>
-  <file name="menu.jmxb" size="6117" sha256="347b59642499120fb153cf853be946a3129e4ac3ad1602f7c422b137152354bd"/>
+  <file name="lib\wgtresetallvalves-1.0\images\Btn_rect_Dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="lib\wgtresetallvalves-1.0\images\Btn_rect_blueUp.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="login_timer_info.jmxb" size="1086" sha256="3ab0c0f2933dd9fb640c990ae6451d044ecf48d8260ce55b9ce86742b93ed7a8"/>
+  <file name="menu.jmxb" size="11787" sha256="e89a5a4383bbafd9b1161742757a0dd5a642b46347d9b48de6f301e6eea222be"/>
   <file name="networkpage.jmxb" size="1412" sha256="bdd9ad3b7ff4cf6b7ac8da798e1bdf30a8e94d0111e51a2edcbda4bdd821395f"/>
+  <file name="opt/ballastpiping.png" size="8827" sha256="8068ca5db0fe47e4113f5e35d62b7e3d896e5700d4a0824adbd4d290a32b9ec3"/>
+  <file name="opt/deflectiongauvert1.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert10.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert2.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert3.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert4.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert5.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert6.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert7.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert8.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
+  <file name="opt/deflectiongauvert9.png" size="865" sha256="749a1917d9f25e49ff32cd43483d27df15848027ecfa7df1a48747668f2039b5"/>
   <file name="opt/draft_settings.png" size="535" sha256="30a46eb145d522ba90c2c07f8eadaf9ae2a25907ded6d947c2304048884486b8"/>
   <file name="opt/info_page.png" size="4542" sha256="85842530e51da8dbcd59990610ca060ad33aa56637a2e2373f76acb94dd41cdc"/>
   <file name="opt/tank_settings.png" size="929" sha256="2ecdfc8f80ef0d6f5a800e09e5ba60cefb1c47f48e2791116feb487cfb855c7b"/>
-  <file name="page1.jmxb" size="861" sha256="df7641bf4499ddb89fc50e645f8e71ae9c6390d6562f6ef8e8bf6d6c351a9634"/>
-  <file name="project_config.jmxb" size="8469" sha256="2bf317a48b9c1af6f726f47ddce39e81729ed5edfe3aa9b753cf1ec41c3debfb"/>
-  <file name="project_config.js" size="1024" sha256="c85682f802d2e502371e3858ba2158475721806d03f83b984065afffead33319"/>
-  <file name="pump_base.jmxb" size="1101" sha256="04372b750cc8896a9abd3e29a6676f1b7ef13140157bff53dad8a438dd9aeb0f"/>
-  <file name="pump_settings.jmxb" size="1616" sha256="91b7b1a0d53862a5f07929ef4bf788dc60cc20fd4cc564c8c912075f30cdfc20"/>
-  <file name="pump_settings_simple.jmxb" size="1016" sha256="1d35671ed9462ede74abc2d4732af05347b36037179e29c15f06585b29ed6837"/>
-  <file name="redundancy_status.jmxb" size="844" sha256="53db7f56900ca01238b5d210c4ca963ae5ad97331e47c10d8013f70e46530075"/>
-  <file name="switch_user.jmxb" size="5990" sha256="a148a49bd110527f7b3b79ee6d68819de258aa064e5f3eede3f7e6b713bacab4"/>
+  <file name="project_config_all.jmxb" size="8131" sha256="07e4e29797727db9a8f8b8732c4bd3f479b535633d57f5d5dce32fb1d9ede0a8"/>
+  <file name="project_config_all.js" size="1024" sha256="bd54cda1bfc5076de85d7d3c4053eed5b2275ddd3c6e9c3870f6b88995a4cc0e"/>
+  <file name="project_config_base.jmxb" size="5191" sha256="78837105a4e258929944e0cf57b8b4ce44a84770d900aa122b9626bdcfb5684f"/>
+  <file name="project_config_base.js" size="1026" sha256="2134b75c85f2351c8f59a2e97bb7a7ac47122ea07620463d52314f0c3fa8ab7e"/>
+  <file name="pump_base.jmxb" size="1101" sha256="ecf0591ead37c772e90c466087c16cd337cf876d930619c3bfb20e9b9278150c"/>
+  <file name="pump_settings.jmxb" size="1628" sha256="de2c4c7cd9c0e6faf3f95b36f07d79a142c403f0d148cb0a831861bae352f233"/>
+  <file name="pump_settings_simple.jmxb" size="1024" sha256="e268f5e892440819ab68b7a2b6eb31f2973b18c3d82fb5bc3563ac84c0d203a4"/>
+  <file name="redundancy_status.jmxb" size="844" sha256="cf5259844e3dfc4c89796a311d070e6d60ecec97fb0b4e694ea5df5115b4f2b3"/>
+  <file name="semiautomatic.jmxb" size="69015" sha256="fb69c27f01f78030d452f2c85822ba9dd5c9d1b6f19905630a7db57a20078e71"/>
+  <file name="simulation_atm_press.jmxb" size="4364" sha256="76275456f3430610966e300a465c6c5ca79c0dd45d16710e653fb7b3c0954550"/>
+  <file name="simulation_draft.jmxb" size="975" sha256="00b6c0560b2005229a050c9e3c386b029efb2454f104806a55cb7d6fd762c78f"/>
+  <file name="simulation_pump.jmxb" size="977" sha256="4252ecbc88d1df209835a56ea0ab9137044adebb9f5bdb2f1f72863b80fe9dcc"/>
+  <file name="simulation_tank.jmxb" size="977" sha256="2963106c9fd4e4da0bf340ee6f46f1bd814ecba235af2f81feba22bf034d4f8c"/>
+  <file name="simulation_valve.jmxb" size="1030" sha256="685e32a111dd38bbb5326962236f63b2486911b8a6a516c4996f5366dee21ead"/>
+  <file name="switch_user.jmxb" size="5990" sha256="67d1a279307019367a3ece249dfe1e69cd14b3e75c1fc71cc4c39939d949a83b"/>
   <file name="switch_user.js" size="943" sha256="73e93690d0d2d66ad88bc62aec22d7dec5b7140d43f4f41c9e1ca607c81d4913"/>
-  <file name="tank_settings.jmxb" size="1004" sha256="57396c571fc9ecf382f093f23438e134933bc9067327aac841add7ec208e545e"/>
-  <file name="user_management.jmxb" size="4217" sha256="5d93456a81124aff6b210ed087db1e0135337d9016f597890e1cbfd076e9568e"/>
-  <file name="user_management.js" size="360" sha256="2a6cc9892856568252a23ca38ebf7b2826b3eca77e3ccbb30c2a344ff2839076"/>
-  <file name="user_management_base.jmxb" size="4659" sha256="83d845cae3e2b73b907d329ae3d375f5bb43f4b7f3182e0bbe565cca52993830"/>
-  <file name="user_management_operator.jmxb" size="6994" sha256="d1e7945b735850a2f1c523ed2112720679001d2d5d90e145f9686a3784354d07"/>
-  <file name="user_management_service.jmxb" size="11494" sha256="f1a8cc0576e208d2978f85463b50154188f44b9beee0155472f6a6ba3e6ce46b"/>
+  <file name="tank_settings.jmxb" size="1012" sha256="65999b84bc51ec58fcb06526af1ba34d970459b4db3f050335c6ad0ae6c25ced"/>
+  <file name="user_management.jmxb" size="4217" sha256="d76ddb5c52139e9a644309b3d07d7537ab7623e022c384614a228c741ff227ea"/>
+  <file name="user_management.js" size="458" sha256="e49e91ccb8dfbf572ad9e3fdeaf528ab720303806dd915a8a6ae284d0bda6fd1"/>
+  <file name="user_management_base.jmxb" size="4659" sha256="979f5783f8e7758c781e68180d31f00f592ad36e8cc675d4b2f158d3bc8aafa9"/>
+  <file name="user_management_operator.jmxb" size="6994" sha256="97bae0f1640be152e733505d479e3bcd6dd93dfe7583f6eab492510c066e5979"/>
+  <file name="user_management_service.jmxb" size="11494" sha256="8b114b59742b41377598ca418a3c2bcf8605b50df22d3c3fb95a6a130158b13b"/>
   <file name="user_management_service.js" size="510" sha256="4112be2c1045319dbcc580a6ad6b7d01f20b529e9a682e0088e26dfcfa41446a"/>
   <file name="usermgmttemplates\adduser.jmx" size="17797" sha256="5ed4d094ce6a6b65f2fdb1041235af4bb38df1d8f2e1d5e40a826ef91a27ebd8"/>
   <file name="usermgmttemplates\changepassword.jmx" size="13064" sha256="ddbcc9ec874d860a02ca4816fe6063dfde3f03d7487a41a4ad7dc256a1f456a5"/>
@@ -141,47 +189,47 @@
   <file name="usermgmttemplates\switchuserloginpage.jmx" size="8668" sha256="65acb4616c82a4f56c0442a7cd4b93545974c29b64147b066ca2b0ec541c6ffa"/>
   <file name="usermgmttemplates\switchuserloginpage_combo.jmx" size="9346" sha256="1535e37ec5652c92bdc192d8ecdd2c586b554e585b81025a9c58616f835e5cfa"/>
   <file name="usermgmttemplates\usereditor.jmx" size="20182" sha256="2e403c07cfa4000c4a1fcbabc894b5f9b88e8adbb77150094a3fd191a5f22a36"/>
-  <file name="valve_base.jmxb" size="1136" sha256="22069936e32764aa88df7056c6eeae8a47e8e8b7e18106b93fd5520c3e0c35c3"/>
-  <file name="valve_base_confirmation.jmxb" size="1056" sha256="41436a76262e16030d7d72803916d54e1754013ac88f035b6b1b82135445a45c"/>
-  <file name="valve_stepless.jmxb" size="1189" sha256="8384de658bfeb008dd00a785477e87af2d69d3beb8527af528e09e78d4f0bdc5"/>
-  <file name="valve_stepless_autoadjust.jmxb" size="1098" sha256="92b0303fc028b262351a648070d193e7c0cde8cb9001dddd9a9a55fd4ba0c772"/>
-  <file name="visuelements.jmxb" size="3340" sha256="b2b828d26337e1a8f57e88882678f671eefd13cb36adb6c139d190465401cff2"/>
-  <file name="besi-template.js" size="2168" sha256="239421adf5b3227ed36babfdd3062cf08e1960ee92649b046806c3cc7a3ed29d"/>
-  <file name="besi-template.jpr" size="13123" sha256="253553c9c382a0165f2489fc412200a8767f93469ebbac7350efc312bd566d06"/>
-  <file name="besi-template.jprb" size="8197" sha256="41a80c4aa63c921366df08f180daedbd73592cee20c0512280298ee81ca87185"/>
-  <file name="config\groups.xml" size="11951" sha256="6f15b73dfce4eac4da786cb3de437b2a8c0275415a4f9f106087f3992afd19fe"/>
+  <file name="valve_base.jmxb" size="1136" sha256="c74687a6119cbe5835548f613314235e94cb3918496b105d481f342144cb00b4"/>
+  <file name="valve_base_confirmation.jmxb" size="1056" sha256="cbf5509858ca9a03f3485ae6bfdc5ad26202db4024dcf79d167cee610a561b11"/>
+  <file name="valve_stepless.jmxb" size="1189" sha256="fb147b7083bf0ca2c21b90b6e77fa41d6602c6539a242578b2f33aec2de14dc9"/>
+  <file name="valve_stepless_autoadjust.jmxb" size="1098" sha256="33269f72ca6049195db38fe22a98437563d0b2bf0b77f32b9f484b9864ff3701"/>
+  <file name="visuelements.jmxb" size="3253" sha256="0c73b001acd1618c39c948680dbdf68050b98620e7f250eb91bd7c16c634b732"/>
+  <file name="4-3776.js" size="2428" sha256="4538a9402247945fb54204e0b11fe9cf1b590eb58d271acfbb04e30fe45a9623"/>
+  <file name="4-3776.jpr" size="15194" sha256="86992ab6859442f42f9f4c431fad4df4589b24db1c28327268e124ec645e9d62"/>
+  <file name="4-3776.jprb" size="8907" sha256="785ef06ed19160a5c663f639fc6ac08918c84969ccd50eb59e3cdc95e51375ac"/>
+  <file name="config\groups.xml" size="90973" sha256="2d9c52947e3e34a5753a2daf313a8d4510e4ab87de8b689bb797597b4f97c14d"/>
   <file name="config\engineconfig.xml" size="367" sha256="772e6b350d9b68bef52729ba27eed918e2db5fdbf874da13466bb346d75bb847"/>
   <file name="config\storagemonitor.xml" size="70" sha256="ff80ab533c6cef101f8b840a70583ee544269958d4efb0671182e12672ad5b6b"/>
   <file name="config\fastboot.xml" size="112" sha256="8c127f389b5c6c69d3ff818711fe1ae26708cf46b721a00bc202dd7f7db7f813"/>
   <file name="config\encryptionconfig.xml" size="145" sha256="b2e6141dee060ff9a95d56d661768e5acb9e5d6029a7dd90924c67ad1a8ca058"/>
   <file name="config\projectconfig.xml" size="290" sha256="007021a170481a8a83d56464dd7c65358e5dc58d8d67b3bb61b74a405e417412"/>
-  <file name="config\tags.xml" size="787862" sha256="4e10ff040623adac028bfca4e2f696ef6065ef1836625ede3003f0413674578f"/>
-  <file name="config\tags.bin" size="314385" sha256="ffa7f603b4402b4686902289af3d18edd90ec4dfd79d30ed82ac867b7b31952f"/>
+  <file name="config\tags.xml" size="3073909" sha256="3b7d9332d70dd1e8b505bd37107ee82bbc3257b44796ba0fda95a008dfa2e6d4"/>
+  <file name="config\tags.bin" size="1802415" sha256="cb1244b5246af1a456cb58514be68c8f4fb34174174cae4719b6ae6a9987c088"/>
   <file name="config\trends.xml" size="513" sha256="fecb844f4ead84a5f913f2dca5f547bd6653816f371f81d501249aeba411dd64"/>
   <file name="config\indexedtagset.xml" size="19" sha256="4d6bc98d664170202e233e30b9fb434383e26e9bb7b28937501f9d59457605bd"/>
   <file name="config\recipe.xml" size="63" sha256="f57496007614c3d5dccae83c7b9a3e2a275bf7c19c84a5eede140a70effa39a1"/>
-  <file name="config\alarms.xml" size="305750" sha256="5ad23b3eae633ae82934637902a2ba4e75b9cf7c516027786c823f5b7b9ba70b"/>
-  <file name="config\alarms.bin" size="90456" sha256="b4e14f934592ba21c82b795df1c7de02123a98ae958adba6c54d2f448d3389ea"/>
+  <file name="config\alarms.xml" size="1563" sha256="d5324570cbe5fd8bd689f724e81cbbc7889354b0295cb91bff2560feff7a8d59"/>
+  <file name="config\alarms.bin" size="653" sha256="0425204c69c1d67a98b42d1748fa4f8c140190885685aa803d67e8f1440797ae"/>
   <file name="config\multilang.xml" size="205" sha256="54b30f513b273992d246767b93f48ba3adbc1e4c760b3eabade73b0ff698e4bd"/>
   <file name="config\keypads.xml" size="222" sha256="c862d09d18ac4342a54424b953d42d7c017d732cd73578b3134c7a1f7d39faf4"/>
   <file name="config\scheduler.xml" size="2660" sha256="cdf48a905ada6ff07146beaa0bcb3bf858f35425f46588c4c8ea91e121058641"/>
-  <file name="config\protocols.xml" size="4568" sha256="e9e67e280a3a2b8c715b21b4d4c27bb5589e9ce173694db06f7070270b3220ec"/>
+  <file name="config\protocols.xml" size="4169" sha256="d6932dfcfea78fa74929939c39598b78bceddb8100594cb582b5b2f63e1e0f6e"/>
   <file name="config\eventconfig.xml" size="4028" sha256="bff91e367357c425bb9297b31bce638710c500c9ed2d14a4ff27a715495acde6"/>
-  <file name="config\eventlistinfo.xml" size="37958" sha256="62f51f7305be0fffadcffcf30764026490a57f926cbcb0932aa9c6685bb803f1"/>
+  <file name="config\eventlistinfo.xml" size="51" sha256="a6bd4b040bc02a952c4c1eb3e39cc3fabbfcbc236bcb2176d93ae1bb0870022d"/>
   <file name="config\emailinfo.xml" size="15" sha256="2b2e8c9590a88764287f8c376d2954c86af9af744a3bd0c0f89da767aed74929"/>
   <file name="config\reports.xml" size="739" sha256="1a10b39b38fd5284b0d3542ba174e82ffaf0af6fca258af5ecf1a5c8846d16bb"/>
   <file name="config\print.xml" size="183" sha256="cfedae6ca73042239784c1d7dbaa90a20e1c93b7a4f7151c69a81f27918e8622"/>
-  <file name="config\usermgnt_group.xml" size="2824" sha256="b7664c64de787dffe0361f6ea9f295fa6097c1a032d05ea05b436356b7268062"/>
-  <file name="config\usermgnt_user.xml" size="5080" sha256="948b14ad4f9d04e800f30b413294b781528f432603fe11d1757b0fb5da389194"/>
-  <file name="config\usermgnt_uiauth.xml" size="43380" sha256="98efffb0ec2a5765ed41cc0f7c453b8ce73c05adeeb701b94272cee34532986e"/>
-  <file name="config\ftpd_security_auth.xml" size="440" sha256="6e9b56417cb016a5c405d7260f2c4ee559f1af8ff7e2c8a031c44897a5569e82"/>
+  <file name="config\usermgnt_group.xml" size="3864" sha256="c06c30f1095a3b0d140754bb42da81f808c961208f5c5ab16d6577a6355ff310"/>
+  <file name="config\usermgnt_user.xml" size="5072" sha256="f41af304f8737ef975e071e7de1e8347ba695c4df880aaf8b90dfe2f87c2a4ae"/>
+  <file name="config\usermgnt_uiauth.xml" size="358628" sha256="ece806e8227b71a15fbfbc3aac328d010036dcc39e3ed7251d6b7615808cc95e"/>
+  <file name="config\ftpd_security_auth.xml" size="528" sha256="df75b03cc383f5ebb9cd74f7b5f8a21aee11807d5785f8bbb98f4f006f651b6e"/>
   <file name="config\httpd_security_auth.xml" size="1100" sha256="ce91e80e0291543ca9211a43b9df042512c43cfd6d4656122c9f380d224ce5b3"/>
-  <file name="config\usermgnt_taggroupauth.xml" size="644" sha256="584277d5defbbfa00fa5b133cda5235a630d1f2a00c42b5d72dd4e44936163c4"/>
+  <file name="config\usermgnt_taggroupauth.xml" size="780" sha256="666cb0a1eaa72465e34aacfb51355319448e27b1393047b9dd4a9279e8060f40"/>
   <file name="config\audittrail.xml" size="508" sha256="440290b6928dd85c6606adf563ecc63f31983f6d0837d207370552a62487a621"/>
   <file name="config\dbconnector.xml" size="59" sha256="d1624e6b4417e33272d62ca1450b3a7210e721ebbd201f55dec297f0c8869bc8"/>
   <file name="config\datatransfers.xml" size="82" sha256="a673847137c6067f4e3774b06264a094471ecc0dd9be3a6e1e02566ce401dee8"/>
   <file name="config\screensaver.xml" size="229" sha256="641e167e49c67f46faed00da51d989958ee769b754ebcd8f75d3aff276ae42bd"/>
-  <file name="opt\imagecachelist.xml" size="13311" sha256="2b653f766968719ef32bbd0f0206c951a5fb0b0cca05c8b2fdbda16c9b24e760"/>
+  <file name="opt\imagecachelist.xml" size="18222" sha256="addcdc09b6706053a0d03f6d8dca197bb75ecd4ca0d2a675fdf551bd569ceae5"/>
   <file name="config\if_opcua.xml" size="365" sha256="c5d9dd712c15044897dbd414c93716e3513bbdc45bbd6f3bdc0d1e45f2d58d02"/>
   <file name="config\opcserverconfig.ini" size="5822" sha256="c19e89d7caa8ca57324f4d2ae7d39bbdb66c6846fc4fc19abdc4a8762be0c452"/>
   <file name="config\opc.ua.custom.nodeset.0.xml" size="820797" sha256="f13f927e8d32fa548678766244842d0197c80638de831c05967286687451fc5b"/>
@@ -190,88 +238,125 @@
   <file name="config\if_mqtt.xml" size="1386" sha256="0ada50082544cbf9a440f5af97883205263c956b7bf7e2ea1d818c94e2739157"/>
   <file name="js/com/hmi/calendarkeypadmodule-1.2.0.js" size="979" sha256="11e07d825e8292052f35ef821edf22da99a3bc47840b9259218217302d0ddf87"/>
   <file name="js/com/hmi/schedulekeypadmodule-1.1.0.js" size="20134" sha256="69f77b22a446ee5d709efc51a2e0311241a795d3998b362ad6a6bff490377945"/>
+  <file name="lib/deflection-1.0/deflection-1.0.js" size="658" sha256="92bdd9ea685db262a432658c057c38731131e3a8134464982ad4a1f9b1a43a3c"/>
+  <file name="lib/deflection-1.0/deflection-1.0.jmx" size="5707" sha256="e8f1807f08d7e9e4dc582501cdaf68985173ec1cc8c74e0532cc668ac01a765b"/>
+  <file name="lib/deflection-1.0/deflection-1.0.png" size="6809" sha256="93c92df5632f9ac0f325966499795c04cbc874dc6e21140f0106871eb4bce7dd"/>
+  <file name="lib/deflection-1.0/deflection-1.0.jmxb" size="3143" sha256="f7d6d4d770819bc4d4f03c5c4b07e543f43c49b7858c20a6c13b0d3fa34ec812"/>
+  <file name="lib/deflection-1.0/deflection-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/deflection-1.0/deflection-1.0.props" size="292" sha256="65abdfaf6d86fa0263135c94ec36e7412e64c07e514fe7913e7f4af8e72fd690"/>
+  <file name="lib/deflection-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.js" size="136" sha256="0d2cc7f588ad432c43b22d449349a93b1f7768c5e8a2b40a63b6bbea813109d7"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.jmx" size="8704" sha256="efb80eeb699d58b1794d8647dc3e6984c345d8a5f3b00ef329ba3daf35da4072"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.png" size="6816" sha256="97ec5a826296f07be024061580d7ec78092a7c036ed3c828b88d905cfb3c879d"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.jmxb" size="4475" sha256="f0351d6cd80aeaf0ea4db04e9967cbc241b12162ce3e5ea53c5094e464028a0b"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/device_network_info-1.0/device_network_info-1.0.props" size="541" sha256="bb9845a074366c35d51bf0b56ebcfba25b43b76eabc7b24b14c0d84d389e35c9"/>
-  <file name="lib/draft-1.0/draft-1.0.js" size="338" sha256="0abe3a78ded86db8fb69e7631ddf7e65c9339feec5343f8b490cf807f49e1e61"/>
-  <file name="lib/draft-1.0/draft-1.0.jmx" size="5238" sha256="781b36b7e58fe3669804296c684a93aeb0b05d37005468fd0e649f66cf659d44"/>
+  <file name="lib/draft-1.0/draft-1.0.js" size="564" sha256="a2649f46197c09a084b7e53d05298349cf66d4e00dcdde84b842ab8c4b3ad7f1"/>
+  <file name="lib/draft-1.0/draft-1.0.jmx" size="5628" sha256="e1111723dd536ca565a2432923f2764e02423f927a6310f9a360275755f810bb"/>
   <file name="lib/draft-1.0/draft-1.0.png" size="4549" sha256="7108ca0a0f66ab7955812d1e49c955db345c0a0aa69ab0240af28fd83975cc8c"/>
-  <file name="lib/draft-1.0/draft-1.0.jmxb" size="2662" sha256="660551b8ce226d6e2fa6aa1126f4eb1727e759def7918c0d61a2c951d409dfe0"/>
+  <file name="lib/draft-1.0/draft-1.0.jmxb" size="3059" sha256="41505d265300dc15ec46d1d90719de9602f60ad7d3f22fc747eb7d528a73d70a"/>
   <file name="lib/draft-1.0/draft-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/draft-1.0/draft-1.0.props" size="295" sha256="710ec18a86ffac7aedc7c31d76334a36e91a89ae5ff7a258dd8d4d3980639fa7"/>
   <file name="lib/draft-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/draft_dialog-1.0/draft_dialog-1.0.js" size="115" sha256="c38a6d9135c4bb2ed828c5102f03b0bbf9b7aae5c3e8d0e4db2ebd08d706812d"/>
-  <file name="lib/draft_dialog-1.0/draft_dialog-1.0.jmx" size="34259" sha256="84812958b3937e8971d995c3281cb15e58a7458c3d9edbaf410fcbb78f246666"/>
+  <file name="lib/draft_dialog-1.0/draft_dialog-1.0.jmx" size="37607" sha256="4db99e193ccc30812fb830d8b0575e2c6d72ffb40dbee5464b3cc42f923f1db5"/>
   <file name="lib/draft_dialog-1.0/draft_dialog-1.0.png" size="9292" sha256="41fd25897a02f062dad617c3bf22fcac20965db02abe32d6bfe5997bb8a707b0"/>
-  <file name="lib/draft_dialog-1.0/draft_dialog-1.0.jmxb" size="18614" sha256="1024f1bd975937c3a1b4b39999c1bb240900fa2c4c7ec93849da1a7abf227390"/>
+  <file name="lib/draft_dialog-1.0/draft_dialog-1.0.jmxb" size="19830" sha256="42b1889c60e56c25683537f9bf60ed47a0588e0a20cd92003387745aab98f9b3"/>
   <file name="lib/draft_dialog-1.0/draft_dialog-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/draft_dialog-1.0/draft_dialog-1.0.props" size="277" sha256="7f895a250e57d3f2024554e352139b1ed0ed35958e752f761ed6b15651b41501"/>
   <file name="lib/draft_dialog-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/draft_dialog-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/draft_dialog-1.0/images/filesettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
+  <file name="lib/draft_dialog-1.0/images/adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.js" size="124" sha256="b37157834ce8a4d4966459b604cbe33e3953096019d16b3bd28707983f84400e"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.jmx" size="7304" sha256="8a41d09adf610867f4dc20c1acdd4d8a976b638a7516dfcb26c298b582406323"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.png" size="2011" sha256="3b9fa169debdd885e946ad6d95efeafa08fe40bc3fd11f3bfdf17fd93505cae2"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.jmxb" size="3967" sha256="af23a4bb31f0aae7827b644d52062f20ba1783b9a0a198fff3d2369df8ffec95"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/draft_simulation-1.0/draft_simulation-1.0.props" size="286" sha256="847e7e9a07913480f9758919da8b236349faf63d558264bf809169ec35a5f4f5"/>
+  <file name="lib/draft_simulation-1.0/images/sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/hpu-1.0/hpu-1.0.js" size="88" sha256="479497fcff9acafd2cd6184a1a56124d898c2f5fd39e62a09eeaaca4eee46730"/>
+  <file name="lib/hpu-1.0/hpu-1.0.jmx" size="30277" sha256="706738235fb9d165023012ceb3653038c12a312a39eaac320cb98c04a90082aa"/>
+  <file name="lib/hpu-1.0/hpu-1.0.png" size="8215" sha256="38173ecf7aeec0deb37d1cc1f1a75fb14b2fbe767ab764c355a5ccc76e728910"/>
+  <file name="lib/hpu-1.0/hpu-1.0.jmxb" size="18739" sha256="ab0fe3abca805f906c191f35a22f4ccfbed57333abcda4973b5e2d2dd26b565c"/>
+  <file name="lib/hpu-1.0/hpu-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/hpu-1.0/hpu-1.0.props" size="273" sha256="b983f92d9834b288e7bebcc0e5a0a487b3caeeac91396903da8a07dcf941aaf4"/>
   <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.js" size="403" sha256="15906706bac419f83360520c10868b554ea5f062ea3f1e3cbbb71c78613de66c"/>
-  <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.jmx" size="8508" sha256="178b1aa173bf2dcf33a86240dde9c302179dc423b80ab17af673fa3ca2889aa2"/>
+  <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.jmx" size="8508" sha256="f66ee42e579ed46c35d0ede963297b9385c2a880c840fbe5b06f8cabb352ec62"/>
   <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.png" size="4169" sha256="9783e26b6df95e74acdb3b69d8cefb3add19a4a5804e5d562c18c9b0c2e2756d"/>
-  <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.jmxb" size="4557" sha256="91a696386a6bc993c0db5128c78a72964682fa24097b1d1be434ad93a49e7397"/>
+  <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.jmxb" size="4557" sha256="27423da6e43aa8320656f508860e131d5363e333c657b004efbcc9eec4ce1da2"/>
   <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/pump_base_dialog-1.0/pump_base_dialog-1.0.props" size="296" sha256="9f7890515050310091d3134aded7937b09b7911980aabff1f994ee742958e7b2"/>
   <file name="lib/pump_base_dialog-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/pump_base_dialog-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.js" size="676" sha256="50a643dbf46aef44bb5043a4df6b431d452c1c99b87519f25f776ca88ae92c0a"/>
-  <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.jmx" size="14914" sha256="72cc1d309b9022c938a4e8f8720bef9b39f4d7f5c9f958724cbaeaa867cd39e8"/>
+  <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.jmx" size="17066" sha256="5740aa560e8157f58b50e42a2b9355e3d36c24afbd9f0b2f291b6aa4f4250e6a"/>
   <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.png" size="7788" sha256="c0994bf254169d8d5dd6538009ddd5ff589adcb74953efb9309cc868ffb0b300"/>
-  <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.jmxb" size="8083" sha256="6a014431841a9a9ad10e1512a01be8f2517634118442b640219e657aa65aa64e"/>
+  <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.jmxb" size="9291" sha256="4e3a8da57827ad360b491cfc3179a2ba2b3e30541f753220888fe65de7c6f56f"/>
   <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/pump_dialog_simple-1.0/pump_dialog_simple-1.0.props" size="454" sha256="003d0c2a15c04b4ab4946a5999154c00e252002a752ea39a4c645d5f6365929f"/>
   <file name="lib/pump_dialog_simple-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/pump_dialog_simple-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/pump_dialog_simple-1.0/images/filesettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
-  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.js" size="3227" sha256="aa255d2a4494705cec2eab8f8f139d2a6a0f0031624cfe00ec90f5f478436075"/>
-  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.jmx" size="16820" sha256="d149af3c891da989d885393f9ae40f20334d3f8d489ede54cc8b6b020ed922fa"/>
+  <file name="lib/pump_dialog_simple-1.0/images/adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
+  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.js" size="3552" sha256="805687d2dd266009b6cd79b3730c1da5ed1e631585e1b36d861fad943e70a8af"/>
+  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.jmx" size="17709" sha256="6a638ff2ca627897668ad3a9477a8aaa7bfc7f7ddeb4f83e3b93db56c1eb7084"/>
   <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.png" size="9334" sha256="eefce435d959b1ed7d6cd406c319d34ae48ad646aafa84a0b54c0c21c2faf15b"/>
-  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.jmxb" size="9249" sha256="3e9911f3d9d0cfd405c8f7dcca36ed5e1cabf2a25553443ad3a3bb84048cb7bc"/>
+  <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.jmxb" size="10156" sha256="a88c2b104c3e30d4e76b7cff94d5026f289587642ffd81b098109db7000da09e"/>
   <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/pump_horizontal-1.0/pump_horizontal-1.0.props" size="966" sha256="9c9aa4724b93c3e5917e2be5b9ad180846ab5da2889f3bdbb4ec1a046621ee16"/>
   <file name="lib/pump_horizontal-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.js" size="418" sha256="f3e3765adb13b0a663281569791affc97c979d58f06a9bed13051a4ae5de33d0"/>
-  <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.jmx" size="14413" sha256="fbcb9970fc2f5605dfbd96f92f7452022e32bb84d8bb08ee06a876d8a342f3ab"/>
+  <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.jmx" size="14781" sha256="5bc5ecfa141cd4b178ab86a6378c83449854eac33e9b10ba2f24b8857dd5760b"/>
   <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.png" size="5961" sha256="789ed3f12a01d49b9accb41c2a44d0d7d4bd9af49260dfab56d84b36e6f086dc"/>
-  <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.jmxb" size="7883" sha256="da1625855671812f56d15be408cbbfc278d04ee69233a02fc194c26f10fd91bc"/>
+  <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.jmxb" size="8069" sha256="c36742631b63a7cdbe21594ea869eb2d008b2888baf8fc8e222b333c94b9919b"/>
   <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/pump_pressure_sensor-1.0/pump_pressure_sensor-1.0.props" size="467" sha256="f15513f7182d49554402d68060a548c5659ffa9a63aef98771140b9cc2d9f942"/>
-  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.js" size="3183" sha256="e1f0f07b42fcf8847a9bf8194ee969cd625f6d7f8adabc8348ac9fd776efa053"/>
-  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.jmx" size="17271" sha256="021ecc296d01e424a325120e22e7d6d498ca2e70fa5a990c1ca8dc37062cf32f"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.js" size="124" sha256="d64b7a7f37f297e895813653b2b0677bd59abfa1b04be66bcc0c1ad64435ae10"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.jmx" size="14488" sha256="776a8a2e3848915ce30e4b001a21d1ece792e8d9b4b6e38bb4f2528e5c2ba30a"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.png" size="2346" sha256="03955c6c74f83f4c10d5cc417c5f746425c462e6e804b290deb0b7251235755f"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.jmxb" size="8006" sha256="6777a99d019a7064ecb542a5857838ead956ef60a1a0f473ce61b764f3a52828"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/pump_simulation-1.0/pump_simulation-1.0.props" size="278" sha256="8d24c7e03fd2e925da386be695e9a44e152a86e452829c9c43303dc59696df20"/>
+  <file name="lib/pump_simulation-1.0/images/sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.js" size="3508" sha256="1e1817701855845f5af5b4c15c99f65412a7b6fe4880aec765f688f5d493b0ec"/>
+  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.jmx" size="18160" sha256="fb8e96c4128996f1bffca0cd5af4fd7710629b0cfa91ed315a107d9dcb4cb1ee"/>
   <file name="lib/pump_vertical-1.0/pump_vertical-1.0.png" size="9334" sha256="eefce435d959b1ed7d6cd406c319d34ae48ad646aafa84a0b54c0c21c2faf15b"/>
-  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.jmxb" size="9301" sha256="466162737134ee2b8850d79643dd349b626c74bf24b79cf1de7975f82f9894e1"/>
+  <file name="lib/pump_vertical-1.0/pump_vertical-1.0.jmxb" size="10208" sha256="05317e7b989b2741e5165f0b2e403f446e937b5fc7ac3381d6da75dc179e6a09"/>
   <file name="lib/pump_vertical-1.0/pump_vertical-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/pump_vertical-1.0/pump_vertical-1.0.props" size="909" sha256="cfe8da84a50d65223345925884f962577d0e2dab794443dcb7b566e798e6cb2a"/>
   <file name="lib/pump_vertical-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.js" size="130" sha256="97a55773206bcefe3cf8e262ff1a3a147d1e92c1c4454300813d9bc8de3c8413"/>
-  <file name="lib/redundancy_status-1.0/redundancy_status-1.0.jmx" size="30809" sha256="1909353268c145b34b9b391ab2b1c5f7823ac7aecf2a030e0975a97b9347779b"/>
+  <file name="lib/redundancy_status-1.0/redundancy_status-1.0.jmx" size="31097" sha256="d5a9d8f6b54b4990b8ecd14899f45eda818386f4f058133804b63d9e61079112"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.png" size="8871" sha256="6863e4319f2e8a43df1e07a87e6bdc565c908589c43c639c7a3c181894d57c38"/>
-  <file name="lib/redundancy_status-1.0/redundancy_status-1.0.jmxb" size="17647" sha256="e5ffca5f0849a648a2e23038a7cd04cd3b06627c69a3bb548eb8b65aed110a1c"/>
+  <file name="lib/redundancy_status-1.0/redundancy_status-1.0.jmxb" size="17979" sha256="09ba44a1ecc749760679930781437f0bf761a8169cf81d0dc51770f51928a157"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/redundancy_status-1.0/redundancy_status-1.0.props" size="163" sha256="4d31e4c849fa48bcc1e871b7032cce84e9ac1649b3a444ff11065590475fc2fe"/>
   <file name="lib/redundancy_status-1.0/images/light_rect_blue.svg" size="280" sha256="5ef1ffcda386c036e47871bbfcd0d7aa18a3b8e29d93133988f0a0a491ad7d3a"/>
   <file name="lib/redundancy_status-1.0/images/network3.svg" size="747" sha256="0207b1eabaa5defb3f8f76cac147086473a5da1a6f4e9755a0597b616fcda3c7"/>
   <file name="lib/redundancy_status-1.0/images/heart1.svg" size="837" sha256="1dc3ed60a60ed12dc84b90939c878f4a9e17af32afdd4d6b02b845a692dd851c"/>
   <file name="lib/redundancy_status-1.0/images/controller1.svg" size="527" sha256="0a081ee5bde2d934702cd49dde6debf6c1c351a32e148a2bc87dd43fa0bcfb18"/>
-  <file name="lib/take_control_button-1.0/take_control_button-1.0.js" size="955" sha256="fee7af5cf5ab06d5596a02e762807c199550480e402b4a5c24ff2013435dc278"/>
-  <file name="lib/take_control_button-1.0/take_control_button-1.0.jmx" size="2897" sha256="255cfbcf16c11f47a9656cdcb2db6caa338357d3491c4284ee8df6c321c95b1d"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.js" size="121" sha256="a6a3c430c52d1b55736a4a66ba050bfb79d6f5e0137db5de936633b0dac4b306"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.jmx" size="8943" sha256="f74e2e93c433f0bb6aead41e81e039c488f8fc6addd110f3f4ff89be1214a5ba"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.png" size="713" sha256="47d7abc1a7b032588095d879671829efafa5217df2dfb33d4c4adce45add702b"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.jmxb" size="3675" sha256="1cbae7101fcfed52bd0a65e3cdc150cd34e4d3964ee956793bd3a265ef2bab43"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/semi_auto_tank-1.0/semi_auto_tank-1.0.props" size="285" sha256="fbd8f9ed5d0826eb04a8ca976fbc2d67d1891517216e3bdd577f79be6d3b8278"/>
+  <file name="lib/semi_auto_tank-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="lib/semi_auto_tank-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="lib/take_control_button-1.0/take_control_button-1.0.js" size="889" sha256="a33e82714efa26b62281117a4a9c74c865a7e9298caefc44b6e7b1e68639b81e"/>
+  <file name="lib/take_control_button-1.0/take_control_button-1.0.jmx" size="3161" sha256="547db2a0e457bcaf60642413174877f64e830c8700602459b4331fd091affd4f"/>
   <file name="lib/take_control_button-1.0/take_control_button-1.0.png" size="2770" sha256="1ba85c86227e9e36db87eeef1af971756544629afff8ecbcfb312d7bb75c8cf6"/>
-  <file name="lib/take_control_button-1.0/take_control_button-1.0.jmxb" size="1731" sha256="9e8a644874c5ca85940c22abcbd6461727799e1aae0e19796b089600eee2d72c"/>
+  <file name="lib/take_control_button-1.0/take_control_button-1.0.jmxb" size="1997" sha256="038c3436f0a9eab52cb693d7f0d832586df1f4fc6fc62724c019db60a84db26d"/>
   <file name="lib/take_control_button-1.0/take_control_button-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/take_control_button-1.0/take_control_button-1.0.props" size="536" sha256="c374267b31b25304dc253100cc5e25f093813d6d8124cd8ad151f88eed7046a9"/>
   <file name="lib/take_control_button-1.0/images/btn_blue_light.svg" size="422" sha256="603a3fce6382fe5b02f8149f01476e9dc3b54902853eba0c34e7386e1600eaae"/>
   <file name="lib/take_control_button-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/take_control_button-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
-  <file name="lib/tank-1.0/tank-1.0.js" size="1522" sha256="0446ae81db494eed054cde40b07e7b38057f964a0f742eb995cafafb54656003"/>
-  <file name="lib/tank-1.0/tank-1.0.jmx" size="18641" sha256="55894ab9ca45177c697941fa15aa22abc03187c4375caaac724de21a470fe9a1"/>
+  <file name="lib/tank-1.0/tank-1.0.js" size="1694" sha256="41830edaaa50ec861551edaaed1edc198ff7616323ef23ddfa469e50111c22e7"/>
+  <file name="lib/tank-1.0/tank-1.0.jmx" size="19403" sha256="9790984f921790435b369765d445d226878304ec390641495879e0f284a241f1"/>
   <file name="lib/tank-1.0/tank-1.0.png" size="11022" sha256="95cd8302cb16194d3ed2098c81a928d60ad1a035a45446b7c378271663cf6f3c"/>
-  <file name="lib/tank-1.0/tank-1.0.jmxb" size="9364" sha256="be09e10adc01e7f7193073deb196f3d95e40ebc9f1036a9bde175bd14ae9bce6"/>
+  <file name="lib/tank-1.0/tank-1.0.jmxb" size="10140" sha256="4521fa390d26be109af93a7e19873c2bf0aebb48a091448ba7570d7000405818"/>
   <file name="lib/tank-1.0/tank-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/tank-1.0/tank-1.0.props" size="291" sha256="f26d1614b05ba36d2aee57cc9b7c1f1c6051d33280c8129ba09ec2aead6bd3e2"/>
   <file name="lib/tank-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
@@ -279,74 +364,99 @@
   <file name="lib/tank-1.0/images/gear2.svg" size="2653" sha256="9fea4a685356045daf12ce53aab1c7d6e60686bd248c7b7c4866e739eb0198c7"/>
   <file name="lib/tank-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/tank_dialog-1.0/tank_dialog-1.0.js" size="1445" sha256="6fd7c8225019a7ed2af2db1ec1f1ed21e3f408d9ee78da468f87fbb0ae2a93c7"/>
-  <file name="lib/tank_dialog-1.0/tank_dialog-1.0.jmx" size="82332" sha256="1ffbb737c559294f5623843873640912a696394588c55b3bf229820395f9da6f"/>
+  <file name="lib/tank_dialog-1.0/tank_dialog-1.0.jmx" size="84307" sha256="a57fff743842a8d1a1de7847e92438710f19df9b010a54f1ced31ded113e5068"/>
   <file name="lib/tank_dialog-1.0/tank_dialog-1.0.png" size="6776" sha256="47ecfc19ada47b1c0838abbae53812d622a3974165658427a6e8330a19530d61"/>
-  <file name="lib/tank_dialog-1.0/tank_dialog-1.0.jmxb" size="44472" sha256="60da6fe0e04b83108f8529ee7ee8b9dc51bf8067a48c6a5111e91f70ba74be65"/>
+  <file name="lib/tank_dialog-1.0/tank_dialog-1.0.jmxb" size="45586" sha256="1085dca9f8a364ae9d16e4aa42255d13fea58159e350fd355d2c7d8badcb899b"/>
   <file name="lib/tank_dialog-1.0/tank_dialog-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/tank_dialog-1.0/tank_dialog-1.0.props" size="291" sha256="9a449178f9d8b122d84e97983abb7bc61810be1cd3089677a6bb14fb218c9f1d"/>
   <file name="lib/tank_dialog-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/tank_dialog-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/tank_dialog-1.0/images/filesettings.svg" size="1467" sha256="ee07a91194fca44cdb3e64260c17ff8b14b6d83a39b54e032c54a5ec239c3f79"/>
-  <file name="lib/valve_base-1.0/valve_base-1.0.js" size="2057" sha256="c63d5add47ecce2d6c990e89a10cba12e926bb4e48d41cc90f9ce3afb8115970"/>
-  <file name="lib/valve_base-1.0/valve_base-1.0.jmx" size="4224" sha256="344d11f7561518c0c8b81038f85ad8e52b9b9fd8f68e89979a6eeeab3013d9f2"/>
+  <file name="lib/tank_dialog-1.0/images/adjustments1.svg" size="701" sha256="9d293181bc41ee2109f64671f244a197a195f5e0ad75625fe43fa88e407cc1a3"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.js" size="124" sha256="b37157834ce8a4d4966459b604cbe33e3953096019d16b3bd28707983f84400e"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.jmx" size="7320" sha256="78a3c0a9fb5fde40963aa265a6a2d154f8b0309213d0cdb065081ee886786fef"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.png" size="1814" sha256="5643388c8a262b659a98e4431630b30de99750c7c275fdd592f27803f159fa4c"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.jmxb" size="3982" sha256="e1965288828f76142636f765b83fdde683e9d6bb37019e762b265f9838e6f1f7"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/tank_simulation-1.0/tank_simulation-1.0.props" size="295" sha256="a62fae1676d66aeb1e70996acf7b09f71e1e4b25d2935c11e1e4134518ab3649"/>
+  <file name="lib/tank_simulation-1.0/images/sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/valve_base-1.0/valve_base-1.0.js" size="3283" sha256="a02f25fe9286c093f3cc64036da38cce70aa6e481ec3fc084c7e5437b8f00883"/>
+  <file name="lib/valve_base-1.0/valve_base-1.0.jmx" size="5502" sha256="99dc224ddc39fe4c20759c17cea20e359cc680b5f822806950b4b7f9711b9947"/>
   <file name="lib/valve_base-1.0/valve_base-1.0.png" size="5328" sha256="0c3e68cd85f6da354202c598f6d8b6d2c9bc1e7349dfa55e9cca87374930f1b9"/>
-  <file name="lib/valve_base-1.0/valve_base-1.0.jmxb" size="2462" sha256="b015e6cf94c698c5592308004230a385f439116da6c67cabf9bb47f1d7b1b8e4"/>
+  <file name="lib/valve_base-1.0/valve_base-1.0.jmxb" size="3351" sha256="90cf1d0f3a11ea7817f6f50f661a29c7eb69cd54ce34d9c9606b8f7fd4d96dd0"/>
   <file name="lib/valve_base-1.0/valve_base-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_base-1.0/valve_base-1.0.props" size="729" sha256="4f442c37be613925e889feea3513c399cdb9587a9e2361e0d1affa477dc9d64b"/>
   <file name="lib/valve_base-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.js" size="131" sha256="921eb9010c5887808bccb8164135f6ba4afa1c1e01a5ef47a2f8cbf5ff6c96e8"/>
-  <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.jmx" size="8652" sha256="e87b355edc627a40285578d73f86e720e7dacbfac72beebb3f8151c6d5d50998"/>
+  <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.jmx" size="8652" sha256="b8df32c3b04623b8ab3df28960c6b34b19ddea5b1e6436c0c76f566a4724b18e"/>
   <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.png" size="5177" sha256="fb0d7954f2d2b9bc1a72e7a76e6aff76648042578ba34549540a1e80b9e26688"/>
-  <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.jmxb" size="4653" sha256="d9b42ed687a1924bba883257da38dcf01622c9025efc5d18d143d7df9717718e"/>
+  <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.jmxb" size="4653" sha256="d76332b1403be3c813800414b376e10109daf1d323e51163c50f8f16e6930bff"/>
   <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_base_dialog-1.1/valve_base_dialog-1.1.props" size="316" sha256="76b9d70b3dee483c4edebe2da2c15361789d14160f622441ca4937e956ee0f72"/>
   <file name="lib/valve_base_dialog-1.1/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/valve_base_dialog-1.1/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.js" size="199" sha256="45082267f2d8f4cd9ec3f7d3f7c8ff56178ad0cb91edcb42dc12550bb6c90162"/>
-  <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.jmx" size="4361" sha256="0a0ae4b7a1a6254e8c85254cda32bf2a02335d82d0f1205782de4674ac28da50"/>
+  <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.jmx" size="4361" sha256="a75ef4062ff6ff17154a67cc4aaffa962c8f8ceaaad2d3c3ec72951a189ed054"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.png" size="1072" sha256="01f219bbdb621b9c741a527cda6c0b2d3c98e50f6339927b34f586e58128c36c"/>
-  <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.jmxb" size="2407" sha256="fdaae014e815bf1a271417c3ad996993c4441fe87923140db081ede4f0ba6491"/>
+  <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.jmxb" size="2407" sha256="b849b19e0364f6579b4f1904ea4462c1dc66b81ac4bf2746979867cdb045c658"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/valve_base_dialog_confirmation-1.0.props" size="312" sha256="b436d0ed90ce4ba4d1484dc6190ab27b1bb09853020ea71f0d987d82a3de9c30"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/valve_base_dialog_confirmation-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
-  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.js" size="2058" sha256="88b4b6b96fee0c956f52ec3921894e0b12bb951da00822bb5d2c36f59dc9f31b"/>
-  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmx" size="4402" sha256="57ab8738559df3a0ba1a69b6de5d5094ee0ab5b55bf1ba849062a45aabbad417"/>
+  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.js" size="3284" sha256="8a897f766f0ee076db4796f7a69b33a99b4cff93ddd0ee2136c8562b8f919fdf"/>
+  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmx" size="5680" sha256="dfb5741e18a355bb6c9bf3164c18f8ea0c42d801ede141a41350c9cff80b29a0"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.png" size="5328" sha256="0c3e68cd85f6da354202c598f6d8b6d2c9bc1e7349dfa55e9cca87374930f1b9"/>
-  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmxb" size="2528" sha256="6d7a00b53a4aa9d02fb9e65845c3425b4656a321b49c61ff0fb6297f55712ffd"/>
+  <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.jmxb" size="3417" sha256="fddb6637bdd5f41ad0cf475f1799624d0de778aa97ef49c66e58c8f0951ad297"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_base_vertical-1.0/valve_base_vertical-1.0.props" size="722" sha256="18c15316640b15a0599fdd241617493cd67828cd1c79eb7b54bdad1d6b9c2061"/>
   <file name="lib/valve_base_vertical-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
-  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.js" size="1914" sha256="58f724c558bf8ec40244e29da36c5122ddee1629d4ec88062e8deca7e4bb387a"/>
-  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.jmx" size="6013" sha256="d68bc8148c058b4440ab3cfc595a69483ae526b604e18464a2d12af21b72d7aa"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.js" size="127" sha256="0f6e537ad86dae668b6351a88bc0ef4813afdc6ba342e485171946d15c4ad5c6"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.jmx" size="10225" sha256="cf8b5b99970bff1420eab99ceffc96ff7fc6205bb6dac432668d712ca97ff157"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.png" size="4064" sha256="6945b8da33902221cdea8e255043747de280936d6256139d6104f1576c278247"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.jmxb" size="5451" sha256="5afd3629da1fac73550de35bf92b89f439187eee7045da3b796db33f80e58572"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/valve_simulation-1.0/valve_simulation-1.0.props" size="316" sha256="7ea9f9832ac5647d95941c19eb3f9e1af5f9a8b0d4dd313950ec7bc5843aaf28"/>
+  <file name="lib/valve_simulation-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="lib/valve_simulation-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
+  <file name="lib/valve_simulation-1.0/images/sldrhrz_needle.svg" size="404" sha256="2a116cac32f0c0eb785a57c61d10e275c96095e24c925ce7b487191177c4f663"/>
+  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.js" size="3303" sha256="9ba55a927502b242cefb3ca0426bd97edfdbadfadfd9bc5fa235ab08ed8fc627"/>
+  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.jmx" size="8567" sha256="a1ab99fe0d7dcfcec5e39a036a345692bfe2dc6c7094cf89f0cd74d2221d51db"/>
   <file name="lib/valve_stepless-1.0/valve_stepless-1.0.png" size="4395" sha256="c14353b60d2a75d4fbee517d221dd8349b0b44ae3347ef781efc5650caa40372"/>
-  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.jmxb" size="3267" sha256="86023f39fdfba62c17dac4da87016e1e3a2a05276af0394d22e174be666f3954"/>
+  <file name="lib/valve_stepless-1.0/valve_stepless-1.0.jmxb" size="4977" sha256="80dbc06e430275c9714d607982e602d01935fa884e1d573c4a0122f45b781f98"/>
   <file name="lib/valve_stepless-1.0/valve_stepless-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_stepless-1.0/valve_stepless-1.0.props" size="590" sha256="002fb06fe464e96a5af17ce3c855dcdfa7fd12c5201c7a9c05ef5f26aed2ab64"/>
   <file name="lib/valve_stepless-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
   <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.js" size="145" sha256="22b94c251ae163a5cf12819e0dddeb50ab64c144400d6a3778d0a25f116411fa"/>
-  <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.jmx" size="10032" sha256="cfd319f44d2218d3b7176d5ee15ffab23b1406cc0798d9ae2314bd07a1a4c502"/>
+  <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.jmx" size="10236" sha256="f7451c2f208b44522073e7acf7d701f91adbb41d33826e53518f0590cf97509c"/>
   <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.png" size="8874" sha256="2045d1c88c132540dd5effb8b10c95cd5577136778ba90978f91d06c50763855"/>
-  <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.jmxb" size="5508" sha256="84f258335e93e606cf7e8202d56e21f87888fa3298e5918a31fbc04a921beb58"/>
+  <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.jmxb" size="5599" sha256="b452e27784690e6a942e214fe1307a3c58e2128ba2df2804bbd486cd81bcf89e"/>
   <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_stepless_dialog-1.1/valve_stepless_dialog-1.1.props" size="320" sha256="5f2bca98dde833244a075d8d09ce8bcf853c4b460b8a0a57d592e624967cb985"/>
   <file name="lib/valve_stepless_dialog-1.1/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/valve_stepless_dialog-1.1/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.js" size="199" sha256="45082267f2d8f4cd9ec3f7d3f7c8ff56178ad0cb91edcb42dc12550bb6c90162"/>
-  <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.jmx" size="4441" sha256="b2d73b02d13df1789ba0ecd7717356ad55257e241a672404479e2446743c575d"/>
+  <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.jmx" size="4441" sha256="bca83632a5e3a9aada555d724e491c42e64d353430d07905613887aa7b846717"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.png" size="1072" sha256="01f219bbdb621b9c741a527cda6c0b2d3c98e50f6339927b34f586e58128c36c"/>
-  <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.jmxb" size="2497" sha256="41ea3ad05c97fce022f820dd4505b6b60dfd79e1ecd53d53c14c06ba7843a544"/>
+  <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.jmxb" size="2497" sha256="8793aa71387a5470a2721a69b8be160463e76cef9d61fb5ec620488ac559833e"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/valve_stepless_dialog_autoadjust_confirm-1.0.props" size="322" sha256="d01020b2d0517299ee02d2c58d87688c7d07fac8bd59ff4c27e32ebba4adbf0a"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
   <file name="lib/valve_stepless_dialog_autoadjust_confirm-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
-  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.js" size="1915" sha256="10814467454aa3894dc221d1d2c497f63e343e552589d71de33c935afb31278a"/>
-  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.jmx" size="6230" sha256="1d1b7e3e6a982f31a745d29920cfe762fd34765b60931e0fae1139cb1bac433f"/>
+  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.js" size="3303" sha256="697f9dbca18295f1c8963c44f550b26a0fc23be577ef43fa1598d40e5046ff32"/>
+  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.jmx" size="8754" sha256="9fcaa9f693534fc77e120344698be384db97605440ec09dc43cec13e12a1676b"/>
   <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.png" size="4395" sha256="c14353b60d2a75d4fbee517d221dd8349b0b44ae3347ef781efc5650caa40372"/>
-  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.jmxb" size="3380" sha256="699f357270260f89bee8bd9466b8db5cd7fb9d987be72b03777d7cb480b0a50a"/>
+  <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.jmxb" size="5090" sha256="2c8b9885ba2df0e6944cf3c57cca1f91faaee6e827ab825cdf60900e02632968"/>
   <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
   <file name="lib/valve_stepless_vertical-1.0/valve_stepless_vertical-1.0.props" size="599" sha256="570219609c18a8885a649b887edc8931676b0888b2f3a6a37ade5afd8f94c9ce"/>
   <file name="lib/valve_stepless_vertical-1.0/images/warning.svg" size="704" sha256="ceda13681ba66a982553901668d35c5eec548ce50d704f67ebfb9458d10dc479"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.js" size="130" sha256="b9f294a7468825e353dd4e3096a837354fdf5b7d0a717785f8ae47e627aafa41"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.jmx" size="2901" sha256="ee0421a310a109ea7e17e3855584784da1bddd9e133765194ed73feb54b0bd15"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.png" size="5694" sha256="d8504ef3d9b7fdc23758f6e2e6739c9595610a4f7115a441e3c24ef667e72fe2"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.jmxb" size="1951" sha256="2b1c06fdbbd4428d924d4d66daa197bcf4a447bad34da123ffab76ea708f86fc"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.tr" size="12" sha256="7eaf65e99ddfb8f01bbc2d7bf4af54eb583b8699de7e11a0a29c1b1ea82840c7"/>
+  <file name="lib/wgtresetallvalves-1.0/wgtresetallvalves-1.0.props" size="468" sha256="577d1fa510b587448ac8da3c857ade3f5d5f44d2283bda2b13b12feff3ef30bf"/>
+  <file name="lib/wgtresetallvalves-1.0/images/btn_rect_blueup.svg" size="268" sha256="9ac8c33cc24291779d6e0412a19451b54352a6f58215d7b840a3b924df322dac"/>
+  <file name="lib/wgtresetallvalves-1.0/images/btn_rect_dwn.svg" size="1757" sha256="f740a986291cc0198865606ba8c489c2cb6033073e106464706d0d5abcd90014"/>
   <file name="Roboto-Bold.ttf" size="170064" sha256="a073f449858a3f0389b2378c8a7c6011bc37065c9147e661b33bbe8180a53150"/>
   <file name="Roboto-Regular.ttf" size="170984" sha256="9e79eaebefe9cb1188defba9413ad6d383cff1f0b4334f0b878634648fb70322"/>
   <file name="Roboto-Medium.ttf" size="171320" sha256="176e8a248c20794bff8b040ab7797c151eea019e6a2b301c9f850897e6bc14f3"/>

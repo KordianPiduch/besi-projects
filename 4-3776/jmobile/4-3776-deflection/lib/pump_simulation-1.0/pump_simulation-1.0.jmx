@@ -1,0 +1,156 @@
+<customWgt>
+ <links>
+  <param attrName="pump_prefix"/>
+ </links>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="pump_simulation_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="1" L1="&lt;pump name>"/>
+   <MLText id="2" L1="Suction Sensor"/>
+   <MLText id="3" L1="Discharge Sensor"/>
+  </MLTexts>
+ </object>
+ <object class="GroupWgt" id="*.name_label">
+  <wgtStyle x="0" y="0" wgtStaticOpt="dynamic" cx="150" cy="15" width="300" height="30" forcePaint="16"/>
+  <object class="ShapeWgt" id="*.name_label.roundrect1">
+   <wgtStyle ry="2" x="0" y="0" wgtStaticOpt="dynamic" cx="145.45" cy="14.52" stroke="rgb(200,200,200)" width="300" height="30" fill="rgb(102,102,102)" forcePaint="16" nodeName="rect" rx="2"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.name_label.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="153.65" alignment="center" cy="13.50" font-sizepx="16" width="299" wrapping="true" height="29" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.suction">
+  <wgtStyle x="0" y="62.50" wgtStaticOpt="dynamic" cx="150" cy="36.75" width="300" height="73.50" forcePaint="16"/>
+  <object class="GroupWgt" customType="Sliders" id="*.suction.signal_slider">
+   <wgtStyle x="49.50" y="13" mtx="1.29299,0,0,0,1.62513,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="100.50" cy="27" width="155.45" height="33.23" forcePaint="16"/>
+   <links>
+    <attr attrName="__scale_lbl_visibility2" alias="*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="visibility2" alias="*.scale.ticks.visibility;*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="align" alias="*.scale.ticks.align;*.scale.lbl.align"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.scale.ticks.reverseScale;*.scale.lbl.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.scale.ticks.labelFreq;*.scale.lbl.labelFreq"/>
+    <attr attrName="toolTipFontName" alias="*.ndl.toolTipFontName"/>
+    <attr attrName="__ndl_min" alias="*.ndl.min;*.scale.ticks.min;*.scale.lbl.min"/>
+    <attr attrName="__ndl_max" alias="*.ndl.max;*.scale.ticks.max;*.scale.lbl.max"/>
+   </links>
+   <object class="GroupWgt" customType="LinearScale" id="*.suction.signal_slider.scale">
+    <wgtStyle x="8.24" y="-15.04" mtx="0.528468,0,0,0,0.954897,0,0,0,1" visibility="false" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="69.76" cy="46.79" width="0" height="0" forcePaint="16"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="*.suction.signal_slider.scale.lbl">
+     <wgtStyle form="horizontal" min="0" timeSpec="local" tickFreq="5" font-size="0" step="1" cx="113.67" cy="34.04" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="64.44" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="264" max="32767" vert-align="top" forcePaint="16" usingFormat="" labelFreq="3" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="*.suction.signal_slider.scale.ticks">
+     <wgtStyle form="horizontal" tickSize2="10" tickFreq="5" stroke-width="2" stroke-linecap="butt" reverseScale="false" alarmMinorWidth="2" cx="121.20" cy="7.69" x="9.86" y="17.25" minorStroke-width="2" height="30.79" alarmColorMajor="rgb(206,21,78)" alarmMax="100" endAngle="200" strokeMajor="rgb(200,200,200)" width="244.40" align="0" max="32767" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="5" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" visibility="false" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="ImageWgt" id="*.suction.signal_slider.img" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd-hsldr">
+    <wgtStyle imagePath="lib/pump_simulation-1.0/images/widget_frame.svg" x="12.99" y="13" wgtStaticOpt="dynamic" cx="64.41" cy="1.89" enableCache="true" width="129.16" height="4.92" fill="rgb(237,237,237)" forcePaint="16"/>
+   </object>
+   <object class="NeedleWgt" id="*.suction.signal_slider.ndl" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:top-hthmb">
+    <wgtStyle form="horizontal" cx="13.81" cy="16.42" x="0" y="0" toolTipFontName="Roboto" height="33.23" width="155.45" max="32767" discrete="true" forcePaint="16" wgtStaticOpt="dynamic" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(76,76,77)" writeMode="0" acceptClick="true" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|simulation|suction_sensor" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="*.suction.signal_slider.ndl.img" hmiStyle="hmi-type:---">
+     <wgtStyle imagePath="lib/pump_simulation-1.0/images/Sldrhrz_needle.svg" x="116.78" y="-1.91" wgtStaticOpt="dynamic" stroke-width="1" cx="11.78" cy="9.84" stroke="rgb(237,237,237)" width="24.75" height="19.69" fill="rgb(0,70,136)" forcePaint="16"/>
+    </object>
+   </object>
+  </object>
+  <object class="NumericWgt" id="*.suction.signal_numeric">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="23" cy="9" x="124.50" numberFormat="1" showThousandSeparator="false" y="52.50" font-sizepx="16" height="20" font-color="rgb(255,255,255)" readWrite="true" width="50" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto Light" text="99999" value="99999" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|simulation|suction_sensor" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.suction.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="153.66" alignment="center" cy="9.45" font-sizepx="16" width="299" wrapping="true" height="20" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" id="*.discharge">
+  <wgtStyle x="0" y="167" wgtStaticOpt="dynamic" cx="150" cy="36.75" width="300" height="73.50" forcePaint="16"/>
+  <object class="GroupWgt" customType="Sliders" id="*.discharge.signal_slider">
+   <wgtStyle x="49.50" y="13" mtx="1.29299,0,0,0,1.62513,0,0,0,1" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="100.50" cy="27" width="155.45" height="33.23" forcePaint="16"/>
+   <links>
+    <attr attrName="__scale_lbl_visibility2" alias="*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="visibility2" alias="*.scale.ticks.visibility;*.scale.lbl.visibility;*.scale.visibility"/>
+    <attr attrName="align" alias="*.scale.ticks.align;*.scale.lbl.align"/>
+    <attr attrName="reverseScale" alias="*.ndl.reverseScale;*.scale.ticks.reverseScale;*.scale.lbl.reverseScale"/>
+    <attr attrName="labelFreq" alias="*.scale.ticks.labelFreq;*.scale.lbl.labelFreq"/>
+    <attr attrName="toolTipFontName" alias="*.ndl.toolTipFontName"/>
+    <attr attrName="__ndl_min" alias="*.ndl.min;*.scale.ticks.min;*.scale.lbl.min"/>
+    <attr attrName="__ndl_max" alias="*.ndl.max;*.scale.ticks.max;*.scale.lbl.max"/>
+   </links>
+   <object class="GroupWgt" customType="LinearScale" id="*.discharge.signal_slider.scale">
+    <wgtStyle x="8.24" y="-15.04" mtx="0.528468,0,0,0,0.954897,0,0,0,1" visibility="false" wgtStaticOpt="dynamic" groupStyle="xform-scaling" cx="69.76" cy="46.79" width="0" height="0" forcePaint="16"/>
+    <links>
+     <attr attrName="min" alias="*.lbl.min;*.ticks.min"/>
+     <attr attrName="max" alias="*.lbl.max;*.ticks.max"/>
+     <attr attrName="align" alias="LabelsWgt.align;TicksWgt.align;ScaleWgt.align"/>
+     <attr attrName="reverseScale" alias="*.lbl.reverseScale;*.ticks.reverseScale"/>
+     <attr attrName="labelFreq" alias="*.ticks.labelFreq;*.lbl.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="*.discharge.signal_slider.scale.lbl">
+     <wgtStyle form="horizontal" min="0" timeSpec="local" tickFreq="5" font-size="0" step="1" cx="113.67" cy="34.04" x="0" numberFormat="1" showThousandSeparator="false" y="0" labelNames="" font-sizepx="13" height="64.44" rotated="true" font-color="rgb(76,76,77)" endAngle="185" readWrite="true" width="264" max="32767" vert-align="top" forcePaint="16" usingFormat="" labelFreq="3" wgtStaticOpt="dynamic" startAngle="-20" font-family="Roboto" text="" value="" visibility="false" keypad-type="None"/>
+    </object>
+    <object class="TicksWgt" id="*.discharge.signal_slider.scale.ticks">
+     <wgtStyle form="horizontal" tickSize2="10" tickFreq="5" stroke-width="2" stroke-linecap="butt" reverseScale="false" alarmMinorWidth="2" cx="121.20" cy="7.69" x="9.86" y="17.25" minorStroke-width="2" height="30.79" alarmColorMajor="rgb(206,21,78)" alarmMax="100" endAngle="200" strokeMajor="rgb(200,200,200)" width="244.40" align="0" max="32767" alarmColorMinor="rgb(206,21,78)" tickSize="6" forcePaint="16" labelFreq="5" strokeMinor="rgb(200,200,200)" wgtStaticOpt="dynamic" visibility="false" alarmMajorWidth="2" alarmMin="75"/>
+    </object>
+   </object>
+   <object class="ImageWgt" id="*.discharge.signal_slider.img" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd-hsldr">
+    <wgtStyle imagePath="lib/pump_simulation-1.0/images/widget_frame.svg" x="12.99" y="13" wgtStaticOpt="dynamic" cx="64.41" cy="1.89" enableCache="true" width="129.16" height="4.92" fill="rgb(237,237,237)" forcePaint="16"/>
+   </object>
+   <object class="NeedleWgt" id="*.discharge.signal_slider.ndl" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:top-hthmb">
+    <wgtStyle form="horizontal" cx="13.81" cy="16.42" x="0" y="0" toolTipFontName="Roboto" height="33.23" width="155.45" max="32767" discrete="true" forcePaint="16" wgtStaticOpt="dynamic" toolTipBgColor="rgb(255,255,255)" toolTipTextColor="rgb(76,76,77)" writeMode="0" acceptClick="true" toolTipFontSize="12" moveStep="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|simulation|discharge_sensor" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <object class="ImageWgt" id="*.discharge.signal_slider.ndl.img" hmiStyle="hmi-type:---">
+     <wgtStyle imagePath="lib/pump_simulation-1.0/images/Sldrhrz_needle.svg" x="116.78" y="-1.91" wgtStaticOpt="dynamic" stroke-width="1" cx="11.78" cy="9.84" stroke="rgb(237,237,237)" width="24.75" height="19.69" fill="rgb(0,70,136)" forcePaint="16"/>
+    </object>
+   </object>
+  </object>
+  <object class="NumericWgt" id="*.discharge.signal_numeric">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="23" cy="9" x="124.50" numberFormat="1" showThousandSeparator="false" y="52.50" font-sizepx="16" height="20" font-color="rgb(255,255,255)" readWrite="true" width="50" alignment="center" max="32767" vert-align="middle" forcePaint="16" usingFormat="" wgtStaticOpt="dynamic" font-family="Roboto Light" text="99999" value="99999" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|simulation|discharge_sensor" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="*.discharge.label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="153.66" alignment="center" cy="9.45" font-sizepx="16" width="299" wrapping="true" height="20" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+ </object>
+</customWgt>

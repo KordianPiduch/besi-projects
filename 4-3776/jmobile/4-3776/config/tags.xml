@@ -40830,4 +40830,538 @@
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.all_valves_ok?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|all_valves_ok</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.reset_all_valves?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|reset_all_valves</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.AtmPressSensor.sttAtmosphericPressure.simulation?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|AtmPressSensor|sttAtmosphericPressure|simulation</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-32768</min>
+        <max>32767</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.cross_section_valve_ok?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.loading_data_available?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.activated?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.seachest_valves_ok?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.pump_selection_ok?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.operation_type?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.step?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.failure?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.total_steps?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_stop?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_start</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_start?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_start?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_start</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|selected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.pumps[5].sttPump.selected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|selected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|selected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|selected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.pumps[6].sttPump.selected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|selected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|selected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[7]|sttPump|selected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.pumps[7].sttPump.selected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[7]|sttPump|selected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[7]|sttPump|selected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[8]|sttPump|selected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.pumps[8].sttPump.selected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[8]|sttPump|selected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[8]|sttPump|selected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.pumps_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_discharge</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_pump_discharge?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_discharge?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_discharge</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_cross_section</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_cross_section?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_cross_section?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_cross_section</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.tanks_portside?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.drafts_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_suction</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_pump_suction?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_suction?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_pump_suction</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_internal</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_sea_chest_internal?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_internal?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_internal</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.tanks_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.pumps_portside?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_ballast_tanks</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_ballast_tanks?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_ballast_tanks?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_ballast_tanks</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.deflections_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_external</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_sea_chest_external?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_external?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_sea_chest_external</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.valves_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|valves_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_starboard</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.tanks_starboard?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_starboard?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_starboard</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.pumps_starboard?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.emergency_stop?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.inlinometers_all?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_stop_emergency?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
 </tags>

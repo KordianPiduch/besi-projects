@@ -1,0 +1,9 @@
+<ProjectConfig>
+ <version>04.05.01.523</version>
+ <targetName>eX715M</targetName>
+ <manufacturerCode>564</manufacturerCode>
+ <orientation>0</orientation>
+ <panelMemory>4GB</panelMemory>
+ <enableUserMgmt>true</enableUserMgmt>
+ <enableWatchdog>true</enableWatchdog>
+</ProjectConfig>

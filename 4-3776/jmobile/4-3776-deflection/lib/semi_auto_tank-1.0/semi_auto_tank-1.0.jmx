@@ -1,0 +1,79 @@
+<customWgt>
+ <links>
+  <param attrName="TankID"/>
+ </links>
+ <gridGroupLayout gridGlobalStrokeWidth="1" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="2" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="5" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="none" gridNRows="1">
+  <colProperties>
+   <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
+   <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
+   <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
+   <colProperty rightMargin="5" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="5" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
+   <colProperty rightMargin="5" leftStrokeColor="rgb(230,230,230)" rightStroke="0" rightStrokeColor="rgb(230,230,230)" leftMargin="5" leftStroke="0" minWidth="0" stretch="1" maxWidth="10000"/>
+  </colProperties>
+  <rowProperties>
+   <rowProperty topStroke="0" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="0" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="100" stretch="1" selStrokeColor="none" minHeight="30" topMargin="0"/>
+  </rowProperties>
+ </gridGroupLayout>
+ <object class="CustomWgtMLTextMgrWgt" mlFileName="" id="semi_auto_tank_1_0:1_0_CustomWgtMLMgrWgt" mgrType="CustomWgt">
+  <wgtStyle x="0" y="0" width="0" height="0"/>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+  </langs>
+  <MLTexts>
+   <MLText id="0" L1="Tank Name"/>
+   <MLText id="1" L1="Execute"/>
+   <MLText id="2" L1="ABORT"/>
+  </MLTexts>
+ </object>
+ <object class="LabelWgt" id="*.label1">
+  <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="14" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="79.90" cy="23.85" x="0" maxWidth="100000" y="0" rowSpan="1" aspectRatio="41:21" rowOcc="1" horItemOverflow="0" height="52" font-sizepx="19" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="155" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="16" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[${TankID}]|sttTank|name" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+  </dataLinks>
+  <links>
+   <lang class="MLTextLink" textid="0"/>
+  </links>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.BtnStd1">
+  <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="73" cy="24.75" x="473" maxWidth="100000" y="2" rowSpan="1" aspectRatio="9:4" rowOcc="1" horItemOverflow="0" height="49.50" minWidth="0" preserveAspectRatio="0" width="146" bottonMargin="0" leftMargin="0" forcePaint="16" wgtStaticOpt="dynamic" maxHeight="50" colOcc="4" colSpan="1"/>
+  <object class="ButtonWgt" id="*.BtnStd1.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,147,0)" cx="73" cy="24.75" x="0" y="0" height="49.50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="146" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+  </object>
+  <object class="LabelWgt" id="*.BtnStd1.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="5.42" vert-align="middle" y="1.13" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="64.89" alignment="center" cy="22.50" font-sizepx="16" width="129.77" wrapping="true" height="46.13" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="1">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="GroupWgt" customType="ButtonsWithLabel" id="*.BtnStd2">
+  <wgtStyle verItemOverflow="0" horItemUnderflow="0" topMargin="0" minHeight="0" verItemUnderflow="0" rightMargin="0" cx="73" cy="24.75" x="629" maxWidth="100000" y="2" rowSpan="1" aspectRatio="30:19" rowOcc="1" horItemOverflow="0" height="49.50" minWidth="0" preserveAspectRatio="0" width="146" bottonMargin="0" leftMargin="0" forcePaint="16" wgtStaticOpt="dynamic" maxHeight="50" colOcc="5" colSpan="1"/>
+  <object class="ButtonWgt" id="*.BtnStd2.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+   <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(220,0,0)" cx="73" cy="24.75" x="0" y="0" height="49.50" downFillColor="rgb(0,176,199)" releasePath="lib\semi_auto_tank-1.0\images\Btn_rect_blueUp.svg" width="146" forcePaint="16" bdrImageSize="54.00,44.00" wgtStaticOpt="dynamic" value="0" style="0" needlePath="lib\semi_auto_tank-1.0\images\Btn_rect_Dwn.svg"/>
+  </object>
+  <object class="LabelWgt" id="*.BtnStd2.lbl" hmiStyle="hmi-type:wgtlabel">
+   <wgtStyle font-family="Roboto Medium" x="5.42" vert-align="middle" y="1.12" font-size="12" wgtStaticOpt="dynamic" keypad-type="None" cx="64.88" alignment="center" cy="22.51" font-sizepx="16" width="129.78" wrapping="true" height="46.13" forcePaint="16" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="2">
+     <MLFontFamily L1="Roboto Medium"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+ <object class="NumericWgt" id="*.numeric1">
+  <wgtStyle step="1" preserveAspectRatio="0" max="32767" timeSpec="local" topMargin="0" font-size="14" numberFormat="1" verItemUnderflow="0" height="52" colSpan="1" font-sizepx="19" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="99999" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="2" width="155" rowSpan="1" frameColor="rgb(200,200,200)" bottonMargin="0" forcePaint="16" showThousandSeparator="false" cx="70.35" cy="22.72" usingFormat="" value="99999" min="0" alignment="center" horItemUnderflow="0" aspectRatio="17:7" vert-align="middle" keypad-type="Numeric" x="156" y="0" decimalDigits="2" font-color="rgb(255,255,255)" horItemOverflow="0" form="Numeric" rowOcc="1" minWidth="0"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[${TankID}]|sttTank|volume" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+  </dataLinks>
+ </object>
+ <object class="NumericWgt" id="*.numeric2">
+  <wgtStyle step="1" preserveAspectRatio="0" max="32767" timeSpec="local" topMargin="0" font-size="14" numberFormat="1" verItemUnderflow="0" height="52" colSpan="1" font-sizepx="19" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="99999" readWrite="true" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="155" rowSpan="1" frameColor="rgb(200,200,200)" bottonMargin="0" forcePaint="16" showThousandSeparator="false" cx="70.36" cy="22.72" usingFormat="" value="99999" min="0" alignment="center" horItemUnderflow="0" aspectRatio="17:7" vert-align="middle" keypad-type="Numeric" x="312" y="0" decimalDigits="2" font-color="rgb(255,255,255)" horItemOverflow="0" form="Numeric" rowOcc="1" minWidth="0"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+  </dataLinks>
+ </object>
+</customWgt>
