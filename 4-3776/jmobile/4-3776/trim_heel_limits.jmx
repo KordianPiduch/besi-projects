@@ -1,0 +1,183 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="trim_heel_limits" py="0" dataWndSize="0,70" pageType="modal" pageName="trim_heel_limits" pageSize="244,300" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="244" height="300" forcePaint="520" v="04.05.01.523"/>
+  <dataLinks>
+   <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
+  </dataLinks>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="8" L1="Warning [ ° ]"/>
+    <MLText id="11" L1="Heel Limit"/>
+    <MLText id="12" L1="Trim Limit"/>
+    <MLText id="13" L1="Warning [ m ]"/>
+    <MLText id="21" L1="Configure values for heel and trim inclinometers that will trigger warningn and alarm (emergency) level alarms"/>
+    <MLText id="22" L1="Critical [ ° ]"/>
+    <MLText id="23" L1="Critical [ m ]"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle x="10" y="10" mtx="1,0,0,0,1,0,0,0,1" cx="112.01" cy="44" width="224.01" height="88"/>
+   <object class="GroupWgt" id="GroupWgt4.GroupWgt1">
+    <wgtStyle x="0.01" y="0" mtx="1,0,0,0,1,0,0,0,1" cx="112" cy="15" width="224.01" height="30"/>
+    <object class="ShapeWgt" id="GroupWgt4.GroupWgt1.roundrect2">
+     <wgtStyle ry="2" x="0" y="0.02" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="108.61" cy="14.48" stroke="rgb(200,200,200)" width="224.01" height="29.92" fill="rgb(102,102,102)" nodeName="rect" forcePaint="152" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt4.GroupWgt1.label2">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" cx="113.95" alignment="center" cy="13.49" font-sizepx="13" width="221.48" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="11"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt4.GroupWgt2">
+    <wgtStyle x="0" y="28.98" mtx="1,0,0,0,1,0,0,0,1" cx="112" cy="15.04" width="224" height="30.08" forcePaint="1"/>
+    <object class="ShapeWgt" id="GroupWgt4.GroupWgt2.roundrect1">
+     <wgtStyle ry="2" x="0" y="0.02" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="153" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt4.GroupWgt2.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" cx="73.76" alignment="center" cy="13.53" font-sizepx="13" width="143.01" wrapping="true" height="29.08" forcePaint="137" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="8"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="GroupWgt4.GroupWgt2.value_button">
+     <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0.02" font-sizepx="13" height="29" font-color="rgb(255,255,255)" mtx="1,0,0,0,1,0,0,0,1" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="5" vert-align="middle" forcePaint="25" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+      <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_warning" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt4.GroupWgt3">
+    <wgtStyle x="0" y="57.92" mtx="1,0,0,0,1,0,0,0,1" cx="112" cy="15.04" width="224" height="30.08" forcePaint="65"/>
+    <object class="ShapeWgt" id="GroupWgt4.GroupWgt3.roundrect1">
+     <wgtStyle ry="2" x="0" y="0.02" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="217" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt4.GroupWgt3.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" cx="73.76" alignment="center" cy="13.53" font-sizepx="13" width="143.01" wrapping="true" height="29.08" forcePaint="201" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="22"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="GroupWgt4.GroupWgt3.value_button">
+     <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0.02" font-sizepx="13" height="29" font-color="rgb(255,255,255)" mtx="1,0,0,0,1,0,0,0,1" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="5" vert-align="middle" forcePaint="89" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+      <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_error" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     </dataLinks>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle x="10" y="113.88" cx="112.01" cy="44" width="224.02" height="88"/>
+   <object class="GroupWgt" id="GroupWgt1.GroupWgt1">
+    <wgtStyle x="0.01" y="0" cx="112" cy="15" width="224.01" height="30"/>
+    <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.roundrect2">
+     <wgtStyle ry="2" x="0" y="0.02" wgtStaticOpt="dynamic" cx="108.61" cy="14.48" stroke="rgb(200,200,200)" width="224.01" height="29.92" fill="rgb(102,102,102)" nodeName="rect" forcePaint="152" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label2">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" keypad-type="None" cx="113.95" alignment="center" cy="13.49" font-sizepx="13" width="221.48" wrapping="true" height="29" forcePaint="137" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="12"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt1.GroupWgt2">
+    <wgtStyle x="0" y="28.98" cx="112" cy="15.04" width="224" height="30.08" forcePaint="1"/>
+    <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.roundrect1">
+     <wgtStyle ry="2" x="0" y="0.02" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="153" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt1.GroupWgt2.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" keypad-type="None" cx="73.76" alignment="center" cy="13.53" font-sizepx="13" width="143.01" wrapping="true" height="29.08" forcePaint="137" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="13"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="GroupWgt1.GroupWgt2.value_button">
+     <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0.02" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="5" vert-align="middle" forcePaint="25" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+      <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_warning" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt1.GroupWgt3">
+    <wgtStyle x="0" y="57.92" cx="112" cy="15.04" width="224" height="30.08" forcePaint="65"/>
+    <object class="ShapeWgt" id="GroupWgt1.GroupWgt3.roundrect1">
+     <wgtStyle ry="2" x="0" y="0.02" wgtStaticOpt="dynamic" cx="70.30" cy="14.52" stroke="rgb(200,200,200)" width="145" height="30" fill="rgb(102,102,102)" nodeName="rect" forcePaint="217" rx="2"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="bar_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="stroke"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt1.GroupWgt3.label1">
+     <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="0" vert-align="middle" y="0" font-size="10" keypad-type="None" cx="73.76" alignment="center" cy="13.53" font-sizepx="13" width="143.01" wrapping="true" height="29.08" forcePaint="201" font-color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="23"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="GroupWgt1.GroupWgt3.value_button">
+     <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="10" step="1" cx="36.08" cy="12.86" decimalDigits="1" x="144" numberFormat="1" showThousandSeparator="false" y="0.02" font-sizepx="13" height="29" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="5" vert-align="middle" forcePaint="89" usingFormat="" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="99999.9" value="99999.9" keypad-type="Numeric"/>
+     <dataLinks>
+      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
+      <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_error" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+     </dataLinks>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-family="Roboto" frameColor="rgb(200,200,200)" x="10" vert-align="middle" y="212.89" font-size="10" keypad-type="None" cx="114.74" alignment="center" cy="29.70" font-sizepx="13" width="223.01" wrapping="true" height="65" forcePaint="136" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="trim_heel_limits@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

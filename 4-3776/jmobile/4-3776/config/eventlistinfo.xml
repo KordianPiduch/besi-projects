@@ -408,6 +408,7 @@
     <event id="406" name="tank2_sensor_main" group="tank2_sensor_main" trigger="valueAlarm" description="[1223@Alarm]DB1S err: main sensor failure"/>
     <event id="407" name="tank2_sensor_backup" group="tank2_sensor_backup" trigger="valueAlarm" description="[1226@Alarm]DB1S err: backup sensor failure"/>
     <event id="408" name="tank2_hhl" group="tank2_hhl" trigger="valueAlarm" description="[1229@Alarm]DB1S warn: High High Level switch triggered"/>
+    <event id="748" name="trim_alarm_crit" group="trim_alarm_crit" notTriggeredTxtColor="#000000" triggeredTxtColor="#000000" triggeredNotAckedTxtColor="#000000" notTriggeredAckedTxtColor="#000000" notTriggeredNotAckedTxtColor="#000000" trigger="valueAlarm" description="[21@Alarm]trim err: trim exceed critical level"/>
     <event id="409" name="tank2_hl" group="tank2_hl" trigger="valueAlarm" description="[1232@Alarm]DB1S warn: High Level switch triggered"/>
     <event id="410" name="tank2_ll" group="tank2_ll" trigger="valueAlarm" description="[1235@Alarm]DB1S warn: Low Level switch triggered"/>
     <event id="411" name="tank3_load_csv" group="tank3_load_csv" trigger="valueAlarm" description="[1238@Alarm]DB2P err: load csv file failed"/>
@@ -727,8 +728,8 @@
     <event id="725" name="deflection10_sensor_main" group="deflection10_sensor_main" trigger="valueAlarm" description="[2180@Alarm]Deflection  5 (S) err: main sensor failure"/>
     <event id="726" name="deflection10_sensor_backup" group="deflection10_sensor_backup" trigger="valueAlarm" description="[2183@Alarm]Deflection  5 (S) err: backup sensor failure"/>
     <event id="727" name="heel_sensor" group="heel_sensor" trigger="valueAlarm" description="[2186@Alarm]heel err: sensor failure"/>
-    <event id="728" name="heel_angle_25" group="heel_angle_25" trigger="valueAlarm" description="[2189@Alarm]heel warn: heel exceed +/- 2.5°"/>
-    <event id="729" name="heel_angle_50" group="heel_angle_50" trigger="valueAlarm" description="[2192@Alarm]heel warn: heel exceed +/- 5.0°"/>
+    <event id="728" name="heel_angle_25" group="heel_angle_25" trigger="valueAlarm" description="[9@Alarm]heel warn: heel exceed warning level"/>
+    <event id="729" name="heel_angle_50" group="heel_angle_50" trigger="valueAlarm" description="[25@Alarm]heel err: heel exceed critical level"/>
     <event id="730" name="trim_sensor" group="trim_sensor" trigger="valueAlarm" description="[2195@Alarm]trim err: sensor failure"/>
     <event id="731" name="atm_pressure_sensor_1" group="atm_pressure_sensor_1" trigger="valueAlarm" description="[2198@Alarm]atmospheric pressure err: sensor 1 failure"/>
     <event id="732" name="atm_pressure_sensor_2" group="atm_pressure_sensor_2" trigger="valueAlarm" description="[2201@Alarm]atmospheric pressure err: sensor 2 failure"/>
@@ -746,4 +747,5 @@
     <event id="744" name="voltage_supervision_8" group="voltage_supervision_8" trigger="valueAlarm" description="[2237@Alarm]voltage supervision 8 err"/>
     <event id="745" name="voltage_supervision_9" group="voltage_supervision_9" trigger="valueAlarm" description="[2240@Alarm]voltage supervision 9 err"/>
     <event id="746" name="voltage_supervision_10" group="voltage_supervision_10" trigger="valueAlarm" description="[2243@Alarm]voltage supervision 10 err"/>
+    <event id="747" name="trim_alarm_warn" group="trim_alarm_warn" notTriggeredTxtColor="#000000" triggeredTxtColor="#000000" triggeredNotAckedTxtColor="#000000" notTriggeredAckedTxtColor="#000000" notTriggeredNotAckedTxtColor="#000000" trigger="valueAlarm" description="[22@Alarm]trim warn: trim exceed warning level"/>
 </events>

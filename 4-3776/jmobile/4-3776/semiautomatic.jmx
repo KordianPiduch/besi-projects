@@ -1549,13 +1549,13 @@
   <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd4">
    <wgtStyle x="26.50" y="216.78" cx="49" cy="27" width="98" height="54" forcePaint="1"/>
    <object class="ButtonWgt" id="BtnStd4.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
-    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="49" cy="27" x="0" y="0" height="54" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" mtx="1,0,0,0,1,0,0,0,1" width="98" forcePaint="9" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
+    <wgtStyle form="standard" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" type="momentary" fill="rgb(0,70,136)" cx="49" cy="27" x="0" y="0" height="54" downFillColor="rgb(0,176,199)" releasePath="images\Btn_rect_blueUp.svg" width="98" forcePaint="9" bdrImageSize="54.00,44.00" value="0" style="0" needlePath="images\Btn_rect_Dwn.svg"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" id="BtnStd4.lbl" hmiStyle="hmi-type:wgtlabel">
-    <wgtStyle font-family="Roboto Medium" x="3.63" vert-align="middle" y="1.23" font-size="12" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" cx="43.56" alignment="center" cy="24.55" font-sizepx="13" width="87.11" wrapping="true" height="50.32" forcePaint="1" font-color="rgb(237,237,237)"/>
+    <wgtStyle font-family="Roboto Medium" x="3.63" vert-align="middle" y="1.23" font-size="12" keypad-type="None" cx="43.56" alignment="center" cy="24.55" font-sizepx="13" width="87.11" wrapping="true" height="50.32" forcePaint="1" font-color="rgb(237,237,237)"/>
     <links>
      <lang class="MLTextLink" textid="15">
       <MLFontFamily L1="Roboto Medium"/>

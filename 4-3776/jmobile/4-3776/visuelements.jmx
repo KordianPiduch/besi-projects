@@ -100,7 +100,7 @@
    </links>
   </object>
   <object class="GroupWgt" customType="semi_auto_tank-1.0:1.0" id="GroupWgt1.GridLayout7.GridLayout15">
-   <wgtStyle x="975.35" y="922.61" mtx="1,0,0,0,1,0,0,0,1" wgtStaticOpt="dynamic" cx="390" cy="26.50" width="780" height="53" forcePaint="16"/>
+   <wgtStyle x="975.35" y="922.61" wgtStaticOpt="dynamic" cx="390" cy="26.50" width="780" height="53" forcePaint="16"/>
    <links>
     <param attrName="TankID"/>
    </links>

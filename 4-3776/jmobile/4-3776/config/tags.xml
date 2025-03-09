@@ -1657,51 +1657,6 @@
         <isClientTag>false</isClientTag>
     </tag>
     <tag>
-        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle</name>
-        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.alarm_angle?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle</TAGLOCATOR>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-        <isClientTag>false</isClientTag>
-    </tag>
-    <tag>
-        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_25</name>
-        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.alarm_angle_25?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_25?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_25</TAGLOCATOR>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-        <isClientTag>false</isClientTag>
-    </tag>
-    <tag>
-        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_50</name>
-        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.alarm_angle_50?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_50?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_50</TAGLOCATOR>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-        <isClientTag>false</isClientTag>
-    </tag>
-    <tag>
         <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|failure</name>
         <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.failure?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
@@ -41335,6 +41290,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -41348,6 +41305,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -41360,6 +41319,622 @@
         <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency?boolean</simulator>
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_warning</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.value_alarm_warning?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_warning?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_warning</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_error</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.value_alarm_error?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_error?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_error</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_error</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.TrimSensor.sttTrim.value_alarm_error?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_error?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_error</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_warning</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.TrimSensor.sttTrim.value_alarm_warning?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_warning?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_warning</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_error</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.TrimSensor.sttTrim.alarm_error?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_error?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_error</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_error</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.alarm_error?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_error?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_error</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_warning</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.TrimSensor.sttTrim.alarm_warning?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_warning?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_warning</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_warning</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.HeelSensor.sttHeel.alarm_warning?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_warning?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_warning</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.enabled?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.semi_auto_data.health_status.loading_computer_connected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.simulation_suggested_volume?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_suggested_volume?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_operation_type</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.simulation_operation_type?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_operation_type?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_operation_type</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|system_healthy</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.system_healthy?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|system_healthy?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|system_healthy</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_loading_connected</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.simulation_loading_connected?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_loading_connected?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_loading_connected</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_enable_semi_auto</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.simulation_enable_semi_auto?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_enable_semi_auto?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_enable_semi_auto</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_step</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.semi_automatic.simulation_step?unsignedByte</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_step?unsignedByte</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_step</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[12].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[11].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[14].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[1].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[3].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[16].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[13].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[7].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[4].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[17].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[15].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[8].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[18].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[2].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[10].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[6].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[9].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[5].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[27]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[27].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[27]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[27]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[26]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[26].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[26]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[26]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[23].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[29]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[29].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[29]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[29]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[19].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[25]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[25].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[25]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[25]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[24].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[22].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[20].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[21].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[28]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[28].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[28]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[28]|sttTank|suggested_volume</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <isMinMaxEdited>false</isMinMaxEdited>
+        <isClientTag>false</isClientTag>
+    </tag>
+    <tag>
+        <name>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[30]|sttTank|suggested_volume</name>
+        <resourceLocator>prot8://1?M?NS4|String||var|WAGO 750-8212 PFC200 G2 2ETH RS.Application.GVL.tanks[30].sttTank.suggested_volume?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[30]|sttTank|suggested_volume?float</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[30]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>

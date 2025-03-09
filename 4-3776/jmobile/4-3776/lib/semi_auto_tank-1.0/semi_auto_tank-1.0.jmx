@@ -71,9 +71,10 @@
   </dataLinks>
  </object>
  <object class="NumericWgt" id="*.numeric2">
-  <wgtStyle step="1" preserveAspectRatio="0" max="32767" timeSpec="local" topMargin="0" font-size="14" numberFormat="1" verItemUnderflow="0" height="52" colSpan="1" font-sizepx="19" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="99999" readWrite="true" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="155" rowSpan="1" frameColor="rgb(200,200,200)" bottonMargin="0" forcePaint="16" showThousandSeparator="false" cx="70.36" cy="22.72" usingFormat="" value="99999" min="0" alignment="center" horItemUnderflow="0" aspectRatio="17:7" vert-align="middle" keypad-type="Numeric" x="312" y="0" decimalDigits="2" font-color="rgb(255,255,255)" horItemOverflow="0" form="Numeric" rowOcc="1" minWidth="0"/>
+  <wgtStyle step="1" preserveAspectRatio="0" max="32767" timeSpec="local" topMargin="0" font-size="14" numberFormat="1" verItemUnderflow="0" height="52" colSpan="1" font-sizepx="19" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="99999" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="155" rowSpan="1" frameColor="rgb(200,200,200)" bottonMargin="0" forcePaint="16" showThousandSeparator="false" cx="70.36" cy="22.72" usingFormat="" value="99999" min="0" alignment="center" horItemUnderflow="0" aspectRatio="17:7" vert-align="middle" keypad-type="Numeric" x="312" y="0" decimalDigits="2" font-color="rgb(255,255,255)" horItemOverflow="0" form="Numeric" rowOcc="1" minWidth="0"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+   <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[${TankID}]|sttTank|suggested_volume" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
   </dataLinks>
  </object>
 </customWgt>

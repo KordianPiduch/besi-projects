@@ -14,11 +14,15 @@
             <MLText id="5" L1="Not Triggered Not Acked"/>
             <MLText id="6" L1="Triggered Acked"/>
             <MLText id="8" L1="BW1.1 err: load csv file failed"/>
+            <MLText id="9" L1="heel warn: heel exceed warning level"/>
             <MLText id="11" L1="BW1.1 err: save csv file failed"/>
             <MLText id="14" L1="BW1.1 err: main sensor failure"/>
             <MLText id="17" L1="BW1.1 err: backup sensor failure"/>
             <MLText id="20" L1="BW1.1 err: both positions"/>
+            <MLText id="21" L1="trim err: trim exceed critical level"/>
+            <MLText id="22" L1="trim warn: trim exceed warning level"/>
             <MLText id="23" L1="BW1.1 err: no position"/>
+            <MLText id="25" L1="heel err: heel exceed critical level"/>
             <MLText id="26" L1="BW1.1 err: lost position close"/>
             <MLText id="29" L1="BW1.1 err: lost position open"/>
             <MLText id="32" L1="BW1.1 err: not reach close position in time"/>
@@ -740,8 +744,6 @@
             <MLText id="2180" L1="Deflection  5 (S) err: main sensor failure"/>
             <MLText id="2183" L1="Deflection  5 (S) err: backup sensor failure"/>
             <MLText id="2186" L1="heel err: sensor failure"/>
-            <MLText id="2189" L1="heel warn: heel exceed +/- 2.5°"/>
-            <MLText id="2192" L1="heel warn: heel exceed +/- 5.0°"/>
             <MLText id="2195" L1="trim err: sensor failure"/>
             <MLText id="2198" L1="atmospheric pressure err: sensor 1 failure"/>
             <MLText id="2201" L1="atmospheric pressure err: sensor 2 failure"/>
@@ -12187,6 +12189,39 @@
         <printMask>1</printMask>
         <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
     </valueAlarm>
+    <valueAlarm alarmId="748" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>trim_alarm_crit</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_error</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[21@Alarm]trim err: trim exceed critical level</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
     <valueAlarm alarmId="409" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
         <name>tank2_hl</name>
         <groups></groups>
@@ -21122,7 +21157,7 @@
     <valueAlarm alarmId="728" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
         <name>heel_angle_25</name>
         <groups></groups>
-        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_25</source>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_warning</source>
         <enableTag></enableTag>
         <remoteAck></remoteAck>
         <ackNotify></ackNotify>
@@ -21133,7 +21168,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[2189@Alarm]heel warn: heel exceed +/- 2.5°</description>
+        <description>[9@Alarm]heel warn: heel exceed warning level</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -21150,7 +21185,7 @@
     <valueAlarm alarmId="729" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
         <name>heel_angle_50</name>
         <groups></groups>
-        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_angle_50</source>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|alarm_error</source>
         <enableTag></enableTag>
         <remoteAck></remoteAck>
         <ackNotify></ackNotify>
@@ -21161,7 +21196,7 @@
         <requireReset>false</requireReset>
         <actions/>
         <useractions/>
-        <description>[2192@Alarm]heel warn: heel exceed +/- 5.0°</description>
+        <description>[25@Alarm]heel err: heel exceed critical level</description>
         <severity>1</severity>
         <priority>3</priority>
         <customFields>
@@ -21643,6 +21678,39 @@
         <customFields>
             <customField_1>[7@Alarm]</customField_1>
             <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <value>1</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <valueAlarm alarmId="747" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>trim_alarm_warn</name>
+        <groups></groups>
+        <source>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|alarm_warning</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <notTriggeredTxtColor>#000000</notTriggeredTxtColor>
+        <triggeredTxtColor>#000000</triggeredTxtColor>
+        <triggeredNotAckedTxtColor>#000000</triggeredNotAckedTxtColor>
+        <notTriggeredAckedTxtColor>#000000</notTriggeredAckedTxtColor>
+        <notTriggeredNotAckedTxtColor>#000000</notTriggeredNotAckedTxtColor>
+        <actions/>
+        <useractions/>
+        <description>[22@Alarm]trim warn: trim exceed warning level</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
         </customFields>
         <value>1</value>
         <logMask>76</logMask>

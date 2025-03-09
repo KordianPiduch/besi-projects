@@ -2,92 +2,92 @@
  <protocol>
   <id>prot1</id>
   <name>VRBL</name>
-  <file/>
+  <file></file>
   <configuration>CfgVer=1 </configuration>
-  <autoImport/>
+  <autoImport></autoImport>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>120000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname autoSync="false"/>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>0</simFlags>
   <displayName>Variables</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot2</id>
   <name>PING</name>
   <file>PING</file>
   <configuration>CfgVer=1 model=1 ipAddress=192.168.10.10 protocol=ICMP port=80 timeout=5000 </configuration>
-  <autoImport/>
+  <autoImport></autoImport>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>30000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname autoSync="false"/>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>0</simFlags>
   <displayName>Ping</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot3</id>
   <name>PING</name>
   <file>PING</file>
   <configuration>CfgVer=1 model=1 ipAddress=192.168.10.20 protocol=ICMP port=80 timeout=5000 </configuration>
-  <autoImport/>
+  <autoImport></autoImport>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>30000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname autoSync="false"/>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>0</simFlags>
   <displayName>Ping</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot6</id>
   <name>VRBL</name>
-  <file/>
+  <file></file>
   <configuration>CfgVer=1 </configuration>
-  <autoImport/>
+  <autoImport></autoImport>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>120000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname autoSync="false"/>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>0</simFlags>
   <displayName>Variables</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>true</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot7</id>
   <name>SVRB</name>
-  <file/>
+  <file></file>
   <configuration>CfgVer=1 model=Default </configuration>
-  <autoImport/>
+  <autoImport></autoImport>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>30000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname autoSync="false"/>
+  <dictionaryname autoSync="false"></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>1</simFlags>
   <displayName>System Variables</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>false</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot8</id>
@@ -101,14 +101,14 @@
   <offline_opt>true</offline_opt>
   <offline_rpt>3</offline_rpt>
   <dictionaries>
-   <dictionaryname autoSync="false" dictionaryFilterNode="false" nodeId="Node1">OPCUA Client_6</dictionaryname>
-   <dictionaryname autoSync="false" dictionaryFilterNode="false" nodeId="Node2">OPCUA Client</dictionaryname>
+   <dictionaryname nodeId="Node1" dictionaryFilterNode="false" autoSync="false">OPCUA Client_10</dictionaryname>
+   <dictionaryname nodeId="Node2" dictionaryFilterNode="false" autoSync="false">OPCUA Client</dictionaryname>
   </dictionaries>
+  <enableSimProtocol>true</enableSimProtocol>
   <simFlags>0</simFlags>
   <displayName>OPC UA Client</displayName>
   <clientSide>false</clientSide>
   <remoteOnly>false</remoteOnly>
-  <enableSimProtocol>false</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot4</id>

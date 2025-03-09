@@ -379,5 +379,11 @@
     </links>
    </object>
   </object>
+  <object class="ButtonWgt" id="hotspotbtn" hmiStyle="type:btn">
+   <wgtStyle type="momentary" releasePath="../../shared/gallery/images/bu_other/win-like.svg" x="1715" form="hotspot" pushColor="rgb(128,128,0)" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" y="1039.61" dx="1" dy="-1" cx="96" cy="14.71" value="0" width="195" height="30" fill="rgb(160,160,164)" forcePaint="65" downFillColor="rgb(160,160,164)"/>
+   <links>
+    <action class="ShowDialogAction" actionID="0" event="onMouseClick" actionWgt="_PageMgr" pageName="trim_heel_limits.jmx" attribute="onMouseClick"/>
+   </links>
+  </object>
  </object>
 </wgtPage>
