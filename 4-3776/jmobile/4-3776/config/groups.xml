@@ -583,15 +583,111 @@
   <tag>text_color</tag>
  </group>
  <group Type="Auto">
+  <name>Page1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>HMI_ID</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[5]|sttPump|selected</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[6]|sttPump|selected</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[7]|sttPump|selected</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[8]|sttPump|selected</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|volume</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[3]|system_control[3][]|in_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[3]|system_control[3][]|press_take_control</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_start</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_stop_emergency</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|system_healthy</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
   <name>SemiAutoData@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|deflections_all</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|drafts_all</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|inlinometers_all</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_portside</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|pumps_starboard</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|tanks_portside</tag>
@@ -611,6 +707,16 @@
   <tag>text_color</tag>
  </group>
  <group Type="Auto">
+  <name>SemiAutoSimulation@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_enable_semi_auto</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_loading_connected</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_operation_type</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_step</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_suggested_volume</tag>
+  <tag>text_color</tag>
+ </group>
+ <group Type="Auto">
   <name>SemiAutomatic@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>HMI_ID</tag>
@@ -619,52 +725,76 @@
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[7]|sttPump|selected</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|pumps|pumps[8]|sttPump|selected</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[3]|system_control[3][]|in_control</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|control|system_control|system_control[3]|system_control[3][]|press_take_control</tag>
@@ -709,6 +839,7 @@
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|status</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[]|sttTank|name</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[]|sttTank|suggested_volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[]|sttTank|volume</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|failure</tag>
   <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|valves|valves[1]|sttValve|name</tag>
@@ -976,6 +1107,17 @@
   <tag>|temp|status</tag>
   <tag>|temp|temperature</tag>
   <tag>|volume</tag>
+ </group>
+ <group Type="Auto">
+  <name>trim_heel_limits@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_error</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|HeelSensor|sttHeel|value_alarm_warning</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_error</tag>
+  <tag>OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|TrimSensor|sttTrim|value_alarm_warning</tag>
+  <tag>bar_color</tag>
+  <tag>frame_color</tag>
+  <tag>text_color</tag>
  </group>
  <group Type="Auto">
   <name>user_management@$GroupSubscrWgt@$0</name>

@@ -3,7 +3,7 @@
     <name>OPCUA Client_6</name>
     <protocol>OPCU</protocol>
     <tag_importer_version>OPC UA Discovery v1.0</tag_importer_version>
-    <import_options ver="1.0" importType="hierarchical"/>
+    <import_options importType="hierarchical" ver="1.0"/>
     <tag_locator>
         <locator>tagName</locator>
     </tag_locator>

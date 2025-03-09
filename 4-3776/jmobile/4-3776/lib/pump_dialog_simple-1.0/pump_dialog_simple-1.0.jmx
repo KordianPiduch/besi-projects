@@ -166,7 +166,7 @@
     <dataLink class="TagMgrWgt" sourceType="Tag" dataSource="_TagMgr" _tag="${pump_prefix}|save" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
    </dataLinks>
   </object>
-  <object class="ImageWgt" id="*.save_button.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+  <object class="ImageWgt" id="*.save_button.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
    <wgtStyle imagePath="lib/pump_dialog_simple-1.0/images/FileSettings.svg" x="3.78" lock="true" y="2.70" wgtStaticOpt="dynamic" stroke-width="1" cx="10.80" cy="10.80" stroke="rgb(237,237,237)" enableCache="true" width="21.60" height="21.60" fill="rgb(255,255,255)" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
@@ -186,7 +186,7 @@
     <action class="ShowDialogAction" actionID="0" event="onMouseClick" actionWgt="_PageMgr" pageName="simulation_pump.jmx" attribute="onMouseClick"/>
    </links>
   </object>
-  <object class="ImageWgt" id="*.simulation_button.icoImg" hmiStyle="hmi-name:solid; ; hmi-type:icon">
+  <object class="ImageWgt" id="*.simulation_button.icoImg" hmiStyle="hmi-name:solid; hmi-type:icon">
    <wgtStyle imagePath="lib/pump_dialog_simple-1.0/images/Adjustments1.svg" x="3.78" lock="true" y="2.70" wgtStaticOpt="dynamic" stroke-width="1" cx="10.80" cy="10.80" stroke="rgb(237,237,237)" enableCache="true" width="21.60" height="21.60" fill="rgb(255,255,255)" forcePaint="16"/>
    <dataLinks>
     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>

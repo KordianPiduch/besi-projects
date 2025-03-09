@@ -1,6 +1,6 @@
 <wgtPage projectType="HMI Project" rev="1">
- <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="SemiAutoData" py="0" dataWndSize="0,70" pageType="non-modal" pageName="SemiAutoData" pageSize="800,600" usedFonts="Roboto">
-  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="800" height="600" forcePaint="520" v="04.05.01.523"/>
+ <object class="DialogWgt" downloadPrepDone="true" dynPosition="false" titlebar="true" singleInstance="true" staticOptEnable="true" titleName="" px="0" id="SemiAutoData" py="0" dataWndSize="0,70" pageType="non-modal" pageName="SemiAutoData" pageSize="800,620" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(127,127,127)" width="800" height="620" forcePaint="520" v="04.05.01.523"/>
   <dataLinks>
    <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="background_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="color"/>
   </dataLinks>
@@ -41,6 +41,7 @@
     <MLText id="29" L1="[tanks] portside"/>
     <MLText id="30" L1="[tanks] starboard"/>
     <MLText id="31" L1="BOOL"/>
+    <MLText id="32" L1="[loading computer] connection"/>
     <MLText id="33" L1="[pumps] portside"/>
     <MLText id="34" L1="disabled"/>
     <MLText id="35" L1="activated"/>
@@ -60,17 +61,23 @@
     <MLText id="50" L1="[inclinometers] all"/>
     <MLText id="51" L1="incorrect position"/>
     <MLText id="52" L1="ok"/>
+    <MLText id="54" L1="Unhealthy"/>
+    <MLText id="55" L1="Healthy"/>
+    <MLText id="56" L1="enabled"/>
+    <MLText id="57" L1="disabled"/>
+    <MLText id="58" L1="enabled"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" id="SemiAutoDataGrid">
-   <wgtStyle x="10" y="10" wgtStaticOpt="dynamic" cx="190" cy="235.50" width="380" height="471" forcePaint="16">
-    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="11">
+   <wgtStyle x="10" y="10" wgtStaticOpt="dynamic" cx="190" cy="249" width="380" height="498" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="12">
      <colProperties>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="200" stretch="1" maxWidth="300"/>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="70" stretch="1" maxWidth="70"/>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="0" stretch="1" maxWidth="10000"/>
      </colProperties>
      <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
@@ -113,7 +120,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_activated">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="40" rowSpan="1" aspectRatio="111:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="80" rowSpan="1" aspectRatio="111:38" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -122,7 +129,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_operation">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="160" rowSpan="1" aspectRatio="37:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="37:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -131,7 +138,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_failure">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="120" rowSpan="1" aspectRatio="37:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="160" rowSpan="1" aspectRatio="37:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -140,7 +147,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_step">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="240" rowSpan="1" aspectRatio="37:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="280" rowSpan="1" aspectRatio="37:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -149,7 +156,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_steps">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="280" rowSpan="1" aspectRatio="37:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="320" rowSpan="1" aspectRatio="37:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -158,7 +165,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_loading_data">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="200" rowSpan="1" aspectRatio="37:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="240" rowSpan="1" aspectRatio="37:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -167,7 +174,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_pump_selection">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="320" rowSpan="1" aspectRatio="37:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="360" rowSpan="1" aspectRatio="37:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -176,7 +183,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_sea_chest">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="360" rowSpan="1" aspectRatio="66:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="66:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -185,7 +192,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_cross_section_valve">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="400" rowSpan="1" aspectRatio="66:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="440" rowSpan="1" aspectRatio="66:13" rowOcc="12" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -194,7 +201,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_activated_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="40" rowSpan="1" aspectRatio="69:38" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="80" rowSpan="1" aspectRatio="69:38" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|activated" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -204,7 +211,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_failure_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="120" rowSpan="1" aspectRatio="23:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="160" rowSpan="1" aspectRatio="23:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|failure" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -214,7 +221,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_operation_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="160" rowSpan="1" aspectRatio="23:13" rowOcc="5" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="200" rowSpan="1" aspectRatio="23:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|operation_type" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -224,7 +231,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_loading_data_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="200" rowSpan="1" aspectRatio="23:13" rowOcc="6" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|loading_data_available" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -234,7 +241,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_pump_selection_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="320" rowSpan="1" aspectRatio="23:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="360" rowSpan="1" aspectRatio="23:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|pump_selection_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -244,7 +251,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_sea_chest_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="360" rowSpan="1" aspectRatio="23:13" rowOcc="10" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="400" rowSpan="1" aspectRatio="23:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|seachest_valves_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -254,7 +261,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_cross_section_valve_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="400" rowSpan="1" aspectRatio="23:13" rowOcc="11" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="440" rowSpan="1" aspectRatio="23:13" rowOcc="12" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|cross_section_valve_ok" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -264,7 +271,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_step_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="280" rowSpan="1" aspectRatio="23:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="unsignedShort" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|step" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -274,7 +281,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_steps_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="280" rowSpan="1" aspectRatio="23:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="320" rowSpan="1" aspectRatio="23:13" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="unsignedShort" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|total_steps" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -284,7 +291,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_activated_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="8:3" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="40" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="2" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="8:3" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="80" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="3" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -303,7 +310,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_failure_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="120" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="4" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="160" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="5" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -322,7 +329,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_operation_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="160" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="5" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="200" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="6" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -341,7 +348,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_loading_data_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="200" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="6" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="240" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="7" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -360,7 +367,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_step_value">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="240" rowSpan="1" aspectRatio="23:13" rowOcc="7" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="280" rowSpan="1" aspectRatio="23:13" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -369,7 +376,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_steps_value">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="280" rowSpan="1" aspectRatio="109:39" rowOcc="8" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="55.83" cy="17.55" x="270" maxWidth="100000" y="320" rowSpan="1" aspectRatio="109:39" rowOcc="9" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="108" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="3" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -378,7 +385,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_pump_selection_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="320" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="9" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="360" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="10" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -397,7 +404,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_sea_chest_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="360" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="10" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="400" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="11" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -416,7 +423,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_cross_section_valve_value">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="400" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="11" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" wrapping="true" frameSize="0" y="440" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="12" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -435,7 +442,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_emergency_stop">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="80" rowSpan="1" aspectRatio="66:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="120" rowSpan="1" aspectRatio="66:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
     </dataLinks>
@@ -444,7 +451,7 @@
     </links>
    </object>
    <object class="LabelWgt" id="SemiAutoDataGrid.label_emergency_stop_raw">
-    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="80" rowSpan="1" aspectRatio="23:13" rowOcc="3" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="120" rowSpan="1" aspectRatio="23:13" rowOcc="4" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|emergency_stop" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
@@ -454,7 +461,7 @@
     </links>
    </object>
    <object class="MsgTextWgt" id="SemiAutoDataGrid.label_activated_value1">
-    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="80" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="3" minWidth="0" continous="true" viewindex="false">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="120" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="4" minWidth="0" continous="true" viewindex="false">
      <msgtxt>
       <msg index="0"/>
       <msg index="1"/>
@@ -472,19 +479,58 @@
      </lang>
     </links>
    </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_enabled">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="101.41" cy="17.55" x="1" maxWidth="100000" y="40" rowSpan="1" aspectRatio="66:13" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="197" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="56"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid.label_enabled_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="200" maxWidth="100000" y="40" rowSpan="1" aspectRatio="23:13" rowOcc="2" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid.label_enabled_value">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="109" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="62.38" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="109:39" vert-align="middle" keypad-type="None" frame="true" x="270" frameSize="0" y="40" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="2" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="57"/>
+      <textid idx="1" val="58"/>
+     </lang>
+    </links>
+   </object>
   </object>
   <object class="GroupSubscribeWgt" id="SemiAutoData@$GroupSubscrWgt@$0">
    <wgtStyle x="0" y="0" width="0" height="0"/>
   </object>
   <object class="GroupWgt" id="SemiAutoDataGrid1">
-   <wgtStyle x="410" y="10" wgtStaticOpt="dynamic" cx="190" cy="286.50" width="380" height="573" forcePaint="16">
-    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="14">
+   <wgtStyle x="410" y="10" wgtStaticOpt="dynamic" cx="190" cy="303.50" width="380" height="607" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeWidth="0" gridScrollSize="10" gridScrollAutohide="0" gridScrollImage="" gridHorOverFlow="2" gridVerUnderFlow="1" gridVerOverFlow="2" gridScrollBgColor="rgb(237,237,237)" gridScrollColor="rgb(0,70,136)" gridScrollOffset="0" gridGlobalStrokeCollapsed="1" gridNCols="3" gridHorUnderFlow="2" gridGlobalStrokeMode="1" gridGlobalStrokeColor="rgb(200,200,200)" gridNRows="15">
      <colProperties>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="5" leftStroke="1" minWidth="200" stretch="1" maxWidth="300"/>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="70" stretch="1" maxWidth="70"/>
       <colProperty rightMargin="0" leftStrokeColor="rgb(230,230,230)" rightStroke="1" rightStrokeColor="rgb(230,230,230)" leftMargin="0" leftStroke="1" minWidth="80" stretch="1" maxWidth="80"/>
      </colProperties>
      <rowProperties>
+      <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
       <rowProperty topStroke="1" backColor="none" selForColor="none" selBackColor="none" bottonMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" maxHeight="40" stretch="1" selStrokeColor="none" minHeight="40" topMargin="0"/>
@@ -1020,6 +1066,44 @@
       <MLFontFamily L1="Roboto"/>
       <textid idx="0" val="10"/>
       <textid idx="1" val="11"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck14">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="114.22" cy="17.55" x="6" maxWidth="100000" y="560" rowSpan="1" aspectRatio="223:39" rowOcc="15" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="222" bottonMargin="0" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="1" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="SemiAutoDataGrid1.label_healthcheck14_raw">
+    <wgtStyle verItemOverflow="0" horItemUnderflow="0" frameColor="rgb(200,200,200)" topMargin="0" font-size="12" minHeight="0" verItemUnderflow="0" wrapping="true" rightMargin="0" cx="35.34" cy="17.55" x="230" maxWidth="100000" y="560" rowSpan="1" aspectRatio="23:13" rowOcc="15" horItemOverflow="0" height="38" font-sizepx="16" minWidth="0" font-color="rgb(255,255,255)" preserveAspectRatio="0" width="68" bottonMargin="0" alignment="center" vert-align="middle" leftMargin="0" forcePaint="153" wgtStaticOpt="dynamic" font-family="Roboto" maxHeight="100000" keypad-type="None" colOcc="2" colSpan="1"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="49"/>
+    </links>
+   </object>
+   <object class="MsgTextWgt" id="SemiAutoDataGrid1.label_healthcheck13_value1">
+    <wgtStyle preserveAspectRatio="0" max="1" topMargin="0" font-size="12" verItemUnderflow="0" height="39" colSpan="1" font-sizepx="16" minHeight="0" maxWidth="100000" maxHeight="100000" wgtStaticOpt="dynamic" font-family="Roboto" text="" leftMargin="0" verItemOverflow="0" rightMargin="0" colOcc="3" width="79" rowSpan="1" frameColor="none" bottonMargin="0" forcePaint="153" cx="45.21" cy="17.55" value="0" min="0" alignment="center" horItemUnderflow="0" aspectRatio="79:39" vert-align="middle" keypad-type="None" frame="true" x="300" frameSize="0" y="560" font-color="rgb(255,255,255)" horItemOverflow="0" rowOcc="15" minWidth="0" continous="true" viewindex="false">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L1="Roboto"/>
+      <textid idx="0" val="54"/>
+      <textid idx="1" val="55"/>
      </lang>
     </links>
    </object>

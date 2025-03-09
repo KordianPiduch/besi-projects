@@ -360,7 +360,7 @@
     <attr attrName="labelFreq" alias="*.Scale.ticks.labelFreq;*.Scale.lbl.labelFreq"/>
    </links>
    <object class="ImageWgt" id="GauVert10.bgImg" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd">
-    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" cx="7.88" cy="54.38" width="78" height="351" fill="rgb(127,127,127)"/>
+    <wgtStyle imagePath="images/Vert_gaugeframe.svg" x="0" y="0" stroke-width="1" cx="7.88" cy="54.38" stroke="none" width="78" height="351" fill="rgb(127,127,127)"/>
    </object>
    <object class="GroupWgt" customType="LinearScale" id="GauVert10.Scale">
     <wgtStyle x="6" y="10" mtx="1.02513,0,0,0,1.21111,0,0,0,1" groupStyle="xform-scaling" cx="35.64" cy="163.50" width="60.48" height="270"/>
@@ -454,10 +454,9 @@
   <object class="GroupWgt" id="GroupWgt1">
    <wgtStyle x="1077.14" y="515" cx="104.50" cy="25" width="209" height="50" forcePaint="1"/>
    <object class="NumericWgt" id="GroupWgt1.numeric1">
-    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="137" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="9" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_warning_level_in_cm" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
     </dataLinks>
    </object>
@@ -484,10 +483,9 @@
   <object class="GroupWgt" id="GroupWgt2">
    <wgtStyle x="1332.05" y="515" cx="104.50" cy="25" width="209" height="50" forcePaint="1"/>
    <object class="NumericWgt" id="GroupWgt2.numeric1">
-    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="137" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
+    <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="0" timeSpec="local" font-size="12" step="1" cx="36.08" cy="21.43" x="129" numberFormat="1" showThousandSeparator="false" y="0" font-sizepx="16" font-bold="true" height="49" font-color="rgb(255,255,255)" frameFill="rgb(0,70,136)" readWrite="true" width="79" alignment="center" max="100" vert-align="middle" forcePaint="9" usingFormat="" frame="true" font-family="Roboto Light" text="100" value="100" keypad-type="Numeric"/>
     <dataLinks>
      <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|deflections|defl_alarm_level_in_cm" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
-     <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="text_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill"/>
      <dataLink class="TagMgrWgt" tagType="string-20" sourceType="Tag" tag="frame_color" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="frameColor"/>
     </dataLinks>
    </object>
