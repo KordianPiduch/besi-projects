@@ -8,6 +8,8 @@
  <file isSvgFile="true" imgSize="70,30" numSizes="1" file="lib/redundancy_status-1.0/images/light_rect_blue.svg" numUses="4" dynamic="true" stroke="none" fill="rgb(192,192,192)"/>
  <file isSvgFile="true" imgSize="30,30" numSizes="1" file="lib/tank_dialog-1.0/images/light_round_orange.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(244,0,0)"/>
  <file isSvgFile="true" imgSize="30,30" numSizes="1" file="lib/tank_dialog-1.0/images/light_round_orange.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(192,192,192)"/>
+ <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/draft_dialog-1.0/images/filesettings.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(255,255,255)"/>
+ <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/draft_dialog-1.0/images/adjustments1.svg" numUses="1" dynamic="true" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="25,20" numSizes="1" file="lib/valve_simulation-1.0/images/sldrhrz_needle.svg" numUses="1" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="25,20" numSizes="1" file="lib/tank_simulation-1.0/images/sldrhrz_needle.svg" numUses="1" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="25,20" numSizes="1" file="lib/pump_simulation-1.0/images/sldrhrz_needle.svg" numUses="2" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
@@ -15,12 +17,12 @@
  <file isSvgFile="true" imgSize="8,167" numSizes="2" file="images/widget_frame.svg" numUses="2" dynamic="true" stroke="none" fill="rgb(237,237,237)"/>
  <file isSvgFile="true" imgSize="25,20" numSizes="1" file="images/sldrhrz_needle.svg" numUses="1" dynamic="true" stroke="rgb(237,237,237)" fill="rgb(0,70,136)"/>
  <file strokeSize="0" isSvgFile="true" imgSize="8,8" numSizes="1" file="lib/take_control_button-1.0/images/btn_blue_light.svg" numUses="5" dynamic="true" stroke="rgb(255,255,255)" fill="rgb(1,50,96)"/>
- <file isSvgFile="true" imgSize="80,50" numSizes="57" file="images/btn_rect_blueup.svg" numUses="59" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="80,50" numSizes="58" file="images/btn_rect_blueup.svg" numUses="60" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="12" file="images/btnkey_rect_graydwn.svg" numUses="58" stroke="none" fill="rgb(230,230,230)"/>
  <file isSvgFile="true" prePath="keypads" imgSize="49,49" numSizes="12" file="images/btnkey_rect_grayup.svg" numUses="58" stroke="none" fill="rgb(230,230,230)"/>
  <file isSvgFile="true" imgSize="146,50" numSizes="5" file="lib/semi_auto_tank-1.0/images/btn_rect_dwn.svg" numUses="53" stroke="none" fill="rgb(0,147,0)"/>
  <file isSvgFile="true" imgSize="146,50" numSizes="5" file="lib/semi_auto_tank-1.0/images/btn_rect_blueup.svg" numUses="53" stroke="none" fill="rgb(0,147,0)"/>
- <file isSvgFile="true" imgSize="49,32" numSizes="40" file="images/btn_rect_dwn.svg" numUses="51" stroke="none" fill="rgb(0,70,136)"/>
+ <file isSvgFile="true" imgSize="49,32" numSizes="41" file="images/btn_rect_dwn.svg" numUses="52" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="146,50" numSizes="1" file="lib/semi_auto_tank-1.0/images/btn_rect_dwn.svg" numUses="49" stroke="none" fill="rgb(220,0,0)"/>
  <file isSvgFile="true" imgSize="146,50" numSizes="1" file="lib/semi_auto_tank-1.0/images/btn_rect_blueup.svg" numUses="49" stroke="none" fill="rgb(220,0,0)"/>
  <file isSvgFile="true" imgSize="35,25" numSizes="1" file="lib/tank-1.0/images/btn_rect_dwn.svg" numUses="31" stroke="none" fill="rgb(0,70,136)"/>
@@ -106,8 +108,6 @@
  <file isSvgFile="true" imgSize="21,21" numSizes="1" file="images/win-like.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/tank_dialog-1.0/images/filesettings.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/tank_dialog-1.0/images/adjustments1.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
- <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/draft_dialog-1.0/images/filesettings.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
- <file isSvgFile="true" imgSize="22,22" numSizes="1" file="lib/draft_dialog-1.0/images/adjustments1.svg" numUses="1" stroke="none" fill="rgb(255,255,255)"/>
  <file isSvgFile="true" imgSize="102,36" numSizes="1" file="images/btn_rect_grayup.svg" numUses="1" stroke="none" fill="rgb(0,70,136)"/>
  <file isSvgFile="true" imgSize="32,32" numSizes="1" file="images/win-like-press.svg" numUses="1" stroke="none" fill="rgb(0,176,199)"/>
  <file isSvgFile="true" imgSize="32,32" numSizes="1" file="images/win-like.svg" numUses="1" stroke="none" fill="rgb(0,176,199)"/>

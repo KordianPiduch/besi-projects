@@ -38674,6 +38674,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|enabled</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38686,6 +38688,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|semi_auto_data|health_status|loading_computer_connected</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38698,6 +38702,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-32768</min>
+        <max>32767</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38710,6 +38716,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_operation_type</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38722,6 +38730,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|system_healthy</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38734,6 +38744,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_loading_connected</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38746,6 +38758,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_enable_semi_auto</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38758,6 +38772,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|Programs|semi_automatic|simulation_step</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>255</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38770,6 +38786,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[12]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38782,6 +38800,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[11]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38794,6 +38814,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[14]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38806,6 +38828,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[1]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38818,6 +38842,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[3]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38830,6 +38856,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[16]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38842,6 +38870,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[13]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38854,6 +38884,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[7]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38866,6 +38898,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[4]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38878,6 +38912,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[17]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38890,6 +38926,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[15]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38902,6 +38940,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[8]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38914,6 +38954,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[18]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38926,6 +38968,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[2]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38938,6 +38982,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[10]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38950,6 +38996,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[6]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38962,6 +39010,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[9]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38974,6 +39024,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[5]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38986,6 +39038,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[27]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -38998,6 +39052,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[26]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39010,6 +39066,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[23]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39022,6 +39080,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[29]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39034,6 +39094,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[19]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39046,6 +39108,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[25]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39058,6 +39122,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[24]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39070,6 +39136,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[22]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39082,6 +39150,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[20]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39094,6 +39164,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[21]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39106,6 +39178,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[28]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
@@ -39118,6 +39192,8 @@
         <enableScaling>false</enableScaling>
         <TAGLOCATOR>OPC UA Client:prot8:uid1:OPCUAServer@BESI-1|Objects|DeviceSet|WAGO 750-8212 PFC200 G2 2ETH RS|Resources|Application|GlobalVars|GVL|tanks|tanks[30]|sttTank|suggested_volume</TAGLOCATOR>
         <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
         <isClientTag>false</isClientTag>
     </tag>
